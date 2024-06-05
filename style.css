@@ -1,0 +1,12 @@
+#backgroundimage {
+    background-image: url('https://mrwallpaper.com/images/hd/dungeons-and-dragons-forest-village-byzz77un3imzaghl.jpg');
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#headertitle {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    color: white;
+}
