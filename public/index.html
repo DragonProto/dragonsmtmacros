@@ -26,18 +26,26 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
       async function fetchData() {
-          // Fetch macros
-          const macrosResponse = await fetch('/macros');
-          const macros = await macrosResponse.json();
-          const macrosList = document.getElementById('macros-list');
-          macros.forEach(macro => {
-              const li = document.createElement('li');
-              li.textContent = `${macro.name} - ${macro.description} - ${macro.category} - ${macro.subcategory} - ${macro.macrocode}`;
-              macrosList.appendChild(li);
-          });
+          try {
+              // Fetch macros
+              const macrosResponse = await fetch('/macros');
+              if (!macrosResponse.ok) {
+                  throw new Error('Network response was not ok ' + macrosResponse.statusText);
+              }
+              const macros = await macrosResponse.json();
+              const macrosList = document.getElementById('macros-list');
+              macrosList.innerHTML = ''; // Clear the list before adding new items
+              macros.forEach(macro => {
+                  const li = document.createElement('li');
+                  li.textContent = `${macro.name} - ${macro.description} - ${macro.category} - ${macro.subcategory} - ${macro.macrocode}`;
+                  macrosList.appendChild(li);
+              });
+          } catch (error) {
+              console.error('Fetch error: ', error);
+          }
       }
 
       fetchData();
-  </script>
+    </script>
   </body>
 </html>
