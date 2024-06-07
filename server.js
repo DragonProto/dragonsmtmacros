@@ -7,8 +7,8 @@ const port = 3000;
 // Connect to SQLite database
 const db = new sqlite3.Database('./dnd.db');
 
-// Middleware to serve static files from the directory
-app.use(express.static(path.join(__dirname)));
+// Middleware to serve static files from the 'public' directory
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Route to get macros
 app.get('/macros', (req, res) => {
@@ -18,6 +18,11 @@ app.get('/macros', (req, res) => {
     }
     res.json(rows);
   });
+});
+
+// Handle the root URL by sending the index.html file
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 app.listen(port, () => {
