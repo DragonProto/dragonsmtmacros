@@ -14,7 +14,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/macros', (req, res) => {
   db.all('SELECT * FROM macros', [], (err, rows) => {
     if (err) {
-      throw err;
+      console.error(err.message);
+      res.status(500).json({ error: err.message });
+      return;
     }
     res.json(rows);
   });
