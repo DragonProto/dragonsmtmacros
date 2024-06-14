@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "name": "Sample Name",
+    "description": "Sample Description",
+    "category": "Sample Category",
+    "subcategory": "Sample Subcategory",
+    "macrocode": "[h: (1d8 + Dexterity);]"
+  }
+]
