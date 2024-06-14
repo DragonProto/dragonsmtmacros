@@ -27,14 +27,13 @@
     <script>
       async function fetchData() {
           try {
-              // Fetch macros
-              const macrosResponse = await fetch('/macros');
+              const macrosResponse = await fetch('macros.json');
               if (!macrosResponse.ok) {
                   throw new Error('Network response was not ok ' + macrosResponse.statusText);
               }
               const macros = await macrosResponse.json();
               const macrosList = document.getElementById('macros-list');
-              macrosList.innerHTML = ''; // Clear the list before adding new items
+              macrosList.innerHTML = ''; 
               macros.forEach(macro => {
                   const li = document.createElement('li');
                   li.textContent = `${macro.name} - ${macro.description} - ${macro.category} - ${macro.subcategory} - ${macro.macrocode}`;
