@@ -6,5 +6,21 @@
     "category": "Sample Category",
     "subcategory": "Sample Subcategory",
     "macrocode": "[h: (1d8 + Dexterity);]"
+  },
+  {
+    "id": 2,
+    "name": "Sample Name2",
+    "description": "Sample Description2",
+    "category": "Sample Category2",
+    "subcategory": "Sample Subcategory2",
+    "macrocode": "[h: (2d8 + Dexterity);]"
+  },
+  {
+    "id": 3,
+    "name": "Sample Name3",
+    "description": "Sample Description3",
+    "category": "Sample Category3",
+    "subcategory": "Sample Subcategory3",
+    "macrocode": "[h: (3d8 + Dexterity);]"
   }
 ]
