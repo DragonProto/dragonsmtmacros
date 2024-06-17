@@ -46,5 +46,38 @@
 
       fetchData();
     </script>
+    <script>
+      async function fetchData() {
+          try {
+              const macrosResponse = await fetch('macros.json');
+              if (!macrosResponse.ok) {
+                  throw new Error('Network response was not ok ' + macrosResponse.statusText);
+              }
+              const macros = await macrosResponse.json();
+              const macrosList = document.getElementById('macros-list');
+              macrosList.innerHTML = ''; 
+              macros.forEach(macro => {
+                  const li = document.createElement('li');
+                  li.className = 'macro-item';
+                  li.innerHTML = `
+                      <h3>${macro.name}</h3>
+                      <div class="macro-details">
+                          <p><strong>Description:</strong> ${macro.description}</p>
+                          <p><strong>Macro Code:</strong> ${macro.macrocode}</p>
+                      </div>
+                  `;
+                  li.addEventListener('click', () => {
+                      const details = li.querySelector('.macro-details');
+                      details.style.display = details.style.display === 'none' ? 'block' : 'none';
+                  });
+                  macrosList.appendChild(li);
+              });
+          } catch (error) {
+              console.error('Fetch error: ', error);
+          }
+      }
+    
+      fetchData();
+    </script>
   </body>
 </html>
