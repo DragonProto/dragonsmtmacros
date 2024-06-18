@@ -1,3 +1,9 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
 #backgroundimage {
   background-image: url('https://mrwallpaper.com/images/hd/dungeons-and-dragons-forest-village-byzz77un3imzaghl.jpg');
   height: 50vh;
@@ -11,13 +17,21 @@
   color: white;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 #macros-list {
-  width: 80%;
+  width: 90%;
+  max-width: 1200px;
   margin: 0 auto;
   list-style-type: none;
   padding: 0;
@@ -27,13 +41,19 @@ body {
   background-color: #ffffff;
   border: 1px solid #ddd;
   margin-bottom: 10px;
-  padding: 10px;
+  padding: 15px 20px;
   border-radius: 15px;
   cursor: pointer;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .macro-item h3 {
   margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .macro-details {
@@ -49,23 +69,13 @@ body {
   padding: 10px 10px;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-h1 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
 #settings-bar {
-  width: 80%;
+  width: 90%;
+  max-width: 1200px;
   margin: 20px auto;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  gap: 10px;
   padding: 10px;
   background-color: #ffffff;
   border: 1px solid #ddd;
@@ -74,4 +84,122 @@ h1 {
 
 #search-input {
   flex: 1;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%; /* Align the top of the menu with the bottom of the button */
+  left: 0;
+  z-index: 1000;
+  min-width: 100%; /* Make the dropdown menu as wide as the button */
+  padding: .5rem 0;
+  margin: 0; /* Remove default margin */
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-top-left-radius: 0; /* Remove top left corner radius */
+  border-top-right-radius: 0; /* Remove top right corner radius */
+  border-bottom-left-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown .dropdown-menu.show {
+  display: block;
+}
+
+.dropdown:hover .btn-secondary,
+.btn-secondary.show {
+  background-color: #5a6268; /* Darker gray color */
+  color: white; /* Text color when highlighted */
+  border-bottom-left-radius: 0; /* Remove bottom left corner radius */
+  border-bottom-right-radius: 0; /* Remove bottom right corner radius */
+}
+
+#category-btn {
+  height: calc(1.5em + .75rem + 2px);
+}
+
+#category-btn:hover,
+#category-btn.show {
+  background-color: #5a6268; /* Darker gray color on hover and when menu is open */
+  color: white;
+}
+
+.copy-btn {
+  cursor: pointer;
+  color: #007bff;
+  font-size: 1.2em;
+  margin-left: auto;
+}
+
+.copy-btn:hover {
+  color: #0056b3;
+}
+
+.notification {
+  position: fixed;
+  bottom: -50px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  animation: none;
+}
+
+.notification.show {
+  display: block;
+  animation: jumpInOut 2s ease-in-out forwards;
+}
+
+@keyframes jumpInOut {
+  0% {
+    bottom: -50px;
+    opacity: 0;
+  }
+  10% {
+    bottom: 20px;
+    opacity: 1;
+  }
+  90% {
+    bottom: 20px;
+    opacity: 1;
+  }
+  100% {
+    bottom: -50px;
+    opacity: 0;
+  }
+}
+
+/* Media Query for Small Viewports */
+@media (max-width: 768px) {
+  #settings-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #search-input,
+  #category-btn,
+  #clear-categories-btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #clear-categories-btn {
+    margin-bottom: 0;
+  }
 }

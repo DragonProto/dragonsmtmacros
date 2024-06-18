@@ -1,26 +1,29 @@
 [
   {
+    "id": 2,
+    "name": "Acid Splash",
+    "description": "School: Conjuration\r\nCasting Time: 1 Action\r\nRange: 60 Feet\r\nDuration: Instantaneous\t\r\nComponents: V, S",
+    "category": "Spells",
+    "subcategory": "",
+    "macrocode": "[h: (2d8 + Dexterity);]",
+    "subcategories": "Wizard Spell List"
+  },
+  {
     "id": 1,
     "name": "Club",
     "description": "Cost: 1 sp\r\nDamage: 1d4 bludgeoning\r\nWeight: 2 lb\r\nProperties: Light",
     "category": "Weapons",
     "subcategory": "Simple Weapons",
-    "macrocode": "[h: (1d8 + Dexterity);]"
-  },
-  {
-    "id": 2,
-    "name": "Acid Splash",
-    "description": "School: Conjuration\r\nCasting Time: 1 Action\r\nRange: 60 Feet\r\nDuration: Instantaneous\t\r\nComponents: V, S",
-    "category": "Spells",
-    "subcategory": "Wizard Spell List, Cleric Spell List",
-    "macrocode": "[h: (2d8 + Dexterity);]"
+    "macrocode": "[h: (1d8 + Dexterity);]",
+    "subcategories": "Simple Weapons"
   },
   {
     "id": 3,
     "name": "Cure Wounds",
     "description": "School: Evocation\r\nCasting Time: 1 Action\r\nRange: Touch\r\nDuration: Instantaneous\r\nComponents: V, S",
     "category": "Spells",
-    "subcategory": "Cleric Spell List",
-    "macrocode": "[h: (3d8 + Dexterity);]"
+    "subcategory": "",
+    "macrocode": "[h: (3d8 + Dexterity);]",
+    "subcategories": "Artificer Spell List, Cleric Spell List"
   }
 ]

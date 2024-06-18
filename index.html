@@ -26,9 +26,19 @@
   <main>
     <div id="settings-bar" class="d-flex justify-content-start align-items-center">
       <input type="text" id="search-input" class="form-control" placeholder="Search for tables...">
+      <div class="dropdown">
+        <button id="category-btn" class="btn btn-secondary dropdown-toggle" type="button">
+          Show specific category
+        </button>
+        <div id="category-dropdown" class="dropdown-menu">
+          <!-- Options will be added dynamically -->
+        </div>
+      </div>
+      <button id="clear-categories-btn" class="btn btn-secondary" type="button">Clear Categories</button>
     </div>
     <h1>DnD Macros</h1>
     <ul id="macros-list"></ul>
+    <div id="notification" class="notification">Copied macro!</div>
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -38,74 +48,148 @@
   <script>
     async function fetchData() {
       try {
-        // Fetch the JSON data from the macros.json file
         const macrosResponse = await fetch('macros.json');
         if (!macrosResponse.ok) {
           throw new Error('Network response was not ok ' + macrosResponse.statusText);
         }
         const macros = await macrosResponse.json();
 
-        // Get the element with the ID macros-list
         const macrosList = document.getElementById('macros-list');
+        const categoryDropdown = document.getElementById('category-dropdown');
+        const searchInput = document.getElementById('search-input');
+        const categoryBtn = document.getElementById('category-btn');
+        const clearCategoriesBtn = document.getElementById('clear-categories-btn');
+        const notification = document.getElementById('notification');
 
-        // Clear any existing content in the macros-list
         macrosList.innerHTML = '';
+        categoryDropdown.innerHTML = '';
 
-        // Variable to keep track of the currently open item
-        let currentlyOpenItem = null;
-
-        // Iterate over each macro item in the JSON data
+        const categories = {};
         macros.forEach(macro => {
-          // Create a list item (li) for each macro
-          const li = document.createElement('li');
-          li.className = 'macro-item'; // Add class for styling
+          if (macro.subcategories) {
+            const subcategories = macro.subcategories.split(', ');
+            subcategories.forEach(subcategory => {
+              if (!categories[macro.category]) {
+                categories[macro.category] = new Set();
+              }
+              categories[macro.category].add(subcategory);
+            });
+          }
+        });
 
-          // Set the inner HTML of the list item, excluding category and subcategory
-          li.innerHTML = `
-              <h3>${macro.name}</h3>
+        // Sort categories and subcategories alphabetically
+        const sortedCategories = Object.keys(categories).sort();
+        sortedCategories.forEach(category => {
+          const categoryHeader = document.createElement('h6');
+          categoryHeader.className = 'dropdown-header';
+          categoryHeader.innerText = category;
+          categoryDropdown.appendChild(categoryHeader);
+
+          Array.from(categories[category]).sort().forEach(subcategory => {
+            const option = document.createElement('a');
+            option.className = 'dropdown-item';
+            option.href = '#';
+            option.dataset.value = `${category}::${subcategory}`;
+            option.innerText = subcategory;
+            option.addEventListener('click', (e) => {
+              e.preventDefault();
+              option.classList.toggle('active');
+              updateMacros();
+            });
+            categoryDropdown.appendChild(option);
+          });
+        });
+
+        function renderMacros(filteredMacros) {
+          macrosList.innerHTML = '';
+          filteredMacros.forEach(macro => {
+            const li = document.createElement('li');
+            li.className = 'macro-item';
+            li.innerHTML = `
+              <h3>${macro.name} <span class="copy-btn" data-macrocode="${macro.macrocode}" title="Copy macro">&#128203;</span></h3>
               <div class="macro-details">
                 <p><strong>Description:</strong> ${macro.description}</p>
+                <p><strong>Subcategories:</strong> ${macro.subcategories}</p>
                 <p><strong>Macro Code:</strong> ${macro.macrocode}</p>
               </div>
             `;
-
-          // Add click event listener to toggle the display of macro details
-          li.addEventListener('click', () => {
-            const details = li.querySelector('.macro-details');
-
-            // Check if the clicked item is already open
-            if (details.classList.contains('open')) {
-              details.classList.remove('open');
-              currentlyOpenItem = null;
-            } else {
-              // Close any other open items
-              if (currentlyOpenItem) {
-                currentlyOpenItem.classList.remove('open');
+            li.addEventListener('click', () => {
+              const details = li.querySelector('.macro-details');
+              if (details.classList.contains('open')) {
+                details.classList.remove('open');
+              } else {
+                document.querySelectorAll('.macro-details.open').forEach(detail => {
+                  detail.classList.remove('open');
+                });
+                details.classList.add('open');
               }
-
-              // Open the current item
-              details.classList.add('open');
-              currentlyOpenItem = details;
-            }
+            });
+            macrosList.appendChild(li);
           });
 
-          // Append the list item to the macros-list
-          macrosList.appendChild(li);
+          // Add event listener for copy buttons
+          document.querySelectorAll('.copy-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+              e.stopPropagation();
+              const macrocode = e.target.dataset.macrocode;
+              navigator.clipboard.writeText(macrocode).then(() => {
+                showNotification('Copied macro!');
+              }).catch(err => {
+                console.error('Error copying text: ', err);
+              });
+            });
+          });
+        }
+
+        function showNotification(message) {
+          notification.textContent = message;
+
+          // Clear any existing animations
+          notification.classList.remove('show');
+          void notification.offsetWidth; // Trigger reflow to restart the animation
+
+          notification.classList.add('show');
+
+          // Remove the notification after the animation ends
+          setTimeout(() => {
+            notification.classList.remove('show');
+          }, 2000); // Adjusted to 2 seconds
+        }
+
+        renderMacros(macros);
+
+        searchInput.addEventListener('input', updateMacros);
+
+        function updateMacros() {
+          const query = searchInput.value.toLowerCase();
+          const selectedOptions = Array.from(categoryDropdown.querySelectorAll('.dropdown-item.active')).map(option => option.dataset.value);
+          const filteredMacros = macros.filter(macro => {
+            const nameMatch = macro.name.toLowerCase().includes(query);
+            const catSubs = macro.subcategories ? macro.subcategories.split(', ').map(sub => `${macro.category}::${sub}`) : [];
+            const categoryMatch = selectedOptions.length === 0 || selectedOptions.some(opt => catSubs.includes(opt));
+            return nameMatch && categoryMatch;
+          });
+          renderMacros(filteredMacros);
+        }
+
+        categoryBtn.addEventListener('click', () => {
+          categoryDropdown.classList.toggle('show');
+          categoryBtn.classList.toggle('show'); // Toggle class to change color when menu is open
         });
 
-        // Search functionality
-        const searchInput = document.getElementById('search-input');
-        searchInput.addEventListener('input', () => {
-          const query = searchInput.value.toLowerCase();
-          const items = document.querySelectorAll('.macro-item');
-          items.forEach(item => {
-            const name = item.querySelector('h3').textContent.toLowerCase();
-            if (name.includes(query)) {
-              item.style.display = '';
-            } else {
-              item.style.display = 'none';
-            }
+        document.addEventListener('click', (e) => {
+          if (!categoryBtn.contains(e.target) && !categoryDropdown.contains(e.target)) {
+            categoryDropdown.classList.remove('show');
+            categoryBtn.classList.remove('show'); // Remove class to revert color when menu is closed
+          }
+        });
+
+        // Clear all selected categories
+        clearCategoriesBtn.addEventListener('click', () => {
+          document.querySelectorAll('.dropdown-item.active').forEach(item => {
+            item.classList.remove('active');
           });
+          updateMacros();
         });
 
       } catch (error) {
@@ -113,10 +197,8 @@
       }
     }
 
-    // Call the fetchData function to fetch and display the data
     fetchData();
   </script>
-
 
 </body>
 
