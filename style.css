@@ -43,10 +43,14 @@ h1 {
   margin-bottom: 10px;
   padding: 15px 20px;
   border-radius: 15px;
-  cursor: pointer;
   position: relative;
   width: 100%;
   box-sizing: border-box;
+  cursor: default; /* Default cursor for the entire item */
+}
+
+.macro-header {
+  cursor: pointer; /* Pointer cursor for the header */
 }
 
 .macro-item h3 {
@@ -202,4 +206,14 @@ h1 {
   #clear-categories-btn {
     margin-bottom: 0;
   }
+}
+
+/* Ensure the entire macro item is clickable */
+.macro-item {
+  cursor: pointer; /* Pointer cursor for the entire item */
+}
+
+/* When macro details are open, ensure the pointer cursor is still active */
+.macro-item .macro-details {
+  cursor: text; /* Text cursor for details area to allow text selection */
 }

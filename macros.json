@@ -11,11 +11,11 @@
   {
     "id": 1,
     "name": "Club",
-    "description": "Cost: 1 sp\r\nDamage: 1d4 bludgeoning\r\nWeight: 2 lb\r\nProperties: Light",
+    "description": "Damage: 1d4 bludgeoning\r\nProperties: Light",
     "category": "Weapons",
-    "subcategory": "Simple Weapons",
-    "macrocode": "[h: (1d8 + Dexterity);]",
-    "subcategories": "Simple Weapons"
+    "subcategory": "Simple Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">Club Damage</font></b> => <font color=\"Black\">[t: 1d4 + Strength] <font color=\"Silver\">🔨</font></font> damage.",
+    "subcategories": "Simple Melee Weapons"
   },
   {
     "id": 3,
@@ -25,5 +25,32 @@
     "subcategory": "",
     "macrocode": "[h: (3d8 + Dexterity);]",
     "subcategories": "Artificer Spell List, Cleric Spell List"
+  },
+  {
+    "id": 4,
+    "name": "Dagger",
+    "description": "Damage: 1d4 piercing\r\nProperties: Finesse, light, thrown (20/60)",
+    "category": "Weapons",
+    "subcategory": "Simple Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">Dagger Damage</b> => <font color=\"Black\">[t: 1d4 + Dexterity] <font color=\"Silver\">📍</font color> damage.",
+    "subcategories": "Simple Melee Weapons"
+  },
+  {
+    "id": 5,
+    "name": "Greatclub",
+    "description": "Damage: 1d8 bludgeoning\r\nProperties: Two-handed",
+    "category": "Weapons",
+    "subcategory": "Simple Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">Greatclub Damage</font></b> => <font color=\"Black\">[t: 1d8 + Strength] <font color=\"Silver\">🔨</font></font> damage.",
+    "subcategories": "Simple Melee Weapons"
+  },
+  {
+    "id": 6,
+    "name": "Handaxe",
+    "description": "Damage: 1d6 slashing\r\nProperties: Light, thrown (20/60)",
+    "category": "Weapons",
+    "subcategory": "Simple Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">Handaxe Damage</b> => <font color=\"Black\">[t: 1d6 + Dexterity] <font color=\"Silver\">🔪</font color> damage.",
+    "subcategories": "Simple Melee Weapons"
   }
 ]
