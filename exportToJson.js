@@ -16,7 +16,8 @@ function exportToJson() {
              CASE 
                WHEN spell_subcategories.subcategory_id IS NOT NULL THEN GROUP_CONCAT(subcategories.name, ', ')
                ELSE macros.subcategory
-             END AS subcategories
+             END AS subcategories,
+             macros.macrocodecrit  -- Ensure this field is selected
       FROM macros
       LEFT JOIN spell_subcategories ON macros.id = spell_subcategories.spell_id
       LEFT JOIN subcategories ON subcategories.id = spell_subcategories.subcategory_id

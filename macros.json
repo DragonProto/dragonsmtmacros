@@ -6,6 +6,7 @@
     "category": "Spells",
     "subcategory": "",
     "macrocode": "[h: (2d8 + Dexterity);]",
+    "macrocodecrit": "[h: (2d8 + Dexterity);]",
     "subcategories": "Wizard Spell List"
   },
   {
@@ -15,6 +16,7 @@
     "category": "Weapons",
     "subcategory": "Simple Melee Weapons",
     "macrocode": "<b><font color=\"Green\">Club Damage</font></b> => <font color=\"Black\">[t: 1d4 + Strength] <font color=\"Silver\">🔨</font></font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Club Damage Crit</font></b> => <font color=\"Black\">[t: 2d4 + Strength] <font color=\"Silver\">🔨</font></font> damage!",
     "subcategories": "Simple Melee Weapons"
   },
   {
@@ -24,6 +26,7 @@
     "category": "Spells",
     "subcategory": "",
     "macrocode": "[h: (3d8 + Dexterity);]",
+    "macrocodecrit": "[h: (3d8 + Dexterity);]",
     "subcategories": "Artificer Spell List, Cleric Spell List"
   },
   {
@@ -33,6 +36,7 @@
     "category": "Weapons",
     "subcategory": "Simple Melee Weapons",
     "macrocode": "<b><font color=\"Green\">Dagger Damage</b> => <font color=\"Black\">[t: 1d4 + Dexterity] <font color=\"Silver\">📍</font color> damage.",
+    "macrocodecrit": "<b><font color=\"Green\">Dagger Damage</b> => <font color=\"Black\">[t: 1d4 + Dexterity] <font color=\"Silver\">📍</font color> damage.",
     "subcategories": "Simple Melee Weapons"
   },
   {
@@ -42,6 +46,7 @@
     "category": "Weapons",
     "subcategory": "Simple Melee Weapons",
     "macrocode": "<b><font color=\"Green\">Greatclub Damage</font></b> => <font color=\"Black\">[t: 1d8 + Strength] <font color=\"Silver\">🔨</font></font> damage.",
+    "macrocodecrit": "<b><font color=\"Green\">Greatclub Damage</font></b> => <font color=\"Black\">[t: 1d8 + Strength] <font color=\"Silver\">🔨</font></font> damage.",
     "subcategories": "Simple Melee Weapons"
   },
   {
@@ -51,6 +56,7 @@
     "category": "Weapons",
     "subcategory": "Simple Melee Weapons",
     "macrocode": "<b><font color=\"Green\">Handaxe Damage</b> => <font color=\"Black\">[t: 1d6 + Dexterity] <font color=\"Silver\">🔪</font color> damage.",
+    "macrocodecrit": "<b><font color=\"Green\">Handaxe Damage</b> => <font color=\"Black\">[t: 1d6 + Dexterity] <font color=\"Silver\">🔪</font color> damage.",
     "subcategories": "Simple Melee Weapons"
   }
 ]
