@@ -86,13 +86,14 @@ h1 {
 
 .macro-item .macro-section,
 .macro-item .macro-section2 {
-  background-color: #f9f9f9;
+  background-color: #f7f7f7;
   padding: 10px;
   border-radius: 5px;
   width: 100%;
   /* Ensure gray area extends the full width */
   box-sizing: border-box;
   margin-top: 20px;
+  cursor: default;
 }
 
 .macro-item .macro-section p,
@@ -111,7 +112,7 @@ h1 {
 .macro-item .macro-section p,
 .macro-item .macro-section2 h4,
 .macro-item .macro-section2 p {
-  cursor: default;
+  cursor: text;
 }
 
 .default-cursor-area {
@@ -260,7 +261,14 @@ footer {
   cursor: text;
 }
 
-#description-wrapper{
-  background-color: crimson;
+#description-wrapper {
+  display: inline-block; /* Ensures the wrapper only takes up as much width as necessary */
+  padding: 10px; /* Optional: Add padding for better visual appearance */
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
   margin-top: 20px;
+  cursor: default;
+}
+
+.macro-critical-code-content:hover {
+  cursor: text;
 }

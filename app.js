@@ -45,14 +45,14 @@ function renderMacros(macros) {
             </div>
             <p>${macro.description.replace(/\r\n/g, '<br>')}</p>
         </div>
-            <div class="macro-section">
+            <div class="macro-section" onclick="event.stopPropagation();">
                 <div class="d-flex justify-content-between align-items-center">
                     <p><strong>Macro Code:</strong></p>
                     <span class="copy-btn" data-macrocode="${macro.macrocode.replace(/"/g, '&quot;')}" title="Copy macro" role="button">&#128203;</span>
                 </div>
                 <code class="macro-code-content">${macro.macrocode.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</code>
             </div>
-            <div class="macro-section2">
+            <div class="macro-section2" onclick="event.stopPropagation();">
                 <div class="d-flex justify-content-between align-items-center">
                     <p><strong>Critical Hit Macro Code:</strong></p>
                     <span class="copy-btn" data-macrocode="${macro.macrocodecrit.replace(/"/g, '&quot;')}" title="Copy critical macro" role="button">&#128203;</span>
@@ -61,6 +61,20 @@ function renderMacros(macros) {
             </div>
         </div>
       `;
+
+      macrosList.appendChild(li);
+
+      // Apply cursor: text to the macro code content
+      const macroCodeContent = li.querySelector('.macro-code-content');
+      if (macroCodeContent) {
+        macroCodeContent.style.cursor = 'text';
+      }
+
+      // Apply cursor: text to the critical hit macro code content
+      const macroCriticalCodeContent = li.querySelector('.macro-critical-code-content');
+      if (macroCriticalCodeContent) {
+        macroCriticalCodeContent.style.cursor = 'text';
+      }
 
       // Add click event listener to the entire list item to toggle open/close
       li.addEventListener('click', (e) => {
@@ -93,7 +107,7 @@ function renderMacros(macros) {
       });
 
       // Prevent closing the macro details when clicking on text inside it
-      li.querySelectorAll('.macro-header, .macro-details p, .macro-details strong, .macro-code-content, .macro-critical-code-content')
+      li.querySelectorAll('.macro-header, .macro-details p, .macro-details strong, .macro-code-content, .macro-critical-code-content, .macro-section2, .macro-section, #description-wrapper')
         .forEach(element => {
           element.addEventListener('click', (e) => {
             e.stopPropagation();
