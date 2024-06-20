@@ -13,12 +13,20 @@ body {
   height: 50vh;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+  margin: 0;
+  padding: 0;
 }
 
 #headertitle {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 20px;
   color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 main {
@@ -27,7 +35,7 @@ main {
   align-items: center;
   justify-content: center;
   flex: 1;
-  padding-bottom: 100px; /* Space for the footer */
+  padding-bottom: 100px;
 }
 
 h1 {
@@ -52,46 +60,67 @@ h1 {
   position: relative;
   width: 100%;
   box-sizing: border-box;
-  cursor: pointer; /* Pointer cursor for the entire item */
+  cursor: pointer;
+  /* Ensure the entire item is clickable */
 }
 
-.macro-header {
+.macro-item .macro-header {
   margin: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer; /* Pointer cursor for the header */
+  display: inline-block;
+  /* Only take up as much space as the text */
+  cursor: text;
 }
 
-.macro-details {
+.macro-item .macro-details {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-out, padding 0.3s ease-out;
-  padding: 0 10px;
+  padding: 0;
   box-sizing: border-box;
 }
 
-.macro-details.open {
+.macro-item .macro-details.open {
   max-height: 500px;
   padding: 10px;
-  margin-bottom: 10px;
 }
 
-.macro-section {
-  background-color: #f9f9f9; /* Light gray background */
+.macro-item .macro-section,
+.macro-item .macro-section2 {
+  background-color: #f9f9f9;
   padding: 10px;
   border-radius: 5px;
-  margin-bottom: 20px; /* Space between macro code and critical hit macro code */
+  width: 100%;
+  /* Ensure gray area extends the full width */
+  box-sizing: border-box;
+  margin-top: 20px;
+  cursor: text;
 }
 
-.macro-section p {
+.macro-item .macro-section p,
+.macro-item .macro-section2 p,
+.macro-item .macro-details p,
+.macro-item .macro-details strong,
+.macro-item .macro-code-content,
+.macro-item .macro-critical-code-content {
   margin: 0;
+  display: inline;
+  /* Only take up as much space as the text */
+}
+
+/* Ensure no cursor change for description */
+.macro-item .macro-header,
+.macro-item .macro-section p {
+  cursor: text;
+}
+
+.default-cursor-area {
+  cursor: default;
 }
 
 #settings-bar {
   width: 90%;
   max-width: 1200px;
-  margin: 20px auto;
+  margin: 20px auto 0 auto;
   display: flex;
   justify-content: space-between;
   gap: 10px;
@@ -99,6 +128,7 @@ h1 {
   background-color: #ffffff;
   border: 1px solid #ddd;
   border-radius: 15px;
+  position: relative;
 }
 
 #search-input {
@@ -112,12 +142,14 @@ h1 {
 .dropdown .dropdown-menu {
   display: none;
   position: absolute;
-  top: 100%; /* Align the top of the menu with the bottom of the button */
+  top: 100%;
   left: 0;
   z-index: 1000;
-  min-width: 100%; /* Make the dropdown menu as wide as the button */
+  min-width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
   padding: .5rem 0;
-  margin: 0; /* Remove default margin */
+  margin: 0;
   font-size: 1rem;
   color: #212529;
   text-align: left;
@@ -125,8 +157,8 @@ h1 {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, .15);
-  border-top-left-radius: 0; /* Remove top left corner radius */
-  border-top-right-radius: 0; /* Remove top right corner radius */
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
   border-bottom-left-radius: .25rem;
   border-bottom-right-radius: .25rem;
 }
@@ -138,19 +170,7 @@ h1 {
 
 .dropdown:hover .btn-secondary,
 .btn-secondary.show {
-  background-color: #5a6268; /* Darker gray color */
-  color: white; /* Text color when highlighted */
-  border-bottom-left-radius: 0; /* Remove bottom left corner radius */
-  border-bottom-right-radius: 0; /* Remove bottom right corner radius */
-}
-
-#category-btn {
-  height: calc(1.5em + .75rem + 2px);
-}
-
-#category-btn:hover,
-#category-btn.show {
-  background-color: #5a6268; /* Darker gray color on hover and when menu is open */
+  background-color: #5a6268;
   color: white;
 }
 
@@ -158,8 +178,7 @@ h1 {
   cursor: pointer;
   color: #007bff;
   font-size: 1.2em;
-  margin-left: auto; /* Align to the right */
-  margin-left: 10px; /* Space between the text and the button */
+  margin-left: 10px;
 }
 
 .copy-btn:hover {
@@ -188,39 +207,42 @@ h1 {
 
 @keyframes jumpInOut {
   0% {
-      bottom: -50px;
-      opacity: 0;
+    bottom: -50px;
+    opacity: 0;
   }
+
   10% {
-      bottom: 20px;
-      opacity: 1;
+    bottom: 20px;
+    opacity: 1;
   }
+
   90% {
-      bottom: 20px;
-      opacity: 1;
+    bottom: 20px;
+    opacity: 1;
   }
+
   100% {
-      bottom: -50px;
-      opacity: 0;
+    bottom: -50px;
+    opacity: 0;
   }
 }
 
 /* Media Query for Small Viewports */
 @media (max-width: 768px) {
   #settings-bar {
-      flex-direction: column;
-      align-items: stretch;
+    flex-direction: column;
+    align-items: stretch;
   }
 
   #search-input,
   #category-btn,
   #clear-categories-btn {
-      width: 100%;
-      margin-bottom: 10px;
+    width: 100%;
+    margin-bottom: 10px;
   }
 
   #clear-categories-btn {
-      margin-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -230,4 +252,13 @@ footer {
   text-align: center;
   color: #6c757d;
   width: 100%;
+}
+
+.macro-item .macro-details .description {
+  cursor: text;
+  /* Set text cursor for the description */
+}
+
+.macro-item .macro-details .description p {
+  margin: 0;
 }
