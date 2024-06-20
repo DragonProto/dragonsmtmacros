@@ -23,98 +23,99 @@ async function fetchData() {
 }
 
 function renderMacros(macros) {
-    const macrosList = document.getElementById('macros-list');
-    const notification = document.getElementById('notification');
-  
-    macrosList.innerHTML = '';
-    if (macros.length === 0) {
-      const emptyStateMessage = document.createElement('p');
-      emptyStateMessage.id = 'empty-state-message';
-      emptyStateMessage.textContent = 'No macros found.';
-      macrosList.appendChild(emptyStateMessage);
-    } else {
-      macros.forEach(macro => {
-        const li = document.createElement('li');
-        li.className = 'macro-item';
-        li.innerHTML = `
-          <h3 class="macro-header">${macro.name}</h3>
-          <div class="macro-details" aria-hidden="true">
-              <div class="d-flex justify-content-between align-items-center">
-                  <p><strong>Description:</strong></p>
-              </div>
-              <p>${macro.description.replace(/\r\n/g, '<br>')}</p>
-              <div class="macro-section">
-                  <div class="d-flex justify-content-between align-items-center">
-                      <p><strong>Macro Code:</strong></p>
-                      <span class="copy-btn" data-macrocode="${macro.macrocode.replace(/"/g, '&quot;')}" title="Copy macro" role="button">&#128203;</span>
-                  </div>
-                  <code class="macro-code-content">${macro.macrocode.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</code>
-              </div>
-              <div class="macro-section2">
-                  <div class="d-flex justify-content-between align-items-center">
-                      <p><strong>Critical Hit Macro Code:</strong></p>
-                      <span class="copy-btn" data-macrocode="${macro.macrocodecrit.replace(/"/g, '&quot;')}" title="Copy critical macro" role="button">&#128203;</span>
-                  </div>
-                  <code class="macro-critical-code-content">${macro.macrocodecrit.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</code>
-              </div>
-          </div>
-        `;
-  
-        // Add click event listener to the entire list item to toggle open/close
-        li.addEventListener('click', (e) => {
-          // Ensure that clicks on the text elements inside do not toggle the macro-item
-          if (e.target.closest('.macro-header, .macro-details p, .macro-details strong, .macro-code-content, .macro-critical-code-content, .copy-btn')) {
-            return;
-          }
-  
-          const details = li.querySelector('.macro-details');
-          const isOpen = details.classList.contains('open');
-  
-          // Close all open details
-          document.querySelectorAll('.macro-details.open').forEach(detail => {
-            detail.classList.remove('open');
-            detail.setAttribute('aria-hidden', 'true');
-            detail.parentElement.setAttribute('aria-expanded', 'false');
-          });
-  
-          // If the clicked item was closed, open it
-          if (!isOpen) {
-            details.classList.add('open');
-            details.setAttribute('aria-hidden', 'false');
-            li.setAttribute('aria-expanded', 'true');
-            li.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          } else {
-            details.classList.remove('open');
-            details.setAttribute('aria-hidden', 'true');
-            li.setAttribute('aria-expanded', 'false');
-          }
+  const macrosList = document.getElementById('macros-list');
+  const notification = document.getElementById('notification');
+
+  macrosList.innerHTML = '';
+  if (macros.length === 0) {
+    const emptyStateMessage = document.createElement('p');
+    emptyStateMessage.id = 'empty-state-message';
+    emptyStateMessage.textContent = 'No macros found.';
+    macrosList.appendChild(emptyStateMessage);
+  } else {
+    macros.forEach(macro => {
+      const li = document.createElement('li');
+      li.className = 'macro-item';
+      li.innerHTML = `
+        <h3 class="macro-header">${macro.name}</h3>
+        <div class="macro-details" aria-hidden="true">
+        <div id="description-wrapper">
+            <div class="d-flex justify-content-between align-items-center">
+                <p><strong>Description:</strong></p>
+            </div>
+            <p>${macro.description.replace(/\r\n/g, '<br>')}</p>
+        </div>
+            <div class="macro-section">
+                <div class="d-flex justify-content-between align-items-center">
+                    <p><strong>Macro Code:</strong></p>
+                    <span class="copy-btn" data-macrocode="${macro.macrocode.replace(/"/g, '&quot;')}" title="Copy macro" role="button">&#128203;</span>
+                </div>
+                <code class="macro-code-content">${macro.macrocode.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</code>
+            </div>
+            <div class="macro-section2">
+                <div class="d-flex justify-content-between align-items-center">
+                    <p><strong>Critical Hit Macro Code:</strong></p>
+                    <span class="copy-btn" data-macrocode="${macro.macrocodecrit.replace(/"/g, '&quot;')}" title="Copy critical macro" role="button">&#128203;</span>
+                </div>
+                <code class="macro-critical-code-content">${macro.macrocodecrit.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</code>
+            </div>
+        </div>
+      `;
+
+      // Add click event listener to the entire list item to toggle open/close
+      li.addEventListener('click', (e) => {
+        // Ensure that clicks on the text elements inside do not toggle the macro-item
+        if (e.target.closest('.macro-header, .macro-details p, .macro-details strong, .macro-code-content, .macro-critical-code-content, .copy-btn')) {
+          return;
+        }
+
+        const details = li.querySelector('.macro-details');
+        const isOpen = details.classList.contains('open');
+
+        // Close all open details
+        document.querySelectorAll('.macro-details.open').forEach(detail => {
+          detail.classList.remove('open');
+          detail.setAttribute('aria-hidden', 'true');
+          detail.parentElement.setAttribute('aria-expanded', 'false');
         });
-  
-        // Prevent closing the macro details when clicking on text inside it
-        li.querySelectorAll('.macro-header, .macro-details p, .macro-details strong, .macro-code-content, .macro-critical-code-content')
-          .forEach(element => {
-            element.addEventListener('click', (e) => {
-              e.stopPropagation();
-            });
+
+        // If the clicked item was closed, open it
+        if (!isOpen) {
+          details.classList.add('open');
+          details.setAttribute('aria-hidden', 'false');
+          li.setAttribute('aria-expanded', 'true');
+          li.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } else {
+          details.classList.remove('open');
+          details.setAttribute('aria-hidden', 'true');
+          li.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      // Prevent closing the macro details when clicking on text inside it
+      li.querySelectorAll('.macro-header, .macro-details p, .macro-details strong, .macro-code-content, .macro-critical-code-content')
+        .forEach(element => {
+          element.addEventListener('click', (e) => {
+            e.stopPropagation();
           });
-  
-        macrosList.appendChild(li);
-      });
-    }
-  
-    document.querySelectorAll('.copy-btn').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const macrocode = e.target.dataset.macrocode;
-        navigator.clipboard.writeText(macrocode).then(() => {
-          showNotification('Copied macro!');
-        }).catch(err => {
-          console.error('Error copying text: ', err);
         });
-      });
+
+      macrosList.appendChild(li);
     });
   }
-  
+
+  document.querySelectorAll('.copy-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const macrocode = e.target.dataset.macrocode;
+      navigator.clipboard.writeText(macrocode).then(() => {
+        showNotification('Copied macro!');
+      }).catch(err => {
+        console.error('Error copying text: ', err);
+      });
+    });
+  });
+}
 
 // Function to update macros based on search/filter criteria
 function updateMacros() {

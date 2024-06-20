@@ -93,7 +93,6 @@ h1 {
   /* Ensure gray area extends the full width */
   box-sizing: border-box;
   margin-top: 20px;
-  cursor: text;
 }
 
 .macro-item .macro-section p,
@@ -108,9 +107,11 @@ h1 {
 }
 
 /* Ensure no cursor change for description */
-.macro-item .macro-header,
-.macro-item .macro-section p {
-  cursor: text;
+.macro-item .macro-section h4,
+.macro-item .macro-section p,
+.macro-item .macro-section2 h4,
+.macro-item .macro-section2 p {
+  cursor: default;
 }
 
 .default-cursor-area {
@@ -254,11 +255,12 @@ footer {
   width: 100%;
 }
 
-.macro-item .macro-details .description {
+.macro-details h4,
+.macro-details p {
   cursor: text;
-  /* Set text cursor for the description */
 }
 
-.macro-item .macro-details .description p {
-  margin: 0;
+#description-wrapper{
+  background-color: crimson;
+  margin-top: 20px;
 }
