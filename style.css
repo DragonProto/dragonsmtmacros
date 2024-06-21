@@ -1,4 +1,3 @@
-/* General Styles */
 body {
   font-family: Arial, sans-serif;
   background-color: #f8f9fa;
@@ -44,6 +43,89 @@ h1 {
   padding: 20px 0px;
 }
 
+footer {
+  background-color: #e0e0e0;
+  padding: 10px 0;
+  text-align: center;
+  color: #6c757d;
+  width: 100%;
+}
+
+#settings-bar {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  align-items: center;
+}
+
+#search-input-wrapper {
+  position: relative;
+  flex: 1; /* Allow the wrapper to take up available space */
+}
+
+#search-input {
+  width: 100%; /* Ensure the input takes up the full width of the wrapper */
+  padding-right: 30px; /* Space for the clear button */
+}
+
+.clear-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: none; /* Initially hidden */
+}
+
+#selected-categories {
+  margin-bottom: 10px;
+  width: 100%; /* Ensure it takes the full width */
+  text-align: center; /* Center the text */
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  max-height: 200px;
+  overflow-y: auto;
+  padding: 0.5rem 0;
+  margin: 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  white-space: nowrap; /* Prevent text from wrapping */
+  min-width: max-content; /* Ensure the dropdown menu is as wide as its content */
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown .dropdown-menu.show {
+  display: block;
+}
+
+.dropdown:hover .btn-secondary,
+.btn-secondary.show {
+  background-color: #5a6268;
+  color: white;
+}
+
 #macros-list {
   width: 90%;
   max-width: 1200px;
@@ -62,14 +144,12 @@ h1 {
   width: 100%;
   box-sizing: border-box;
   overflow: hidden;
-  cursor: pointer;
-  /* Ensure the entire item is clickable */
+  cursor: pointer; /* Ensure the entire item is clickable */
 }
 
 .macro-item .macro-header {
   margin: 0;
-  display: inline-block;
-  /* Only take up as much space as the text */
+  display: inline-block; /* Only take up as much space as the text */
   cursor: text;
 }
 
@@ -91,8 +171,7 @@ h1 {
   background-color: #f7f7f7;
   padding: 10px;
   border-radius: 5px;
-  width: 100%;
-  /* Ensure gray area extends the full width */
+  width: 100%; /* Ensure gray area extends the full width */
   box-sizing: border-box;
   margin-top: 20px;
   cursor: default;
@@ -105,11 +184,9 @@ h1 {
 .macro-item .macro-code-content,
 .macro-item .macro-critical-code-content {
   margin: 0;
-  display: inline;
-  /* Only take up as much space as the text */
+  display: inline; /* Only take up as much space as the text */
 }
 
-/* Ensure no cursor change for description */
 .macro-item .macro-section h4,
 .macro-item .macro-section p,
 .macro-item .macro-section2 h4,
@@ -117,76 +194,21 @@ h1 {
   cursor: text;
 }
 
-.default-cursor-area {
+.macro-details h4,
+.macro-details p {
+  cursor: text;
+}
+
+#description-wrapper {
+  display: inline-block; /* Ensures the wrapper only takes up as much width as necessary */
+  padding: 10px; /* Optional: Add padding for better visual appearance */
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+  margin-top: 20px;
   cursor: default;
 }
 
-#settings-bar {
-  width: 90%;
-  max-width: 1200px;
-  margin: 20px auto 0 auto;
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  padding: 10px;
-  background-color: #ffffff;
-  border: 1px solid #ddd;
-  border-radius: 15px;
-  position: relative;
-}
-
-#search-input {
-  flex: 1;
-  position: relative;
-  padding-right: 30px; /* Space for the clear button */
-}
-
-.clear-btn {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-  display: none; /* Initially hidden */
-}
-
-.dropdown {
-  position: relative;
-}
-
-.dropdown .dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1000;
-  min-width: 100%;
-  max-height: 200px;
-  overflow-y: auto;
-  padding: .5rem 0;
-  margin: 0;
-  font-size: 1rem;
-  color: #212529;
-  text-align: left;
-  list-style: none;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, .15);
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  border-bottom-left-radius: .25rem;
-  border-bottom-right-radius: .25rem;
-}
-
-.dropdown:hover .dropdown-menu,
-.dropdown .dropdown-menu.show {
-  display: block;
-}
-
-.dropdown:hover .btn-secondary,
-.btn-secondary.show {
-  background-color: #5a6268;
-  color: white;
+.macro-critical-code-content:hover {
+  cursor: text;
 }
 
 .copy-btn {
@@ -194,6 +216,7 @@ h1 {
   color: #007bff;
   font-size: 1.2em;
   margin-left: 10px;
+  display: inline-block; /* Ensure it's inline */
 }
 
 .copy-btn:hover {
@@ -242,53 +265,24 @@ h1 {
   }
 }
 
-/* Media Query for Small Viewports */
 @media (max-width: 768px) {
   #settings-bar {
     flex-direction: column;
     align-items: stretch;
   }
 
-  #search-input,
+  #search-input-wrapper,
   #category-btn,
   #clear-categories-btn {
     width: 100%;
-    margin-bottom: 10px;
+  }
+
+  #category-btn{
+    flex: 1;
   }
 
   #clear-categories-btn {
     margin-bottom: 0;
   }
-}
-
-footer {
-  background-color: #e0e0e0;
-  padding: 10px 0;
-  text-align: center;
-  color: #6c757d;
-  width: 100%;
-}
-
-.macro-details h4,
-.macro-details p {
-  cursor: text;
-}
-
-#description-wrapper {
-  display: inline-block; /* Ensures the wrapper only takes up as much width as necessary */
-  padding: 10px; /* Optional: Add padding for better visual appearance */
-  box-sizing: border-box; /* Ensure padding and border are included in the width */
-  margin-top: 20px;
-  cursor: default;
-}
-
-.macro-critical-code-content:hover {
-  cursor: text;
-}
-
-#selected-categories {
-  margin-bottom: 10px;
-  width: 100%; /* Ensure it takes the full width */
-  text-align: center; /* Center the text */
 }
 

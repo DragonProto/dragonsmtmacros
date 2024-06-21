@@ -223,6 +223,7 @@ document.getElementById('clear-categories-btn').addEventListener('click', () => 
     item.classList.remove('active');
   });
   updateMacros();
+  updateSelectedCategories(); // Update the selected categories display
 });
 
 function populateCategories(macros) {
@@ -267,40 +268,47 @@ function populateCategories(macros) {
   });
 }
 
-// Clear categories button listener
-document.getElementById('clear-categories-btn').addEventListener('click', () => {
-  document.querySelectorAll('.dropdown-item.active').forEach(item => {
-    item.classList.remove('active');
-  });
-  updateMacros();
-  updateSelectedCategories(); // Update the selected categories display
-});
-
 document.addEventListener('DOMContentLoaded', () => {
   fetchData();
-  
+
+  // Create the clear button element and wrap the search input
   const searchInput = document.getElementById('search-input');
   const searchInputWrapper = document.createElement('div');
   searchInputWrapper.id = 'search-input-wrapper';
   searchInputWrapper.style.position = 'relative';
-  searchInputWrapper.style.flex = '1';
+  searchInputWrapper.style.display = 'inline-block'; // Ensure it displays correctly
 
+  // Insert the wrapper before the search input and then move the search input inside the wrapper
   searchInput.parentNode.insertBefore(searchInputWrapper, searchInput);
   searchInputWrapper.appendChild(searchInput);
 
   const clearBtn = document.createElement('span');
   clearBtn.className = 'clear-btn';
-  clearBtn.innerHTML = '&#10006;';
+  clearBtn.innerHTML = '&#10006;'; // Unicode for 'X'
   searchInputWrapper.appendChild(clearBtn);
 
+  // Add event listener to clear the search input
   clearBtn.addEventListener('click', () => {
     searchInput.value = '';
     updateMacros();
     searchInput.focus();
-    clearBtn.style.display = 'none';
+    clearBtn.style.display = 'none'; // Hide the clear button when input is cleared
   });
 
+  // Show the clear button when typing
   searchInput.addEventListener('input', () => {
     clearBtn.style.display = searchInput.value ? 'block' : 'none';
   });
+
+  // Ensure the dropdown menu width adjusts based on its content
+  const dropdownMenu = document.querySelector('.dropdown-menu');
+  categoryBtn.addEventListener('click', () => {
+    dropdownMenu.style.display = 'block'; // Temporarily display to get width
+    const dropdownWidth = dropdownMenu.scrollWidth; // Get the width of the content
+    dropdownMenu.style.minWidth = `${dropdownWidth}px`; // Set min-width based on content
+    categoryBtn.style.width = `${dropdownWidth}px`; // Set category button width to match dropdown
+    dropdownMenu.style.display = ''; // Revert display setting
+  });
 });
+
+
