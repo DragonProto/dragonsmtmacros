@@ -62,6 +62,7 @@ footer {
   border: 1px solid #ddd;
   border-radius: 15px;
   align-items: center;
+  position: relative;
 }
 
 #search-input-wrapper {
@@ -89,11 +90,7 @@ footer {
   text-align: center; /* Center the text */
 }
 
-.dropdown {
-  position: relative;
-}
-
-.dropdown .dropdown-menu {
+.dropdown-menu {
   display: none;
   position: absolute;
   top: 100%;
@@ -115,12 +112,12 @@ footer {
   min-width: max-content; /* Ensure the dropdown menu is as wide as its content */
 }
 
-.dropdown:hover .dropdown-menu,
-.dropdown .dropdown-menu.show {
+.dropdown-menu,
+.category-btn .dropdown-menu.show {
   display: block;
 }
 
-.dropdown:hover .btn-secondary,
+.btn-secondary,
 .btn-secondary.show {
   background-color: #5a6268;
   color: white;
@@ -285,4 +282,29 @@ footer {
     margin-bottom: 0;
   }
 }
+
+#category-btn {
+  white-space: nowrap;
+  position: relative; /* Ensure the button is relative for correct positioning */
+}
+
+#category-dropdown {
+  display: none; /* Hide by default */
+  position: absolute; /* Position absolutely */
+  top: calc(100% + 10px); /* Position it just below the button with a small gap */
+  left: 0;
+  z-index: 1000; /* Ensure it's above other content */
+  width: max-content; /* Adjust width based on content */
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  white-space: nowrap; /* Prevent text wrapping */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+}
+
+#category-btn.show + #category-dropdown {
+  display: block;
+}
+
+
 

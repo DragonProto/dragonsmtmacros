@@ -311,4 +311,20 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    fetchData();
+
+    document.getElementById('category-btn').addEventListener('click', function() {
+        const dropdownMenu = document.getElementById('category-dropdown');
+        const isDisplayed = dropdownMenu.style.display === 'block';
+        dropdownMenu.style.display = isDisplayed ? 'none' : 'block';
+
+        if (!isDisplayed) {
+            const buttonWidth = dropdownMenu.scrollWidth + 'px';
+            this.style.width = buttonWidth;
+        } else {
+            this.style.width = 'auto'; // Reset the button width when dropdown is hidden
+        }
+    });
+});
 
