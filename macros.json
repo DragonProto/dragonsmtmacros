@@ -7,7 +7,7 @@
     "subcategory": "",
     "macrocode": "[h: (2d8 + Dexterity);]",
     "macrocodecrit": "[h: (2d8 + Dexterity);]",
-    "subcategories": "Wizard Spell List"
+    "subcategories": "Wizard Spells"
   },
   {
     "id": 1,
@@ -27,7 +27,7 @@
     "subcategory": "",
     "macrocode": "[h: (3d8 + Dexterity);]",
     "macrocodecrit": "[h: (3d8 + Dexterity);]",
-    "subcategories": "Artificer Spell List, Cleric Spell List"
+    "subcategories": "Artificer Spells, Cleric Spells"
   },
   {
     "id": 4,

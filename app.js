@@ -98,7 +98,7 @@ function renderMacros(macros) {
           details.classList.add('open');
           details.setAttribute('aria-hidden', 'false');
           li.setAttribute('aria-expanded', 'true');
-          li.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          li.scrollIntoView({ behavior: 'smooth', block: 'start'});
         } else {
           details.classList.remove('open');
           details.setAttribute('aria-hidden', 'true');
@@ -155,6 +155,12 @@ function showNotification(message) {
   setTimeout(() => {
     notification.classList.remove('show');
   }, 2000);
+}
+
+function updateSelectedCategories() {
+  const selectedOptions = Array.from(document.querySelectorAll('.dropdown-item.active')).map(option => option.innerText);
+  const selectedCategoriesDiv = document.getElementById('selected-categories');
+  selectedCategoriesDiv.textContent = selectedOptions.length > 0 ? `Selected categories: ${selectedOptions.join(', ')}` : '';
 }
 
 // Function to populate categories
@@ -217,4 +223,84 @@ document.getElementById('clear-categories-btn').addEventListener('click', () => 
     item.classList.remove('active');
   });
   updateMacros();
+});
+
+function populateCategories(macros) {
+  const categoryDropdown = document.getElementById('category-dropdown');
+  categoryDropdown.innerHTML = '';
+
+  const categories = {};
+  macros.forEach(macro => {
+    if (macro.subcategories) {
+      const subcategories = macro.subcategories.split(', ');
+      subcategories.forEach(subcategory => {
+        if (!categories[macro.category]) {
+          categories[macro.category] = new Set();
+        }
+        categories[macro.category].add(subcategory);
+      });
+    }
+  });
+
+  const sortedCategories = Object.keys(categories).sort();
+  sortedCategories.forEach(category => {
+    const categoryHeader = document.createElement('h6');
+    categoryHeader.className = 'dropdown-header';
+    categoryHeader.innerText = category;
+    categoryDropdown.appendChild(categoryHeader);
+
+    Array.from(categories[category]).sort().forEach(subcategory => {
+      const option = document.createElement('a');
+      option.className = 'dropdown-item';
+      option.href = '#';
+      option.dataset.value = `${category}::${subcategory}`;
+      option.innerText = subcategory;
+      option.setAttribute('role', 'menuitem');
+      option.addEventListener('click', (e) => {
+        e.preventDefault();
+        option.classList.toggle('active');
+        updateMacros();
+        updateSelectedCategories(); // Update the selected categories display
+      });
+      categoryDropdown.appendChild(option);
+    });
+  });
+}
+
+// Clear categories button listener
+document.getElementById('clear-categories-btn').addEventListener('click', () => {
+  document.querySelectorAll('.dropdown-item.active').forEach(item => {
+    item.classList.remove('active');
+  });
+  updateMacros();
+  updateSelectedCategories(); // Update the selected categories display
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  fetchData();
+  
+  const searchInput = document.getElementById('search-input');
+  const searchInputWrapper = document.createElement('div');
+  searchInputWrapper.id = 'search-input-wrapper';
+  searchInputWrapper.style.position = 'relative';
+  searchInputWrapper.style.flex = '1';
+
+  searchInput.parentNode.insertBefore(searchInputWrapper, searchInput);
+  searchInputWrapper.appendChild(searchInput);
+
+  const clearBtn = document.createElement('span');
+  clearBtn.className = 'clear-btn';
+  clearBtn.innerHTML = '&#10006;';
+  searchInputWrapper.appendChild(clearBtn);
+
+  clearBtn.addEventListener('click', () => {
+    searchInput.value = '';
+    updateMacros();
+    searchInput.focus();
+    clearBtn.style.display = 'none';
+  });
+
+  searchInput.addEventListener('input', () => {
+    clearBtn.style.display = searchInput.value ? 'block' : 'none';
+  });
 });

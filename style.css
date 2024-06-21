@@ -20,7 +20,7 @@ body {
 
 #headertitle {
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 20px;
+  padding: 10px 40px;
   color: white;
   position: absolute;
   top: 50%;
@@ -32,15 +32,16 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start; /* Align items at the top */
+  justify-content: flex-start; /* Ensure content is pushed to the top */
   flex: 1;
-  padding-bottom: 100px;
+  padding-bottom: 100px; /* Space for the footer */
 }
 
 h1 {
   text-align: center;
-  margin-bottom: 20px;
+  width: 100%; /* Ensure the header takes the full width */
+  padding: 20px 0px;
 }
 
 #macros-list {
@@ -60,6 +61,7 @@ h1 {
   position: relative;
   width: 100%;
   box-sizing: border-box;
+  overflow: hidden;
   cursor: pointer;
   /* Ensure the entire item is clickable */
 }
@@ -135,6 +137,17 @@ h1 {
 
 #search-input {
   flex: 1;
+  position: relative;
+  padding-right: 30px; /* Space for the clear button */
+}
+
+.clear-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: none; /* Initially hidden */
 }
 
 .dropdown {
@@ -272,3 +285,10 @@ footer {
 .macro-critical-code-content:hover {
   cursor: text;
 }
+
+#selected-categories {
+  margin-bottom: 10px;
+  width: 100%; /* Ensure it takes the full width */
+  text-align: center; /* Center the text */
+}
+
