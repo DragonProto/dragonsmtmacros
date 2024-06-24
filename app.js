@@ -314,7 +314,7 @@ document.addEventListener('DOMContentLoaded', () => {
   fetchData().then(() => {
     initializeDropdown();
   });
-  
+
   function initializeDropdown() {
     const categoryBtn = document.getElementById('category-btn');
     const categoryDropdown = document.getElementById('category-dropdown');
@@ -322,11 +322,11 @@ document.addEventListener('DOMContentLoaded', () => {
     function setButtonAndDropdownWidth() {
       if (window.innerWidth > 768) {
         // Desktop view
-        categoryDropdown.style.display = 'block';
-        const dropdownWidth = categoryDropdown.offsetWidth;
+        categoryDropdown.style.display = 'block'; // Temporarily display to calculate width
+        const dropdownWidth = categoryDropdown.scrollWidth; // Use scrollWidth to get the full width of the content
         categoryBtn.style.width = dropdownWidth + 'px';
-        categoryDropdown.style.display = 'none';
-        categoryDropdown.style.width = 'auto';
+        categoryDropdown.style.display = 'none'; // Hide again after calculation
+        categoryDropdown.style.width = 'auto'; // Reset the dropdown width to auto for desktop view
       } else {
         // Mobile view
         categoryBtn.style.width = '100%';
@@ -343,6 +343,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Hover event for the button (works for both desktop and mobile)
     categoryBtn.addEventListener('mouseenter', function() {
       categoryDropdown.style.display = 'block';
+      categoryBtn.classList.add('open');
+      categoryDropdown.classList.add('open');
     });
 
     // Mouse leave event for the button
@@ -351,13 +353,10 @@ document.addEventListener('DOMContentLoaded', () => {
       setTimeout(function() {
         if (!categoryDropdown.matches(':hover')) {
           categoryDropdown.style.display = 'none';
+          categoryBtn.classList.remove('open');
+          categoryDropdown.classList.remove('open');
         }
       }, 100);
-    });
-
-    // Hover event for the dropdown menu (works for both desktop and mobile)
-    categoryDropdown.addEventListener('mouseenter', function() {
-      categoryDropdown.style.display = 'block';
     });
 
     // Mouse leave event for the dropdown menu
@@ -365,6 +364,8 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(function() {
         if (!categoryDropdown.matches(':hover')) {
           categoryDropdown.style.display = 'none';
+          categoryBtn.classList.remove('open');
+          categoryDropdown.classList.remove('open');
         }
       }, 100);
     });
@@ -441,4 +442,3 @@ document.addEventListener('macrosLoaded', (event) => {
   populateCategories(macros);
   initializeDropdown();
 });
-

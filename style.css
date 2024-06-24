@@ -62,7 +62,7 @@ footer {
   border: 1px solid #ddd;
   border-radius: 15px;
   align-items: center;
-  position: relative;
+  position: relative; /* Ensure it's relative to contain the absolute positioning */
 }
 
 #search-input-wrapper {
@@ -90,37 +90,34 @@ footer {
   text-align: center; /* Center the text */
 }
 
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
+#category-btn {
+  position: relative;
+  white-space: nowrap;
+}
+
+#category-dropdown {
+  display: none; /* Hide by default */
+  position: absolute; /* Position absolutely relative to the button */
+  top: 100%; /* Position it directly below the button */
   left: 0;
-  z-index: 1000;
-  max-height: 200px;
-  overflow-y: auto;
-  padding: 0.5rem 0;
-  margin: 0;
-  font-size: 1rem;
-  color: #212529;
-  text-align: left;
-  list-style: none;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.25rem;
-  white-space: nowrap; /* Prevent text from wrapping */
-  min-width: max-content; /* Ensure the dropdown menu is as wide as its content */
+  z-index: 1000; /* Ensure it appears above other content */
+  padding: 10px;
+  border: 0px solid #ccc;
+  background-color: #edf3ee;
+  width: auto; /* Adjust width based on content */
+  white-space: nowrap; /* Prevent text wrapping */
+  max-height: none; /* Remove maximum height constraint */
+  overflow-y: visible; /* Ensure there is no vertical scrollbar */
 }
 
-.dropdown-menu,
-.category-btn .dropdown-menu.show {
-  display: block;
+#category-btn.open {
+  border-bottom-left-radius: 0; /* Remove bottom-left border radius */
+  border-bottom-right-radius: 0; /* Remove bottom-right border radius */
 }
 
-.btn-secondary,
-.btn-secondary.show {
-  background-color: #5a6268;
-  color: white;
+#category-dropdown.open {
+  border-top-left-radius: 0; /* Remove top-left border radius */
+  border-top-right-radius: 0; /* Remove top-right border radius */
 }
 
 #macros-list {
@@ -260,20 +257,6 @@ footer {
     bottom: -50px;
     opacity: 0;
   }
-}
-
-#category-dropdown {
-  display: none; /* Hide by default */
-  position: absolute; /* Position absolutely */
-  top: calc(100% + 10px); /* Position it just below the button with a small gap */
-  left: 0;
-  z-index: 1000; /* Ensure it's above other content */
-  width: max-content; /* Adjust width based on content */
-  padding: 10px;
-  border: 1px solid #ccc;
-  background-color: #fff;
-  white-space: nowrap; /* Prevent text wrapping */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
 }
 
 @media (max-width: 768px) {
