@@ -262,6 +262,20 @@ footer {
   }
 }
 
+#category-dropdown {
+  display: none; /* Hide by default */
+  position: absolute; /* Position absolutely */
+  top: calc(100% + 10px); /* Position it just below the button with a small gap */
+  left: 0;
+  z-index: 1000; /* Ensure it's above other content */
+  width: max-content; /* Adjust width based on content */
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  white-space: nowrap; /* Prevent text wrapping */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+}
+
 @media (max-width: 768px) {
   #settings-bar {
     flex-direction: column;
@@ -277,25 +291,17 @@ footer {
   #clear-categories-btn {
     margin-bottom: 0;
   }
-}
 
-#category-btn {
-  white-space: nowrap;
-  position: relative; /* Ensure the button is relative for correct positioning */
-}
+  #category-dropdown {
+    width: 100%; /* Ensure the dropdown takes the full width of the button */
+    position: relative; /* Change position to relative */
+    top: 0; /* Reset top positioning */
+    left: 0; /* Reset left positioning */
+  }
 
-#category-dropdown {
-  display: none; /* Hide by default */
-  position: absolute; /* Position absolutely */
-  top: calc(100% + 10px); /* Position it just below the button with a small gap */
-  left: 0;
-  z-index: 1000; /* Ensure it's above other content */
-  width: max-content; /* Adjust width based on content */
-  padding: 10px;
-  border: 1px solid #ccc;
-  background-color: #fff;
-  white-space: nowrap; /* Prevent text wrapping */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+  #category-btn.show + #category-dropdown {
+    display: block;
+  }
 }
 
 

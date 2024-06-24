@@ -319,19 +319,28 @@ document.addEventListener('DOMContentLoaded', () => {
     const categoryBtn = document.getElementById('category-btn');
     const categoryDropdown = document.getElementById('category-dropdown');
 
-    // Ensure dropdown is visible to calculate its width
-    categoryDropdown.style.display = 'block';
+    function setButtonAndDropdownWidth() {
+      if (window.innerWidth > 768) {
+        // Desktop view
+        categoryDropdown.style.display = 'block';
+        const dropdownWidth = categoryDropdown.offsetWidth;
+        categoryBtn.style.width = dropdownWidth + 'px';
+        categoryDropdown.style.display = 'none';
+        categoryDropdown.style.width = 'auto';
+      } else {
+        // Mobile view
+        categoryBtn.style.width = '100%';
+        categoryDropdown.style.width = '100%';
+      }
+    }
 
-    // Calculate the width including padding and borders
-    const dropdownWidth = categoryDropdown.offsetWidth;
+    // Set initial width
+    setButtonAndDropdownWidth();
 
-    // Set the initial width of the button
-    categoryBtn.style.width = dropdownWidth + 'px';
+    // Update widths on window resize
+    window.addEventListener('resize', setButtonAndDropdownWidth);
 
-    // Hide the dropdown again
-    categoryDropdown.style.display = 'none';
-
-    // Mouse enter event for the button
+    // Hover event for the button (works for both desktop and mobile)
     categoryBtn.addEventListener('mouseenter', function() {
       categoryDropdown.style.display = 'block';
     });
@@ -343,17 +352,21 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!categoryDropdown.matches(':hover')) {
           categoryDropdown.style.display = 'none';
         }
-      }, 100); // Adjust delay as needed
+      }, 100);
     });
 
-    // Mouse enter event for the dropdown menu
+    // Hover event for the dropdown menu (works for both desktop and mobile)
     categoryDropdown.addEventListener('mouseenter', function() {
       categoryDropdown.style.display = 'block';
     });
 
     // Mouse leave event for the dropdown menu
     categoryDropdown.addEventListener('mouseleave', function() {
-      categoryDropdown.style.display = 'none';
+            setTimeout(function() {
+        if (!categoryDropdown.matches(':hover')) {
+          categoryDropdown.style.display = 'none';
+        }
+      }, 100);
     });
   }
 });
