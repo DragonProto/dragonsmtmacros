@@ -306,25 +306,126 @@ document.addEventListener('DOMContentLoaded', () => {
     dropdownMenu.style.display = 'block'; // Temporarily display to get width
     const dropdownWidth = dropdownMenu.scrollWidth; // Get the width of the content
     dropdownMenu.style.minWidth = `${dropdownWidth}px`; // Set min-width based on content
-    categoryBtn.style.width = `${dropdownWidth}px`; // Set category button width to match dropdown
     dropdownMenu.style.display = ''; // Revert display setting
   });
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    fetchData();
+  fetchData().then(() => {
+    initializeDropdown();
+  });
+  
+  function initializeDropdown() {
+    const categoryBtn = document.getElementById('category-btn');
+    const categoryDropdown = document.getElementById('category-dropdown');
 
-    document.getElementById('category-btn').addEventListener('click', function() {
-        const dropdownMenu = document.getElementById('category-dropdown');
-        const isDisplayed = dropdownMenu.style.display === 'block';
-        dropdownMenu.style.display = isDisplayed ? 'none' : 'block';
+    // Ensure dropdown is visible to calculate its width
+    categoryDropdown.style.display = 'block';
 
-        if (!isDisplayed) {
-            const buttonWidth = dropdownMenu.scrollWidth + 'px';
-            this.style.width = buttonWidth;
-        } else {
-            this.style.width = 'auto'; // Reset the button width when dropdown is hidden
-        }
+    // Calculate the width including padding and borders
+    const dropdownWidth = categoryDropdown.offsetWidth;
+
+    // Set the initial width of the button
+    categoryBtn.style.width = dropdownWidth + 'px';
+
+    // Hide the dropdown again
+    categoryDropdown.style.display = 'none';
+
+    // Mouse enter event for the button
+    categoryBtn.addEventListener('mouseenter', function() {
+      categoryDropdown.style.display = 'block';
     });
+
+    // Mouse leave event for the button
+    categoryBtn.addEventListener('mouseleave', function() {
+      // Delay hiding to check if the mouse is over the dropdown
+      setTimeout(function() {
+        if (!categoryDropdown.matches(':hover')) {
+          categoryDropdown.style.display = 'none';
+        }
+      }, 100); // Adjust delay as needed
+    });
+
+    // Mouse enter event for the dropdown menu
+    categoryDropdown.addEventListener('mouseenter', function() {
+      categoryDropdown.style.display = 'block';
+    });
+
+    // Mouse leave event for the dropdown menu
+    categoryDropdown.addEventListener('mouseleave', function() {
+      categoryDropdown.style.display = 'none';
+    });
+  }
+});
+
+async function fetchData() {
+  const loadingIndicator = document.createElement('div');
+  loadingIndicator.id = 'loading-indicator';
+  loadingIndicator.textContent = 'Loading...';
+  document.body.appendChild(loadingIndicator);
+
+  try {
+    const macrosResponse = await fetch('macros.json');
+    if (!macrosResponse.ok) {
+      throw new Error('Network response was not ok ' + macrosResponse.statusText);
+    }
+    const macros = await macrosResponse.json();
+    document.body.removeChild(loadingIndicator);
+    allMacros = macros;
+    document.dispatchEvent(new CustomEvent('macrosLoaded', { detail: macros }));
+  } catch (error) {
+    document.body.removeChild(loadingIndicator);
+    console.error('Fetch error: ', error);
+  }
+}
+
+function populateCategories(macros) {
+  const categoryDropdown = document.getElementById('category-dropdown');
+  categoryDropdown.innerHTML = '';
+
+  const categories = {};
+  macros.forEach(macro => {
+    if (macro.subcategories) {
+      const subcategories = macro.subcategories.split(', ');
+      subcategories.forEach(subcategory => {
+        if (!categories[macro.category]) {
+          categories[macro.category] = new Set();
+        }
+        categories[macro.category].add(subcategory);
+      });
+    }
+  });
+
+  const sortedCategories = Object.keys(categories).sort();
+  sortedCategories.forEach(category => {
+    const categoryHeader = document.createElement('h6');
+    categoryHeader.className = 'dropdown-header';
+    categoryHeader.innerText = category;
+    categoryDropdown.appendChild(categoryHeader);
+
+    Array.from(categories[category]).sort().forEach(subcategory => {
+      const option = document.createElement('a');
+      option.className = 'dropdown-item';
+      option.href = '#';
+      option.dataset.value = `${category}::${subcategory}`;
+      option.innerText = subcategory;
+      option.setAttribute('role', 'menuitem');
+      option.addEventListener('click', (e) => {
+        e.preventDefault();
+        option.classList.toggle('active');
+        updateMacros();
+        updateSelectedCategories(); // Update the selected categories display
+      });
+      categoryDropdown.appendChild(option);
+    });
+  });
+}
+
+// Ensure the dropdown menu width adjusts based on its content
+document.addEventListener('macrosLoaded', (event) => {
+  const macros = event.detail;
+  renderMacros(macros);
+  populateCategories(macros);
+  initializeDropdown();
 });
 

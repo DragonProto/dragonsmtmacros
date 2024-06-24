@@ -274,10 +274,6 @@ footer {
     width: 100%;
   }
 
-  #category-btn{
-    flex: 1;
-  }
-
   #clear-categories-btn {
     margin-bottom: 0;
   }
@@ -300,10 +296,6 @@ footer {
   background-color: #fff;
   white-space: nowrap; /* Prevent text wrapping */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
-}
-
-#category-btn.show + #category-dropdown {
-  display: block;
 }
 
 
