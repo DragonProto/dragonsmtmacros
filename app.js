@@ -98,7 +98,7 @@ function renderMacros(macros) {
           details.classList.add('open');
           details.setAttribute('aria-hidden', 'false');
           li.setAttribute('aria-expanded', 'true');
-          li.scrollIntoView({ behavior: 'smooth', block: 'start'});
+          li.scrollIntoView({ behavior: 'smooth', block: 'center'});
         } else {
           details.classList.remove('open');
           details.setAttribute('aria-hidden', 'true');
@@ -442,3 +442,5 @@ document.addEventListener('macrosLoaded', (event) => {
   populateCategories(macros);
   initializeDropdown();
 });
+
+

@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
+  background-color: #121212;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -8,7 +8,7 @@ body {
 }
 
 #backgroundimage {
-  background-image: url('https://mrwallpaper.com/images/hd/dungeons-and-dragons-forest-village-byzz77un3imzaghl.jpg');
+  background-image: url(backgroundimage.jpg);
   height: 50vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -18,7 +18,7 @@ body {
 }
 
 #headertitle {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(38, 38, 38, 0.8);
   padding: 10px 40px;
   color: white;
   position: absolute;
@@ -35,19 +35,22 @@ main {
   justify-content: flex-start; /* Ensure content is pushed to the top */
   flex: 1;
   padding-bottom: 100px; /* Space for the footer */
+  background-color: #121212;
+  color: white;
 }
 
 h1 {
   text-align: center;
   width: 100%; /* Ensure the header takes the full width */
   padding: 20px 0px;
+  color: white;
 }
 
 footer {
-  background-color: #e0e0e0;
+  background-color: hsl(0, 0%, 7%);
   padding: 10px 0;
   text-align: center;
-  color: #6c757d;
+  color: white;
   width: 100%;
 }
 
@@ -58,8 +61,6 @@ footer {
   padding: 10px;
   display: flex;
   gap: 10px;
-  background-color: #ffffff;
-  border: 1px solid #ddd;
   border-radius: 15px;
   align-items: center;
   position: relative; /* Ensure it's relative to contain the absolute positioning */
@@ -70,9 +71,19 @@ footer {
   flex: 1; /* Allow the wrapper to take up available space */
 }
 
+/* Search input styling */
 #search-input {
   width: 100%; /* Ensure the input takes up the full width of the wrapper */
   padding-right: 30px; /* Space for the clear button */
+  background-color: hsl(0, 0%, 15%); /* Background color */
+  color: #ffffff; /* Text color */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  border-width: 0px;
+  font-size: 1rem; /* Font size */
+}
+
+#search-input::placeholder {
+  color: hsl(0, 0%, 48%); /* Placeholder text color */
 }
 
 .clear-btn {
@@ -93,6 +104,21 @@ footer {
 #category-btn {
   position: relative;
   white-space: nowrap;
+  background-color: hwb(255 36% 22%);
+  border: 0px;
+}
+
+#category-btn:hover {
+  background-color: hwb(255 46% 12%);
+}
+
+#clear-categories-btn{
+  background-color: hwb(0 36% 22%);
+  border: 0px;
+}
+
+#clear-categories-btn:hover{
+  background-color: hwb(0 46% 12%);
 }
 
 #category-dropdown {
@@ -102,12 +128,40 @@ footer {
   left: 0;
   z-index: 1000; /* Ensure it appears above other content */
   padding: 10px;
-  border: 0px solid #ccc;
-  background-color: #edf3ee;
+  border: 0px solid;
   width: auto; /* Adjust width based on content */
   white-space: nowrap; /* Prevent text wrapping */
   max-height: none; /* Remove maximum height constraint */
   overflow-y: visible; /* Ensure there is no vertical scrollbar */
+  background-color: hwb(255 36% 22%);
+}
+
+/* Dropdown item styling */
+.dropdown-item {
+  color: #ffffff !important; /* Default text color for dropdown items */
+  transition: background-color 0.3s, color 0.3s;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* Dropdown item hover styling */
+.dropdown-item:hover {
+  background-color: hwb(255 46% 12%) !important; /* Hover background color for dropdown items */
+}
+
+.dropdown-item.active {
+  background-color: hwb(255 56% 2%) !important; /* Background color for active items */
+}
+
+/* Dropdown header styling */
+.dropdown-header {
+  font-weight: bold;
+  color: #ffffff !important; /* Text color for dropdown headers */
+  background-color: hwb(255 36% 22%); /* Background color for dropdown headers */
+  margin: 8px 0px !important;
+  text-decoration: underline;
+  text-underline-offset: 6px;
 }
 
 #category-btn.open {
@@ -129,8 +183,7 @@ footer {
 }
 
 .macro-item {
-  background-color: #ffffff;
-  border: 1px solid #ddd;
+  background-color: hsl(0, 0%, 15%);
   margin-bottom: 10px;
   padding: 15px 20px;
   border-radius: 15px;
@@ -162,7 +215,7 @@ footer {
 
 .macro-item .macro-section,
 .macro-item .macro-section2 {
-  background-color: #f7f7f7;
+  background-color: hsl(0, 0%, 23%);
   padding: 10px;
   border-radius: 5px;
   width: 100%; /* Ensure gray area extends the full width */
@@ -273,6 +326,10 @@ footer {
 
   #clear-categories-btn {
     margin-bottom: 0;
+  }
+
+  .dropdown {
+    width: 100%;
   }
 
   #category-dropdown {
