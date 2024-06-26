@@ -340,35 +340,47 @@ document.addEventListener('DOMContentLoaded', () => {
     // Update widths on window resize
     window.addEventListener('resize', setButtonAndDropdownWidth);
 
-    // Hover event for the button (works for both desktop and mobile)
-    categoryBtn.addEventListener('mouseenter', function() {
+    let isMouseOverButtonOrDropdown = false;
+
+    function openDropdown() {
       categoryDropdown.style.display = 'block';
-      categoryBtn.classList.add('open');
-      categoryDropdown.classList.add('open');
+      categoryBtn.classList.add('dropdown-open');
+      categoryBtn.classList.remove('dropdown-closed');
+    }
+  
+    function closeDropdown() {
+      categoryDropdown.style.display = 'none';
+      categoryBtn.classList.remove('dropdown-open');
+      categoryBtn.classList.add('dropdown-closed');
+    }
+    
+    categoryBtn.addEventListener('mouseenter', () => {
+      isMouseOverButtonOrDropdown = true;
+      openDropdown();
     });
-
-    // Mouse leave event for the button
-    categoryBtn.addEventListener('mouseleave', function() {
-      // Delay hiding to check if the mouse is over the dropdown
-      setTimeout(function() {
-        if (!categoryDropdown.matches(':hover')) {
-          categoryDropdown.style.display = 'none';
-          categoryBtn.classList.remove('open');
-          categoryDropdown.classList.remove('open');
+  
+    categoryBtn.addEventListener('mouseleave', () => {
+      isMouseOverButtonOrDropdown = false;
+      setTimeout(() => {
+        if (!isMouseOverButtonOrDropdown) {
+          closeDropdown();
         }
       }, 100);
     });
-
-    // Mouse leave event for the dropdown menu
-    categoryDropdown.addEventListener('mouseleave', function() {
-            setTimeout(function() {
-        if (!categoryDropdown.matches(':hover')) {
-          categoryDropdown.style.display = 'none';
-          categoryBtn.classList.remove('open');
-          categoryDropdown.classList.remove('open');
+  
+    categoryDropdown.addEventListener('mouseenter', () => {
+      isMouseOverButtonOrDropdown = true;
+    });
+  
+    categoryDropdown.addEventListener('mouseleave', () => {
+      isMouseOverButtonOrDropdown = false;
+      setTimeout(() => {
+        if (!isMouseOverButtonOrDropdown) {
+          closeDropdown();
         }
       }, 100);
     });
+    categoryBtn.classList.add('dropdown-closed');
   }
 });
 

@@ -137,41 +137,39 @@ footer {
 }
 
 /* Dropdown item styling */
-.dropdown-item {
-  color: #ffffff !important; /* Default text color for dropdown items */
+#bootstrapoverride .dropdown-item {
+  --bs-dropdown-link-hover-bg: 0;
+  color: #ffffff; /* Default text color for dropdown items */
   transition: background-color 0.3s, color 0.3s;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
 }
 
 /* Dropdown item hover styling */
-.dropdown-item:hover {
-  background-color: hwb(255 46% 12%) !important; /* Hover background color for dropdown items */
+#bootstrapoverride .dropdown-item:hover {
+  background-color: hwb(255 46% 12%);
 }
 
-.dropdown-item.active {
-  background-color: hwb(255 56% 2%) !important; /* Background color for active items */
+#bootstrapoverride .dropdown-item.active {
+  background-color: hwb(255 56% 2%); /* Background color for active items */
 }
 
 /* Dropdown header styling */
-.dropdown-header {
+#bootstrapoverride .dropdown-header {
   font-weight: bold;
-  color: #ffffff !important; /* Text color for dropdown headers */
+  color: #ffffff; /* Text color for dropdown headers */
   background-color: hwb(255 36% 22%); /* Background color for dropdown headers */
-  margin: 8px 0px !important;
+  margin: 8px 0px;
   text-decoration: underline;
   text-underline-offset: 6px;
 }
 
-#category-btn.open {
-  border-bottom-left-radius: 0; /* Remove bottom-left border radius */
-  border-bottom-right-radius: 0; /* Remove bottom-right border radius */
+#category-btn.dropdown-open {
+  border-bottom-left-radius: 0; /* Remove bottom left corner */
+  border-bottom-right-radius: 0; /* Remove bottom right corner */
 }
 
-#category-dropdown.open {
-  border-top-left-radius: 0; /* Remove top-left border radius */
-  border-top-right-radius: 0; /* Remove top-right border radius */
+#category-btn.dropdown-open + #category-dropdown {
+  border-top-left-radius: 0; /* Remove top left corner */
+  border-top-right-radius: 0; /* Remove top right corner */
 }
 
 #macros-list {
@@ -344,5 +342,24 @@ footer {
   }
 }
 
-
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  border-color: hwb(255 36% 22%);;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+  outline: 0 none;
+}
 
