@@ -284,7 +284,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const clearBtn = document.createElement('span');
   clearBtn.className = 'clear-btn';
-  clearBtn.innerHTML = '&#10006;'; // Unicode for 'X'
+  clearBtn.innerHTML = '&#10005;'; // Unicode for 'X'
   searchInputWrapper.appendChild(clearBtn);
 
   // Add event listener to clear the search input

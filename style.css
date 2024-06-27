@@ -93,6 +93,7 @@ footer {
   transform: translateY(-50%);
   cursor: pointer;
   display: none; /* Initially hidden */
+  color: hsl(86, 100%, 25%);
 }
 
 #selected-categories {
@@ -104,21 +105,21 @@ footer {
 #category-btn {
   position: relative;
   white-space: nowrap;
-  background-color: hwb(255 36% 22%);
+  background-color: hsl(86, 100%, 25%);
   border: 0px;
 }
 
 #category-btn:hover {
-  background-color: hwb(255 46% 12%);
+  background-color: hsl(86, 94%, 31%);
 }
 
 #clear-categories-btn{
-  background-color: hwb(0 36% 22%);
+  background-color: hsl(12, 100%, 25%);
   border: 0px;
 }
 
 #clear-categories-btn:hover{
-  background-color: hwb(0 46% 12%);
+  background-color: hsl(12, 94%, 31%);
 }
 
 #category-dropdown {
@@ -133,7 +134,7 @@ footer {
   white-space: nowrap; /* Prevent text wrapping */
   max-height: none; /* Remove maximum height constraint */
   overflow-y: visible; /* Ensure there is no vertical scrollbar */
-  background-color: hwb(255 36% 22%);
+  background-color: hsl(86, 100%, 25%);
 }
 
 /* Dropdown item styling */
@@ -145,18 +146,18 @@ footer {
 
 /* Dropdown item hover styling */
 #bootstrapoverride .dropdown-item:hover {
-  background-color: hwb(255 46% 12%);
+  background-color: hsl(86, 94%, 31%);
 }
 
 #bootstrapoverride .dropdown-item.active {
-  background-color: hwb(255 56% 2%); /* Background color for active items */
+  background-color: hsl(86, 88%, 37%); /* Background color for active items */
 }
 
 /* Dropdown header styling */
 #bootstrapoverride .dropdown-header {
   font-weight: bold;
   color: #ffffff; /* Text color for dropdown headers */
-  background-color: hwb(255 36% 22%); /* Background color for dropdown headers */
+  background-color: hsl(86, 100%, 25%); /* Background color for dropdown headers */
   margin: 8px 0px;
   text-decoration: underline;
   text-underline-offset: 6px;
@@ -358,8 +359,8 @@ input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus,
 .uneditable-input:focus {   
-  border-color: hwb(255 36% 22%);;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+  border-color: hsl(86, 100%, 25%);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px hsl(86, 100%, 25%);
   outline: 0 none;
 }
 
