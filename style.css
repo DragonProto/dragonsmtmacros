@@ -18,7 +18,7 @@ body {
 }
 
 #headertitle {
-  background-color: rgba(38, 38, 38, 0.8);
+  background-color: hwb(0 15% 85% / 0.8);
   padding: 10px 40px;
   color: white;
   position: absolute;
@@ -35,7 +35,7 @@ main {
   justify-content: flex-start; /* Ensure content is pushed to the top */
   flex: 1;
   padding-bottom: 100px; /* Space for the footer */
-  background-color: #121212;
+  background-color: hsl(0, 0%, 7%);
   color: white;
 }
 
@@ -75,7 +75,7 @@ footer {
 #search-input {
   width: 100%; /* Ensure the input takes up the full width of the wrapper */
   padding-right: 30px; /* Space for the clear button */
-  background-color: hsl(0, 0%, 15%); /* Background color */
+  background-color: hsl(0, 0%, 11%); /* Background color */
   color: #ffffff; /* Text color */
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
   border-width: 0px;
@@ -83,7 +83,7 @@ footer {
 }
 
 #search-input::placeholder {
-  color: hsl(0, 0%, 48%); /* Placeholder text color */
+  color: hsl(0, 0%, 35%); /* Placeholder text color */
 }
 
 .clear-btn {
@@ -93,7 +93,7 @@ footer {
   transform: translateY(-50%);
   cursor: pointer;
   display: none; /* Initially hidden */
-  color: hsl(86, 100%, 25%);
+  color: hsl(107, 100%, 27%);
 }
 
 #selected-categories {
@@ -105,21 +105,21 @@ footer {
 #category-btn {
   position: relative;
   white-space: nowrap;
-  background-color: hsl(86, 100%, 25%);
+  background-color: hsl(107, 100%, 27%);
   border: 0px;
 }
 
 #category-btn:hover {
-  background-color: hsl(86, 94%, 31%);
+  background-color: hsl(107, 100%, 31%);
 }
 
 #clear-categories-btn{
-  background-color: hsl(12, 100%, 25%);
+  background-color: hsl(165, 100%, 27%);
   border: 0px;
 }
 
 #clear-categories-btn:hover{
-  background-color: hsl(12, 94%, 31%);
+  background-color: hsl(165, 100%, 31%);
 }
 
 #category-dropdown {
@@ -134,7 +134,7 @@ footer {
   white-space: nowrap; /* Prevent text wrapping */
   max-height: none; /* Remove maximum height constraint */
   overflow-y: visible; /* Ensure there is no vertical scrollbar */
-  background-color: hsl(86, 100%, 25%);
+  background-color: hsl(107, 100%, 27%);
 }
 
 /* Dropdown item styling */
@@ -146,18 +146,18 @@ footer {
 
 /* Dropdown item hover styling */
 #bootstrapoverride .dropdown-item:hover {
-  background-color: hsl(86, 94%, 31%);
+  background-color: hsl(107, 100%, 31%);
 }
 
 #bootstrapoverride .dropdown-item.active {
-  background-color: hsl(86, 88%, 37%); /* Background color for active items */
+  background-color: hsl(107, 100%, 35%); /* Background color for active items */
 }
 
 /* Dropdown header styling */
 #bootstrapoverride .dropdown-header {
   font-weight: bold;
   color: #ffffff; /* Text color for dropdown headers */
-  background-color: hsl(86, 100%, 25%); /* Background color for dropdown headers */
+  background-color: hsl(107, 100%, 27%); /* Background color for dropdown headers */
   margin: 8px 0px;
   text-decoration: underline;
   text-underline-offset: 6px;
@@ -182,7 +182,7 @@ footer {
 }
 
 .macro-item {
-  background-color: hsl(0, 0%, 15%);
+  background-color: hsl(0, 0%, 11%);
   margin-bottom: 10px;
   padding: 15px 20px;
   border-radius: 15px;
@@ -209,12 +209,11 @@ footer {
 
 .macro-item .macro-details.open {
   max-height: 500px;
-  padding: 10px;
 }
 
 .macro-item .macro-section,
 .macro-item .macro-section2 {
-  background-color: hsl(0, 0%, 23%);
+  background-color: hsl(0, 0%, 15%);
   padding: 10px;
   border-radius: 5px;
   width: 100%; /* Ensure gray area extends the full width */
@@ -238,6 +237,7 @@ footer {
 .macro-item .macro-section2 h4,
 .macro-item .macro-section2 p {
   cursor: text;
+  padding: 0px 10px;
 }
 
 .macro-details h4,
@@ -253,20 +253,32 @@ footer {
   cursor: default;
 }
 
+#macrocode-wrapper{
+  display: inline-block; /* Ensures the wrapper only takes up as much width as necessary */
+  padding: 10px; /* Optional: Add padding for better visual appearance */
+  padding-right: 30px;
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+#macrocritcode-wrapper{
+  display: inline-block; /* Ensures the wrapper only takes up as much width as necessary */
+  padding: 10px; /* Optional: Add padding for better visual appearance */
+  padding-right: 30px;
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
 .macro-critical-code-content:hover {
   cursor: text;
 }
 
-.copy-btn {
-  cursor: pointer;
-  color: #007bff;
-  font-size: 1.2em;
-  margin-left: 10px;
-  display: inline-block; /* Ensure it's inline */
+/* Styles for the macro critical code content */
+.macro-code-content {
+  color: hsl(107, 100%, 50%); /* Change to your desired text color */
 }
 
-.copy-btn:hover {
-  color: #0056b3;
+/* Styles for the macro critical code content */
+.macro-critical-code-content {
+  color: hsl(107, 100%, 50%); /* Change to your desired text color */
 }
 
 .notification {
@@ -359,8 +371,7 @@ input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus,
 .uneditable-input:focus {   
-  border-color: hsl(86, 100%, 25%);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px hsl(86, 100%, 25%);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px hsl(107, 100%, 27%);
   outline: 0 none;
 }
 

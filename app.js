@@ -47,17 +47,20 @@ function renderMacros(macros) {
         </div>
             <div class="macro-section" onclick="event.stopPropagation();">
                 <div class="d-flex justify-content-between align-items-center">
-                    <p><strong>Macro Code:</strong></p>
-                    <span class="copy-btn" data-macrocode="${macro.macrocode.replace(/"/g, '&quot;')}" title="Copy macro" role="button">&#128203;</span>
-                </div>
-                <code class="macro-code-content">${macro.macrocode.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</code>
+                  <p><strong>Macro Code:</strong></p>
+                  <span class="copy-btn" data-macrocode="${macro.macrocode.replace(/"/g, '&quot;')}" title="Copy macro" role="button"><img src="copy.svg" alt="Copy" class="copy-icon"></span></div>
+                  <div id="macrocode-wrapper">
+                    <code class="macro-code-content">${macro.macrocode.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</code>
+                  </div>  
             </div>
             <div class="macro-section2" onclick="event.stopPropagation();">
                 <div class="d-flex justify-content-between align-items-center">
                     <p><strong>Critical Hit Macro Code:</strong></p>
-                    <span class="copy-btn" data-macrocode="${macro.macrocodecrit.replace(/"/g, '&quot;')}" title="Copy critical macro" role="button">&#128203;</span>
+                    <span class="copy-btn" data-macrocode="${macro.macrocodecrit.replace(/"/g, '&quot;')}" title="Copy critical macro" role="button"><img src="copy.svg" alt="Copy" class="copy-icon"></span>
                 </div>
-                <code class="macro-critical-code-content">${macro.macrocodecrit.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</code>
+                <div id="macrocritcode-wrapper">
+                  <code class="macro-critical-code-content">${macro.macrocodecrit.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</code>
+                </div>
             </div>
         </div>
       `;
@@ -380,6 +383,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }, 100);
     });
+
+    categoryBtn.addEventListener('click', () => {
+      if (categoryDropdown.style.display === 'block') {
+        closeDropdown();
+      } else {
+        openDropdown();
+      }
+    });
+
     categoryBtn.classList.add('dropdown-closed');
   }
 });
