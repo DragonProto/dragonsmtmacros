@@ -48,7 +48,7 @@ function renderMacros(macros) {
             <div class="macro-section" onclick="event.stopPropagation();">
                 <div class="d-flex justify-content-between align-items-center">
                   <p><strong>Macro Code:</strong></p>
-                  <span class="copy-btn" data-macrocode="${macro.macrocode.replace(/"/g, '&quot;')}" title="Copy macro" role="button"><img src="copy.svg" alt="Copy" class="copy-icon"></span></div>
+                  <span class="copy-btn" data-macrocode="${macro.macrocode.replace(/"/g, '&quot;')}" title="Copy macro code" role="button"><img src="copy.svg" alt="Copy" class="copy-icon"></span></div>
                   <div id="macrocode-wrapper">
                     <code class="macro-code-content">${macro.macrocode.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</code>
                   </div>  
