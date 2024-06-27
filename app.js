@@ -36,36 +36,48 @@ function renderMacros(macros) {
     macros.forEach(macro => {
       const li = document.createElement('li');
       li.className = 'macro-item';
-      li.innerHTML = `
-        <h3 class="macro-header">${macro.name}</h3>
-        <div class="macro-details" aria-hidden="true">
-        <div id="description-wrapper">
-            <div class="d-flex justify-content-between align-items-center">
-                <p><strong>Description:</strong></p>
-            </div>
-            <p>${macro.description.replace(/\r\n/g, '<br>')}</p>
+      
+      const critMacroSection = macro.macrocodecrit
+      ? `
+        <div class="macro-section2" onclick="event.stopPropagation();">
+          <div class="d-flex justify-content-between align-items-center">
+            <p><strong>Critical Hit Macro Code:</strong></p>
+            <span class="copy-btn" data-macrocode="${macro.macrocodecrit.replace(/"/g, '&quot;')}" title="Copy critical macro" role="button">
+              <img src="copy.svg" alt="Copy" class="copy-icon">
+            </span>
+          </div>
+          <div id="macrocritcode-wrapper">
+            <code class="macro-critical-code-content">${macro.macrocodecrit.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</code>
+          </div>
         </div>
-            <div class="macro-section" onclick="event.stopPropagation();">
-                <div class="d-flex justify-content-between align-items-center">
-                  <p><strong>Macro Code:</strong></p>
-                  <span class="copy-btn" data-macrocode="${macro.macrocode.replace(/"/g, '&quot;')}" title="Copy macro code" role="button"><img src="copy.svg" alt="Copy" class="copy-icon"></span></div>
-                  <div id="macrocode-wrapper">
-                    <code class="macro-code-content">${macro.macrocode.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</code>
-                  </div>  
-            </div>
-            <div class="macro-section2" onclick="event.stopPropagation();">
-                <div class="d-flex justify-content-between align-items-center">
-                    <p><strong>Critical Hit Macro Code:</strong></p>
-                    <span class="copy-btn" data-macrocode="${macro.macrocodecrit.replace(/"/g, '&quot;')}" title="Copy critical macro" role="button"><img src="copy.svg" alt="Copy" class="copy-icon"></span>
-                </div>
-                <div id="macrocritcode-wrapper">
-                  <code class="macro-critical-code-content">${macro.macrocodecrit.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</code>
-                </div>
-            </div>
-        </div>
-      `;
+      `
+      : '';
 
-      macrosList.appendChild(li);
+    li.innerHTML = `
+      <h3 class="macro-header">${macro.name}</h3>
+      <div class="macro-details" aria-hidden="true">
+        <div id="description-wrapper">
+          <div class="d-flex justify-content-between align-items-center">
+            <p><strong>Description:</strong></p>
+          </div>
+          <p>${macro.description.replace(/\r\n/g, '<br>')}</p>
+        </div>
+        <div class="macro-section" onclick="event.stopPropagation();">
+          <div class="d-flex justify-content-between align-items-center">
+            <p><strong>Macro Code:</strong></p>
+            <span class="copy-btn" data-macrocode="${macro.macrocode.replace(/"/g, '&quot;')}" title="Copy macro" role="button">
+              <img src="copy.svg" alt="Copy" class="copy-icon">
+            </span>
+          </div>
+          <div id="macrocode-wrapper">
+            <code class="macro-code-content">${macro.macrocode.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</code>
+          </div>
+        </div>
+        ${critMacroSection}
+      </div>
+    `;
+
+    macrosList.appendChild(li);
 
       // Apply cursor: text to the macro code content
       const macroCodeContent = li.querySelector('.macro-code-content');

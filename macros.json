@@ -6,7 +6,7 @@
     "category": "Spells",
     "subcategory": "",
     "macrocode": "[h: (2d8 + Dexterity);]",
-    "macrocodecrit": "[h: (2d8 + Dexterity);]",
+    "macrocodecrit": "",
     "subcategories": "Wizard Spells"
   },
   {
