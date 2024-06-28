@@ -2,8 +2,8 @@
   {
     "id": 2,
     "name": "Acid Splash",
-    "description": "School: Conjuration\r\nCasting Time: 1 Action\r\nRange: 60 Feet\r\nDuration: Instantaneous\t\r\nComponents: V, S",
-    "category": "Spells",
+    "description": "This spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
+    "category": "Spell Lists",
     "subcategory": "",
     "macrocode": "[h: (2d8 + Dexterity);]",
     "macrocodecrit": "",
@@ -16,7 +16,7 @@
     "category": "Weapons",
     "subcategory": "Martial Melee Weapons",
     "macrocode": "<b><font color=\"Green\">Battleaxe Damage</b> => <font color=\"Black\">[t: 1d8 + Strength] <font color=\"Silver\">🔪</font color> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Battleaxe Damage Crit</b> => <font color=\"Black\">[t: 2d8 + Strength] <font color=\"Silver\">🔪</font color> damage!",
+    "macrocodecrit": "<b><font color=\"Teal\">Battleaxe Crit Damage</b> => <font color=\"Black\">[t: 2d8 + Strength] <font color=\"Silver\">🔪</font color> damage!",
     "subcategories": "Martial Melee Weapons"
   },
   {
@@ -26,7 +26,7 @@
     "category": "Weapons",
     "subcategory": "Martial Melee Weapons",
     "macrocode": "<b><font color=\"Green\">Battleaxe Damage</b> => <font color=\"Black\">[t: 1d10 + Strength] <font color=\"Silver\">🔪</font color> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Battleaxe Damage Crit</b> => <font color=\"Black\">[t: 2d10 + Strength] <font color=\"Silver\">🔪</font color> damage!",
+    "macrocodecrit": "<b><font color=\"Teal\">Battleaxe Crit Damage</b> => <font color=\"Black\">[t: 2d10 + Strength] <font color=\"Silver\">🔪</font color> damage!",
     "subcategories": "Martial Melee Weapons"
   },
   {
@@ -36,17 +36,17 @@
     "category": "Weapons",
     "subcategory": "Simple Melee Weapons",
     "macrocode": "<b><font color=\"Green\">Club Damage</font></b> => <font color=\"Black\">[t: 1d4 + Strength] <font color=\"Silver\">🔨</font></font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Club Damage Crit</font></b> => <font color=\"Black\">[t: 2d4 + Strength] <font color=\"Silver\">🔨</font></font> damage!",
+    "macrocodecrit": "<b><font color=\"Teal\">Club Crit Damage</font></b> => <font color=\"Black\">[t: 2d4 + Strength] <font color=\"Silver\">🔨</font></font> damage!",
     "subcategories": "Simple Melee Weapons"
   },
   {
     "id": 3,
     "name": "Cure Wounds",
-    "description": "School: Evocation\r\nCasting Time: 1 Action\r\nRange: Touch\r\nDuration: Instantaneous\r\nComponents: V, S",
-    "category": "Spells",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spell Lists",
     "subcategory": "",
-    "macrocode": "[h: (3d8 + Dexterity);]",
-    "macrocodecrit": "[h: (3d8 + Dexterity);]",
+    "macrocode": "<b><font color=\"Purple\">Cure Wounds</b> => <font color=\"Black\">[t:1d8 + INPUT] <font color=\"Red\">➕</font color> healing.",
+    "macrocodecrit": "",
     "subcategories": "Artificer Spells, Cleric Spells"
   },
   {
@@ -56,7 +56,7 @@
     "category": "Weapons",
     "subcategory": "Simple Melee Weapons",
     "macrocode": "<b><font color=\"Green\">Dagger Damage</b> => <font color=\"Black\">[t: 1d4 + Dexterity] <font color=\"Silver\">📍</font color> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Dagger Damage Crit</b> => <font color=\"Black\">[t: 2d4 + Dexterity] <font color=\"Silver\">📍</font color> damage!",
+    "macrocodecrit": "<b><font color=\"Teal\">Dagger Crit Damage</b> => <font color=\"Black\">[t: 2d4 + Dexterity] <font color=\"Silver\">📍</font color> damage!",
     "subcategories": "Simple Melee Weapons"
   },
   {
@@ -66,7 +66,7 @@
     "category": "Weapons",
     "subcategory": "Simple Melee Weapons",
     "macrocode": "<b><font color=\"Green\">Dagger Damage</b> => <font color=\"Black\">[t: 1d4 + Strength] <font color=\"Silver\">📍</font color> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Dagger Damage Crit</b> => <font color=\"Black\">[t: 2d4 + Strength] <font color=\"Silver\">📍</font color> damage!",
+    "macrocodecrit": "<b><font color=\"Teal\">Dagger Crit Damage</b> => <font color=\"Black\">[t: 2d4 + Strength] <font color=\"Silver\">📍</font color> damage!",
     "subcategories": "Simple Melee Weapons"
   },
   {
@@ -76,7 +76,7 @@
     "category": "Weapons",
     "subcategory": "Simple Ranged Weapons",
     "macrocode": "<b><font color=\"Green\">Dart Damage</b> => <font color=\"Black\">[t: 1d4 + Dexterity] <font color=\"Silver\">📍</font color> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Dart Damage Crit</b> => <font color=\"Black\">[t: 2d4 + Dexterity] <font color=\"Silver\">📍</font color> damage!",
+    "macrocodecrit": "<b><font color=\"Teal\">Dart Crit Damage</b> => <font color=\"Black\">[t: 2d4 + Dexterity] <font color=\"Silver\">📍</font color> damage!",
     "subcategories": "Simple Ranged Weapons"
   },
   {
@@ -86,8 +86,18 @@
     "category": "Weapons",
     "subcategory": "Simple Ranged Weapons",
     "macrocode": "<b><font color=\"Green\">Dart Damage</b> => <font color=\"Black\">[t: 1d4 + Strength] <font color=\"Silver\">📍</font color> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Dart Damage Crit</b> => <font color=\"Black\">[t: 2d4 + Strength] <font color=\"Silver\">📍</font color> damage!",
+    "macrocodecrit": "<b><font color=\"Teal\">Dart Crit Damage</b> => <font color=\"Black\">[t: 2d4 + Strength] <font color=\"Silver\">📍</font color> damage!",
     "subcategories": "Simple Ranged Weapons"
+  },
+  {
+    "id": 23,
+    "name": "Flail",
+    "description": "A strength-based weapon used with an attack action.",
+    "category": "Weapons",
+    "subcategory": "Martial Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">Flail Damage</b> => <font color=\"Black\">[t: 1d8 + Strength] <font color=\"Silver\">🔨</font color> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Flail Crit Damage</b> => <font color=\"Black\">[t: 2d8 + Strength] <font color=\"Silver\">🔨</font color> damage!",
+    "subcategories": "Martial Melee Weapons"
   },
   {
     "id": 5,
@@ -96,7 +106,7 @@
     "category": "Weapons",
     "subcategory": "Simple Melee Weapons",
     "macrocode": "<b><font color=\"Green\">Greatclub Damage</font></b> => <font color=\"Black\">[t: 1d8 + Strength] <font color=\"Silver\">🔨</font></font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Greatclub Damage Crit</font></b> => <font color=\"Black\">[t: 2d8 + Strength] <font color=\"Silver\">🔨</font></font> damage!",
+    "macrocodecrit": "<b><font color=\"Teal\">Greatclub Crit Damage</font></b> => <font color=\"Black\">[t: 2d8 + Strength] <font color=\"Silver\">🔨</font></font> damage!",
     "subcategories": "Simple Melee Weapons"
   },
   {
@@ -106,7 +116,7 @@
     "category": "Weapons",
     "subcategory": "Simple Melee Weapons",
     "macrocode": "<b><font color=\"Green\">Handaxe Damage</b> => <font color=\"Black\">[t: 1d6 + Strength] <font color=\"Silver\">🔪</font color> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Handaxe Damage Crit</b> => <font color=\"Black\">[t: 2d6 + Strength] <font color=\"Silver\">🔪</font color> damage!",
+    "macrocodecrit": "<b><font color=\"Teal\">Handaxe Crit Damage</b> => <font color=\"Black\">[t: 2d6 + Strength] <font color=\"Silver\">🔪</font color> damage!",
     "subcategories": "Simple Melee Weapons"
   },
   {
@@ -116,7 +126,7 @@
     "category": "Weapons",
     "subcategory": "Simple Melee Weapons",
     "macrocode": "<b><font color=\"Green\">Javelin Damage</b> => <font color=\"Black\">[t: 1d6 + Strength] <font color=\"Silver\">📍</font color> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Handaxe Damage Crit</b> => <font color=\"Black\">[t: 2d6 + Dexterity] <font color=\"Silver\">🔪</font color> damage!",
+    "macrocodecrit": "<b><font color=\"Teal\">Handaxe Crit Damage</b> => <font color=\"Black\">[t: 2d6 + Dexterity] <font color=\"Silver\">🔪</font color> damage!",
     "subcategories": "Simple Melee Weapons"
   },
   {
@@ -126,7 +136,7 @@
     "category": "Weapons",
     "subcategory": "Simple Ranged Weapons",
     "macrocode": "<b><font color=\"Green\">Light Crossbow Damage</b> => <font color=\"Black\">[t: 1d8 + Dexterity] <font color=\"Silver\">📍</font color> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Light Crossbow Damage Crit</b> => <font color=\"Black\">[t: 2d8 + Dexterity] <font color=\"Silver\">📍</font color> damage!",
+    "macrocodecrit": "<b><font color=\"Teal\">Light Crossbow Crit Damage</b> => <font color=\"Black\">[t: 2d8 + Dexterity] <font color=\"Silver\">📍</font color> damage!",
     "subcategories": "Simple Ranged Weapons"
   },
   {
@@ -136,7 +146,7 @@
     "category": "Weapons",
     "subcategory": "Simple Melee Weapons",
     "macrocode": "<b><font color=\"Green\">Light Hammer Damage</b> => <font color=\"Black\">[t: 1d4 + Strength] <font color=\"Silver\">🔨</font color> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Light Hammer Damage Crit</b> => <font color=\"Black\">[t: 2d4 + Strength] <font color=\"Silver\">🔨</font color> damage!",
+    "macrocodecrit": "<b><font color=\"Teal\">Light Hammer Crit Damage</b> => <font color=\"Black\">[t: 2d4 + Strength] <font color=\"Silver\">🔨</font color> damage!",
     "subcategories": "Simple Melee Weapons"
   },
   {
@@ -146,7 +156,7 @@
     "category": "Weapons",
     "subcategory": "Simple Melee Weapons",
     "macrocode": "<b><font color=\"Green\">Mace Damage</font></b> => <font color=\"Black\">[t: 1d6 + Strength] <font color=\"Silver\">🔨</font></font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Mace Damage Crit</font></b> => <font color=\"Black\">[t: 2d6 + Strength] <font color=\"Silver\">🔨</font></font> damage!",
+    "macrocodecrit": "<b><font color=\"Teal\">Mace Crit Damage</font></b> => <font color=\"Black\">[t: 2d6 + Strength] <font color=\"Silver\">🔨</font></font> damage!",
     "subcategories": "Simple Melee Weapons"
   },
   {
@@ -156,7 +166,7 @@
     "category": "Weapons",
     "subcategory": "Simple Melee Weapons",
     "macrocode": "<b><font color=\"Green\">Quarterstaff Damage</font></b> => <font color=\"Black\">[t: 1d6 + Strength] <font color=\"Silver\">🔨</font></font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Quarterstaff Damage Crit</font></b> => <font color=\"Black\">[t: 2d6 + Strength] <font color=\"Silver\">🔨</font></font> damage!",
+    "macrocodecrit": "<b><font color=\"Teal\">Quarterstaff Crit Damage</font></b> => <font color=\"Black\">[t: 2d6 + Strength] <font color=\"Silver\">🔨</font></font> damage!",
     "subcategories": "Simple Melee Weapons"
   },
   {
@@ -166,7 +176,7 @@
     "category": "Weapons",
     "subcategory": "Simple Melee Weapons",
     "macrocode": "<b><font color=\"Green\">Quarterstaff Damage</font></b> => <font color=\"Black\">[t: 1d8 + Strength] <font color=\"Silver\">🔨</font></font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Quarterstaff Damage Crit</font></b> => <font color=\"Black\">[t: 2d8 + Strength] <font color=\"Silver\">🔨</font></font> damage!",
+    "macrocodecrit": "<b><font color=\"Teal\">Quarterstaff Crit Damage</font></b> => <font color=\"Black\">[t: 2d8 + Strength] <font color=\"Silver\">🔨</font></font> damage!",
     "subcategories": "Simple Melee Weapons"
   },
   {
@@ -176,7 +186,7 @@
     "category": "Weapons",
     "subcategory": "Simple Ranged Weapons",
     "macrocode": "<b><font color=\"Green\">Shortbow Damage</b> => <font color=\"Black\">[t: 1d6 + Dexterity] <font color=\"Silver\">📍</font color> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Shortbow Damage Crit</b> => <font color=\"Black\">[t: 2d6 + Dexterity] <font color=\"Silver\">📍</font color> damage!",
+    "macrocodecrit": "<b><font color=\"Teal\">Shortbow Crit Damage</b> => <font color=\"Black\">[t: 2d6 + Dexterity] <font color=\"Silver\">📍</font color> damage!",
     "subcategories": "Simple Ranged Weapons"
   },
   {
@@ -186,7 +196,7 @@
     "category": "Weapons",
     "subcategory": "Simple Melee Weapons",
     "macrocode": "<b><font color=\"Green\">Sickle Damage</b> => <font color=\"Black\">[t: 1d4 + Strength] <font color=\"Silver\">🔪</font color> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Sickle Damage Crit</b> => <font color=\"Black\">[t: 2d4 + Strength] <font color=\"Silver\">🔪</font color> damage!",
+    "macrocodecrit": "<b><font color=\"Teal\">Sickle Crit Damage</b> => <font color=\"Black\">[t: 2d4 + Strength] <font color=\"Silver\">🔪</font color> damage!",
     "subcategories": "Simple Melee Weapons"
   },
   {
@@ -196,7 +206,7 @@
     "category": "Weapons",
     "subcategory": "Simple Ranged Weapons",
     "macrocode": "<b><font color=\"Green\">Sling Damage</b> => <font color=\"Black\">[t: 1d4 + Dexterity] <font color=\"Silver\">🔨</font color> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Sling Damage Crit</b> => <font color=\"Black\">[t: 2d4 + Dexterity] <font color=\"Silver\">🔨</font color> damage!",
+    "macrocodecrit": "<b><font color=\"Teal\">Sling Crit Damage</b> => <font color=\"Black\">[t: 2d4 + Dexterity] <font color=\"Silver\">🔨</font color> damage!",
     "subcategories": "Simple Ranged Weapons"
   },
   {
@@ -206,7 +216,7 @@
     "category": "Weapons",
     "subcategory": "Simple Melee Weapons",
     "macrocode": "<b><font color=\"Green\">Spear Damage</b> => <font color=\"Black\">[t: 1d6 + Strength] <font color=\"Silver\">📍</font color> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Spear Damage Crit</b> => <font color=\"Black\">[t: 2d6 + Strength] <font color=\"Silver\">📍</font color> damage!",
+    "macrocodecrit": "<b><font color=\"Teal\">Spear Crit Damage</b> => <font color=\"Black\">[t: 2d6 + Strength] <font color=\"Silver\">📍</font color> damage!",
     "subcategories": "Simple Melee Weapons"
   },
   {
@@ -216,7 +226,7 @@
     "category": "Weapons",
     "subcategory": "Simple Melee Weapons",
     "macrocode": "<b><font color=\"Green\">Spear Damage</b> => <font color=\"Black\">[t: 1d8 + Strength] <font color=\"Silver\">📍</font color> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Spear Damage Crit</b> => <font color=\"Black\">[t: 2d8 + Strength] <font color=\"Silver\">📍</font color> damage!",
+    "macrocodecrit": "<b><font color=\"Teal\">Spear Crit Damage</b> => <font color=\"Black\">[t: 2d8 + Strength] <font color=\"Silver\">📍</font color> damage!",
     "subcategories": "Simple Melee Weapons"
   }
 ]
