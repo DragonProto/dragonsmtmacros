@@ -478,5 +478,3 @@ document.addEventListener('macrosLoaded', (event) => {
   populateCategories(macros);
   initializeDropdown();
 });
-
-
