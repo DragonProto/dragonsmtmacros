@@ -38,46 +38,47 @@ function renderMacros(macros) {
       li.className = 'macro-item';
       
       const critMacroSection = macro.macrocodecrit
-      ? `
-        <div class="macro-section2" onclick="event.stopPropagation();">
-          <div class="d-flex justify-content-between align-items-center">
-            <p><strong>Critical Hit Macro Code:</strong></p>
-            <span class="copy-btn" data-macrocode="${macro.macrocodecrit.replace(/"/g, '&quot;')}" title="Copy critical macro" role="button">
-              <img src="copy.svg" alt="Copy" class="copy-icon">
-            </span>
+        ? `
+          <div class="macro-section2" onclick="event.stopPropagation();">
+            <div class="d-flex justify-content-between align-items-center">
+              <p><strong>Critical Hit Macro Code:</strong></p>
+              <span class="copy-btn" data-macrocode="${macro.macrocodecrit.replace(/"/g, '&quot;')}" title="Copy critical macro" role="button">
+                <img src="copy.svg" alt="Copy" class="copy-icon">
+              </span>
+            </div>
+            <div id="macrocritcode-wrapper">
+              <code class="macro-critical-code-content">${macro.macrocodecrit.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</code>
+            </div>
           </div>
-          <div id="macrocritcode-wrapper">
-            <code class="macro-critical-code-content">${macro.macrocodecrit.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</code>
-          </div>
-        </div>
-      `
-      : '';
+        `
+        : '';
 
-    li.innerHTML = `
-      <h3 class="macro-header">${macro.name}</h3>
-      <div class="macro-details" aria-hidden="true">
-        <div id="description-wrapper">
-          <div class="d-flex justify-content-between align-items-center">
-            <p><strong>Description:</strong></p>
+      li.innerHTML = `
+        <h3 class="macro-header">${macro.name}</h3>
+        <div class="macro-details" aria-hidden="true">
+          <div id="description-wrapper">
+            <div class="d-flex justify-content-between align-items-center">
+              <p><strong>Description:</strong></p>
+            </div>
+            <p>${macro.description.replace(/\r\n/g, '<br>')}</p>
           </div>
-          <p>${macro.description.replace(/\r\n/g, '<br>')}</p>
+          <div class="macro-section" onclick="event.stopPropagation();">
+            <div class="d-flex justify-content-between align-items-center">
+              <p><strong>Macro Code:</strong></p>
+              <span class="copy-btn" data-macrocode="${macro.macrocode.replace(/"/g, '&quot;')}" title="Copy macro" role="button">
+                <img src="copy.svg" alt="Copy" class="copy-icon">
+              </span>
+            </div>
+            <div id="macrocode-wrapper">
+              <code class="macro-code-content">${macro.macrocode.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</code>
+            </div>
+          </div>
+          ${critMacroSection}
+          ${macro.spell_level ? `<p><strong>Spell Level:</strong> ${macro.spell_level}</p>` : ''}
         </div>
-        <div class="macro-section" onclick="event.stopPropagation();">
-          <div class="d-flex justify-content-between align-items-center">
-            <p><strong>Macro Code:</strong></p>
-            <span class="copy-btn" data-macrocode="${macro.macrocode.replace(/"/g, '&quot;')}" title="Copy macro" role="button">
-              <img src="copy.svg" alt="Copy" class="copy-icon">
-            </span>
-          </div>
-          <div id="macrocode-wrapper">
-            <code class="macro-code-content">${macro.macrocode.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</code>
-          </div>
-        </div>
-        ${critMacroSection}
-      </div>
-    `;
+      `;
 
-    macrosList.appendChild(li);
+      macrosList.appendChild(li);
 
       // Apply cursor: text to the macro code content
       const macroCodeContent = li.querySelector('.macro-code-content');
@@ -153,12 +154,19 @@ function updateMacros() {
 
   const filteredMacros = allMacros.filter(macro => {
     const nameMatch = macro.name.toLowerCase().includes(query);
-    const catSubs = macro.subcategories ? macro.subcategories.split(', ').map(sub => `${macro.category}::${sub}`) : [];
-    const categoryMatch = selectedOptions.length === 0 || selectedOptions.some(opt => catSubs.includes(opt));
+    
+    const catSubs = macro.subcategories ? macro.subcategories.split(',').map(sub => `${macro.category}::${sub.trim()}`) : [];
+    const spellLevels = macro.spell_levels ? macro.spell_levels.split(',').map(level => `Spell Categories::${level.trim()}`) : [];
+    
+    const categoryMatch = selectedOptions.length === 0 || selectedOptions.some(opt => catSubs.includes(opt) || spellLevels.includes(opt));
+    
     return nameMatch && categoryMatch;
   });
+  
   renderMacros(filteredMacros);
 }
+
+
 
 // Function to show notifications
 function showNotification(message) {
@@ -184,80 +192,53 @@ function populateCategories(macros) {
   categoryDropdown.innerHTML = '';
 
   const categories = {};
+  const spellLevels = new Set();
+
   macros.forEach(macro => {
+    // Collect spell levels
+    if (macro.spell_levels) {
+      macro.spell_levels.split(',').forEach(level => {
+        spellLevels.add(level.trim());
+      });
+    }
+
+    // Collect subcategories
     if (macro.subcategories) {
-      const subcategories = macro.subcategories.split(', ');
+      const subcategories = macro.subcategories.split(',');
       subcategories.forEach(subcategory => {
         if (!categories[macro.category]) {
           categories[macro.category] = new Set();
         }
-        categories[macro.category].add(subcategory);
+        categories[macro.category].add(subcategory.trim());
       });
     }
   });
 
-  const sortedCategories = Object.keys(categories).sort();
-  sortedCategories.forEach(category => {
-    const categoryHeader = document.createElement('h6');
-    categoryHeader.className = 'dropdown-header';
-    categoryHeader.innerText = category;
-    categoryDropdown.appendChild(categoryHeader);
+  // Add spell levels to the dropdown under 'Spell Categories'
+  if (spellLevels.size > 0) {
+    const spellCategoryItem = document.createElement('h6');
+    spellCategoryItem.textContent = 'Spell Categories';
+    spellCategoryItem.className = 'dropdown-header';
+    categoryDropdown.appendChild(spellCategoryItem);
 
-    Array.from(categories[category]).sort().forEach(subcategory => {
+    Array.from(spellLevels).sort().forEach(level => {
       const option = document.createElement('a');
       option.className = 'dropdown-item';
       option.href = '#';
-      option.dataset.value = `${category}::${subcategory}`;
-      option.innerText = subcategory;
+      option.dataset.value = `Spell Categories::${level}`;
+      option.innerText = level;
       option.setAttribute('role', 'menuitem');
       option.addEventListener('click', (e) => {
         e.preventDefault();
         option.classList.toggle('active');
         updateMacros();
+        updateSelectedCategories(); // Update the selected categories display
       });
       categoryDropdown.appendChild(option);
     });
-  });
-}
+  }
 
-// Event listeners
-document.addEventListener('DOMContentLoaded', () => {
-  fetchData();
-});
-
-document.addEventListener('macrosLoaded', (event) => {
-  const macros = event.detail;
-  renderMacros(macros);
-  populateCategories(macros);
-});
-
-document.getElementById('search-input').addEventListener('input', updateMacros);
-
-document.getElementById('clear-categories-btn').addEventListener('click', () => {
-  document.querySelectorAll('.dropdown-item.active').forEach(item => {
-    item.classList.remove('active');
-  });
-  updateMacros();
-  updateSelectedCategories(); // Update the selected categories display
-});
-
-function populateCategories(macros) {
-  const categoryDropdown = document.getElementById('category-dropdown');
-  categoryDropdown.innerHTML = '';
-
-  const categories = {};
-  macros.forEach(macro => {
-    if (macro.subcategories) {
-      const subcategories = macro.subcategories.split(', ');
-      subcategories.forEach(subcategory => {
-        if (!categories[macro.category]) {
-          categories[macro.category] = new Set();
-        }
-        categories[macro.category].add(subcategory);
-      });
-    }
-  });
-
+  // Add subcategories to the dropdown
   const sortedCategories = Object.keys(categories).sort();
   sortedCategories.forEach(category => {
     const categoryHeader = document.createElement('h6');
@@ -282,6 +263,30 @@ function populateCategories(macros) {
     });
   });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  fetch('macros.json')
+    .then(response => response.json())
+    .then(data => populateCategories(data))
+    .catch(error => console.error('Error fetching macros:', error));
+});
+
+
+document.addEventListener('macrosLoaded', (event) => {
+  const macros = event.detail;
+  renderMacros(macros);
+  populateCategories(macros);
+});
+
+document.getElementById('search-input').addEventListener('input', updateMacros);
+
+document.getElementById('clear-categories-btn').addEventListener('click', () => {
+  document.querySelectorAll('.dropdown-item.active').forEach(item => {
+    item.classList.remove('active');
+  });
+  updateMacros();
+  updateSelectedCategories(); // Update the selected categories display
+});
 
 document.addEventListener('DOMContentLoaded', () => {
   fetchData();
@@ -408,73 +413,3 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-async function fetchData() {
-  const loadingIndicator = document.createElement('div');
-  loadingIndicator.id = 'loading-indicator';
-  loadingIndicator.textContent = 'Loading...';
-  document.body.appendChild(loadingIndicator);
-
-  try {
-    const macrosResponse = await fetch('macros.json');
-    if (!macrosResponse.ok) {
-      throw new Error('Network response was not ok ' + macrosResponse.statusText);
-    }
-    const macros = await macrosResponse.json();
-    document.body.removeChild(loadingIndicator);
-    allMacros = macros;
-    document.dispatchEvent(new CustomEvent('macrosLoaded', { detail: macros }));
-  } catch (error) {
-    document.body.removeChild(loadingIndicator);
-    console.error('Fetch error: ', error);
-  }
-}
-
-function populateCategories(macros) {
-  const categoryDropdown = document.getElementById('category-dropdown');
-  categoryDropdown.innerHTML = '';
-
-  const categories = {};
-  macros.forEach(macro => {
-    if (macro.subcategories) {
-      const subcategories = macro.subcategories.split(', ');
-      subcategories.forEach(subcategory => {
-        if (!categories[macro.category]) {
-          categories[macro.category] = new Set();
-        }
-        categories[macro.category].add(subcategory);
-      });
-    }
-  });
-
-  const sortedCategories = Object.keys(categories).sort();
-  sortedCategories.forEach(category => {
-    const categoryHeader = document.createElement('h6');
-    categoryHeader.className = 'dropdown-header';
-    categoryHeader.innerText = category;
-    categoryDropdown.appendChild(categoryHeader);
-
-    Array.from(categories[category]).sort().forEach(subcategory => {
-      const option = document.createElement('a');
-      option.className = 'dropdown-item';
-      option.href = '#';
-      option.dataset.value = `${category}::${subcategory}`;
-      option.innerText = subcategory;
-      option.setAttribute('role', 'menuitem');
-      option.addEventListener('click', (e) => {
-        e.preventDefault();
-        option.classList.toggle('active');
-        updateMacros();
-        updateSelectedCategories(); // Update the selected categories display
-      });
-      categoryDropdown.appendChild(option);
-    });
-  });
-}
-
-// Ensure the dropdown menu width adjusts based on its content
-document.addEventListener('macrosLoaded', (event) => {
-  const macros = event.detail;
-  renderMacros(macros);
-  populateCategories(macros);
-  initializeDropdown();
-});

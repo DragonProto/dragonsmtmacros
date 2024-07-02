@@ -85,7 +85,7 @@
     "macrocode": "<b><font color=\"Purple\">Cure Wounds</b> => <font color=\"Black\">[t:1d8 + INPUT] <font color=\"Red\">➕</font color> healing.",
     "macrocodecrit": "",
     "subcategories": "Cleric,Artificer,Ranger,Paladin,Druid,Bard",
-    "spell_levels": "1st level spell"
+    "spell_levels": "1st Level Spell"
   },
   {
     "id": 5,
