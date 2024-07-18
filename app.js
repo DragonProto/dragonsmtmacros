@@ -156,9 +156,8 @@ function updateMacros() {
     const nameMatch = macro.name.toLowerCase().includes(query);
     
     const catSubs = macro.subcategories ? macro.subcategories.split(',').map(sub => `${macro.category}::${sub.trim()}`) : [];
-    const spellLevels = macro.spell_levels ? macro.spell_levels.split(',').map(level => `Spell Categories::${level.trim()}`) : [];
     
-    const categoryMatch = selectedOptions.length === 0 || selectedOptions.some(opt => catSubs.includes(opt) || spellLevels.includes(opt));
+    const categoryMatch = selectedOptions.length === 0 || selectedOptions.some(opt => catSubs.includes(opt));
     
     return nameMatch && categoryMatch;
   });
@@ -192,16 +191,8 @@ function populateCategories(macros) {
   categoryDropdown.innerHTML = '';
 
   const categories = {};
-  const spellLevels = new Set();
 
   macros.forEach(macro => {
-    // Collect spell levels
-    if (macro.spell_levels) {
-      macro.spell_levels.split(',').forEach(level => {
-        spellLevels.add(level.trim());
-      });
-    }
-
     // Collect subcategories
     if (macro.subcategories) {
       const subcategories = macro.subcategories.split(',');
@@ -213,30 +204,6 @@ function populateCategories(macros) {
       });
     }
   });
-
-  // Add spell levels to the dropdown under 'Spell Categories'
-  if (spellLevels.size > 0) {
-    const spellCategoryItem = document.createElement('h6');
-    spellCategoryItem.textContent = 'Spell Categories';
-    spellCategoryItem.className = 'dropdown-header';
-    categoryDropdown.appendChild(spellCategoryItem);
-
-    Array.from(spellLevels).sort().forEach(level => {
-      const option = document.createElement('a');
-      option.className = 'dropdown-item';
-      option.href = '#';
-      option.dataset.value = `Spell Categories::${level}`;
-      option.innerText = level;
-      option.setAttribute('role', 'menuitem');
-      option.addEventListener('click', (e) => {
-        e.preventDefault();
-        option.classList.toggle('active');
-        updateMacros();
-        updateSelectedCategories(); // Update the selected categories display
-      });
-      categoryDropdown.appendChild(option);
-    });
-  }
 
   // Add subcategories to the dropdown
   const sortedCategories = Object.keys(categories).sort();
