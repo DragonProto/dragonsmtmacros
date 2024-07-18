@@ -122,10 +122,12 @@ input:-webkit-autofill:active{
   white-space: nowrap;
   background-color: hsl(107, 100%, 27%);
   border: 0px;
+  box-sizing: border-box;
 }
 
 #category-btn:hover {
   background-color: hsl(107, 100%, 31%);
+  box-sizing: border-box;
 }
 
 #clear-categories-btn{
@@ -150,6 +152,7 @@ input:-webkit-autofill:active{
   max-height: none; /* Remove maximum height constraint */
   overflow-y: visible; /* Ensure there is no vertical scrollbar */
   background-color: hsl(107, 100%, 27%);
+  box-sizing: border-box;
 }
 
 /* Dropdown item styling */

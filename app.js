@@ -156,16 +156,15 @@ function updateMacros() {
     const nameMatch = macro.name.toLowerCase().includes(query);
     
     const catSubs = macro.subcategories ? macro.subcategories.split(',').map(sub => `${macro.category}::${sub.trim()}`) : [];
-    
-    const categoryMatch = selectedOptions.length === 0 || selectedOptions.some(opt => catSubs.includes(opt));
+    const spellLevels = macro.spell_levels ? macro.spell_levels.split(',').map(level => `Spell Levels::${level.trim()}`) : [];
+
+    const categoryMatch = selectedOptions.length === 0 || selectedOptions.some(opt => catSubs.includes(opt) || spellLevels.includes(opt));
     
     return nameMatch && categoryMatch;
   });
   
   renderMacros(filteredMacros);
 }
-
-
 
 // Function to show notifications
 function showNotification(message) {
@@ -191,8 +190,16 @@ function populateCategories(macros) {
   categoryDropdown.innerHTML = '';
 
   const categories = {};
+  const spellLevels = new Set();
 
   macros.forEach(macro => {
+    // Collect spell levels
+    if (macro.spell_levels) {
+      macro.spell_levels.split(',').forEach(level => {
+        spellLevels.add(level.trim());
+      });
+    }
+
     // Collect subcategories
     if (macro.subcategories) {
       const subcategories = macro.subcategories.split(',');
@@ -229,6 +236,34 @@ function populateCategories(macros) {
       categoryDropdown.appendChild(option);
     });
   });
+
+  // Add spell levels to the dropdown under 'Spell Levels'
+  if (spellLevels.size > 0) {
+    const spellLevelHeader = document.createElement('h6');
+    spellLevelHeader.className = 'dropdown-header';
+    spellLevelHeader.innerText = 'Spell Levels';
+    categoryDropdown.appendChild(spellLevelHeader);
+
+    Array.from(spellLevels).sort((a, b) => {
+      if (a === 'Cantrip') return -1;
+      if (b === 'Cantrip') return 1;
+      return a.localeCompare(b);
+    }).forEach(level => {
+      const option = document.createElement('a');
+      option.className = 'dropdown-item';
+      option.href = '#';
+      option.dataset.value = `Spell Levels::${level}`;
+      option.innerText = level;
+      option.setAttribute('role', 'menuitem');
+      option.addEventListener('click', (e) => {
+        e.preventDefault();
+        option.classList.toggle('active');
+        updateMacros();
+        updateSelectedCategories(); // Update the selected categories display
+      });
+      categoryDropdown.appendChild(option);
+    });
+  }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -237,7 +272,6 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(data => populateCategories(data))
     .catch(error => console.error('Error fetching macros:', error));
 });
-
 
 document.addEventListener('macrosLoaded', (event) => {
   const macros = event.detail;
