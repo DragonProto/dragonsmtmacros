@@ -212,31 +212,6 @@ function populateCategories(macros) {
     }
   });
 
-  // Add subcategories to the dropdown
-  const sortedCategories = Object.keys(categories).sort();
-  sortedCategories.forEach(category => {
-    const categoryHeader = document.createElement('h6');
-    categoryHeader.className = 'dropdown-header';
-    categoryHeader.innerText = category;
-    categoryDropdown.appendChild(categoryHeader);
-
-    Array.from(categories[category]).sort().forEach(subcategory => {
-      const option = document.createElement('a');
-      option.className = 'dropdown-item';
-      option.href = '#';
-      option.dataset.value = `${category}::${subcategory}`;
-      option.innerText = subcategory;
-      option.setAttribute('role', 'menuitem');
-      option.addEventListener('click', (e) => {
-        e.preventDefault();
-        option.classList.toggle('active');
-        updateMacros();
-        updateSelectedCategories(); // Update the selected categories display
-      });
-      categoryDropdown.appendChild(option);
-    });
-  });
-
   // Add spell levels to the dropdown under 'Spell Levels'
   if (spellLevels.size > 0) {
     const spellLevelHeader = document.createElement('h6');
@@ -264,6 +239,31 @@ function populateCategories(macros) {
       categoryDropdown.appendChild(option);
     });
   }
+
+  // Add subcategories to the dropdown
+  const sortedCategories = Object.keys(categories).sort();
+  sortedCategories.forEach(category => {
+    const categoryHeader = document.createElement('h6');
+    categoryHeader.className = 'dropdown-header';
+    categoryHeader.innerText = category;
+    categoryDropdown.appendChild(categoryHeader);
+
+    Array.from(categories[category]).sort().forEach(subcategory => {
+      const option = document.createElement('a');
+      option.className = 'dropdown-item';
+      option.href = '#';
+      option.dataset.value = `${category}::${subcategory}`;
+      option.innerText = subcategory;
+      option.setAttribute('role', 'menuitem');
+      option.addEventListener('click', (e) => {
+        e.preventDefault();
+        option.classList.toggle('active');
+        updateMacros();
+        updateSelectedCategories(); // Update the selected categories display
+      });
+      categoryDropdown.appendChild(option);
+    });
+  });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -278,6 +278,7 @@ document.addEventListener('macrosLoaded', (event) => {
   renderMacros(macros);
   populateCategories(macros);
 });
+
 
 document.getElementById('search-input').addEventListener('input', updateMacros);
 
