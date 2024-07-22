@@ -137,7 +137,7 @@ function renderMacros(macros) {
   document.querySelectorAll('.copy-btn').forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.stopPropagation();
-      const macrocode = e.target.dataset.macrocode;
+      const macrocode = e.currentTarget.dataset.macrocode;
       navigator.clipboard.writeText(macrocode).then(() => {
         showNotification('Copied macro!');
       }).catch(err => {

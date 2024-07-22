@@ -110,9 +110,10 @@ input:-webkit-autofill:active{
 }
 
 #selected-categories {
-  margin-bottom: 10px;
-  width: 100%; /* Ensure it takes the full width */
+  padding-bottom: 20px;
+  width: 90%; /* Ensure it takes the full width */
   text-align: center; /* Center the text */
+  margin: auto;
 }
 
 #category-btn {
