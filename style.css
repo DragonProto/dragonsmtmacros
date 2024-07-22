@@ -12,7 +12,7 @@ body {
 
 #backgroundimage {
   background-image: url(backgroundimage.jpg);
-  height: 30vh;
+  height: 28.15vh;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -145,9 +145,8 @@ input:-webkit-autofill:active{
   padding: 10px;
   border: 0px solid;
   width: auto; /* Adjust width based on content */
-  white-space: nowrap; /* Prevent text wrapping */
-  max-height: none; /* Remove maximum height constraint */
-  overflow-y: visible; /* Ensure there is no vertical scrollbar */
+  max-height: 41vh; /* Remove maximum height constraint */
+  overflow-y: auto; /* Ensure there is no vertical scrollbar */
   background-color: hsl(107, 100%, 27%);
   box-sizing: border-box;
 }
@@ -388,5 +387,29 @@ input[type="color"]:focus,
 .uneditable-input:focus {   
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px hsl(107, 100%, 27%);
   outline: 0 none;
+}
+
+::-webkit-scrollbar {
+  width: auto;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #121212; 
+}
+
+/* Track dropdown*/
+#category-dropdown::-webkit-scrollbar-track {
+  background: hsl(107, 100%, 27%); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: hwb(0 15% 85%); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(0, 0%, 23%); 
 }
 

@@ -345,7 +345,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (window.innerWidth > 768) {
         // Desktop view
         categoryDropdown.style.display = 'block'; // Temporarily display to calculate width
-        const dropdownWidth = categoryDropdown.scrollWidth; // Use scrollWidth to get the full width of the content
+        const dropdownWidth = categoryDropdown.offsetWidth; // Use scrollWidth to get the full width of the content
         categoryBtn.style.width = dropdownWidth + 'px';
         categoryDropdown.style.display = 'none'; // Hide again after calculation
         categoryDropdown.style.width = 'auto'; // Reset the dropdown width to auto for desktop view
@@ -366,6 +366,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function openDropdown() {
       categoryDropdown.style.display = 'block';
+      categoryDropdown.scrollTop = 0; // Scroll to top when opening
       categoryBtn.classList.add('dropdown-open');
       categoryBtn.classList.remove('dropdown-closed');
     }
