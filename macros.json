@@ -2,7 +2,7 @@
   {
     "id": 2,
     "name": "Acid Splash",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThis spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
+    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThis spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).\r\n\r\nRemember to edit the damage dice according to level.",
     "category": "Spellcasting Classes",
     "subcategory": "",
     "macrocode": "<b><font color=\"Purple\">Acid Splash</b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => <font color=\"Black\">[t: 1d6] <font color=\"Green\">🔥</font color> damage.",
@@ -44,6 +44,39 @@
     "spell_levels": null
   },
   {
+    "id": 54,
+    "name": "Booming Blade Extra Damage",
+    "description": "This spell’s damage increases by 1d8 when you reach 11th level (2d8), and 17th level (3d8).\r\n\r\nRemember to edit the damage dice according to level.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Booming Blade Extra Damage</b> => <font color=\"Black\">[t: 1d8] <font color=\"Gray\">💥</font color> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Booming Blade Extra Crit Damage</b> => <font color=\"Black\">[t: 2d8] <font color=\"Gray\">💥</font color> damage!",
+    "subcategories": "Wizard,Artificer,Sorcerer,Warlock",
+    "spell_levels": "Cantrip"
+  },
+  {
+    "id": 53,
+    "name": "Booming Blade Movement Damage",
+    "description": "This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).\r\n\r\nRemember to edit the damage dice according to level.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Booming Blade Movement Damage</b> => <font color=\"Black\">[t: 1d8] <font color=\"Gray\">💥 </font color> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Booming Blade Movement Crit Damage</b> => <font color=\"Black\">[t: 2d8] <font color=\"Gray\">💥</font color> damage!",
+    "subcategories": "Wizard,Artificer,Sorcerer,Warlock",
+    "spell_levels": "Cantrip"
+  },
+  {
+    "id": 55,
+    "name": "Chill Touch",
+    "description": "A spell used with a spell attack action.\r\n\r\nThis spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).\r\n\r\nRemember to edit the damage dice according to level.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Chill Touch Damage</b> => <font color=\"Black\">[t: 1d8] <font color=\"Purple\">💀</font color> damage + can't regain hitpoints until the start of your next turn (undead targets receive disadvantage on attack rolls until the end of your next turn).",
+    "macrocodecrit": "<b><font color=\"Teal\">Chill Touch Crit Damage</b> => <font color=\"Black\">[t: 2d8] <font color=\"Purple\">💀</font color> damage + can't regain hitpoints until the start of your next turn (undead targets receive disadvantage on attack rolls until the end of your next turn)!",
+    "subcategories": "Wizard,Sorcerer,Warlock",
+    "spell_levels": "Cantrip"
+  },
+  {
     "id": 1,
     "name": "Club",
     "description": "A strength-based weapon used with an attack action.\r\n\r\nRemove Strength damage if used in off-hand.",
@@ -53,6 +86,17 @@
     "macrocodecrit": "<b><font color=\"Teal\">Club Crit Damage</font></b> => <font color=\"Black\">[t: 2d4 + Strength] <font color=\"Silver\">🔨</font></font> damage!",
     "subcategories": "Simple Melee Weapons",
     "spell_levels": null
+  },
+  {
+    "id": 56,
+    "name": "Create Bonfire",
+    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThis spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).\r\n\r\nRemember to edit the damage dice according to level.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Create Bonfire</b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => <font color=\"Black\">[t: 1d8] <font color=\"Orange\">🔥</font color> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Wizard,Artificer,Sorcerer,Druid,Warlock",
+    "spell_levels": "Cantrip"
   },
   {
     "id": 49,
@@ -207,6 +251,17 @@
     "macrocodecrit": "<b><font color=\"Teal\">Handaxe Crit Damage</b> => <font color=\"Black\">[t: 2d6 + Strength] <font color=\"Silver\">🔪</font color> damage!",
     "subcategories": "Simple Melee Weapons",
     "spell_levels": null
+  },
+  {
+    "id": 52,
+    "name": "Hold Person",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Hold Person</b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or become Paralyzed.",
+    "macrocodecrit": "",
+    "subcategories": "Wizard,Cleric,Sorcerer,Druid,Bard,Warlock",
+    "spell_levels": "2nd Level Spell"
   },
   {
     "id": 51,
