@@ -60,7 +60,7 @@
     "description": "This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).\r\n\r\nRemember to edit the damage dice according to level.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Booming Blade Movement Damage</b> => <font color=\"Black\">[t: 1d8] <font color=\"Gray\">💥 </font color> damage.",
+    "macrocode": "<b><font color=\"Purple\">Booming Blade Movement Damage</b> => <font color=\"Black\">[t: 1d8] <font color=\"Gray\">💥</font color> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Booming Blade Movement Crit Damage</b> => <font color=\"Black\">[t: 2d8] <font color=\"Gray\">💥</font color> damage!",
     "subcategories": "Wizard,Artificer,Sorcerer,Warlock",
     "spell_levels": "Cantrip"
@@ -71,7 +71,7 @@
     "description": "A spell used with a spell attack action.\r\n\r\nThis spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).\r\n\r\nRemember to edit the damage dice according to level.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Chill Touch Damage</b> => <font color=\"Black\">[t: 1d8] <font color=\"Purple\">💀</font color> damage + can't regain hitpoints until the start of your next turn (undead targets receive disadvantage on attack rolls until the end of your next turn).",
+    "macrocode": "<b><font color=\"Purple\">Chill Touch Damage</b> => <font color=\"Black\">[t: 1d8] <font color=\"Purple\">💀</font color> damage + can't regain hitpoints until the start of your next turn (+ undead targets receive disadvantage on attack rolls until the end of your next turn).",
     "macrocodecrit": "<b><font color=\"Teal\">Chill Touch Crit Damage</b> => <font color=\"Black\">[t: 2d8] <font color=\"Purple\">💀</font color> damage + can't regain hitpoints until the start of your next turn (undead targets receive disadvantage on attack rolls until the end of your next turn)!",
     "subcategories": "Wizard,Sorcerer,Warlock",
     "spell_levels": "Cantrip"
@@ -99,6 +99,17 @@
     "spell_levels": "Cantrip"
   },
   {
+    "id": 48,
+    "name": "Crossbow, Hand",
+    "description": "A dexterity-based weapon used with an attack action.\r\n\r\nRemove Dexterity damage if used in off-hand.",
+    "category": "Weapons",
+    "subcategory": "Martial Ranged Weapons",
+    "macrocode": "<b><font color=\"Green\">Hand Crossbow Damage</b> => <font color=\"Black\">[t: 1d6 + Dexterity] <font color=\"Silver\">📍</font color> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Hand Crossbow Crit Damage</b> => <font color=\"Black\">[t: 2d6 + Dexterity] <font color=\"Silver\">📍</font color> damage!",
+    "subcategories": "Martial Ranged Weapons",
+    "spell_levels": null
+  },
+  {
     "id": 49,
     "name": "Crossbow, Heavy",
     "description": "A dexterity-based weapon used with an attack action.",
@@ -106,17 +117,6 @@
     "subcategory": "Martial Ranged Weapons",
     "macrocode": "<b><font color=\"Green\">Heavy Crossbow Damage</b> => <font color=\"Black\">[t: 1d10 + Dexterity] <font color=\"Silver\">📍</font color> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Heavy Crossbow Crit Damage</b> => <font color=\"Black\">[t: 2d10 + Dexterity] <font color=\"Silver\">📍</font color> damage!",
-    "subcategories": "Martial Ranged Weapons",
-    "spell_levels": null
-  },
-  {
-    "id": 48,
-    "name": "Crossbow, hand",
-    "description": "A dexterity-based weapon used with an attack action.\r\n\r\nRemove Dexterity damage if used in off-hand.",
-    "category": "Weapons",
-    "subcategory": "Martial Ranged Weapons",
-    "macrocode": "<b><font color=\"Green\">Hand Crossbow Damage</b> => <font color=\"Black\">[t: 1d6 + Dexterity] <font color=\"Silver\">📍</font color> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Hand Crossbow Crit Damage</b> => <font color=\"Black\">[t: 2d6 + Dexterity] <font color=\"Silver\">📍</font color> damage!",
     "subcategories": "Martial Ranged Weapons",
     "spell_levels": null
   },
@@ -176,6 +176,17 @@
     "spell_levels": null
   },
   {
+    "id": 57,
+    "name": "Fire Bolt",
+    "description": "A spell used with a spell attack action.\r\n\r\nThis spell’s damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).\r\n\r\nRemember to edit the damage dice according to level.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Fire Bolt Damage</b> => <font color=\"Black\">[t: 1d10] <font color=\"Orange\">🔥</font color> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Fire Bolt Crit Damage</b> => <font color=\"Black\">[t: 2d10] <font color=\"Orange\">🔥</font color> damage!",
+    "subcategories": "Wizard,Artificer,Sorcerer",
+    "spell_levels": "Cantrip"
+  },
+  {
     "id": 23,
     "name": "Flail",
     "description": "A strength-based weapon used with an attack action.",
@@ -185,6 +196,17 @@
     "macrocodecrit": "<b><font color=\"Teal\">Flail Crit Damage</b> => <font color=\"Black\">[t: 2d8 + Strength] <font color=\"Silver\">🔨</font color> damage!",
     "subcategories": "Martial Melee Weapons",
     "spell_levels": null
+  },
+  {
+    "id": 58,
+    "name": "Frostbite",
+    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).\r\n\r\nRemember to edit the damage dice according to level.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Frostbite</b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => <font color=\"Black\">[t: 1d6] <font color=\"Blue\">❄</font color> damage + has disadvantage on the next weapon attack roll before the end of their next turn.",
+    "macrocodecrit": "",
+    "subcategories": "Wizard,Artificer,Sorcerer,Druid,Warlock",
+    "spell_levels": "Cantrip"
   },
   {
     "id": 24,
@@ -231,6 +253,39 @@
     "spell_levels": null
   },
   {
+    "id": 60,
+    "name": "Green-Flame Blade Extra Damage",
+    "description": "This spell’s damage increases by 1d8 when you reach 5th level (1d8), 11th level (2d8), and 17th level (3d8).\r\n\r\nRemember to edit the damage dice according to level.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Green-Flame Blade Extra Damage</b> => <font color=\"Black\">[t: 1d8] <font color=\"Orange\">🔥</font color> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Green-Flame Blade Extra Crit Damage</b> => <font color=\"Black\">[t: 2d8] <font color=\"Orange\">🔥</font color> damage!",
+    "subcategories": "Wizard,Artificer,Sorcerer,Warlock",
+    "spell_levels": "Cantrip"
+  },
+  {
+    "id": 59,
+    "name": "Green-Flame Blade Leap Damage",
+    "description": "Replace INPUT with spellcasting ability modifier.\r\n\r\nThis spell’s damage increases by 1d8 when you reach 5th level (1d8), 11th level (2d8), and 17th level (3d8).\r\n\r\nRemember to edit the damage dice according to level.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Green-Flame Blade Leap Damage</b> => <font color=\"Black\">[t: 0d8 + INPUT] <font color=\"Orange\">🔥</font color> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Green-Flame Blade Leap Crit Damage</b> => <font color=\"Black\">[t: 0d8 + INPUT] <font color=\"Orange\">🔥</font color> damage!",
+    "subcategories": "Wizard,Artificer,Sorcerer,Warlock",
+    "spell_levels": "Cantrip"
+  },
+  {
+    "id": 61,
+    "name": "Gust",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Gust</b> => DC [r: 8 + INPUT + Proficiency] Strength Save or become pushed 5 feet away from you.",
+    "macrocodecrit": "",
+    "subcategories": "Wizard,Sorcerer,Druid",
+    "spell_levels": "Cantrip"
+  },
+  {
     "id": 27,
     "name": "Halberd",
     "description": "A strength-based weapon used with an attack action.",
@@ -265,7 +320,7 @@
   },
   {
     "id": 51,
-    "name": "Improved weapon",
+    "name": "Improvised Weapon",
     "description": "A strength-based weapon used with an attack action.",
     "category": "Weapons",
     "subcategory": "Special",
@@ -273,6 +328,17 @@
     "macrocodecrit": "<b><font color=\"Teal\">Improved Weapon Crit Damage</b> => <font color=\"Black\">[t: 2d4 + Strength] damage!",
     "subcategories": "Special",
     "spell_levels": null
+  },
+  {
+    "id": 62,
+    "name": "Infestation",
+    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).\r\n\r\nRemember to edit the damage dice according to level.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Infestation</b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => <font color=\"Black\">[t: 1d6] <font color=\"Green\">☠</font color> damage + move 5 feet in listed direction [t: 1d4] if it can move and its speed is at least 5 feet.",
+    "macrocodecrit": "",
+    "subcategories": "Wizard,Sorcerer,Druid,Warlock",
+    "spell_levels": "Cantrip"
   },
   {
     "id": 8,

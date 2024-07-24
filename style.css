@@ -47,7 +47,7 @@ h1 {
 
 footer {
   background-color: hsl(0, 0%, 7%);
-  padding: 15px 0;
+  padding: 15px 60px;
   text-align: center;
   color: white;
 }
@@ -223,7 +223,7 @@ input:-webkit-autofill:active{
 }
 
 .macro-item .macro-details.open {
-  max-height: 500px;
+  max-height: 2000px;
 }
 
 .macro-item .macro-section,

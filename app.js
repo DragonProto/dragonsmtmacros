@@ -232,7 +232,14 @@ function populateCategories(macros) {
       option.setAttribute('role', 'menuitem');
       option.addEventListener('click', (e) => {
         e.preventDefault();
-        option.classList.toggle('active');
+        if (option.classList.contains('active')) {
+          option.classList.remove('active');
+        } else {
+          document.querySelectorAll('.dropdown-item').forEach(item => {
+            item.classList.remove('active');
+          });
+          option.classList.add('active');
+        }
         updateMacros();
         updateSelectedCategories(); // Update the selected categories display
       });
@@ -257,7 +264,14 @@ function populateCategories(macros) {
       option.setAttribute('role', 'menuitem');
       option.addEventListener('click', (e) => {
         e.preventDefault();
-        option.classList.toggle('active');
+        if (option.classList.contains('active')) {
+          option.classList.remove('active');
+        } else {
+          document.querySelectorAll('.dropdown-item').forEach(item => {
+            item.classList.remove('active');
+          });
+          option.classList.add('active');
+        }
         updateMacros();
         updateSelectedCategories(); // Update the selected categories display
       });
