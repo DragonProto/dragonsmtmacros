@@ -181,7 +181,7 @@ function showNotification(message) {
 function updateSelectedCategories() {
   const selectedOptions = Array.from(document.querySelectorAll('.dropdown-item.active')).map(option => option.innerText);
   const selectedCategoriesDiv = document.getElementById('selected-categories');
-  selectedCategoriesDiv.textContent = selectedOptions.length > 0 ? `Selected categories: ${selectedOptions.join(', ')}` : '';
+  selectedCategoriesDiv.textContent = selectedOptions.length > 0 ? `Selected category: ${selectedOptions.join(', ')}` : '';
 }
 
 // Function to populate categories
