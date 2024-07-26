@@ -1,5 +1,16 @@
 [
   {
+    "id": 85,
+    "name": "Absorb Elements",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Absorb Elements</font></b> => [t: 1d6].",
+    "macrocodecrit": "",
+    "subcategories": "Wizard,Artificer,Sorcerer,Ranger,Druid",
+    "spell_levels": "1st Level Spell"
+  },
+  {
     "id": 2,
     "name": "Acid Splash",
     "description": "Replace INPUT with spellcasting ability.\r\n\r\nThis spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).\r\n\r\nRemember to edit the damage dice according to level.",
@@ -64,6 +75,17 @@
     "macrocodecrit": "<b><font color=\"Teal\">Booming Blade Movement Crit Damage</font></b> => [t: 2d8] <font color=\"Gray\">💥</font> damage!",
     "subcategories": "Wizard,Artificer,Sorcerer,Warlock",
     "spell_levels": "Cantrip"
+  },
+  {
+    "id": 86,
+    "name": "Catapult",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Catapult</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: 3d8] <font color=\"Silver\">🔨</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Wizard,Artificer,Sorcerer",
+    "spell_levels": "1st Level Spell"
   },
   {
     "id": 55,
@@ -192,8 +214,8 @@
     "description": "A spell used with a spell attack action.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Eldritch Blast Damage</font></b> => [t: 1d10 + Charisma] <font color=\"Blue\">✊</font> damage + you can push the creature up to 10 feet away from you.",
-    "macrocodecrit": "<b><font color=\"Teal\">Eldritch Blast Crit Damage</font></b> => [t: 2d10 + Charisma] <font color=\"Blue\">✊</font> damage + you can push the creature up to 10 feet away from you!",
+    "macrocode": "<b><font color=\"Purple\">Eldritch Blast Damage</font></b> => [t: 1d10 + Charisma] <font color=\"Blue\">✊</font> damage + you can push it up to 10 feet away from you.",
+    "macrocodecrit": "<b><font color=\"Teal\">Eldritch Blast Crit Damage</font></b> => [t: 2d10 + Charisma] <font color=\"Blue\">✊</font> damage + you can push it up to 10 feet away from you!",
     "subcategories": "Warlock",
     "spell_levels": "Cantrip"
   },
@@ -214,10 +236,32 @@
     "description": "A spell used with a spell attack action.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Eldritch Blast Damage</font></b> => [t: 1d10] <font color=\"Blue\">✊</font> damage + you can push the creature up to 10 feet away from you.",
-    "macrocodecrit": "<b><font color=\"Teal\">Eldritch Blast Crit Damage</font></b> => [t: 2d10] <font color=\"Blue\">✊</font> damage + you can push the creature up to 10 feet away from you!",
+    "macrocode": "<b><font color=\"Purple\">Eldritch Blast Damage</font></b> => [t: 1d10] <font color=\"Blue\">✊</font> damage + you can push it up to 10 feet away from you.",
+    "macrocodecrit": "<b><font color=\"Teal\">Eldritch Blast Crit Damage</font></b> => [t: 2d10] <font color=\"Blue\">✊</font> damage + you can push it up to 10 feet away from you!",
     "subcategories": "Warlock",
     "spell_levels": "Cantrip"
+  },
+  {
+    "id": 87,
+    "name": "Faerie Fire",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Faerie Fire</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or shed dim light in a 10-foot radius + any attack roll against it has advantage if the attacker can see it + it can't benefit from being invisible.",
+    "macrocodecrit": "",
+    "subcategories": "Artificer,Druid,Bard",
+    "spell_levels": "1st Level Spell"
+  },
+  {
+    "id": 88,
+    "name": "False Life",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">False Life</font></b> => [t: 1d4 + 4] temporary hit points.",
+    "macrocodecrit": "",
+    "subcategories": "Wizard,Artificer,Sorcerer",
+    "spell_levels": "1st Level Spell"
   },
   {
     "id": 57,
@@ -247,7 +291,7 @@
     "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).\r\n\r\nRemember to edit the damage dice according to level.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Frostbite</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: 1d6] <font color=\"Blue\">❄</font> damage + has disadvantage on the next weapon attack roll before the end of their next turn.",
+    "macrocode": "<b><font color=\"Purple\">Frostbite</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: 1d6] <font color=\"Blue\">❄</font> damage + has disadvantage on the next weapon attack roll before the end of its next turn.",
     "macrocodecrit": "",
     "subcategories": "Wizard,Artificer,Sorcerer,Druid,Warlock",
     "spell_levels": "Cantrip"
@@ -797,8 +841,8 @@
     "description": "A spell used with a spell attack action.\r\n\r\nThis spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).\r\n\r\nRemember to edit the damage dice according to level.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Thorn Whip Damage</font></b> => [t: 1d6] <font color=\"Silver\">📍</font> damage (+ if the creature is Large or smaller, you pull the creature up to 10 feet closer to you).",
-    "macrocodecrit": "<b><font color=\"Teal\">Thorn Whip Crit Damage</font></b> => [t: 2d6] <font color=\"Silver\">📍</font> damage (+ if the creature is Large or smaller, you pull the creature up to 10 feet closer to you)!",
+    "macrocode": "<b><font color=\"Purple\">Thorn Whip Damage</font></b> => [t: 1d6] <font color=\"Silver\">📍</font> damage (+ if the target is Large or smaller, you pull it up to 10 feet closer to you).",
+    "macrocodecrit": "<b><font color=\"Teal\">Thorn Whip Crit Damage</font></b> => [t: 2d6] <font color=\"Silver\">📍</font> damage (+ if the target is Large or smaller, you pull it up to 10 feet closer to you)!",
     "subcategories": "Artificer,Druid",
     "spell_levels": "Cantrip"
   },
