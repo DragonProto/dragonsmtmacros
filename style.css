@@ -211,7 +211,7 @@ input:-webkit-autofill:active{
 .macro-item .macro-header {
   margin: 0;
   display: inline-block; /* Only take up as much space as the text */
-  cursor: text;
+  cursor: pointer;
 }
 
 .macro-item .macro-details {
@@ -298,7 +298,7 @@ input:-webkit-autofill:active{
 
 .notification {
   position: fixed;
-  bottom: -50px;
+  bottom: 20px;
   right: 20px;
   background-color: hsl(107, 100%, 27%);
   color: white;
@@ -314,6 +314,32 @@ input:-webkit-autofill:active{
 .notification.show {
   display: block;
   animation: jumpInOut 2s ease-in-out forwards;
+}
+
+.back-to-top {
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button 20px from the bottom */
+  right: 20px; /* Place the button 30px from the right */
+  z-index: 999; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: hsl(0, 0%, 19%);
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 5px; /* Rounded corners */
+  opacity: 0; /* Initial opacity */
+  pointer-events: none; /* Initially non-interactive */
+  transition: opacity 0.2s ease-in-out; /* Add transition for opacity */
+}
+
+.back-to-top.show {
+  opacity: 1; /* Show the button with full opacity */
+  pointer-events: auto; /* Make interactive */
+}
+
+.back-to-top:hover {
+  background-color: hsl(0, 0%, 24%); /* Add a dark-grey background on hover */
 }
 
 @keyframes jumpInOut {
@@ -396,7 +422,7 @@ input[type="color"]:focus,
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #121212; 
+  background: hsl(0, 0%, 7%); 
 }
 
 /* Track dropdown*/
@@ -406,7 +432,7 @@ input[type="color"]:focus,
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: hwb(0 15% 85%); 
+  background: hsl(0, 0%, 15%); 
 }
 
 /* Handle on hover */

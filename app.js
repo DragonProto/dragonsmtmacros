@@ -95,7 +95,7 @@ function renderMacros(macros) {
       // Add click event listener to the entire list item to toggle open/close
       li.addEventListener('click', (e) => {
         // Ensure that clicks on the text elements inside do not toggle the macro-item
-        if (e.target.closest('.macro-header, .macro-details p, .macro-details strong, .macro-code-content, .macro-critical-code-content, .copy-btn')) {
+        if (e.target.closest('.macro-details p, .macro-details strong, .macro-code-content, .macro-critical-code-content, .copy-btn')) {
           return;
         }
 
@@ -123,7 +123,7 @@ function renderMacros(macros) {
       });
 
       // Prevent closing the macro details when clicking on text inside it
-      li.querySelectorAll('.macro-header, .macro-details p, .macro-details strong, .macro-code-content, .macro-critical-code-content, .macro-section2, .macro-section, #description-wrapper')
+      li.querySelectorAll('.macro-details p, .macro-details strong, .macro-code-content, .macro-critical-code-content, .macro-section2, .macro-section, #description-wrapper')
         .forEach(element => {
           element.addEventListener('click', (e) => {
             e.stopPropagation();
@@ -165,6 +165,25 @@ function updateMacros() {
   
   renderMacros(filteredMacros);
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const backToTopButton = document.getElementById('back-to-top');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 400) { // Show the button after scrolling down 300px
+      backToTopButton.classList.add('show');
+    } else {
+      backToTopButton.classList.remove('show');
+    }
+  });
+
+  backToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+});
 
 // Function to show notifications
 function showNotification(message) {
