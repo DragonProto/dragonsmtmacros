@@ -22,6 +22,28 @@
     "spell_levels": "Cantrip"
   },
   {
+    "id": 95,
+    "name": "Animal Friendship",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Animal Friendship</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or be Charmed.",
+    "macrocodecrit": "",
+    "subcategories": "Ranger,Druid,Bard",
+    "spell_levels": "1st Level Spell"
+  },
+  {
+    "id": 97,
+    "name": "Bane",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Bane</font></b> => DC [r: 8 + INPUT + Proficiency] Charisma Save or target subtracts [t: 1d4] from its attack or saving throw.",
+    "macrocodecrit": "",
+    "subcategories": "Cleric,Bard",
+    "spell_levels": "1st Level Spell"
+  },
+  {
     "id": 21,
     "name": "Battleaxe (one-handed)",
     "description": "A strength-based weapon used with an attack action.",
@@ -85,6 +107,17 @@
     "macrocode": "<b><font color=\"Purple\">Catapult</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: 3d8] <font color=\"Silver\">🔨</font> damage.",
     "macrocodecrit": "",
     "subcategories": "Wizard,Artificer,Sorcerer",
+    "spell_levels": "1st Level Spell"
+  },
+  {
+    "id": 98,
+    "name": "Charm Person",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Charm Person</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or be Charmed.",
+    "macrocodecrit": "",
+    "subcategories": "Wizard,Sorcerer,Bard",
     "spell_levels": "1st Level Spell"
   },
   {
@@ -198,6 +231,17 @@
     "spell_levels": null
   },
   {
+    "id": 92,
+    "name": "Disguise Self",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Disguise Self</font></b> => DC [r: 8 + INPUT + Proficiency] Investigation Check or disguise stays active.",
+    "macrocodecrit": "",
+    "subcategories": "Wizard,Artificer,Sorcerer,Bard",
+    "spell_levels": "1st Level Spell"
+  },
+  {
     "id": 71,
     "name": "Eldritch Blast",
     "description": "A spell used with a spell attack action.",
@@ -308,6 +352,17 @@
     "spell_levels": null
   },
   {
+    "id": 89,
+    "name": "Grease",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Grease</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or fall Prone.",
+    "macrocodecrit": "",
+    "subcategories": "Wizard,Artificer,Sorcerer",
+    "spell_levels": "1st Level Spell"
+  },
+  {
     "id": 25,
     "name": "Greataxe",
     "description": "A strength-based weapon used with an attack action.",
@@ -412,7 +467,7 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Hold Person</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or become Paralyzed.",
+    "macrocode": "<b><font color=\"Purple\">Hold Person</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or be Paralyzed.",
     "macrocodecrit": "",
     "subcategories": "Wizard,Cleric,Sorcerer,Druid,Bard,Warlock",
     "spell_levels": "2nd Level Spell"
@@ -572,6 +627,17 @@
     "spell_levels": "Cantrip"
   },
   {
+    "id": 91,
+    "name": "Minor Illusion",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Minor Illusion</font></b> => DC [r: 8 + INPUT + Proficiency] Investigation Check or illusion stays active.",
+    "macrocodecrit": "",
+    "subcategories": "Wizard,Sorcerer,Bard,Warlock",
+    "spell_levels": "Cantrip"
+  },
+  {
     "id": 32,
     "name": "Morningstar",
     "description": "A strength-based weapon used with an attack action.",
@@ -704,6 +770,17 @@
     "spell_levels": "Cantrip"
   },
   {
+    "id": 90,
+    "name": "Sanctuary",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Sanctuary</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or you must choose new target. ",
+    "macrocodecrit": "",
+    "subcategories": "Cleric,Artificer",
+    "spell_levels": "1st Level Spell"
+  },
+  {
     "id": 37,
     "name": "Scimitar (dexterity)",
     "description": "A dexterity-based weapon used with an attack action.\r\n\r\nRemove Dexterity damage if used in off-hand.",
@@ -803,6 +880,28 @@
     "spell_levels": null
   },
   {
+    "id": 96,
+    "name": "Snare",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Snare</font></b> => DC [r: 8 + INPUT + Proficiency] Investigation Check or trap stays hidden.",
+    "macrocodecrit": "",
+    "subcategories": "Wizard,Artificer,Ranger,Druid",
+    "spell_levels": "1st Level Spell"
+  },
+  {
+    "id": 93,
+    "name": "Snare (triggered)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Snare</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or fall Prone, and immediately after get Restrained.",
+    "macrocodecrit": "",
+    "subcategories": "Wizard,Artificer,Ranger,Druid",
+    "spell_levels": "1st Level Spell"
+  },
+  {
     "id": 14,
     "name": "Spear (one-handed)",
     "description": "A strength-based weapon used with an attack action.",
@@ -834,6 +933,17 @@
     "macrocodecrit": "",
     "subcategories": "Wizard,Artificer,Sorcerer,Warlock",
     "spell_levels": "Cantrip"
+  },
+  {
+    "id": 94,
+    "name": "Tasha's Caustic Brew",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Tasha's Caustic Brew</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: 2d4] <font color=\"Green\">🔥</font> damage at the start of each of its turns.",
+    "macrocodecrit": "",
+    "subcategories": "Wizard,Artificer,Sorcerer",
+    "spell_levels": "1st Level Spell"
   },
   {
     "id": 81,
