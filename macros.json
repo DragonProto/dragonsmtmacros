@@ -77,6 +77,28 @@
     "spell_levels": "1st Level Spell"
   },
   {
+    "id": 179,
+    "name": "Ashardalon's Stride",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Ashardalon's Stride</font></b> => [t: 1d6] <font color=\"Orange\">🔥</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Thunderous Smite Extra Crit Damage</font></b> => [t: 4d6] <font color=\"Gray\">💥</font> damage (+ if the target is a creature => DC [r: 8 + Charisma + Proficiency] Strength Save or be pushed 10 feet away from you and knocked Prone!",
+    "subcategories": "Wizard,Artificer,Sorcerer,Ranger",
+    "spell_levels": "3rd Level Spell"
+  },
+  {
+    "id": 178,
+    "name": "Aura of Vitality",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Aura of Vitality</font></b> => [t: 2d6] <font color=\"Red\">➕</font> healing.",
+    "macrocodecrit": "",
+    "subcategories": "Cleric,Paladin,Druid",
+    "spell_levels": "3rd Level Spell"
+  },
+  {
     "id": 97,
     "name": "Bane",
     "description": "Replace INPUT with spellcasting ability.",
@@ -110,6 +132,39 @@
     "spell_levels": null
   },
   {
+    "id": 182,
+    "name": "Bestow Curse (cursed damage)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Bestow Curse Extra Damage</font></b> => [t: 1d8] <font color=\"Purple\">💀</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Bestow Curse Extra Crit Damage</font></b> => [t: 2d8] <font color=\"Purple\">💀</font> damage!",
+    "subcategories": "Wizard,Cleric,Bard",
+    "spell_levels": "3rd Level Spell"
+  },
+  {
+    "id": 181,
+    "name": "Bestow Curse (cursed save)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Bestow Curse</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or lose your action.",
+    "macrocodecrit": "",
+    "subcategories": "Wizard,Cleric,Bard",
+    "spell_levels": "3rd Level Spell"
+  },
+  {
+    "id": 180,
+    "name": "Bestow Curse (initial)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Bestow Curse</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or become Cursed.",
+    "macrocodecrit": "",
+    "subcategories": "Wizard,Cleric,Bard",
+    "spell_levels": "3rd Level Spell"
+  },
+  {
     "id": 110,
     "name": "Bless",
     "description": "",
@@ -119,6 +174,17 @@
     "macrocodecrit": "",
     "subcategories": "Cleric,Paladin",
     "spell_levels": "1st Level Spell"
+  },
+  {
+    "id": 183,
+    "name": "Blinding Smite",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Blinding Smite Extra Damage</font></b> => [t: 3d8] <font color=\"Orange\">☀</font> damage + DC [r: 8 + Charisma + Proficiency] Constitution Save or become Blinded.",
+    "macrocodecrit": "<b><font color=\"Teal\">Blinding Smite Extra Crit Damage</font></b> => [t: 6d8] <font color=\"Orange\">☀</font> damage + DC [r: 8 + Charisma + Proficiency] Constitution Save or become Blinded!",
+    "subcategories": "Paladin",
+    "spell_levels": "3rd Level Spell"
   },
   {
     "id": 150,
@@ -429,6 +495,17 @@
     "spell_levels": "2nd Level Spell"
   },
   {
+    "id": 175,
+    "name": "Disguise Self",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Disguise Self</font></b> => DC [r: 8 + INPUT + Proficiency] Investigation Save or disguise stays active.",
+    "macrocodecrit": "",
+    "subcategories": "Wizard,Artificer,Sorcerer,Bard",
+    "spell_levels": "1st Level Spell"
+  },
+  {
     "id": 101,
     "name": "Dissonant Whispers",
     "description": "",
@@ -665,7 +742,7 @@
     "description": "",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Frost Fingers</font></b> =>DC [r: 8 + Intelligence + Proficiency] Constitution Save or take => [t: Frost = 2d8] ([t: floor(Frost/2)]) <font color=\"Blue\">❄</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Frost Fingers</font></b> => DC [r: 8 + Intelligence + Proficiency] Constitution Save or take => [t: Frost = 2d8] ([t: floor(Frost/2)]) <font color=\"Blue\">❄</font> damage.",
     "macrocodecrit": "",
     "subcategories": "Wizard",
     "spell_levels": "1st Level Spell"
@@ -1111,6 +1188,17 @@
     "spell_levels": "Cantrip"
   },
   {
+    "id": 174,
+    "name": "Minor Illusion",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Minor Illusion</font></b> => DC [r: 8 + INPUT + Proficiency] Investigation Save or illusion stays active.",
+    "macrocodecrit": "",
+    "subcategories": "Wizard,Sorcerer,Bard,Warlock",
+    "spell_levels": "Cantrip"
+  },
+  {
     "id": 155,
     "name": "Mirror Image",
     "description": "",
@@ -1149,7 +1237,7 @@
     "description": "",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Pass Without Trace</font></b> =>DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Moon = 2d10] ([t: floor(Moon/2)]) <font color=\"Orange\">☀</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Pass Without Trace</font></b> => +10 to Stealth checks.",
     "macrocodecrit": "",
     "subcategories": "Ranger,Druid",
     "spell_levels": "2nd Level Spell"
@@ -1474,6 +1562,17 @@
     "spell_levels": null
   },
   {
+    "id": 176,
+    "name": "Silent Image",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Silent Image</font></b> => DC [r: 8 + INPUT + Proficiency] Investigation Save or image stays active.",
+    "macrocodecrit": "",
+    "subcategories": "Wizard,Sorcerer,Bard",
+    "spell_levels": "1st Level Spell"
+  },
+  {
     "id": 107,
     "name": "Sleep",
     "description": "",
@@ -1494,6 +1593,17 @@
     "macrocodecrit": "<b><font color=\"Teal\">Sling Crit Damage</font></b> => [t: 2d4 + Dexterity] <font color=\"Silver\">🔨</font> damage!",
     "subcategories": "Simple Ranged Weapons",
     "spell_levels": null
+  },
+  {
+    "id": 177,
+    "name": "Snare (check)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Snare</font></b> => DC [r: 8 + INPUT + Proficiency] Investigation Save or trap stays hidden.",
+    "macrocodecrit": "",
+    "subcategories": "Wizard,Artificer,Ranger,Druid",
+    "spell_levels": "1st Level Spell"
   },
   {
     "id": 93,
