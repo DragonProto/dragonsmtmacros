@@ -66,6 +66,17 @@
     "spell_levels": "1st Level Spell"
   },
   {
+    "id": 233,
+    "name": "Antagonize",
+    "description": "Replace INPUT with spellcasting ability.\r\n\r\nWhen you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d4 for each slot level above 3rd.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Antagonize</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or take => [t: Antagonize = 4d4] ([t: floor(Antagonize/2)]) <font color=\"Purple\">👁</font> damage + fall under the effect of the spell.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Sorcerer,Warlock,Wizard",
+    "spell_levels": "3rd Level Spell"
+  },
+  {
     "id": 133,
     "name": "Armor of Agathys",
     "description": "When you cast this spell using a spell slot of 2nd level or higher, both the temporary hit points and the cold damage increase by 5 for each slot.",
@@ -143,6 +154,17 @@
     "spell_levels": null
   },
   {
+    "id": 180,
+    "name": "Bestow Curse (cast)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Bestow Curse</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or become Cursed.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Cleric,Wizard",
+    "spell_levels": "3rd Level Spell"
+  },
+  {
     "id": 182,
     "name": "Bestow Curse (cursed damage)",
     "description": "",
@@ -160,17 +182,6 @@
     "category": "Spellcasting Classes",
     "subcategory": "",
     "macrocode": "<b><font color=\"Purple\">Bestow Curse</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or it wastes its action that turn doing nothing.",
-    "macrocodecrit": "",
-    "subcategories": "Bard,Cleric,Wizard",
-    "spell_levels": "3rd Level Spell"
-  },
-  {
-    "id": 180,
-    "name": "Bestow Curse (initial)",
-    "description": "Replace INPUT with spellcasting ability.",
-    "category": "Spellcasting Classes",
-    "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Bestow Curse</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or become Cursed.",
     "macrocodecrit": "",
     "subcategories": "Bard,Cleric,Wizard",
     "spell_levels": "3rd Level Spell"
@@ -265,7 +276,7 @@
   },
   {
     "id": 200,
-    "name": "Call Lightning (default)",
+    "name": "Call Lightning (cast)",
     "description": "",
     "category": "Spellcasting Classes",
     "subcategory": "",
@@ -680,6 +691,28 @@
     "macrocodecrit": "<b><font color=\"Teal\">Eldritch Blast Crit Damage</font></b> => [t: 2d10] <font color=\"Blue\">✊</font> damage + push the creature up to 10 feet away from you in a straight line!",
     "subcategories": "Warlock",
     "spell_levels": "Cantrip"
+  },
+  {
+    "id": 237,
+    "name": "Elemental Bane (attacked)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Elemental Bane Extra Damage</font></b> => [t: 2d6] damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Elemental Bane Extra Crit Damage</font></b> => [t: 4d6] damage!",
+    "subcategories": "Artificer,Druid,Warlock,Wizard",
+    "spell_levels": "4th Level Spell"
+  },
+  {
+    "id": 236,
+    "name": "Elemental Bane (cast)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Elemental Bane</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or be affected by the spell for its duration.",
+    "macrocodecrit": "",
+    "subcategories": "Artificer,Druid,Warlock,Wizard",
+    "spell_levels": "4th Level Spell"
   },
   {
     "id": 204,
@@ -1497,7 +1530,7 @@
   },
   {
     "id": 188,
-    "name": "Maximillian's Earthen Grasp (initial)",
+    "name": "Maximillian's Earthen Grasp (cast)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
@@ -1530,7 +1563,7 @@
   },
   {
     "id": 198,
-    "name": "Melf's Acid Arrow (initial)",
+    "name": "Melf's Acid Arrow (cast)",
     "description": "A spell used with a spell attack action.",
     "category": "Spellcasting Classes",
     "subcategory": "",
@@ -1617,6 +1650,17 @@
     "spell_levels": "2nd Level Spell"
   },
   {
+    "id": 238,
+    "name": "Mordenkainen's Faithful Hound",
+    "description": "A spell used with a spell attack action.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Mordenkainen's Faithful Hound Damage</font></b> => [t: 4d8] <font color=\"Silver\">📍</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Mordenkainen's Faithful Hound Crit Damage</font></b> => [t: 8d8] <font color=\"Silver\">📍</font> damage!",
+    "subcategories": "Artificer,Wizard",
+    "spell_levels": "4th Level Spell"
+  },
+  {
     "id": 32,
     "name": "Morningstar",
     "description": "A strength-based weapon used with an attack action.",
@@ -1637,6 +1681,17 @@
     "macrocodecrit": "",
     "subcategories": "Bard,Cleric",
     "spell_levels": "3rd Level Spell"
+  },
+  {
+    "id": 239,
+    "name": "Otiluke's Resilient Sphere",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Otiluke's Resilient Sphere</font></b> => DC [r: 8 + Intelligence + Proficiency] Dexterity Save or the creature is enclosed for the duration.",
+    "macrocodecrit": "",
+    "subcategories": "Artificer,Wizard",
+    "spell_levels": "4th Level Spell"
   },
   {
     "id": 170,
@@ -2123,6 +2178,28 @@
     "spell_levels": "2nd Level Spell"
   },
   {
+    "id": 234,
+    "name": "Spirit Guardians",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Spirit Guardians</font></b> => DC [r: 8 + Wisdom + Proficiency] Wisdom Save or take => [t: Spirit = 3d8] ([t: floor(Spirit/2)]) damage.",
+    "macrocodecrit": "",
+    "subcategories": "Cleric",
+    "spell_levels": "3rd Level Spell"
+  },
+  {
+    "id": 228,
+    "name": "Spirit Shroud",
+    "description": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for every two slot levels above 3rd.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Spirit Shroud Extra Damage</font></b> => [t: 1d8] damage + fall under the effect of the spell.",
+    "macrocodecrit": "<b><font color=\"Teal\">Spirit Shroud Extra Crit Damage</font></b> => [t: 2d8] damage + fall under the effect of the spell!",
+    "subcategories": "Cleric,Paladin,Warlock,Wizard",
+    "spell_levels": "3rd Level Spell"
+  },
+  {
     "id": 162,
     "name": "Spiritual Weapon",
     "description": "A spell used with a spell attack action.",
@@ -2143,6 +2220,17 @@
     "macrocodecrit": "",
     "subcategories": "Bard,Sorcerer,Warlock,Wizard",
     "spell_levels": "2nd Level Spell"
+  },
+  {
+    "id": 229,
+    "name": "Stinking Cloud",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Stinking Cloud</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or the creature spends its action that turn retching and reeling.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Sorcerer,Wizard",
+    "spell_levels": "3rd Level Spell"
   },
   {
     "id": 159,
@@ -2211,6 +2299,17 @@
     "spell_levels": "Cantrip"
   },
   {
+    "id": 230,
+    "name": "Thunder Step",
+    "description": "Replace INPUT with spellcasting ability.\r\n\r\nWhen you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d10 for each slot level above 3rd.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Thunder Step</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Thunder = 3d10] ([t: floor(Thunder/2)]) <font color=\"Gray\">💥</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Sorcerer,Warlock,Wizard",
+    "spell_levels": "3rd Level Spell"
+  },
+  {
     "id": 69,
     "name": "Thunderclap",
     "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).\r\n\r\nRemember to edit the damage dice according to level.",
@@ -2242,6 +2341,17 @@
     "macrocodecrit": "",
     "subcategories": "Bard,Druid,Sorcerer,Wizard",
     "spell_levels": "1st Level Spell"
+  },
+  {
+    "id": 231,
+    "name": "Tidal Wave",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Tidal Wave</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Tidal = 4d8] ([t: floor(Tidal/2)]) <font color=\"Silver\">🔨</font> damage + on fail, fall Prone.",
+    "macrocodecrit": "",
+    "subcategories": "Druid,Sorcerer,Wizard",
+    "spell_levels": "3rd Level Spell"
   },
   {
     "id": 70,
@@ -2286,6 +2396,17 @@
     "macrocodecrit": "<b><font color=\"Teal\">Unarmed Strike Crit Damage</font></b> => [t: 1 + Strength] damage!",
     "subcategories": "Special",
     "spell_levels": null
+  },
+  {
+    "id": 232,
+    "name": "Vampiric Touch",
+    "description": "A spell used with a spell attack action.\r\n\r\nWhen you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Vampiric Touch Damage</font></b> => [t: Vampiric = 3d6] <font color=\"Purple\">💀</font> damage + you regain [t: floor(Vampiric/2)] hit points.",
+    "macrocodecrit": "<b><font color=\"Teal\">Vampiric Touch Crit Damage</font></b> => [t: Vampiric = 6d6] <font color=\"Purple\">💀</font> damage + you regain [t: floor(Vampiric/2)] hit points!",
+    "subcategories": "Sorcerer,Warlock,Wizard",
+    "spell_levels": "3rd Level Spell"
   },
   {
     "id": 84,
@@ -2374,6 +2495,17 @@
     "macrocodecrit": "<b><font color=\"Teal\">Whip Crit Damage</font></b> => [t: 2d4 + Strength] <font color=\"Silver\">🔪</font> damage!",
     "subcategories": "Martial Melee Weapons",
     "spell_levels": null
+  },
+  {
+    "id": 235,
+    "name": "Wind Wall",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Wind Wall</font></b> => DC [r: 8 + Wisdom + Proficiency] Strength Save or take => [t: Wind = 3d8] ([t: floor(Wind/2)]) <font color=\"Silver\">🔨</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Druid,Ranger",
+    "spell_levels": "3rd Level Spell"
   },
   {
     "id": 132,
