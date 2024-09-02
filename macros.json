@@ -66,6 +66,61 @@
     "spell_levels": "1st Level Spell"
   },
   {
+    "id": 272,
+    "name": "Animate Objects (huge)",
+    "description": "A spell used with a strength attack action.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Animate Object Damage</font></b> => [t: 2d12 + Strength] damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Animate Object Crit Damage</font></b> => [t: 4d12 + Strength] damage!",
+    "subcategories": "Artificer,Bard,Sorcerer,Wizard",
+    "spell_levels": "5th Level Spell"
+  },
+  {
+    "id": 271,
+    "name": "Animate Objects (large)",
+    "description": "A spell used with a strength attack action.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Animate Object Damage</font></b> => [t: 2d10 + Strength] damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Animate Object Crit Damage</font></b> => [t: 4d10 + Strength] damage!",
+    "subcategories": "Artificer,Bard,Sorcerer,Wizard",
+    "spell_levels": "5th Level Spell"
+  },
+  {
+    "id": 270,
+    "name": "Animate Objects (medium)",
+    "description": "A spell used with a dexterity attack action.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Animate Object Damage</font></b> => [t: 2d6 + Dexterity] damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Animate Object Crit Damage</font></b> => [t: 4d6 + Dexterity] damage!",
+    "subcategories": "Artificer,Bard,Sorcerer,Wizard",
+    "spell_levels": "5th Level Spell"
+  },
+  {
+    "id": 269,
+    "name": "Animate Objects (small)",
+    "description": "A spell used with a dexterity attack action.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Animate Object Damage</font></b> => [t: 1d8 + Dexterity] damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Animate Object Crit Damage</font></b> => [t: 2d8 + Dexterity] damage!",
+    "subcategories": "Artificer,Bard,Sorcerer,Wizard",
+    "spell_levels": "5th Level Spell"
+  },
+  {
+    "id": 268,
+    "name": "Animate Objects (tiny)",
+    "description": "A spell used with a dexterity attack action.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Animate Object Damage</font></b> => [t: 1d4 + Dexterity] damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Animate Object Crit Damage</font></b> => [t: 2d4 + Dexterity] damage!",
+    "subcategories": "Artificer,Bard,Sorcerer,Wizard",
+    "spell_levels": "5th Level Spell"
+  },
+  {
     "id": 233,
     "name": "Antagonize",
     "description": "Replace INPUT with spellcasting ability.\r\n\r\nWhen you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d4 for each slot level above 3rd.",
@@ -132,6 +187,28 @@
     "spell_levels": "1st Level Spell"
   },
   {
+    "id": 267,
+    "name": "Banishing Smite",
+    "description": "A spell used with an attack action.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Banishing Smite Extra Damage</font></b> => [t: 5d10] <font color=\"Blue\">✊</font> damage. If this attack reduces the target to 50 hit points of fewer, you banish it.",
+    "macrocodecrit": "<b><font color=\"Teal\">Banishing Smite Extra Crit Damage</font></b> => [t: 10d10] <font color=\"Blue\">✊</font> damage. If this attack reduces the target to 50 hit points of fewer, you banish it!",
+    "subcategories": "Paladin",
+    "spell_levels": "5th Level Spell"
+  },
+  {
+    "id": 240,
+    "name": "Banishment",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Banishment</font></b> => DC [r: 8 + INPUT + Proficiency] Charisma Save or be banished.",
+    "macrocodecrit": "",
+    "subcategories": "Cleric,Paladin,Sorcerer,Warlock,Wizard",
+    "spell_levels": "4th Level Spell"
+  },
+  {
     "id": 21,
     "name": "Battleaxe (one-handed)",
     "description": "A strength-based weapon used with an attack action.",
@@ -167,7 +244,7 @@
   {
     "id": 182,
     "name": "Bestow Curse (cursed damage)",
-    "description": "",
+    "description": "A spell used with an attack action.",
     "category": "Spellcasting Classes",
     "subcategory": "",
     "macrocode": "<b><font color=\"Purple\">Bestow Curse Extra Damage</font></b> => [t: 1d8] <font color=\"Purple\">💀</font> damage.",
@@ -187,6 +264,50 @@
     "spell_levels": "3rd Level Spell"
   },
   {
+    "id": 273,
+    "name": "Bigby's Hand (clenched fist)",
+    "description": "A spell used with a spell attack action.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Bigby's Hand Damage</font></b> => [t: 4d8] <font color=\"Blue\">✊</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Bigby's Hand CritDamage</font></b> => [t: 8d8] <font color=\"Blue\">✊</font> damage!",
+    "subcategories": "Artificer,Sorcerer,Wizard",
+    "spell_levels": "5th Level Spell"
+  },
+  {
+    "id": 274,
+    "name": "Bigby's Hand (forceful hand)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Bigby's Hand</font></b> => DC [r: 1d20 + Strength] Athletics Save or the hand pushes the target up to [t: 5 + (5 * INPUT)] feet.",
+    "macrocodecrit": "",
+    "subcategories": "Artificer,Sorcerer,Wizard",
+    "spell_levels": "5th Level Spell"
+  },
+  {
+    "id": 275,
+    "name": "Bigby's Hand (grasping hand damage)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Bigby's Hand Damage</font></b> => [t: 2d6 + INPUT] <font color=\"Silver\">🔨</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Artificer,Sorcerer,Wizard",
+    "spell_levels": "5th Level Spell"
+  },
+  {
+    "id": 276,
+    "name": "Bigby's Hand (grasping hand grapple)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Bigby's Hand</font></b> => DC [r: 1d20 + Strength] Acrobatics/Athletics Save or become Grappled.",
+    "macrocodecrit": "",
+    "subcategories": "Artificer,Sorcerer,Wizard",
+    "spell_levels": "5th Level Spell"
+  },
+  {
     "id": 110,
     "name": "Bless",
     "description": "",
@@ -198,9 +319,20 @@
     "spell_levels": "1st Level Spell"
   },
   {
+    "id": 241,
+    "name": "Blight",
+    "description": "Replace INPUT with spellcasting ability.\r\n\r\nWhen you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Blight</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Blight = 8d8] ([t: floor(Blight/2)]) <font color=\"Purple\">💀</font> damage. ",
+    "macrocodecrit": "",
+    "subcategories": "Druid,Sorcerer,Warlock,Wizard",
+    "spell_levels": "4th Level Spell"
+  },
+  {
     "id": 183,
     "name": "Blinding Smite",
-    "description": "",
+    "description": "A spell used with an attack action.",
     "category": "Spellcasting Classes",
     "subcategory": "",
     "macrocode": "<b><font color=\"Purple\">Blinding Smite Extra Damage</font></b> => [t: 3d8] <font color=\"Orange\">☀</font> damage + DC [r: 8 + Charisma + Proficiency] Constitution Save or become Blinded.",
@@ -255,7 +387,7 @@
   {
     "id": 173,
     "name": "Branding Smite",
-    "description": "",
+    "description": "A spell used with an attack action.",
     "category": "Spellcasting Classes",
     "subcategory": "",
     "macrocode": "<b><font color=\"Purple\">Branding Smite Extra Damage</font></b> => [t: 2d6] <font color=\"Orange\">☀</font> damage + becomes visible if it is invisible, and the target sheds dim light in a 5-foot radius and can’t become invisible until the spell ends.",
@@ -341,6 +473,17 @@
     "spell_levels": "1st Level Spell"
   },
   {
+    "id": 242,
+    "name": "Charm Monster",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Charm Monster</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or become Charmed. The Charmed creature is friendly to you. When the spell ends, the creature knows it was charmed by you.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Druid,Sorcerer,Warlock,Wizard",
+    "spell_levels": "4th Level Spell"
+  },
+  {
     "id": 98,
     "name": "Charm Person",
     "description": "Replace INPUT with spellcasting ability.",
@@ -383,6 +526,17 @@
     "macrocodecrit": "",
     "subcategories": "Bard,Sorcerer,Warlock,Wizard",
     "spell_levels": "2nd Level Spell"
+  },
+  {
+    "id": 277,
+    "name": "Cloudkill",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Cloudkill</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Cloud = 5d8] ([t: floor(Cloud/2)]) <font color=\"Green\">☠</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Sorcerer,Wizard",
+    "spell_levels": "5th Level Spell"
   },
   {
     "id": 1,
@@ -429,6 +583,39 @@
     "spell_levels": "1st Level Spell"
   },
   {
+    "id": 243,
+    "name": "Compulsion",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Compulsion</font></b> => DC [r: 8 + Charisma + Proficiency] Wisdom Save or become Charmed + fall under the effect of the spell.",
+    "macrocodecrit": "",
+    "subcategories": "Bard",
+    "spell_levels": "4th Level Spell"
+  },
+  {
+    "id": 278,
+    "name": "Cone of Cold",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Cone of Cold</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Cold = 8d8] ([t: floor(Cold/2)]) <font color=\"Blue\">❄</font> damage. A creature killed by this spell becomes a frozen statue until it thaws.",
+    "macrocodecrit": "",
+    "subcategories": "Druid,Sorcerer,Wizard",
+    "spell_levels": "5th Level Spell"
+  },
+  {
+    "id": 244,
+    "name": "Confusion",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Confusion</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or be affected by it. An affected target can’t take reactions and must roll a d10 at the start of each of its turns to determine its behavior for that turn.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Druid,Sorcerer,Wizard",
+    "spell_levels": "4th Level Spell"
+  },
+  {
     "id": 202,
     "name": "Conjure Barrage",
     "description": "",
@@ -438,6 +625,61 @@
     "macrocodecrit": "",
     "subcategories": "Ranger",
     "spell_levels": "3rd Level Spell"
+  },
+  {
+    "id": 279,
+    "name": "Conjure Volley",
+    "description": "A spell used with a strength/dexterity attack action.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Conjure Volley Damage</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Volley = 8d8] ([t: floor(Volley/2)]) damage.",
+    "macrocodecrit": "",
+    "subcategories": "Ranger",
+    "spell_levels": "5th Level Spell"
+  },
+  {
+    "id": 280,
+    "name": "Contact Other Plane",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Contact Other Plane</font></b> => DC [r: 8 + INPUT + Proficiency] Intelligence Save or take => [t: 6d6] <font color=\"Purple\">👁</font> damage + are insane until you finish a long rest.",
+    "macrocodecrit": "",
+    "subcategories": "Warlock,Wizard",
+    "spell_levels": "5th Level Spell"
+  },
+  {
+    "id": 282,
+    "name": "Contagion (active)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Contagion</font></b> => DC [r: 8 + Wisdom + Proficiency] Constitution Save. If the target succeeds on three of these saves, it is no longer poisoned. If the target fails three of these saves, the target is no longer poisoned, but choose one of the spell's diseases.",
+    "macrocodecrit": "",
+    "subcategories": "Cleric,Druid",
+    "spell_levels": "5th Level Spell"
+  },
+  {
+    "id": 281,
+    "name": "Contagion (cast)",
+    "description": "A spell used with a spell attack action.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Contagion</font></b> => The target is Poisoned.",
+    "macrocodecrit": "",
+    "subcategories": "Cleric,Druid",
+    "spell_levels": "5th Level Spell"
+  },
+  {
+    "id": 283,
+    "name": "Control Winds",
+    "description": "A spell used with a spell attack action.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Control Winds</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or the creature is knocked Prone.",
+    "macrocodecrit": "",
+    "subcategories": "Druid,Sorcerer,Wizard",
+    "spell_levels": "5th Level Spell"
   },
   {
     "id": 184,
@@ -497,7 +739,7 @@
   {
     "id": 203,
     "name": "Crusader's Mantle",
-    "description": "",
+    "description": "A spell used with an attack action.",
     "category": "Spellcasting Classes",
     "subcategory": "",
     "macrocode": "<b><font color=\"Purple\">Crusader's Mantle Extra Damage</font></b> => [t: 1d4] <font color=\"Orange\">☀</font> damage.",
@@ -596,13 +838,24 @@
   {
     "id": 117,
     "name": "Divine Favor",
-    "description": "",
+    "description": "A spell used with an attack action.",
     "category": "Spellcasting Classes",
     "subcategory": "",
     "macrocode": "<b><font color=\"Purple\">Divine Favor Extra Damage</font></b> => [t: 1d4] <font color=\"Orange\">☀</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Divine Favor Extra Crit Damage</font></b> => [t: 2d4] <font color=\"Orange\">☀</font> damage!",
     "subcategories": "Paladin",
     "spell_levels": "1st Level Spell"
+  },
+  {
+    "id": 245,
+    "name": "Dominate Beast",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Dominate Beast</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or become Charmed + fall under the effect of the spell.",
+    "macrocodecrit": "",
+    "subcategories": "Druid,Ranger,Sorcerer",
+    "spell_levels": "4th Level Spell"
   },
   {
     "id": 186,
@@ -695,7 +948,7 @@
   {
     "id": 237,
     "name": "Elemental Bane (attacked)",
-    "description": "",
+    "description": "A spell used with an attack action.",
     "category": "Spellcasting Classes",
     "subcategory": "",
     "macrocode": "<b><font color=\"Purple\">Elemental Bane Extra Damage</font></b> => [t: 2d6] damage.",
@@ -717,7 +970,7 @@
   {
     "id": 204,
     "name": "Elemental Weapon",
-    "description": "",
+    "description": "A spell used with an attack action.",
     "category": "Spellcasting Classes",
     "subcategory": "",
     "macrocode": "<b><font color=\"Purple\">Elemental Weapon Extra Damage</font></b> => [t: 1d4] damage.",
@@ -750,7 +1003,7 @@
   {
     "id": 146,
     "name": "Enlarge/Reduce",
-    "description": "",
+    "description": "A spell used with an attack action.",
     "category": "Spellcasting Classes",
     "subcategory": "",
     "macrocode": "<b><font color=\"Purple\">Enlarge/Reduce Damage</font></b> => [t: 1d4] extra/less damage.",
@@ -772,7 +1025,7 @@
   {
     "id": 123,
     "name": "Ensnaring Strike (restrained)",
-    "description": "",
+    "description": "A spell used with an attack action.",
     "category": "Spellcasting Classes",
     "subcategory": "",
     "macrocode": "<b><font color=\"Purple\">Ensnaring Strike Extra Damage</font></b> => [t: 1d6] <font color=\"Silver\">📍</font> damage.",
@@ -812,6 +1065,17 @@
     "macrocodecrit": "",
     "subcategories": "Druid,Sorcerer,Wizard",
     "spell_levels": "3rd Level Spell"
+  },
+  {
+    "id": 246,
+    "name": "Evard's Black Tentacles",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Evard's Black Tentacles</font></b> => DC [r: 8 + Intelligence + Proficiency] Dexterity Save or take => [t: 3d6] <font color=\"Silver\">🔨</font> damage + be Restrained by the tentacles until the spell ends.",
+    "macrocodecrit": "",
+    "subcategories": "Wizard",
+    "spell_levels": "4th Level Spell"
   },
   {
     "id": 87,
@@ -869,6 +1133,17 @@
     "spell_levels": "Cantrip"
   },
   {
+    "id": 247,
+    "name": "Fire Shield",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Fire Shield</font></b> => [t: 2d8] damage.",
+    "macrocodecrit": "",
+    "subcategories": "Druid,Sorcerer,Wizard",
+    "spell_levels": "4th Level Spell"
+  },
+  {
     "id": 209,
     "name": "Fireball",
     "description": "Replace INPUT with spellcasting ability.",
@@ -893,7 +1168,7 @@
   {
     "id": 210,
     "name": "Flame Arrows",
-    "description": "",
+    "description": "A spell used with an attack action.",
     "category": "Spellcasting Classes",
     "subcategory": "",
     "macrocode": "<b><font color=\"Purple\">Flame Arrows Extra Damage</font></b> => [t: 1d6] <font color=\"Orange\">🔥</font> damage.",
@@ -979,6 +1254,17 @@
     "spell_levels": "3rd Level Spell"
   },
   {
+    "id": 248,
+    "name": "Grasping Vine",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Grasping Vine</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or be pulled 20 feet directly toward the vine.",
+    "macrocodecrit": "",
+    "subcategories": "Druid,Ranger",
+    "spell_levels": "4th Level Spell"
+  },
+  {
     "id": 89,
     "name": "Grease",
     "description": "Replace INPUT with spellcasting ability.",
@@ -1045,6 +1331,28 @@
     "spell_levels": "Cantrip"
   },
   {
+    "id": 249,
+    "name": "Guardian of Faith",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Guardian of Faith</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Faith = 20] ([t: floor(Faith/2)]) <font color=\"Orange\">☀</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Cleric",
+    "spell_levels": "4th Level Spell"
+  },
+  {
+    "id": 250,
+    "name": "Guardian of Nature",
+    "description": "A spell used with an attack action.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Guardian of Nature Extra Damage</font></b> => [t: 1d6] <font color=\"Blue\">✊</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Guardian of Nature Extra Crit Damage</font></b> => [t: 2d6] <font color=\"Blue\">✊</font> damage!",
+    "subcategories": "Druid,Ranger",
+    "spell_levels": "4th Level Spell"
+  },
+  {
     "id": 76,
     "name": "Guidance",
     "description": "",
@@ -1091,7 +1399,7 @@
   {
     "id": 124,
     "name": "Hail of Thorns",
-    "description": "",
+    "description": "A spell used with an attack action.",
     "category": "Spellcasting Classes",
     "subcategory": "",
     "macrocode": "<b><font color=\"Purple\">Hail of Thorns Extra Damage</font></b> =>DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Hail = 1d10] ([t: floor(Hail/2)]) <font color=\"Silver\">📍</font> damage.",
@@ -1109,6 +1417,17 @@
     "macrocodecrit": "<b><font color=\"Teal\">Halberd Crit Damage</font></b> => [t: 2d10 + Strength] <font color=\"Silver\">🔪</font> damage!",
     "subcategories": "Martial Melee Weapons",
     "spell_levels": null
+  },
+  {
+    "id": 251,
+    "name": "Hallucinatory Terrain",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Hallucinatory Terrain</font></b> => DC [r: 8 + INPUT + Proficiency] Investigation Save or illusion stays active.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Druid,Warlock,Wizard",
+    "spell_levels": "4th Level Spell"
   },
   {
     "id": 6,
@@ -1179,7 +1498,7 @@
   {
     "id": 138,
     "name": "Hex",
-    "description": "",
+    "description": "A spell used with an attack action.",
     "category": "Spellcasting Classes",
     "subcategory": "",
     "macrocode": "<b><font color=\"Purple\">Hex Extra Damage</font></b> => [t: 1d6] <font color=\"Purple\">💀</font> damage + the target has disadvantage on ability checks made with a chosen ability.",
@@ -1223,7 +1542,7 @@
   {
     "id": 125,
     "name": "Hunter's Mark",
-    "description": "",
+    "description": "A spell used with an attack action.",
     "category": "Spellcasting Classes",
     "subcategory": "",
     "macrocode": "<b><font color=\"Purple\">Hunter's Mark Extra Damage</font></b> => [t: 1d6] damage.",
@@ -1252,6 +1571,17 @@
     "macrocodecrit": "<b><font color=\"Teal\">Ice Knife Crit Damage</font></b> => [t: 2d10] <font color=\"Silver\">📍</font> damage + DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: 4d6] <font color=\"Green\">❄</font> damage!",
     "subcategories": "Druid,Sorcerer,Wizard",
     "spell_levels": "1st Level Spell"
+  },
+  {
+    "id": 252,
+    "name": "Ice Storm",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Ice Storm</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Ice = 2d8] ([t: floor(Ice/2)]) <font color=\"Silver\">🔨</font> damage + [t: Storm = 4d6] ([t: floor(Storm/2)]) <font color=\"Blue\">❄</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Druid,Sorcerer,Wizard",
+    "spell_levels": "4th Level Spell"
   },
   {
     "id": 51,
@@ -1727,6 +2057,28 @@
     "spell_levels": "2nd Level Spell"
   },
   {
+    "id": 253,
+    "name": "Phantasmal Killer (cast)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Phantasmal Killer</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or the target becomes Frightened for the duration.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Wizard",
+    "spell_levels": "4th Level Spell"
+  },
+  {
+    "id": 254,
+    "name": "Phantasmal Killer (end)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Phantasmal Killer</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or take => [t: 4d10] <font color=\"Purple\">👁</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Wizard",
+    "spell_levels": "4th Level Spell"
+  },
+  {
     "id": 33,
     "name": "Pike",
     "description": "A strength-based weapon used with an attack action.",
@@ -1747,6 +2099,17 @@
     "macrocodecrit": "",
     "subcategories": "Artificer,Druid,Sorcerer,Warlock,Wizard",
     "spell_levels": "Cantrip"
+  },
+  {
+    "id": 255,
+    "name": "Polymorph",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Polymorph</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or a creature that you can see within range transforms into a new form.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Druid,Sorcerer,Wizard",
+    "spell_levels": "4th Level Spell"
   },
   {
     "id": 161,
@@ -1835,6 +2198,17 @@
     "macrocodecrit": "<b><font color=\"Teal\">Rapier Crit Damage</font></b> => [t: 2d8 + Strength] <font color=\"Silver\">📍</font> damage!",
     "subcategories": "Martial Melee Weapons",
     "spell_levels": null
+  },
+  {
+    "id": 256,
+    "name": "Raulothim's Psychic Lance",
+    "description": "Replace INPUT with spellcasting ability.\r\n\r\nWhen you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d6 for each slot level above 4th.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Raulothim's Psychic Lance</font></b> => DC [r: 8 + INPUT + Proficiency] Intelligence Save or take => [t: Lance = 7d6] ([t: floor(Lance/2)]) <font color=\"Silver\">🔨</font> damage + is Incapacitated until the start of your next turn. On fail, isn’t Incapacitated.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Sorcerer,Warlock,Wizard",
+    "spell_levels": "4th Level Spell"
   },
   {
     "id": 66,
@@ -1938,7 +2312,7 @@
   {
     "id": 118,
     "name": "Searing Smite (attack)",
-    "description": "",
+    "description": "A spell used with an attack action.",
     "category": "Spellcasting Classes",
     "subcategory": "",
     "macrocode": "<b><font color=\"Purple\">Searing Smite Extra Damage</font></b> => [t: 1d6] <font color=\"Orange\">🔥</font> damage.",
@@ -1963,7 +2337,7 @@
     "description": "A spell used with a dexterity attack action.\r\n\r\nWhen you cast this spell using a 3rd- or 4th-level spell slot, the damage increases to 3d8. When you cast it using a 5th- or 6th-level spell slot, the damage increases to 4d8. When you cast it using a spell slot of 7th level or higher, the damage increases to 5d8.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Shadow Blade Damage</font></b> => [t: 2d8] <font color=\"Purple\">👁</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Shadow Blade Damage</font></b> => [t: 2d8 + Dexterity] <font color=\"Purple\">👁</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Shadow Blade Crit Damage</font></b> => [t: 4d8 + Dexterity] <font color=\"Purple\">👁</font> damage!",
     "subcategories": "Sorcerer,Warlock,Wizard",
     "spell_levels": "2nd Level Spell"
@@ -1978,6 +2352,17 @@
     "macrocodecrit": "<b><font color=\"Teal\">Shadow Blade Crit Damage</font></b> => [t: 4d8 + Strength] <font color=\"Purple\">👁</font> damage!",
     "subcategories": "Sorcerer,Warlock,Wizard",
     "spell_levels": "2nd Level Spell"
+  },
+  {
+    "id": 257,
+    "name": "Shadow Of Moil",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Shadow Of Moil</font></b> => [t: 2d8] <font color=\"Purple\">💀</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Warlock",
+    "spell_levels": "4th Level Spell"
   },
   {
     "id": 134,
@@ -2044,6 +2429,17 @@
     "macrocodecrit": "<b><font color=\"Teal\">Shortsword Crit Damage</font></b> => [t: 2d6 + Strength] <font color=\"Silver\">📍</font> damage!",
     "subcategories": "Martial Melee Weapons",
     "spell_levels": null
+  },
+  {
+    "id": 258,
+    "name": "Sickening Radiance",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Sickening Radiance</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: 4d10] <font color=\"Orange\">☀</font> damage + it suffers one level of Exhaustion and emits a dim, greenish light in a 5-foot radius.",
+    "macrocodecrit": "",
+    "subcategories": "Sorcerer,Warlock,Wizard",
+    "spell_levels": "4th Level Spell"
   },
   {
     "id": 13,
@@ -2222,6 +2618,17 @@
     "spell_levels": "2nd Level Spell"
   },
   {
+    "id": 259,
+    "name": "Staggering Smite",
+    "description": "A spell used with an attack action.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Staggering Smite Extra Damage</font></b> => [t: 4d6] <font color=\"Purple\">👁</font> damage + => DC [r: 8 + Charisma + Proficiency] Wisdom Save or it has disadvantage on attack rolls and ability checks, and can’t take reactions, until the end of its next turn.",
+    "macrocodecrit": "<b><font color=\"Teal\">Staggering Smite Extra Crit Damage</font></b> => [t: 8d6] <font color=\"Purple\">👁</font> damage + => DC [r: 8 + Charisma + Proficiency] Wisdom Save or it has disadvantage on attack rolls and ability checks, and can’t take reactions, until the end of its next turn!",
+    "subcategories": "Paladin",
+    "spell_levels": "4th Level Spell"
+  },
+  {
     "id": 229,
     "name": "Stinking Cloud",
     "description": "Replace INPUT with spellcasting ability.",
@@ -2233,6 +2640,28 @@
     "spell_levels": "3rd Level Spell"
   },
   {
+    "id": 260,
+    "name": "Storm Sphere (active)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Storm Sphere</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or take => [t: 2d6] <font color=\"Silver\">🔨</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Sorcerer,Wizard",
+    "spell_levels": "4th Level Spell"
+  },
+  {
+    "id": 261,
+    "name": "Storm Sphere (bonus)",
+    "description": "A spell used with a spell attack action.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Storm Sphere Damage</font></b> => [t: 4d6] <font color=\"Blue\">✴</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Storm Sphere Crit Damage</font></b> => [t: 8d6] <font color=\"Blue\">✴</font> damage!",
+    "subcategories": "Sorcerer,Wizard",
+    "spell_levels": "4th Level Spell"
+  },
+  {
     "id": 159,
     "name": "Suggestion",
     "description": "Replace INPUT with spellcasting ability.",
@@ -2242,6 +2671,17 @@
     "macrocodecrit": "",
     "subcategories": "Bard,Sorcerer,Warlock,Wizard",
     "spell_levels": "2nd Level Spell"
+  },
+  {
+    "id": 262,
+    "name": "Summon Greater Demon (control)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Summon Greater Demon</font></b> => DC [r: 8 + INPUT + Proficiency] Charisma Save or your control of the demon ends for the rest of the duration, and the demon spends its turns pursuing and attacking the nearest non-demons to the best of its ability.",
+    "macrocodecrit": "",
+    "subcategories": "Warlock,Wizard",
+    "spell_levels": "4th Level Spell"
   },
   {
     "id": 68,
@@ -2323,7 +2763,7 @@
   {
     "id": 120,
     "name": "Thunderous Smite",
-    "description": "",
+    "description": "A spell used with an attack action.",
     "category": "Spellcasting Classes",
     "subcategory": "",
     "macrocode": "<b><font color=\"Purple\">Thunderous Smite Extra Damage</font></b> => [t: 2d6] <font color=\"Gray\">💥</font> damage (+ if the target is a creature => DC [r: 8 + Charisma + Proficiency] Strength Save or be pushed 10 feet away from you and knocked Prone.",
@@ -2420,6 +2860,39 @@
     "spell_levels": "Cantrip"
   },
   {
+    "id": 263,
+    "name": "Vitriolic Sphere",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Vitriolic Sphere</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Sphere = 10d4] ([t: floor(Sphere/2)]) <font color=\"Green\">🔥</font> damage. On fail, [t: 5d4] <font color=\"Green\">🔥</font> damage at the end of its next turn.",
+    "macrocodecrit": "",
+    "subcategories": "Sorcerer,Wizard",
+    "spell_levels": "4th Level Spell"
+  },
+  {
+    "id": 265,
+    "name": "Wall of Fire (active)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Wall of Fire</font></b> => [t: 5d8] <font color=\"Orange\">🔥</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Druid,Sorcerer,Wizard",
+    "spell_levels": "4th Level Spell"
+  },
+  {
+    "id": 264,
+    "name": "Wall of Fire (cast)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Wall of Fire</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fire = 5d8] ([t: floor(Fire/2)]) <font color=\"Orange\">🔥</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Druid,Sorcerer,Wizard",
+    "spell_levels": "4th Level Spell"
+  },
+  {
     "id": 42,
     "name": "War pick",
     "description": "A strength-based weapon used with an attack action.",
@@ -2451,6 +2924,17 @@
     "macrocodecrit": "<b><font color=\"Teal\">Warhammer Crit Damage</font></b> => [t: 2d10 + Strength] <font color=\"Silver\">🔨</font> damage!",
     "subcategories": "Martial Melee Weapons",
     "spell_levels": null
+  },
+  {
+    "id": 266,
+    "name": "Watery Sphere",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Watery Sphere</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or a creature is Restrained by the sphere and is engulfed by the water. On success, a creature is ejected from that space to the nearest unoccupied space outside it.",
+    "macrocodecrit": "",
+    "subcategories": "Druid,Sorcerer,Wizard",
+    "spell_levels": "4th Level Spell"
   },
   {
     "id": 149,
@@ -2532,7 +3016,7 @@
   {
     "id": 121,
     "name": "Wrathful Smite",
-    "description": "",
+    "description": "A spell used with an attack action.",
     "category": "Spellcasting Classes",
     "subcategory": "",
     "macrocode": "<b><font color=\"Purple\">Wrathful Smite Extra Damage</font></b> => [t: 1d6] <font color=\"Purple\">👁</font> damage (+ if the target is a creature => DC [r: 8 + Charisma + Proficiency] Wisdom Save or be Frightened of you.",
@@ -2543,7 +3027,7 @@
   {
     "id": 126,
     "name": "Zephyr Strike",
-    "description": "",
+    "description": "A spell used with an attack action.",
     "category": "Spellcasting Classes",
     "subcategory": "",
     "macrocode": "<b><font color=\"Purple\">Zephyr Strike Extra Damage</font></b> => [t: 1d8] damage.",
