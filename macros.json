@@ -2887,8 +2887,8 @@
     "description": "A spell used with a spell attack action.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Steel Wind Strike</font></b> => [t: 6d10] <font color=\"Blue\">✊</font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Steel Wind Strike Crit</font></b> => [t: 12d10] <font color=\"Blue\">✊</font> damage!",
+    "macrocode": "<b><font color=\"Purple\">Steel Wind Strike Extra Damage</font></b> => [t: 6d10] <font color=\"Blue\">✊</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Steel Wind Strike Extra Crit Damage</font></b> => [t: 12d10] <font color=\"Blue\">✊</font> damage!",
     "subcategories": "Ranger,Wizard",
     "spell_levels": "5th Level Spell"
   },
@@ -3113,6 +3113,17 @@
     "spell_levels": "Cantrip"
   },
   {
+    "id": 314,
+    "name": "Transmute Rock (mud to rock, ground)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Transmute Rock</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or a creature becomes Restrained by the rock.",
+    "macrocodecrit": "",
+    "subcategories": "Artificer,Druid,Wizard",
+    "spell_levels": "5th Level Spell"
+  },
+  {
     "id": 313,
     "name": "Transmute Rock (rock to mud, ceiling)",
     "description": "Replace INPUT with spellcasting ability.",
@@ -3221,6 +3232,39 @@
     "macrocodecrit": "",
     "subcategories": "Druid,Sorcerer,Wizard",
     "spell_levels": "4th Level Spell"
+  },
+  {
+    "id": 316,
+    "name": "Wall of Light (attack)",
+    "description": "A spell used with a spell attack action.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Wall of Light</font></b> => [t: 4d8] <font color=\"Orange\">☀</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Wall of Light Crit Damage</font></b> => [t: 8d8] <font color=\"Orange\">☀</font> damage!",
+    "subcategories": "Sorcerer,Warlock,Wizard",
+    "spell_levels": "5th Level Spell"
+  },
+  {
+    "id": 315,
+    "name": "Wall of Light (cast)",
+    "description": "Replace INPUT with spellcasting ability.\r\n\r\nWhen you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Wall of Light</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Light = 4d8] ([t: floor(Light/2)]) <font color=\"Orange\">☀</font> damage. On fail, it is Blinded for 1 minute.",
+    "macrocodecrit": "",
+    "subcategories": "Sorcerer,Warlock,Wizard",
+    "spell_levels": "5th Level Spell"
+  },
+  {
+    "id": 317,
+    "name": "Wall of Stone",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Wall of Stone</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or it can use its reaction to move up to its speed so that it is no longer enclosed by the wall.",
+    "macrocodecrit": "",
+    "subcategories": "Artificer,Druid,Sorcerer,Wizard",
+    "spell_levels": "5th Level Spell"
   },
   {
     "id": 42,
@@ -3342,6 +3386,39 @@
     "macrocodecrit": "",
     "subcategories": "Cleric",
     "spell_levels": "Cantrip"
+  },
+  {
+    "id": 320,
+    "name": "Wrath Of Nature (rocks)",
+    "description": "A spell used with a spell attack action.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Wall of Light Damage</font></b> => [t: 3d8] <font color=\"Silver\">🔨</font> damage + DC [r: 8 + Wisdom + Proficiency] Strength Save or fall Prone.",
+    "macrocodecrit": "<b><font color=\"Teal\">Wall of Light Crit Damage</font></b> => [t: 6d8] <font color=\"Silver\">🔨</font> damage + DC [r: 8 + Wisdom + Proficiency] Strength Save or fall Prone!",
+    "subcategories": "Druid,Ranger",
+    "spell_levels": "5th Level Spell"
+  },
+  {
+    "id": 319,
+    "name": "Wrath Of Nature (roots and vines)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Wrath Of Nature</font></b> => DC [r: 8 + Wisdom + Proficiency] Strength Save or become Restrained.",
+    "macrocodecrit": "",
+    "subcategories": "Druid,Ranger",
+    "spell_levels": "5th Level Spell"
+  },
+  {
+    "id": 318,
+    "name": "Wrath Of Nature (trees)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Wrath Of Nature</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: 4d6] <font color=\"Silver\">🔪</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Druid,Ranger",
+    "spell_levels": "5th Level Spell"
   },
   {
     "id": 121,
