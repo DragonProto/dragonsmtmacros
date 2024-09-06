@@ -27,7 +27,7 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Aganazzar's Scorcher</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Scorch = 3d8] ([t: floor(Scorch/2)]) <font color=\"Orange\">🔥</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Aganazzar's Scorcher</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 3d8] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage.",
     "macrocodecrit": "",
     "subcategories": "Sorcerer,Wizard",
     "spell_levels": "2nd Level Spell"
@@ -126,7 +126,7 @@
     "description": "Replace INPUT with spellcasting ability.\r\n\r\nWhen you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d4 for each slot level above 3rd.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Antagonize</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or take => [t: Antagonize = 4d4] ([t: floor(Antagonize/2)]) <font color=\"Purple\">👁</font> damage + fall under the effect of the spell.",
+    "macrocode": "<b><font color=\"Purple\">Antagonize</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or take => [t: Psy = 4d4] ([t: floor(Psy/2)]) <font color=\"Purple\">👁</font> damage + fall under the effect of the spell.",
     "macrocodecrit": "",
     "subcategories": "Bard,Sorcerer,Warlock,Wizard",
     "spell_levels": "3rd Level Spell"
@@ -148,7 +148,7 @@
     "description": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Arms of Hadar</font></b> => DC [r: 8 + Charisma + Proficiency] Strength Save or take => [t: Arms = 2d6] ([t: floor(Arms/2)]) <font color=\"Purple\">💀</font> damage + on fail, can’t take reactions until its next turn.",
+    "macrocode": "<b><font color=\"Purple\">Arms of Hadar</font></b> => DC [r: 8 + Charisma + Proficiency] Strength Save or take => [t: Nec = 2d6] ([t: floor(Nec/2)]) <font color=\"Purple\">💀</font> damage. On fail, can’t take reactions until its next turn.",
     "macrocodecrit": "",
     "subcategories": "Warlock",
     "spell_levels": "1st Level Spell"
@@ -308,6 +308,17 @@
     "spell_levels": "5th Level Spell"
   },
   {
+    "id": 321,
+    "name": "Blade Barrier",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Blade Barrier</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Sla = 6d10] ([t: floor(Sla/2)]) <font color=\"Silver\">🔪</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Cleric",
+    "spell_levels": "6th Level Spell"
+  },
+  {
     "id": 110,
     "name": "Bless",
     "description": "",
@@ -324,7 +335,7 @@
     "description": "Replace INPUT with spellcasting ability.\r\n\r\nWhen you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Blight</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Blight = 8d8] ([t: floor(Blight/2)]) <font color=\"Purple\">💀</font> damage. ",
+    "macrocode": "<b><font color=\"Purple\">Blight</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Nec = 8d8] ([t: floor(Nec/2)]) <font color=\"Purple\">💀</font> damage. ",
     "macrocodecrit": "",
     "subcategories": "Druid,Sorcerer,Warlock,Wizard",
     "spell_levels": "4th Level Spell"
@@ -361,6 +372,39 @@
     "macrocodecrit": "<b><font color=\"Teal\">Blowgun Crit Damage</font></b> => [t: 1 + Dexterity] <font color=\"Silver\">📍</font> damage!",
     "subcategories": "Martial Ranged Weapons",
     "spell_levels": null
+  },
+  {
+    "id": 322,
+    "name": "Bones of the Earth (cast)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Bones of the Earth</font></b> => DC [r: 8 + Wisdom + Proficiency] Strength Save or be lifted by the pillar.",
+    "macrocodecrit": "",
+    "subcategories": "Druid",
+    "spell_levels": "6th Level Spell"
+  },
+  {
+    "id": 323,
+    "name": "Bones of the Earth (crushed)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Bones of the Earth</font></b> => [t: 6d6] <font color=\"Silver\">🔨</font> damage + is Restrained, pinched between the pillar and the obstacle.",
+    "macrocodecrit": "",
+    "subcategories": "Druid",
+    "spell_levels": "6th Level Spell"
+  },
+  {
+    "id": 324,
+    "name": "Bones of the Earth (escape)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Bones of the Earth</font></b> => DC [r: 8 + Wisdom + Proficiency] Strength/Dexterity Save or the creature is still Restrained.",
+    "macrocodecrit": "",
+    "subcategories": "Druid",
+    "spell_levels": "6th Level Spell"
   },
   {
     "id": 54,
@@ -401,7 +445,7 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Burning Hands</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Burning = 3d6] ([t: floor(Burning/2)]) <font color=\"Orange\">🔥</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Burning Hands</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 3d6] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage.",
     "macrocodecrit": "",
     "subcategories": "Sorcerer,Wizard",
     "spell_levels": "1st Level Spell"
@@ -412,7 +456,7 @@
     "description": "",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Call Lightning</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Lightning = 3d10] ([t: floor(Lightning/2)]) <font color=\"Blue\">✴</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Call Lightning</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Lig = 3d10] ([t: floor(Lig/2)]) <font color=\"Blue\">✴</font> damage.",
     "macrocodecrit": "",
     "subcategories": "Druid",
     "spell_levels": "3rd Level Spell"
@@ -423,7 +467,7 @@
     "description": "",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Call Lightning</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Lightning = 4d10] ([t: floor(Lightning/2)]) <font color=\"Blue\">✴</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Call Lightning</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Lig = 4d10] ([t: floor(Lig/2)]) <font color=\"Blue\">✴</font> damage.",
     "macrocodecrit": "",
     "subcategories": "Druid",
     "spell_levels": "3rd Level Spell"
@@ -460,6 +504,17 @@
     "macrocodecrit": "",
     "subcategories": "Cleric,Paladin",
     "spell_levels": "1st Level Spell"
+  },
+  {
+    "id": 325,
+    "name": "Chain Lightning",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Chain Lightning</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Lig = 10d8] ([t: floor(Lig/2)]) <font color=\"Blue\">✴</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Sorcerer,Wizard",
+    "spell_levels": "6th Level Spell"
   },
   {
     "id": 128,
@@ -517,6 +572,17 @@
     "spell_levels": "1st Level Spell"
   },
   {
+    "id": 326,
+    "name": "Circle of Death",
+    "description": "Replace INPUT with spellcasting ability.\r\n\r\nWhen you cast this spell using a spell slot of 7th level or higher, the damage increases by 2d6 for each slot level above 6th.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Circle of Death</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Nec = 8d6] ([t: floor(Nec/2)]) <font color=\"Purple\">💀</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Sorcerer,Warlock,Wizard",
+    "spell_levels": "6th Level Spell"
+  },
+  {
     "id": 151,
     "name": "Cloud of Daggers",
     "description": "",
@@ -533,7 +599,7 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Cloudkill</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Cloud = 5d8] ([t: floor(Cloud/2)]) <font color=\"Green\">☠</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Cloudkill</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Poi = 5d8] ([t: floor(Poi/2)]) <font color=\"Green\">☠</font> damage.",
     "macrocodecrit": "",
     "subcategories": "Sorcerer,Wizard",
     "spell_levels": "5th Level Spell"
@@ -599,7 +665,7 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Cone of Cold</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Cold = 8d8] ([t: floor(Cold/2)]) <font color=\"Blue\">❄</font> damage. A creature killed by this spell becomes a frozen statue.",
+    "macrocode": "<b><font color=\"Purple\">Cone of Cold</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Col = 8d8] ([t: floor(Col/2)]) <font color=\"Blue\">❄</font> damage. A creature killed by this spell becomes a frozen statue.",
     "macrocodecrit": "",
     "subcategories": "Druid,Sorcerer,Wizard",
     "spell_levels": "5th Level Spell"
@@ -621,7 +687,7 @@
     "description": "",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Conjure Barrage</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Barrage = 3d8] ([t: floor(Barrage/2)]) damage.",
+    "macrocode": "<b><font color=\"Purple\">Conjure Barrage</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Any = 3d8] ([t: floor(Any/2)]) damage.",
     "macrocodecrit": "",
     "subcategories": "Ranger",
     "spell_levels": "3rd Level Spell"
@@ -632,7 +698,7 @@
     "description": "A spell used with a strength/dexterity attack action.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Conjure Volley Damage</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Volley = 8d8] ([t: floor(Volley/2)]) damage.",
+    "macrocode": "<b><font color=\"Purple\">Conjure Volley Damage</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Any = 8d8] ([t: floor(Any/2)]) damage.",
     "macrocodecrit": "",
     "subcategories": "Ranger",
     "spell_levels": "5th Level Spell"
@@ -702,6 +768,17 @@
     "macrocodecrit": "",
     "subcategories": "Artificer,Druid,Sorcerer,Warlock,Wizard",
     "spell_levels": "Cantrip"
+  },
+  {
+    "id": 327,
+    "name": "Create Homunculus",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Create Homunculus</font></b> => [t: 2d4] <font color=\"Silver\">📍</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Wizard",
+    "spell_levels": "6th Level Spell"
   },
   {
     "id": 48,
@@ -808,7 +885,7 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Dawn</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Dawn = 4d10] ([t: floor(Dawn/2)]) <font color=\"Orange\">☀</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Dawn</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Rad = 4d10] ([t: floor(Rad/2)]) <font color=\"Orange\">☀</font> damage.",
     "macrocodecrit": "",
     "subcategories": "Cleric,Wizard",
     "spell_levels": "5th Level Spell"
@@ -819,7 +896,7 @@
     "description": "",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Destructive Wave</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Wave = 5d6] ([t: floor(Wave/2)]) <font color=\"Orange\">☀</font> damage + [t: Wave2 = 5d6] ([t: floor(Wave2/2)]) damage + on fail, be knocked Prone.",
+    "macrocode": "<b><font color=\"Purple\">Destructive Wave</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Thu = 5d6] ([t: floor(Thu/2)]) <font color=\"Gray\">💥</font> damage + [t: Any = 5d6] ([t: floor(Any/2)]) damage. On fail, be knocked Prone.",
     "macrocodecrit": "",
     "subcategories": "Paladin",
     "spell_levels": "5th Level Spell"
@@ -847,12 +924,23 @@
     "spell_levels": "1st Level Spell"
   },
   {
+    "id": 328,
+    "name": "Disintegrate",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Disintegrate</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: 10d6 + 40] <font color=\"Blue\">✊</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Sorcerer,Wizard",
+    "spell_levels": "6th Level Spell"
+  },
+  {
     "id": 101,
     "name": "Dissonant Whispers",
     "description": "",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Dissonant Whispers</font></b> =>DC [r: 8 + Charisma + Proficiency] Wisdom Save or take => [t: Whisper = 3d6] ([t: floor(Whisper/2)]) <font color=\"Purple\">👁</font> damage + on fail, must immediately use its reaction, if available, to move as far as its speed allows away from you",
+    "macrocode": "<b><font color=\"Purple\">Dissonant Whispers</font></b> =>DC [r: 8 + Charisma + Proficiency] Wisdom Save or take => [t: Psy = 3d6] ([t: floor(Psy/2)]) <font color=\"Purple\">👁</font> damage. On fail, must immediately use its reaction, if available, to move as far as its speed allows away from you",
     "macrocodecrit": "",
     "subcategories": "Artificer,Sorcerer,Wizard",
     "spell_levels": "1st Level Spell"
@@ -896,7 +984,7 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Dragon's Breath</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Dragon = 3d6] ([t: floor(Dragon/2)]) <font color=\"Orange\">🔥</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Dragon's Breath</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 3d6] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage.",
     "macrocodecrit": "",
     "subcategories": "Sorcerer,Wizard",
     "spell_levels": "2nd Level Spell"
@@ -918,7 +1006,7 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Dust Devil</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or take => [t: Dust = 1d8] ([t: floor(Dust/2)]) <font color=\"Silver\">🔨</font> damage + on fail, is pushed 10 feet away.",
+    "macrocode": "<b><font color=\"Purple\">Dust Devil</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or take => [t: Blu = 1d8] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage. On fail, is pushed 10 feet away.",
     "macrocodecrit": "",
     "subcategories": "Druid,Sorcerer,Wizard",
     "spell_levels": "2nd Level Spell"
@@ -1050,7 +1138,7 @@
     "description": "Replace INPUT with spellcasting ability.\r\n\r\nWhen you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Enervation</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Enervation = 4d8] ([t: floor(Enervation/2)]) <font color=\"Purple\">💀</font> damage + you regain [t: Enervation] ([t: floor(Enervation/2)]) hit points.",
+    "macrocode": "<b><font color=\"Purple\">Enervation</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Nec = 4d8] ([t: floor(Nec/2)]) <font color=\"Purple\">💀</font> damage + you regain [t: Hea] ([t: floor(Hea/2)]) hit points.",
     "macrocodecrit": "",
     "subcategories": "Sorcerer,Warlock,Wizard",
     "spell_levels": "5th Level Spell"
@@ -1127,7 +1215,7 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Erupting Earth</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Erupting = 3d12] ([t: floor(Erupting/2)]) <font color=\"Silver\">🔨</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Erupting Earth</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Blu = 3d12] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage.",
     "macrocodecrit": "",
     "subcategories": "Druid,Sorcerer,Wizard",
     "spell_levels": "3rd Level Spell"
@@ -1142,6 +1230,17 @@
     "macrocodecrit": "",
     "subcategories": "Wizard",
     "spell_levels": "4th Level Spell"
+  },
+  {
+    "id": 329,
+    "name": "Eyebite",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Eyebite</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or be affected by one of the following effects.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Sorcerer,Warlock,Wizard",
+    "spell_levels": "6th Level Spell"
   },
   {
     "id": 87,
@@ -1215,7 +1314,7 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Fireball</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fireball = 8d6] ([t: floor(Fireball/2)]) <font color=\"Orange\">🔥</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Fireball</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 8d6] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage.",
     "macrocodecrit": "",
     "subcategories": "Sorcerer,Wizard",
     "spell_levels": "3rd Level Spell"
@@ -1259,7 +1358,7 @@
     "description": "",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Flame Strike</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Flame = 4d6] ([t: floor(Flame/2)]) <font color=\"Orange\">☀</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Flame Strike</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Fir = 4d6] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage + [t: Rad = 4d6] ([t: floor(Rad/2)]) <font color=\"Orange\">☀</font> damage.",
     "macrocodecrit": "",
     "subcategories": "Cleric",
     "spell_levels": "5th Level Spell"
@@ -1270,10 +1369,32 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Flaming Sphere</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Flaming = 2d6] ([t: floor(Flaming/2)]) <font color=\"Orange\">🔥</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Flaming Sphere</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 2d6] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage.",
     "macrocodecrit": "",
     "subcategories": "Druid,Sorcerer,Wizard",
     "spell_levels": "2nd Level Spell"
+  },
+  {
+    "id": 330,
+    "name": "Flesh to Stone",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Flesh to Stone</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or it is Restrained as its flesh begins to harden.",
+    "macrocodecrit": "",
+    "subcategories": "Druid,Sorcerer,Warlock,Wizard",
+    "spell_levels": "6th Level Spell"
+  },
+  {
+    "id": 331,
+    "name": "Forbiddance",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Forbiddance</font></b> => [t: 5d10] damage.",
+    "macrocodecrit": "",
+    "subcategories": "Cleric",
+    "spell_levels": "6th Level Spell"
   },
   {
     "id": 139,
@@ -1281,7 +1402,7 @@
     "description": "",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Frost Fingers</font></b> => DC [r: 8 + Intelligence + Proficiency] Constitution Save or take => [t: Frost = 2d8] ([t: floor(Frost/2)]) <font color=\"Blue\">❄</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Frost Fingers</font></b> => DC [r: 8 + Intelligence + Proficiency] Constitution Save or take => [t: Col = 2d8] ([t: floor(Col/2)]) <font color=\"Blue\">❄</font> damage.",
     "macrocodecrit": "",
     "subcategories": "Wizard",
     "spell_levels": "1st Level Spell"
@@ -1325,7 +1446,7 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Glyph of Warding</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Glyph = 5d8] ([t: floor(Glyph/2)]) damage.",
+    "macrocode": "<b><font color=\"Purple\">Glyph of Warding</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Any = 5d8] ([t: floor(Any/2)]) damage.",
     "macrocodecrit": "",
     "subcategories": "Artificer,Bard,Cleric,Wizard",
     "spell_levels": "3rd Level Spell"
@@ -1424,7 +1545,7 @@
     "description": "",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Guardian of Faith</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Faith = 20] ([t: floor(Faith/2)]) <font color=\"Orange\">☀</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Guardian of Faith</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Rad = 20] ([t: floor(Rad/2)]) <font color=\"Orange\">☀</font> damage.",
     "macrocodecrit": "",
     "subcategories": "Cleric",
     "spell_levels": "4th Level Spell"
@@ -1490,7 +1611,7 @@
     "description": "A spell used with an attack action.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Hail of Thorns Extra Damage</font></b> =>DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Hail = 1d10] ([t: floor(Hail/2)]) <font color=\"Silver\">📍</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Hail of Thorns Extra Damage</font></b> =>DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Pie = 1d10] ([t: floor(Pie/2)]) <font color=\"Silver\">📍</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Hail of Thorns Extra Crit Damage</font></b> =>DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Hail = 2d10] ([t: floor(Hail/2)]) <font color=\"Silver\">📍</font> damage!",
     "subcategories": "Ranger",
     "spell_levels": "1st Level Spell"
@@ -1512,7 +1633,7 @@
     "description": "",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Hallow</font></b> => DC [r: 8 + Wisdom + Proficiency] Charisma Save or become affected by a chosen effect in the spell's area.",
+    "macrocode": "<b><font color=\"Purple\">Hallow</font></b> => DC [r: 8 + Wisdom + Proficiency] Charisma Save or be affected by one of the following effects in the spell's area.",
     "macrocodecrit": "",
     "subcategories": "Cleric",
     "spell_levels": "5th Level Spell"
@@ -1538,6 +1659,28 @@
     "macrocodecrit": "<b><font color=\"Teal\">Handaxe Crit Damage</font></b> => [t: 2d6 + Strength] <font color=\"Silver\">🔪</font> damage!",
     "subcategories": "Simple Melee Weapons",
     "spell_levels": null
+  },
+  {
+    "id": 332,
+    "name": "Harm",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Harm</font></b> => DC [r: 8 + Wisdom + Proficiency] Constitution Save or take => [t: Nec = 14d6] ([t: floor(Nec/2)]) <font color=\"Purple\">💀</font> damage. On fail, its hit point maximum is reduced by [t: Nec] for 1 hour.",
+    "macrocodecrit": "",
+    "subcategories": "Cleric",
+    "spell_levels": "6th Level Spell"
+  },
+  {
+    "id": 333,
+    "name": "Heal",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Heal</font></b> => [t: 70] <font color=\"Red\">➕</font> healing.",
+    "macrocodecrit": "",
+    "subcategories": "Cleric,Druid",
+    "spell_levels": "6th Level Spell"
   },
   {
     "id": 168,
@@ -1578,10 +1721,21 @@
     "description": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Hellish Rebuke</font></b> => DC [r: 8 + Charisma + Proficiency] Dexterity Save or take => [t: Hell = 2d10] ([t: floor(Hell/2)]) <font color=\"Orange\">🔥</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Hellish Rebuke</font></b> => DC [r: 8 + Charisma + Proficiency] Dexterity Save or take => [t: Fir = 2d10] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage.",
     "macrocodecrit": "",
     "subcategories": "Warlock",
     "spell_levels": "1st Level Spell"
+  },
+  {
+    "id": 334,
+    "name": "Heroes' Feast",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Heroes' Feast</font></b> => [t: 2d10] hit points and hit point maximum.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Cleric,Druid",
+    "spell_levels": "6th Level Spell"
   },
   {
     "id": 105,
@@ -1644,7 +1798,7 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Holy Weapon</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Holy = 4d8] ([t: floor(Holy/2)]) <font color=\"Orange\">☀</font> damage. On fail, it is Blinded for 1 minute.",
+    "macrocode": "<b><font color=\"Purple\">Holy Weapon</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Rad = 4d8] ([t: floor(Rad/2)]) <font color=\"Orange\">☀</font> damage. On fail, it is Blinded for 1 minute.",
     "macrocodecrit": "",
     "subcategories": "Cleric,Paladin",
     "spell_levels": "5th Level Spell"
@@ -1710,7 +1864,7 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Ice Storm</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Ice = 2d8] ([t: floor(Ice/2)]) <font color=\"Silver\">🔨</font> damage + [t: Storm = 4d6] ([t: floor(Storm/2)]) <font color=\"Blue\">❄</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Ice Storm</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Blu = 2d8] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage + [t: Col = 4d6] ([t: floor(Col/2)]) <font color=\"Blue\">❄</font> damage.",
     "macrocodecrit": "",
     "subcategories": "Druid,Sorcerer,Wizard",
     "spell_levels": "4th Level Spell"
@@ -1721,7 +1875,7 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Immolation</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Immolation = 3d6] ([t: floor(Immolation/2)]) <font color=\"Orange\">🔥</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Immolation</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 3d6] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage.",
     "macrocodecrit": "",
     "subcategories": "Sorcerer,Wizard",
     "spell_levels": "5th Level Spell"
@@ -1732,7 +1886,7 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Immolation</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Immolation = 7d6] ([t: floor(Immolation/2)]) <font color=\"Orange\">🔥</font> damage. On fail, the target also burns.",
+    "macrocode": "<b><font color=\"Purple\">Immolation</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 7d6] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage. On fail, the target also burns.",
     "macrocodecrit": "",
     "subcategories": "Sorcerer,Wizard",
     "spell_levels": "5th Level Spell"
@@ -1787,7 +1941,7 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Insect Plague</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Insect = 4d10] ([t: floor(Insect/2)]) <font color=\"Silver\">📍</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Insect Plague</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Pie = 4d10] ([t: floor(Pie/2)]) <font color=\"Silver\">📍</font> damage.",
     "macrocodecrit": "",
     "subcategories": "Cleric,Druid,Sorcerer",
     "spell_levels": "5th Level Spell"
@@ -1853,7 +2007,7 @@
     "description": "",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Life Transference</font></b> => [t: Life = 4d8] <font color=\"Purple\">💀</font> damage taken + [t: floor(Life/2)] <font color=\"Red\">➕</font> healing.",
+    "macrocode": "<b><font color=\"Purple\">Life Transference</font></b> => [t: Hea = 4d8] <font color=\"Purple\">💀</font> damage taken + [t: floor(Hea/2)] <font color=\"Red\">➕</font> healing.",
     "macrocodecrit": "",
     "subcategories": "Cleric,Wizard",
     "spell_levels": "3rd Level Spell"
@@ -1886,7 +2040,7 @@
     "description": "A spell used with a dexterity attack action.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Lightning Arrow Damage</font></b> => [h: Lightning = 4d8][t: Lightning + Dexterity] ([t: floor(Lightning/2) + Dexterity]) <font color=\"Blue\">✴</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Lightning Arrow Damage</font></b> => [h: Lig = 4d8][t: Lig + Dexterity] ([t: floor(Lig/2) + Dexterity]) <font color=\"Blue\">✴</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Lightning Arrow Crit Damage</font></b> => [h: Lightning = 8d8][t: Lightning + Dexterity] ([t: floor(Lightning/2) + Dexterity]) <font color=\"Blue\">✴</font> damage!",
     "subcategories": "Ranger",
     "spell_levels": "3rd Level Spell"
@@ -1897,7 +2051,7 @@
     "description": "A spell used with a strength attack action.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Lightning Arrow Damage</font></b> => [h: Lightning = 4d8][t: Lightning + Strength] ([t: floor(Lightning/2) + Strength]) <font color=\"Blue\">✴</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Lightning Arrow Damage</font></b> => [h: Lig = 4d8][t: Lig + Strength] ([t: floor(Lig/2) + Strength]) <font color=\"Blue\">✴</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Lightning Arrow Crit Damage</font></b> => [h: Lightning = 8d8][t: Lightning + Strength] ([t: floor(Lightning/2) + Strength]) <font color=\"Blue\">✴</font> damage!",
     "subcategories": "Ranger",
     "spell_levels": "3rd Level Spell"
@@ -1908,7 +2062,7 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Lightning Bolt</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Lightning = 8d6] ([t: floor(Lightning/2)]) <font color=\"Blue\">✴</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Lightning Bolt</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Lig = 8d6] ([t: floor(Lig/2)]) <font color=\"Blue\">✴</font> damage.",
     "macrocodecrit": "",
     "subcategories": "Sorcerer,Wizard",
     "spell_levels": "3rd Level Spell"
@@ -1974,7 +2128,7 @@
     "description": "",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Maelstrom</font></b> => DC [r: 8 + Wisdom + Proficiency] Strength Save or take => [t: Maelstrom = 4d10] ([t: floor(Maelstrom/2)]) <font color=\"Silver\">🔨</font> damage + be pulled 10 feet toward the center.",
+    "macrocode": "<b><font color=\"Purple\">Maelstrom</font></b> => DC [r: 8 + Wisdom + Proficiency] Strength Save or take => [t: Blu = 4d10] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage + be pulled 10 feet toward the center.",
     "macrocodecrit": "",
     "subcategories": "Druid",
     "spell_levels": "5th Level Spell"
@@ -2062,7 +2216,7 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Maximillian's Earthen Grasp</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or take => [t: Grasp = 2d6] ([t: floor(Grasp/2)]) <font color=\"Silver\">🔨</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Maximillian's Earthen Grasp</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or take => [t: Blu = 2d6] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage.",
     "macrocodecrit": "",
     "subcategories": "Sorcerer,Wizard",
     "spell_levels": "2nd Level Spell"
@@ -2084,7 +2238,7 @@
     "description": "A spell used with a spell attack action.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Melf's Acid Arrow Damage</font></b> => [t: Acid = 4d4] ([t: floor(Acid/2)]) <font color=\"Green\">🔥</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Melf's Acid Arrow Damage</font></b> => [t: Aci = 4d4] ([t: floor(Aci/2)]) <font color=\"Green\">🔥</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Melf's Acid Arrow Crit Damage</font></b> => [t: Acid = 8d4] ([t: floor(Acid/2)]) <font color=\"Green\">🔥</font> damage!",
     "subcategories": "Wizard",
     "spell_levels": "2nd Level Spell"
@@ -2106,7 +2260,7 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Melf's Minute Meteors</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Meteor = 2d6] ([t: floor(Meteor/2)]) <font color=\"Orange\">🔥</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Melf's Minute Meteors</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 2d6] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage.",
     "macrocodecrit": "",
     "subcategories": "Sorcerer,Wizard",
     "spell_levels": "3rd Level Spell"
@@ -2128,7 +2282,7 @@
     "description": "Replace INPUT with spellcasting ability.\r\n\r\nWhen you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Mind Spike</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or take => [t: Mind = 3d8] ([t: floor(Mind/2)]) <font color=\"Purple\">👁</font> damage + on fail, you also always know the target's location.",
+    "macrocode": "<b><font color=\"Purple\">Mind Spike</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or take => [t: Psy = 3d8] ([t: floor(Psy/2)]) <font color=\"Purple\">👁</font> damage. On fail, you also always know the target's location.",
     "macrocodecrit": "",
     "subcategories": "Sorcerer,Warlock,Wizard",
     "spell_levels": "2nd Level Spell"
@@ -2172,7 +2326,7 @@
     "description": "",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Moonbeam</font></b> => DC [r: 8 + Wisdom + Proficiency] Constitution Save or take => [t: Moon = 2d10] ([t: floor(Moon/2)]) <font color=\"Orange\">☀</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Moonbeam</font></b> => DC [r: 8 + Wisdom + Proficiency] Constitution Save or take => [t: Rad = 2d10] ([t: floor(Rad/2)]) <font color=\"Orange\">☀</font> damage.",
     "macrocodecrit": "",
     "subcategories": "Druid",
     "spell_levels": "2nd Level Spell"
@@ -2216,7 +2370,7 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Negative Energy Flood</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Flood = 5d12] ([t: floor(Flood/2)]) <font color=\"Purple\">💀</font> damage. A target killed by this damage rises up as a zombie at the start of your next turn.",
+    "macrocode": "<b><font color=\"Purple\">Negative Energy Flood</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Nec = 5d12] ([t: floor(Nec/2)]) <font color=\"Purple\">💀</font> damage. A target killed by this damage rises up as a zombie at the start of your next turn.",
     "macrocodecrit": "",
     "subcategories": "Warlock,Wizard",
     "spell_levels": "5th Level Spell"
@@ -2227,7 +2381,7 @@
     "description": "",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Negative Energy Flood</font></b> => The target gains [h: Flood = 5d12] [t: floor(Flood/2)] temporary hit points.",
+    "macrocode": "<b><font color=\"Purple\">Negative Energy Flood</font></b> => The target gains [h: Hea = 5d12] [t: floor(Hea/2)] temporary hit points.",
     "macrocodecrit": "",
     "subcategories": "Warlock,Wizard",
     "spell_levels": "5th Level Spell"
@@ -2436,7 +2590,7 @@
     "description": "Replace INPUT with spellcasting ability.\r\n\r\nWhen you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d6 for each slot level above 4th.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Raulothim's Psychic Lance</font></b> => DC [r: 8 + INPUT + Proficiency] Intelligence Save or take => [t: Lance = 7d6] ([t: floor(Lance/2)]) <font color=\"Silver\">🔨</font> damage + is Incapacitated until the start of your next turn. On fail, isn’t Incapacitated.",
+    "macrocode": "<b><font color=\"Purple\">Raulothim's Psychic Lance</font></b> => DC [r: 8 + INPUT + Proficiency] Intelligence Save or take => [t: Blu = 7d6] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage + is Incapacitated until the start of your next turn. On fail, isn’t Incapacitated.",
     "macrocodecrit": "",
     "subcategories": "Bard,Sorcerer,Warlock,Wizard",
     "spell_levels": "4th Level Spell"
@@ -2480,7 +2634,7 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Rime's Binding Ice</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Rime = 3d8] ([t: floor(Rime/2)]) <font color=\"Blue\">❄</font> damage + on fail, is hindered by ice and has its speed reduced to 0.",
+    "macrocode": "<b><font color=\"Purple\">Rime's Binding Ice</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Col = 3d8] ([t: floor(Col/2)]) <font color=\"Blue\">❄</font> damage. On fail, is hindered by ice and has its speed reduced to 0.",
     "macrocodecrit": "",
     "subcategories": "Sorcerer,Wizard",
     "spell_levels": "2nd Level Spell"
@@ -2623,7 +2777,7 @@
     "description": "Replace INPUT with spellcasting ability.\r\n\r\nWhen you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Shatter</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Shatter = 3d8] ([t: floor(Shatter/2)]) <font color=\"Gray\">💥</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Shatter</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Thu = 3d8] ([t: floor(Thu/2)]) <font color=\"Gray\">💥</font> damage.",
     "macrocodecrit": "",
     "subcategories": "Bard,Sorcerer,Warlock,Wizard",
     "spell_levels": "2nd Level Spell"
@@ -2788,7 +2942,7 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Snilloc's Snowball Storm</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Storm = 3d6] ([t: floor(Storm/2)]) <font color=\"Blue\">❄</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Snilloc's Snowball Storm</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Col = 3d6] ([t: floor(Col/2)]) <font color=\"Blue\">❄</font> damage.",
     "macrocodecrit": "",
     "subcategories": "Sorcerer,Wizard",
     "spell_levels": "2nd Level Spell"
@@ -2832,7 +2986,7 @@
     "description": "",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Spirit Guardians</font></b> => DC [r: 8 + Wisdom + Proficiency] Wisdom Save or take => [t: Spirit = 3d8] ([t: floor(Spirit/2)]) damage.",
+    "macrocode": "<b><font color=\"Purple\">Spirit Guardians</font></b> => DC [r: 8 + Wisdom + Proficiency] Wisdom Save or take => [t: Any = 3d8] ([t: floor(Any/2)]) damage.",
     "macrocodecrit": "",
     "subcategories": "Cleric",
     "spell_levels": "3rd Level Spell"
@@ -2865,7 +3019,7 @@
     "description": "Replace INPUT with spellcasting ability.\r\n\r\nWhen you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d10 for each slot level above 2nd.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Spray Of Cards</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Spray = 2d10] ([t: floor(Spray/2)]) <font color=\"Blue\">✊</font> damage + has the Blinded condition until the end of its next turn.",
+    "macrocode": "<b><font color=\"Purple\">Spray Of Cards</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: For = 2d10] ([t: floor(For/2)]) <font color=\"Blue\">✊</font> damage + has the Blinded condition until the end of its next turn.",
     "macrocodecrit": "",
     "subcategories": "Bard,Sorcerer,Warlock,Wizard",
     "spell_levels": "2nd Level Spell"
@@ -2975,7 +3129,7 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Synaptic Static</font></b> => DC [r: 8 + INPUT + Proficiency] Intelligence Save or take => [t: Static = 8d6] ([t: floor(Static/2)]) <font color=\"Purple\">👁</font> damage + fall under the effect of the spell.",
+    "macrocode": "<b><font color=\"Purple\">Synaptic Static</font></b> => DC [r: 8 + INPUT + Proficiency] Intelligence Save or take => [t: Psy = 8d6] ([t: floor(Psy/2)]) <font color=\"Purple\">👁</font> damage + fall under the effect of the spell.",
     "macrocodecrit": "",
     "subcategories": "Bard,Sorcerer,Warlock,Wizard",
     "spell_levels": "5th Level Spell"
@@ -3008,7 +3162,7 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Tasha's Mind Whip</font></b> => DC [r: 8 + INPUT + Proficiency] Intelligence Save or take => [t: Tasha = 3d6] ([t: floor(Tasha/2)]) <font color=\"Purple\">👁</font> damage + on fail, fall under the effect of the spell.",
+    "macrocode": "<b><font color=\"Purple\">Tasha's Mind Whip</font></b> => DC [r: 8 + INPUT + Proficiency] Intelligence Save or take => [t: Psy = 3d6] ([t: floor(Psy/2)]) <font color=\"Purple\">👁</font> damage. On fail, fall under the effect of the spell.",
     "macrocodecrit": "",
     "subcategories": "Sorcerer,Wizard",
     "spell_levels": "2nd Level Spell"
@@ -3052,7 +3206,7 @@
     "description": "Replace INPUT with spellcasting ability.\r\n\r\nWhen you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d10 for each slot level above 3rd.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Thunder Step</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Thunder = 3d10] ([t: floor(Thunder/2)]) <font color=\"Gray\">💥</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Thunder Step</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Thu = 3d10] ([t: floor(Thu/2)]) <font color=\"Gray\">💥</font> damage.",
     "macrocodecrit": "",
     "subcategories": "Sorcerer,Warlock,Wizard",
     "spell_levels": "3rd Level Spell"
@@ -3085,7 +3239,7 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Thunderwave</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Thunder = 2d8] ([t: floor(Thunder/2)]) <font color=\"Gray\">💥</font> damage + on fail, is pushed 10 feet away from you.",
+    "macrocode": "<b><font color=\"Purple\">Thunderwave</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Thu = 2d8] ([t: floor(Thu/2)]) <font color=\"Gray\">💥</font> damage. On fail, is pushed 10 feet away from you.",
     "macrocodecrit": "",
     "subcategories": "Bard,Druid,Sorcerer,Wizard",
     "spell_levels": "1st Level Spell"
@@ -3096,7 +3250,7 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Tidal Wave</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Tidal = 4d8] ([t: floor(Tidal/2)]) <font color=\"Silver\">🔨</font> damage + on fail, fall Prone.",
+    "macrocode": "<b><font color=\"Purple\">Tidal Wave</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Blu = 4d8] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage. On fail, fall Prone.",
     "macrocodecrit": "",
     "subcategories": "Druid,Sorcerer,Wizard",
     "spell_levels": "3rd Level Spell"
@@ -3129,7 +3283,7 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Transmute Rock</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Rock = 4d8] ([t: floor(Rock/2)]) <font color=\"Silver\">🔨</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Transmute Rock</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Blu = 4d8] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage.",
     "macrocodecrit": "",
     "subcategories": "Artificer,Druid,Wizard",
     "spell_levels": "5th Level Spell"
@@ -3184,7 +3338,7 @@
     "description": "A spell used with a spell attack action.\r\n\r\nWhen you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Vampiric Touch Damage</font></b> => [t: Vampiric = 3d6] <font color=\"Purple\">💀</font> damage + you regain [t: floor(Vampiric/2)] hit points.",
+    "macrocode": "<b><font color=\"Purple\">Vampiric Touch Damage</font></b> => [t: Hea = 3d6] <font color=\"Purple\">💀</font> damage + you regain [t: floor(Hea/2)] hit points.",
     "macrocodecrit": "<b><font color=\"Teal\">Vampiric Touch Crit Damage</font></b> => [t: Vampiric = 6d6] <font color=\"Purple\">💀</font> damage + you regain [t: floor(Vampiric/2)] hit points!",
     "subcategories": "Sorcerer,Warlock,Wizard",
     "spell_levels": "3rd Level Spell"
@@ -3206,7 +3360,7 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Vitriolic Sphere</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Sphere = 10d4] ([t: floor(Sphere/2)]) <font color=\"Green\">🔥</font> damage. On fail, [t: 5d4] <font color=\"Green\">🔥</font> damage at the end of its next turn.",
+    "macrocode": "<b><font color=\"Purple\">Vitriolic Sphere</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Aci = 10d4] ([t: floor(Aci/2)]) <font color=\"Green\">🔥</font> damage. On fail, [t: 5d4] <font color=\"Green\">🔥</font> damage at the end of its next turn.",
     "macrocodecrit": "",
     "subcategories": "Sorcerer,Wizard",
     "spell_levels": "4th Level Spell"
@@ -3228,7 +3382,7 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Wall of Fire</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fire = 5d8] ([t: floor(Fire/2)]) <font color=\"Orange\">🔥</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Wall of Fire</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 5d8] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage.",
     "macrocodecrit": "",
     "subcategories": "Druid,Sorcerer,Wizard",
     "spell_levels": "4th Level Spell"
@@ -3250,7 +3404,7 @@
     "description": "Replace INPUT with spellcasting ability.\r\n\r\nWhen you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Wall of Light</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Light = 4d8] ([t: floor(Light/2)]) <font color=\"Orange\">☀</font> damage. On fail, it is Blinded for 1 minute.",
+    "macrocode": "<b><font color=\"Purple\">Wall of Light</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Rad = 4d8] ([t: floor(Rad/2)]) <font color=\"Orange\">☀</font> damage. On fail, it is Blinded for 1 minute.",
     "macrocodecrit": "",
     "subcategories": "Sorcerer,Warlock,Wizard",
     "spell_levels": "5th Level Spell"
@@ -3360,7 +3514,7 @@
     "description": "",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Wind Wall</font></b> => DC [r: 8 + Wisdom + Proficiency] Strength Save or take => [t: Wind = 3d8] ([t: floor(Wind/2)]) <font color=\"Silver\">🔨</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Wind Wall</font></b> => DC [r: 8 + Wisdom + Proficiency] Strength Save or take => [t: Blu = 3d8] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage.",
     "macrocodecrit": "",
     "subcategories": "Druid,Ranger",
     "spell_levels": "3rd Level Spell"
@@ -3393,8 +3547,8 @@
     "description": "A spell used with a spell attack action.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Wall of Light Damage</font></b> => [t: 3d8] <font color=\"Silver\">🔨</font> damage + DC [r: 8 + Wisdom + Proficiency] Strength Save or fall Prone.",
-    "macrocodecrit": "<b><font color=\"Teal\">Wall of Light Crit Damage</font></b> => [t: 6d8] <font color=\"Silver\">🔨</font> damage + DC [r: 8 + Wisdom + Proficiency] Strength Save or fall Prone!",
+    "macrocode": "<b><font color=\"Purple\">Wrath Of Nature Damage</font></b> => [t: 3d8] <font color=\"Silver\">🔨</font> damage + DC [r: 8 + Wisdom + Proficiency] Strength Save or fall Prone.",
+    "macrocodecrit": "<b><font color=\"Teal\">Wrath Of Nature Crit Damage</font></b> => [t: 6d8] <font color=\"Silver\">🔨</font> damage + DC [r: 8 + Wisdom + Proficiency] Strength Save or fall Prone!",
     "subcategories": "Druid,Ranger",
     "spell_levels": "5th Level Spell"
   },
