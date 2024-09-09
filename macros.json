@@ -1947,6 +1947,61 @@
     "spell_levels": "5th Level Spell"
   },
   {
+    "id": 335,
+    "name": "Investiture of Flame (action)\r\n",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Investiture of Flame</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 4d8] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Druid,Sorcerer,Warlock,Wizard",
+    "spell_levels": "6th Level Spell"
+  },
+  {
+    "id": 336,
+    "name": "Investiture of Flame (cast)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Investiture of Flame</font></b> => [t: 1d10] <font color=\"Orange\">🔥</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Druid,Sorcerer,Warlock,Wizard",
+    "spell_levels": "6th Level Spell"
+  },
+  {
+    "id": 337,
+    "name": "Investiture of Ice",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Investiture of Ice</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Col = 4d6] ([t: floor(Col/2)]) <font color=\"Blue\">❄</font> damage. On fail, has its speed halved until the start of your next turn.",
+    "macrocodecrit": "",
+    "subcategories": "Druid,Sorcerer,Warlock,Wizard",
+    "spell_levels": "6th Level Spell"
+  },
+  {
+    "id": 338,
+    "name": "Investiture of Stone",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Investiture of Stone</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or be knocked Prone.",
+    "macrocodecrit": "",
+    "subcategories": "Druid,Sorcerer,Warlock,Wizard",
+    "spell_levels": "6th Level Spell"
+  },
+  {
+    "id": 339,
+    "name": "Investiture of Wind",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Investiture of Wind</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Blu = 2d10] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage. On fail,  a Large or smaller creature is also pushed up to 10 feet away from the center of the cube.",
+    "macrocodecrit": "",
+    "subcategories": "Druid,Sorcerer,Warlock,Wizard",
+    "spell_levels": "6th Level Spell"
+  },
+  {
     "id": 8,
     "name": "Javelin",
     "description": "A strength-based weapon used with an attack action.",
@@ -2134,6 +2189,17 @@
     "spell_levels": "5th Level Spell"
   },
   {
+    "id": 340,
+    "name": "Magic Jar",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Magic Jar</font></b> => DC [r: 8 + Intelligence + Proficiency] Charisma Save or your soul moves into the target’s body, and the target’s soul becomes trapped in the container.",
+    "macrocodecrit": "",
+    "subcategories": "Wizard",
+    "spell_levels": "6th Level Spell"
+  },
+  {
     "id": 130,
     "name": "Magic Missile",
     "description": "",
@@ -2187,6 +2253,17 @@
     "macrocodecrit": "",
     "subcategories": "Bard,Cleric",
     "spell_levels": "3rd Level Spell"
+  },
+  {
+    "id": 341,
+    "name": "Mass Suggestion",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Mass Suggestion</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or it pursues the course of action you described to the best of its ability.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Sorcerer,Warlock,Wizard",
+    "spell_levels": "6th Level Spell"
   },
   {
     "id": 31,
@@ -2264,6 +2341,28 @@
     "macrocodecrit": "",
     "subcategories": "Sorcerer,Wizard",
     "spell_levels": "3rd Level Spell"
+  },
+  {
+    "id": 342,
+    "name": "Mental Prison (cast)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Mental Prison</font></b> => [t: 5d10] <font color=\"Purple\">👁</font> damage + DC [r: 8 + INPUT + Proficiency] Intelligence Save or the target is Blinded, Deafened and is Restrained inside whatever form the illusion takes.",
+    "macrocodecrit": "",
+    "subcategories": "Sorcerer,Warlock,Wizard",
+    "spell_levels": "6th Level Spell"
+  },
+  {
+    "id": 343,
+    "name": "Mental Prison (escape)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Mental Prison</font></b> => [t: 10d10] <font color=\"Purple\">👁</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Sorcerer,Warlock,Wizard",
+    "spell_levels": "6th Level Spell"
   },
   {
     "id": 64,
@@ -2385,6 +2484,28 @@
     "macrocodecrit": "",
     "subcategories": "Warlock,Wizard",
     "spell_levels": "5th Level Spell"
+  },
+  {
+    "id": 344,
+    "name": "Otiluke's Freezing Sphere (cast)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Otiluke's Freezing Sphere</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Col = 10d6] ([t: floor(Col/2)]) <font color=\"Blue\">❄</font> damage. ",
+    "macrocodecrit": "",
+    "subcategories": "Sorcerer,Wizard",
+    "spell_levels": "6th Level Spell"
+  },
+  {
+    "id": 345,
+    "name": "Otiluke's Freezing Sphere (ice)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Otiluke's Freezing Sphere</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or be trapped in the ice.",
+    "macrocodecrit": "",
+    "subcategories": "Sorcerer,Wizard",
+    "spell_levels": "6th Level Spell"
   },
   {
     "id": 239,
@@ -2530,6 +2651,17 @@
     "spell_levels": "Cantrip"
   },
   {
+    "id": 346,
+    "name": "Programmed Illusion",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Programmed Illusion</font></b> => DC [r: 8 + INPUT + Proficiency] Investigation Save or illusion stays active.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Wizard",
+    "spell_levels": "6th Level Spell"
+  },
+  {
     "id": 147,
     "name": "Pyrotechnics (fireworks)",
     "description": "Replace INPUT with spellcasting ability.",
@@ -2660,6 +2792,17 @@
     "macrocodecrit": "",
     "subcategories": "Artificer,Cleric",
     "spell_levels": "1st Level Spell"
+  },
+  {
+    "id": 347,
+    "name": "Scatter",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Scatter</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or fail to resist this spell.",
+    "macrocodecrit": "",
+    "subcategories": "Sorcerer,Warlock,Wizard",
+    "spell_levels": "6th Level Spell"
   },
   {
     "id": 37,
@@ -2946,6 +3089,17 @@
     "macrocodecrit": "",
     "subcategories": "Sorcerer,Wizard",
     "spell_levels": "2nd Level Spell"
+  },
+  {
+    "id": 348,
+    "name": "Soul Cage",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Soul Cage</font></b> => [t: 2d8] <font color=\"Red\">➕</font> healing.",
+    "macrocodecrit": "",
+    "subcategories": "Warlock,Wizard",
+    "spell_levels": "6th Level Spell"
   },
   {
     "id": 14,
