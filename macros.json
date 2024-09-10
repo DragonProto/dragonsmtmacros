@@ -814,6 +814,17 @@
     "spell_levels": "2nd Level Spell"
   },
   {
+    "id": 356,
+    "name": "Crown of Stars",
+    "description": "A spell used with a spell attack action.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Crown of Stars Damage</font></b> => [t: 4d12] <font color=\"Orange\">☀</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Crown of Stars Crit Damage</font></b> => [t: 8d12] <font color=\"Orange\">☀</font> damage!",
+    "subcategories": "Sorcerer,Warlock,Wizard",
+    "spell_levels": "7th Level Spell"
+  },
+  {
     "id": 203,
     "name": "Crusader's Mantle",
     "description": "A spell used with an attack action.",
@@ -891,6 +902,28 @@
     "spell_levels": "5th Level Spell"
   },
   {
+    "id": 358,
+    "name": "Delayed Blast Fireball (bead)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Delayed Blast Fireball</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or the spell ends immediately, causing the bead to erupt in flame.",
+    "macrocodecrit": "",
+    "subcategories": "Sorcerer,Wizard",
+    "spell_levels": "7th Level Spell"
+  },
+  {
+    "id": 357,
+    "name": "Delayed Blast Fireball (cast)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Delayed Blast Fireball</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 12d6] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage. If at the end of your turn the bead has not yet detonated, the damage increases by [t: 1d6].",
+    "macrocodecrit": "",
+    "subcategories": "Sorcerer,Wizard",
+    "spell_levels": "7th Level Spell"
+  },
+  {
     "id": 285,
     "name": "Destructive Wave",
     "description": "",
@@ -957,6 +990,17 @@
     "spell_levels": "1st Level Spell"
   },
   {
+    "id": 359,
+    "name": "Divine Word",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Divine Word</font></b> => DC [r: 8 + Wisdom + Proficiency] Charisma Save or fall under the effect of the spell.",
+    "macrocodecrit": "",
+    "subcategories": "Cleric",
+    "spell_levels": "7th Level Spell"
+  },
+  {
     "id": 245,
     "name": "Dominate Beast",
     "description": "Replace INPUT with spellcasting ability.",
@@ -977,6 +1021,17 @@
     "macrocodecrit": "",
     "subcategories": "Bard,Sorcerer,Wizard",
     "spell_levels": "5th Level Spell"
+  },
+  {
+    "id": 360,
+    "name": "Draconic Transformation",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Draconic Transformation</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: For = 6d8] ([t: floor(For/2)]) <font color=\"Blue\">✊</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Druid,Sorcerer,Wizard",
+    "spell_levels": "7th Level Spell"
   },
   {
     "id": 186,
@@ -1287,6 +1342,17 @@
     "spell_levels": "3rd Level Spell"
   },
   {
+    "id": 361,
+    "name": "Finger of Death",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Finger of Death</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Nec = 7d8 + 30] ([t: floor(Nec/2)]) <font color=\"Purple\">💀</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Sorcerer,Warlock,Wizard",
+    "spell_levels": "7th Level Spell"
+  },
+  {
     "id": 57,
     "name": "Fire Bolt",
     "description": "A spell used with a spell attack action.\r\n\r\nThis spell’s damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).\r\n\r\nRemember to edit the damage dice according to level.",
@@ -1307,6 +1373,17 @@
     "macrocodecrit": "",
     "subcategories": "Druid,Sorcerer,Wizard",
     "spell_levels": "4th Level Spell"
+  },
+  {
+    "id": 362,
+    "name": "Fire Storm",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Fire Storm</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 7d10] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Cleric,Druid,Sorcerer",
+    "spell_levels": "7th Level Spell"
   },
   {
     "id": 209,
@@ -1395,6 +1472,17 @@
     "macrocodecrit": "",
     "subcategories": "Cleric",
     "spell_levels": "6th Level Spell"
+  },
+  {
+    "id": 363,
+    "name": "Forcecage",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Forcecage</font></b> => DC [r: 8 + INPUT + Proficiency] Charisma Save or the creature can't exit the cage and wastes the use of the spell or effect.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Warlock,Wizard",
+    "spell_levels": "7th Level Spell"
   },
   {
     "id": 139,
@@ -2442,6 +2530,17 @@
     "spell_levels": "4th Level Spell"
   },
   {
+    "id": 364,
+    "name": "Mordenkainen's Sword",
+    "description": "A spell used with a spell attack action.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Mordenkainen's Sword Damage</font></b> => [t: 3d10] <font color=\"Blue\">✊</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Mordenkainen's Sword Crit Damage</font></b> => [t: 6d10] <font color=\"Blue\">✊</font> damage!",
+    "subcategories": "Bard,Wizard",
+    "spell_levels": "7th Level Spell"
+  },
+  {
     "id": 32,
     "name": "Morningstar",
     "description": "A strength-based weapon used with an attack action.",
@@ -2596,6 +2695,17 @@
     "spell_levels": "5th Level Spell"
   },
   {
+    "id": 365,
+    "name": "Plane Shift",
+    "description": "A spell used with a spell attack action.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Plane Shift</font></b> => DC [r: 8 + INPUT + Proficiency] Charisma Save or it is transported to a random location on the plane of existence you specify.",
+    "macrocodecrit": "",
+    "subcategories": "Cleric,Druid,Sorcerer,Warlock,Wizard",
+    "spell_levels": "7th Level Spell"
+  },
+  {
     "id": 65,
     "name": "Poison Spray",
     "description": "Replace INPUT with spellcasting ability.\r\n\r\nThis spell’s damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12).\r\n\r\nRemember to edit the damage dice according to level.",
@@ -2618,6 +2728,17 @@
     "spell_levels": "4th Level Spell"
   },
   {
+    "id": 366,
+    "name": "Power Word: Pain",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Power Word: Pain</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or the casting fails and the spell is wasted.",
+    "macrocodecrit": "",
+    "subcategories": "Sorcerer,Warlock,Wizard",
+    "spell_levels": "7th Level Spell"
+  },
+  {
     "id": 161,
     "name": "Prayer of Healing",
     "description": "Replace INPUT with spellcasting ability.",
@@ -2638,6 +2759,94 @@
     "macrocodecrit": "<b><font color=\"Teal\">Primal Savagery Crit Damage</font></b> => [t: 2d10] <font color=\"Green\">🔥</font> damage!",
     "subcategories": "Druid",
     "spell_levels": "Cantrip"
+  },
+  {
+    "id": 372,
+    "name": "Prismatic Spray (blue)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Prismatic Spray (blue)</font></b> [t: Col = 10d6] ([t: floor(Col/2)]) <font color=\"Blue\">❄</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Sorcerer,Wizard",
+    "spell_levels": "7th Level Spell"
+  },
+  {
+    "id": 367,
+    "name": "Prismatic Spray (cast)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Prismatic Spray</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save. Target gets affected by the following ray: [t: 1d8].",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Sorcerer,Wizard",
+    "spell_levels": "7th Level Spell"
+  },
+  {
+    "id": 371,
+    "name": "Prismatic Spray (green)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Prismatic Spray (green)</font></b> [t: Poi = 10d6] ([t: floor(Poi/2)]) <font color=\"Green\">☠</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Sorcerer,Wizard",
+    "spell_levels": "7th Level Spell"
+  },
+  {
+    "id": 373,
+    "name": "Prismatic Spray (indigo)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Prismatic Spray (indigo)</font></b> => On fail, the target is Restrained. DC [r: 8 + INPUT + Proficiency] Constitution Save. If it successfully saves three times, the spell ends. If it fails its save three times, it permanently turns to stone and is subjected to the Petrified condition.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Sorcerer,Wizard",
+    "spell_levels": "7th Level Spell"
+  },
+  {
+    "id": 369,
+    "name": "Prismatic Spray (orange)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Prismatic Spray (orange)</font></b> [t: Aci = 10d6] ([t: floor(Aci/2)]) <font color=\"Green\">🔥</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Sorcerer,Wizard",
+    "spell_levels": "7th Level Spell"
+  },
+  {
+    "id": 368,
+    "name": "Prismatic Spray (red)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Prismatic Spray (red)</font></b> [t: Fir = 10d6] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Sorcerer,Wizard",
+    "spell_levels": "7th Level Spell"
+  },
+  {
+    "id": 374,
+    "name": "Prismatic Spray (violet)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Prismatic Spray (violet)</font></b> => On fail, the target is Blinded. DC [r: 8 + INPUT + Proficiency] Wisdom Save or the creature is transported to another plane of existence of the DM’s choosing and is no longer Blinded. On success, ends the blindness.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Sorcerer,Wizard",
+    "spell_levels": "7th Level Spell"
+  },
+  {
+    "id": 370,
+    "name": "Prismatic Spray (yellow)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Prismatic Spray (yellow)</font></b> [t: Lig = 10d6] ([t: floor(Lig/2)]) <font color=\"Blue\">✴</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Sorcerer,Wizard",
+    "spell_levels": "7th Level Spell"
   },
   {
     "id": 78,
@@ -3256,6 +3465,17 @@
     "spell_levels": "4th Level Spell"
   },
   {
+    "id": 349,
+    "name": "Sunbeam",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Sunbeam</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Rad = 6d8] ([t: floor(Rad/2)]) <font color=\"Orange\">☀</font> damage. On fail,  is Blinded until your next turn.",
+    "macrocodecrit": "",
+    "subcategories": "Cleric,Druid,Sorcerer,Wizard",
+    "spell_levels": "6th Level Spell"
+  },
+  {
     "id": 68,
     "name": "Sword Burst",
     "description": "Replace INPUT with spellcasting ability.\r\n\r\nThis spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).\r\n\r\nRemember to edit the damage dice according to level.",
@@ -3342,6 +3562,28 @@
     "macrocodecrit": "",
     "subcategories": "Sorcerer,Wizard",
     "spell_levels": "5th Level Spell"
+  },
+  {
+    "id": 351,
+    "name": "Tenser's Transformation (attack)",
+    "description": "A spell used with an attack action.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Tenser's Transformation Extra Damage</font></b> => [t: 2d12] <font color=\"Blue\">✊</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Tenser's Transformation Extra Crit Damage</font></b> => [t: 4d12] <font color=\"Blue\">✊</font> damage!",
+    "subcategories": "Wizard",
+    "spell_levels": "6th Level Spell"
+  },
+  {
+    "id": 350,
+    "name": "Tenser's Transformation (health)\r\n",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Tenser's Transformation</font></b> => [t: 50] temporary hit points.",
+    "macrocodecrit": "",
+    "subcategories": "Wizard",
+    "spell_levels": "6th Level Spell"
   },
   {
     "id": 81,
@@ -3542,6 +3784,28 @@
     "spell_levels": "4th Level Spell"
   },
   {
+    "id": 352,
+    "name": "Wall of Ice (cast)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Wall of Ice</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Col = 10d6] ([t: floor(Col/2)]) <font color=\"Blue\">❄</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Wizard",
+    "spell_levels": "6th Level Spell"
+  },
+  {
+    "id": 353,
+    "name": "Wall of Ice (enter)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Wall of Ice</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Col = 5d6] ([t: floor(Col/2)]) <font color=\"Blue\">❄</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Wizard",
+    "spell_levels": "6th Level Spell"
+  },
+  {
     "id": 316,
     "name": "Wall of Light (attack)",
     "description": "A spell used with a spell attack action.",
@@ -3573,6 +3837,28 @@
     "macrocodecrit": "",
     "subcategories": "Artificer,Druid,Sorcerer,Wizard",
     "spell_levels": "5th Level Spell"
+  },
+  {
+    "id": 354,
+    "name": "Wall of Thorns (cast)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Wall of Thorns</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Pie = 7d8] ([t: floor(Pie/2)]) <font color=\"Silver\">📍</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Druid",
+    "spell_levels": "6th Level Spell"
+  },
+  {
+    "id": 355,
+    "name": "Wall of Thorns (enter)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Wall of Thorns</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Sla = 7d8] ([t: floor(Sla/2)]) <font color=\"Silver\">🔪</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Druid",
+    "spell_levels": "6th Level Spell"
   },
   {
     "id": 42,
