@@ -269,8 +269,8 @@
     "description": "A spell used with a spell attack action.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Bigby's Hand Damage</font></b> => [t: 4d8] <font color=\"Blue\">✊</font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Bigby's Hand CritDamage</font></b> => [t: 8d8] <font color=\"Blue\">✊</font> damage!",
+    "macrocode": "<b><font color=\"Purple\">Bigby's Hand (clenched fist) Damage</font></b> => [t: 4d8] <font color=\"Blue\">✊</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Bigby's Hand (clenched fist) Crit Damage</font></b> => [t: 8d8] <font color=\"Blue\">✊</font> damage!",
     "subcategories": "Artificer,Sorcerer,Wizard",
     "spell_levels": "5th Level Spell"
   },
@@ -280,7 +280,7 @@
     "description": "",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Bigby's Hand</font></b> => DC [r: 1d20 + Strength] Athletics Save or the hand pushes the target up to [t: 5 + (5 * INPUT)] feet.",
+    "macrocode": "<b><font color=\"Purple\">Bigby's Hand (forceful hand)</font></b> => DC [r: 1d20 + Strength] Athletics Save or the hand pushes the target up to [t: 5 + (5 * INPUT)] feet.",
     "macrocodecrit": "",
     "subcategories": "Artificer,Sorcerer,Wizard",
     "spell_levels": "5th Level Spell"
@@ -291,7 +291,7 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Bigby's Hand Damage</font></b> => [t: 2d6 + INPUT] <font color=\"Silver\">🔨</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Bigby's Hand (grasping hand) Damage</font></b> => [t: 2d6 + INPUT] <font color=\"Silver\">🔨</font> damage.",
     "macrocodecrit": "",
     "subcategories": "Artificer,Sorcerer,Wizard",
     "spell_levels": "5th Level Spell"
@@ -302,7 +302,7 @@
     "description": "",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Bigby's Hand</font></b> => DC [r: 1d20 + Strength] Acrobatics/Athletics Save or become Grappled.",
+    "macrocode": "<b><font color=\"Purple\">Bigby's Hand (grasping hand)</font></b> => DC [r: 1d20 + Strength] Acrobatics/Athletics Save or become Grappled.",
     "macrocodecrit": "",
     "subcategories": "Artificer,Sorcerer,Wizard",
     "spell_levels": "5th Level Spell"
@@ -1534,7 +1534,7 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Glyph of Warding</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Any = 5d8] ([t: floor(Any/2)]) damage.",
+    "macrocode": "<b><font color=\"Purple\">Glyph of Warding (explosive runes)\r\n</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Any = 5d8] ([t: floor(Any/2)]) damage.",
     "macrocodecrit": "",
     "subcategories": "Artificer,Bard,Cleric,Wizard",
     "spell_levels": "3rd Level Spell"
@@ -2871,6 +2871,17 @@
     "spell_levels": "6th Level Spell"
   },
   {
+    "id": 375,
+    "name": "Project Image",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Project Image</font></b> => DC [r: 8 + INPUT + Proficiency] Investigation Save or illusion stays active.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Wizard",
+    "spell_levels": "7th Level Spell"
+  },
+  {
     "id": 147,
     "name": "Pyrotechnics (fireworks)",
     "description": "Replace INPUT with spellcasting ability.",
@@ -2959,6 +2970,17 @@
     "spell_levels": "1st Level Spell"
   },
   {
+    "id": 376,
+    "name": "Regenerate",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Regenerate</font></b> => [t: 4d8 + 15] <font color=\"Red\">➕</font> healing. The target regains 1 hit point at the start of each of its turns",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Cleric,Druid",
+    "spell_levels": "7th Level Spell"
+  },
+  {
     "id": 79,
     "name": "Resistance",
     "description": "",
@@ -2968,6 +2990,17 @@
     "macrocodecrit": "",
     "subcategories": "Artificer,Cleric,Druid",
     "spell_levels": "Cantrip"
+  },
+  {
+    "id": 377,
+    "name": "Reverse Gravity",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Reverse Gravity</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save. On success, grab onto a fixed object it can reach, thus avoiding the fall.",
+    "macrocodecrit": "",
+    "subcategories": "Druid,Sorcerer,Wizard",
+    "spell_levels": "7th Level Spell"
   },
   {
     "id": 190,
@@ -3487,6 +3520,105 @@
     "spell_levels": "Cantrip"
   },
   {
+    "id": 379,
+    "name": "Symbol (death)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Symbol (death)</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Nec = 10d10] ([t: floor(Nec/2)]) <font color=\"Purple\">💀</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Cleric,Druid,Wizard",
+    "spell_levels": "7th Level Spell"
+  },
+  {
+    "id": 380,
+    "name": "Symbol (discord)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Symbol (discord)</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or a target bickers and argues with other creatures for 1 minute + has disadvantage on attack rolls and ability checks.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Cleric,Druid,Wizard",
+    "spell_levels": "7th Level Spell"
+  },
+  {
+    "id": 381,
+    "name": "Symbol (fear)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Symbol (fear)</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or becomes Frightened for 1 minute + the target drops whatever it is holding and must move at least 20 feet away from the glyph on each of its turns, if able.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Cleric,Druid,Wizard",
+    "spell_levels": "7th Level Spell"
+  },
+  {
+    "id": 378,
+    "name": "Symbol (hidden)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Symbol</font></b> => DC [r: 8 + INPUT + Proficiency] Investigation Save or glyph stays hidden.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Cleric,Druid,Wizard",
+    "spell_levels": "7th Level Spell"
+  },
+  {
+    "id": 382,
+    "name": "Symbol (hopelessness)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Symbol (hopelessness)</font></b> => DC [r: 8 + INPUT + Proficiency] Charisma Save or the target is overwhelmed with despair for 1 minute + it can't attack or target any creature with harmful abilities, spells, or other magical effects.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Cleric,Druid,Wizard",
+    "spell_levels": "7th Level Spell"
+  },
+  {
+    "id": 383,
+    "name": "Symbol (insanity)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Symbol (insanity)</font></b> => DC [r: 8 + INPUT + Proficiency] Intelligence Save or the target is driven insane for 1 minute + can't take actions, can't understand what other creatures say, can't read, and speaks only in gibberish.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Cleric,Druid,Wizard",
+    "spell_levels": "7th Level Spell"
+  },
+  {
+    "id": 384,
+    "name": "Symbol (pain)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Symbol (pain)</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or becomes Incapacitated with excruciating pain for 1 minute.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Cleric,Druid,Wizard",
+    "spell_levels": "7th Level Spell"
+  },
+  {
+    "id": 385,
+    "name": "Symbol (sleep)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Symbol (sleep)</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or falls unconscious for 10 minutes.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Cleric,Druid,Wizard",
+    "spell_levels": "7th Level Spell"
+  },
+  {
+    "id": 386,
+    "name": "Symbol (stunning)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Symbol (stunning)</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or becomes Stunned for 1 minute.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Cleric,Druid,Wizard",
+    "spell_levels": "7th Level Spell"
+  },
+  {
     "id": 309,
     "name": "Synaptic Static (active)",
     "description": "",
@@ -3547,7 +3679,7 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Telekinesis</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or you move the creature up to 30 feet in any direction, including upward but not beyond the range of this spell. Until the end of your next turn, the creature is Restrained in your telekinetic grip.",
+    "macrocode": "<b><font color=\"Purple\">Telekinesis (creature)</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or you move the creature up to 30 feet in any direction, including upward but not beyond the range of this spell. Until the end of your next turn, the creature is Restrained in your telekinetic grip.",
     "macrocodecrit": "",
     "subcategories": "Sorcerer,Wizard",
     "spell_levels": "5th Level Spell"
@@ -3558,10 +3690,43 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Telekinesis</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or you pull the object away from that creature and can move it up to 30 feet in any direction but not beyond the range of this spell.",
+    "macrocode": "<b><font color=\"Purple\">Telekinesis (object)</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or you pull the object away from that creature and can move it up to 30 feet in any direction but not beyond the range of this spell.",
     "macrocodecrit": "",
     "subcategories": "Sorcerer,Wizard",
     "spell_levels": "5th Level Spell"
+  },
+  {
+    "id": 387,
+    "name": "Teleport (mishap)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Teleport (mishap)</font></b> => [t: 3d10] <font color=\"Blue\">✊</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Mordenkainen's Sword Crit Damage</font></b> => [t: 6d10] <font color=\"Blue\">✊</font> damage!",
+    "subcategories": "Bard,Sorcerer,Wizard",
+    "spell_levels": "7th Level Spell"
+  },
+  {
+    "id": 389,
+    "name": "Temple of the Gods (active)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Temple of the Gods</font></b> => [t: 1d4].",
+    "macrocodecrit": "",
+    "subcategories": "Cleric",
+    "spell_levels": "7th Level Spell"
+  },
+  {
+    "id": 388,
+    "name": "Temple of the Gods (enter)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Temple of the Gods</font></b> => DC [r: 8 + Wisdom + Proficiency] Charisma Save or it can’t enter the temple for 24 hours.",
+    "macrocodecrit": "",
+    "subcategories": "Cleric",
+    "spell_levels": "7th Level Spell"
   },
   {
     "id": 351,
@@ -3584,6 +3749,17 @@
     "macrocodecrit": "",
     "subcategories": "Wizard",
     "spell_levels": "6th Level Spell"
+  },
+  {
+    "id": 390,
+    "name": "Tether Essence",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Tether Essence</font></b> => DC [r: 8 + Intelligence + Proficiency] Constitution Save or the creatures are magically linked for the duration, regardless of the distance between them.",
+    "macrocodecrit": "",
+    "subcategories": "Wizard",
+    "spell_levels": "7th Level Spell"
   },
   {
     "id": 81,
@@ -3668,7 +3844,7 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Transmute Rock</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or a creature becomes Restrained by the rock.",
+    "macrocode": "<b><font color=\"Purple\">Transmute Rock (mud to rock, ground)</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or a creature becomes Restrained by the rock.",
     "macrocodecrit": "",
     "subcategories": "Artificer,Druid,Wizard",
     "spell_levels": "5th Level Spell"
@@ -3679,7 +3855,7 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Transmute Rock</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Blu = 4d8] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Transmute Rock (rock to mud, ceiling)</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Blu = 4d8] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage.",
     "macrocodecrit": "",
     "subcategories": "Artificer,Druid,Wizard",
     "spell_levels": "5th Level Spell"
@@ -3690,7 +3866,7 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Transmute Rock</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or a creature sinks into the mud and is Restrained.",
+    "macrocode": "<b><font color=\"Purple\">Transmute Rock (rock to mud, ground)</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or a creature sinks into the mud and is Restrained.",
     "macrocodecrit": "",
     "subcategories": "Artificer,Druid,Wizard",
     "spell_levels": "5th Level Spell"
@@ -3949,6 +4125,28 @@
     "spell_levels": null
   },
   {
+    "id": 391,
+    "name": "Whirlwind (enter)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Whirlwind (enter)</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Blu = 10d6] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage + a Large or smaller creature that fails the save => DC [r: 8 + INPUT + Proficiency] Strength Save or become Restrained.",
+    "macrocodecrit": "",
+    "subcategories": "Druid,Wizard",
+    "spell_levels": "7th Level Spell"
+  },
+  {
+    "id": 392,
+    "name": "Whirlwind (escape)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Whirlwind (escape)</font></b> => DC [r: 8 + INPUT + Proficiency] Strength/Dexterity Save. On success, the creature is no longer Restrained by the whirlwind and is hurled [t: 3d6 * 10] feet away from it in a random direction.",
+    "macrocodecrit": "",
+    "subcategories": "Druid,Wizard",
+    "spell_levels": "7th Level Spell"
+  },
+  {
     "id": 235,
     "name": "Wind Wall",
     "description": "",
@@ -3987,8 +4185,8 @@
     "description": "A spell used with a spell attack action.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Wrath Of Nature Damage</font></b> => [t: 3d8] <font color=\"Silver\">🔨</font> damage + DC [r: 8 + Wisdom + Proficiency] Strength Save or fall Prone.",
-    "macrocodecrit": "<b><font color=\"Teal\">Wrath Of Nature Crit Damage</font></b> => [t: 6d8] <font color=\"Silver\">🔨</font> damage + DC [r: 8 + Wisdom + Proficiency] Strength Save or fall Prone!",
+    "macrocode": "<b><font color=\"Purple\">Wrath Of Nature (rocks) Damage</font></b> => [t: 3d8] <font color=\"Silver\">🔨</font> damage + DC [r: 8 + Wisdom + Proficiency] Strength Save or fall Prone.",
+    "macrocodecrit": "<b><font color=\"Teal\">Wrath Of Nature (rocks) Crit Damage</font></b> => [t: 6d8] <font color=\"Silver\">🔨</font> damage + DC [r: 8 + Wisdom + Proficiency] Strength Save or fall Prone!",
     "subcategories": "Druid,Ranger",
     "spell_levels": "5th Level Spell"
   },
@@ -3998,7 +4196,7 @@
     "description": "",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Wrath Of Nature</font></b> => DC [r: 8 + Wisdom + Proficiency] Strength Save or become Restrained.",
+    "macrocode": "<b><font color=\"Purple\">Wrath Of Nature (roots and vines)</font></b> => DC [r: 8 + Wisdom + Proficiency] Strength Save or become Restrained.",
     "macrocodecrit": "",
     "subcategories": "Druid,Ranger",
     "spell_levels": "5th Level Spell"
@@ -4009,7 +4207,7 @@
     "description": "",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Wrath Of Nature</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: 4d6] <font color=\"Silver\">🔪</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Wrath Of Nature (trees)</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: 4d6] <font color=\"Silver\">🔪</font> damage.",
     "macrocodecrit": "",
     "subcategories": "Druid,Ranger",
     "spell_levels": "5th Level Spell"
