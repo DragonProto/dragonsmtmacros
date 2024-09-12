@@ -1,5 +1,16 @@
 [
   {
+    "id": 393,
+    "name": "Abi-Dalzim's Horrid Wilting",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Abi-Dalzim's Horrid Wilting</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Nec = 10d8] ([t: floor(Nec/2)]) <font color=\"Purple\">💀</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Sorcerer,Wizard",
+    "spell_levels": "8th Level Spell"
+  },
+  {
     "id": 85,
     "name": "Absorb Elements",
     "description": "",
@@ -130,6 +141,28 @@
     "macrocodecrit": "",
     "subcategories": "Bard,Sorcerer,Warlock,Wizard",
     "spell_levels": "3rd Level Spell"
+  },
+  {
+    "id": 394,
+    "name": "Antipathy/Sympathy (antipathy)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Antipathy/Sympathy (antipathy)</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or become Frightened + fall under the effects of the spell.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Druid,Wizard",
+    "spell_levels": "8th Level Spell"
+  },
+  {
+    "id": 395,
+    "name": "Antipathy/Sympathy (sympathy)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Antipathy/Sympathy (antipathy)</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or use its movement on each of its turns to enter the area or move within reach of the target + fall under the effects of the spell.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Druid,Wizard",
+    "spell_levels": "8th Level Spell"
   },
   {
     "id": 133,
@@ -737,6 +770,17 @@
     "spell_levels": "5th Level Spell"
   },
   {
+    "id": 396,
+    "name": "Control Weather",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Control Weather</font></b> => [t: 1d4 * 10] minutes for the new conditions to take effect.",
+    "macrocodecrit": "",
+    "subcategories": "Cleric,Druid,Wizard",
+    "spell_levels": "8th Level Spell"
+  },
+  {
     "id": 283,
     "name": "Control Winds",
     "description": "A spell used with a spell attack action.",
@@ -1012,6 +1056,17 @@
     "spell_levels": "4th Level Spell"
   },
   {
+    "id": 397,
+    "name": "Dominate Monster",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Dominate Monster</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or become Charmed + fall under the effect of the spell.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Sorcerer,Warlock,Wizard",
+    "spell_levels": "8th Level Spell"
+  },
+  {
     "id": 286,
     "name": "Dominate Person",
     "description": "Replace INPUT with spellcasting ability.",
@@ -1087,6 +1142,50 @@
     "macrocodecrit": "",
     "subcategories": "Druid,Sorcerer,Warlock,Wizard",
     "spell_levels": "2nd Level Spell"
+  },
+  {
+    "id": 399,
+    "name": "Earthquake (area)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Earthquake (area)</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or the creature is knocked Prone.",
+    "macrocodecrit": "",
+    "subcategories": "Cleric,Druid,Sorcerer",
+    "spell_levels": "8th Level Spell"
+  },
+  {
+    "id": 398,
+    "name": "Earthquake (concentration)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Earthquake (concentration)</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or the creature’s Concentration is broken.",
+    "macrocodecrit": "",
+    "subcategories": "Cleric,Druid,Sorcerer",
+    "spell_levels": "8th Level Spell"
+  },
+  {
+    "id": 400,
+    "name": "Earthquake (fissures)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Earthquake (fissures)</font></b> => [t: 1d6] fissures open, each [t: 1d10 * 10] feet deep, 10 feet wide and extends from one edge of the spell’s area to the opposite side. DC [r: 8 + INPUT + Proficiency] Dexterity Save or fall in.",
+    "macrocodecrit": "",
+    "subcategories": "Cleric,Druid,Sorcerer",
+    "spell_levels": "8th Level Spell"
+  },
+  {
+    "id": 401,
+    "name": "Earthquake (structures)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Earthquake (structures)</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Blu = 5d6] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage. On fail, is knocked Prone, and is buried in the rubble.",
+    "macrocodecrit": "",
+    "subcategories": "Cleric,Druid,Sorcerer",
+    "spell_levels": "8th Level Spell"
   },
   {
     "id": 71,
@@ -1340,6 +1439,17 @@
     "macrocodecrit": "",
     "subcategories": "Bard,Sorcerer,Warlock,Wizard",
     "spell_levels": "3rd Level Spell"
+  },
+  {
+    "id": 402,
+    "name": "Feeblemind",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Feeblemind</font></b> => [t: Psy = 4d6] ([t: floor(Psy/2)]) <font color=\"Purple\">👁</font> damage + DC [r: 8 + INPUT + Proficiency] Intelligence Save or fall under the effects of the spell.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Druid,Warlock,Wizard",
+    "spell_levels": "8th Level Spell"
   },
   {
     "id": 361,
@@ -1870,6 +1980,17 @@
     "spell_levels": "2nd Level Spell"
   },
   {
+    "id": 403,
+    "name": "Holy Aura",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Holy Aura</font></b> => DC [r: 8 + Wisdom + Proficiency] Constitution Save or be Blinded.",
+    "macrocodecrit": "",
+    "subcategories": "Cleric",
+    "spell_levels": "8th Level Spell"
+  },
+  {
     "id": 294,
     "name": "Holy Weapon (active)",
     "description": "A spell used with an attack action.",
@@ -1958,6 +2079,39 @@
     "spell_levels": "4th Level Spell"
   },
   {
+    "id": 404,
+    "name": "Illusory Dragon (cast)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Illusory Dragon (cast)</font></b> => DC [r: 8 + Intelligence + Proficiency] Wisdom Save or become Frightened of it for 1 minute.",
+    "macrocodecrit": "",
+    "subcategories": "Wizard",
+    "spell_levels": "8th Level Spell"
+  },
+  {
+    "id": 405,
+    "name": "Illusory Dragon (cone)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Illusory Dragon (cone)</font></b> => DC [r: 8 + Intelligence + Proficiency] Intelligence Save or take => [t: Any = 7d6] ([t: floor(Any/2)]) damage.",
+    "macrocodecrit": "",
+    "subcategories": "Wizard",
+    "spell_levels": "8th Level Spell"
+  },
+  {
+    "id": 406,
+    "name": "Illusory Dragon (illusion)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Illusory Dragon (illusion)</font></b> => DC [r: 8 + INPUT + Proficiency] Investigation Save or illusion stays active.",
+    "macrocodecrit": "",
+    "subcategories": "Wizard",
+    "spell_levels": "8th Level Spell"
+  },
+  {
     "id": 297,
     "name": "Immolation (burning)",
     "description": "Replace INPUT with spellcasting ability.",
@@ -1989,6 +2143,17 @@
     "macrocodecrit": "<b><font color=\"Teal\">Improved Weapon Crit Damage</font></b> => [t: 2d4 + Strength] damage!",
     "subcategories": "Special",
     "spell_levels": null
+  },
+  {
+    "id": 407,
+    "name": "Incendiary Cloud",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Incendiary Cloud</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 10d8] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Druid,Sorcerer,Wizard",
+    "spell_levels": "8th Level Spell"
   },
   {
     "id": 216,
@@ -2264,6 +2429,17 @@
     "macrocodecrit": "<b><font color=\"Teal\">Mace Crit Damage</font></b> => [t: 2d6 + Strength] <font color=\"Silver\">🔨</font> damage!",
     "subcategories": "Simple Melee Weapons",
     "spell_levels": null
+  },
+  {
+    "id": 408,
+    "name": "Maddening Darkness",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Maddening Darkness</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or take => [t: Psy = 8d8] ([t: floor(Psy/2)]) <font color=\"Purple\">👁</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Warlock,Wizard",
+    "spell_levels": "8th Level Spell"
   },
   {
     "id": 299,
@@ -2739,6 +2915,17 @@
     "spell_levels": "7th Level Spell"
   },
   {
+    "id": 409,
+    "name": "Power Word: Stun",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Power Word: Stun</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or the target stays Stunned.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Sorcerer,Warlock,Wizard",
+    "spell_levels": "8th Level Spell"
+  },
+  {
     "id": 161,
     "name": "Prayer of Healing",
     "description": "Replace INPUT with spellcasting ability.",
@@ -2766,7 +2953,7 @@
     "description": "",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Prismatic Spray (blue)</font></b> [t: Col = 10d6] ([t: floor(Col/2)]) <font color=\"Blue\">❄</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Prismatic Spray (blue)</font></b> => [t: Col = 10d6] ([t: floor(Col/2)]) <font color=\"Blue\">❄</font> damage.",
     "macrocodecrit": "",
     "subcategories": "Bard,Sorcerer,Wizard",
     "spell_levels": "7th Level Spell"
@@ -2788,7 +2975,7 @@
     "description": "",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Prismatic Spray (green)</font></b> [t: Poi = 10d6] ([t: floor(Poi/2)]) <font color=\"Green\">☠</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Prismatic Spray (green)</font></b> => [t: Poi = 10d6] ([t: floor(Poi/2)]) <font color=\"Green\">☠</font> damage.",
     "macrocodecrit": "",
     "subcategories": "Bard,Sorcerer,Wizard",
     "spell_levels": "7th Level Spell"
@@ -2799,7 +2986,7 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Prismatic Spray (indigo)</font></b> => On fail, the target is Restrained. DC [r: 8 + INPUT + Proficiency] Constitution Save. If it successfully saves three times, the spell ends. If it fails its save three times, it permanently turns to stone and is subjected to the Petrified condition.",
+    "macrocode": "<b><font color=\"Purple\">Prismatic Spray (indigo)</font></b> => On fail, the target is Restrained. DC [r: 8 + INPUT + Proficiency] Constitution Save. If it successfully saves three times, the spell ends. If it fails its save three times, it permanently turns to stone with the Petrified condition.",
     "macrocodecrit": "",
     "subcategories": "Bard,Sorcerer,Wizard",
     "spell_levels": "7th Level Spell"
@@ -2810,7 +2997,7 @@
     "description": "",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Prismatic Spray (orange)</font></b> [t: Aci = 10d6] ([t: floor(Aci/2)]) <font color=\"Green\">🔥</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Prismatic Spray (orange)</font></b> => [t: Aci = 10d6] ([t: floor(Aci/2)]) <font color=\"Green\">🔥</font> damage.",
     "macrocodecrit": "",
     "subcategories": "Bard,Sorcerer,Wizard",
     "spell_levels": "7th Level Spell"
@@ -2821,7 +3008,7 @@
     "description": "",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Prismatic Spray (red)</font></b> [t: Fir = 10d6] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Prismatic Spray (red)</font></b> => [t: Fir = 10d6] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage.",
     "macrocodecrit": "",
     "subcategories": "Bard,Sorcerer,Wizard",
     "spell_levels": "7th Level Spell"
@@ -2843,7 +3030,7 @@
     "description": "",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Prismatic Spray (yellow)</font></b> [t: Lig = 10d6] ([t: floor(Lig/2)]) <font color=\"Blue\">✴</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Prismatic Spray (yellow)</font></b> => [t: Lig = 10d6] ([t: floor(Lig/2)]) <font color=\"Blue\">✴</font> damage.",
     "macrocodecrit": "",
     "subcategories": "Bard,Sorcerer,Wizard",
     "spell_levels": "7th Level Spell"
@@ -3509,6 +3696,17 @@
     "spell_levels": "6th Level Spell"
   },
   {
+    "id": 410,
+    "name": "Sunburst",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Sunburst</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Rad = 12d6] ([t: floor(Rad/2)]) <font color=\"Orange\">☀</font> damage. On fail, is Blinded for 1 minute.",
+    "macrocodecrit": "",
+    "subcategories": "Cleric,Druid,Sorcerer,Wizard",
+    "spell_levels": "8th Level Spell"
+  },
+  {
     "id": 68,
     "name": "Sword Burst",
     "description": "Replace INPUT with spellcasting ability.\r\n\r\nThis spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).\r\n\r\nRemember to edit the damage dice according to level.",
@@ -3756,7 +3954,7 @@
     "description": "",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Tether Essence</font></b> => DC [r: 8 + Intelligence + Proficiency] Constitution Save or the creatures are magically linked for the duration, regardless of the distance between them.",
+    "macrocode": "<b><font color=\"Purple\">Tether Essence</font></b> => DC [r: 8 + Intelligence + Proficiency] Constitution Save or the creatures are magically linked for the duration + fall under the effects of the spell.",
     "macrocodecrit": "",
     "subcategories": "Wizard",
     "spell_levels": "7th Level Spell"
@@ -3892,6 +4090,39 @@
     "macrocodecrit": "<b><font color=\"Teal\">Trident Crit Damage</font></b> => [t: 2d8 + Strength] <font color=\"Silver\">📍</font> damage!",
     "subcategories": "Martial Melee Weapons",
     "spell_levels": null
+  },
+  {
+    "id": 412,
+    "name": "Tsunami (active)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "[h: input(\"Tsunami_Strength\")]\r\n<b><font color=\"Purple\">Tsunami</font></b> => DC [r: 8 + Wisdom + Proficiency] Strength Save or take => [t: roll(Tsunami_Strength,10)] <font color=\"Silver\">🔨</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Druid",
+    "spell_levels": "8th Level Spell"
+  },
+  {
+    "id": 411,
+    "name": "Tsunami (cast)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Tsunami</font></b> => DC [r: 8 + Wisdom + Proficiency] Strength Save or take => [t: Blu = 6d10] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Druid",
+    "spell_levels": "8th Level Spell"
+  },
+  {
+    "id": 413,
+    "name": "Tsunami (escape)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Tsunami</font></b> => DC [r: 8 + Wisdom + Proficiency] Athletics Save or it can’t move.",
+    "macrocodecrit": "",
+    "subcategories": "Druid",
+    "spell_levels": "8th Level Spell"
   },
   {
     "id": 144,
