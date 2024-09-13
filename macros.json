@@ -352,6 +352,17 @@
     "spell_levels": "6th Level Spell"
   },
   {
+    "id": 414,
+    "name": "Blade of Disaster",
+    "description": "A spell used with a spell attack action.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Blade of Disaster Damage</font></b> => [t: 4d12] <font color=\"Blue\">✊</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Blade of Disaster Crit Damage</font></b> => [t: 12d12] <font color=\"Blue\">✊</font> damage!",
+    "subcategories": "Sorcerer,Warlock,Wizard",
+    "spell_levels": "9th Level Spell"
+  },
+  {
     "id": 110,
     "name": "Bless",
     "description": "",
@@ -1870,12 +1881,12 @@
     "spell_levels": "6th Level Spell"
   },
   {
-    "id": 333,
+    "id": 419,
     "name": "Heal",
     "description": "",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Heal</font></b> => [t: 70] <font color=\"Red\">➕</font> healing.",
+    "macrocode": "<b><font color=\"Purple\">Heal</font></b> => [t: 70] <font color=\"Red\">➕</font> healing. The spell also ends Blindness, Deafness, and any diseases affecting the target.",
     "macrocodecrit": "",
     "subcategories": "Cleric,Druid",
     "spell_levels": "6th Level Spell"
@@ -2084,7 +2095,7 @@
     "description": "",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Illusory Dragon (cast)</font></b> => DC [r: 8 + Intelligence + Proficiency] Wisdom Save or become Frightened of it for 1 minute.",
+    "macrocode": "<b><font color=\"Purple\">Illusory Dragon</font></b> => DC [r: 8 + Intelligence + Proficiency] Wisdom Save or become Frightened of it for 1 minute.",
     "macrocodecrit": "",
     "subcategories": "Wizard",
     "spell_levels": "8th Level Spell"
@@ -2095,7 +2106,7 @@
     "description": "",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Illusory Dragon (cone)</font></b> => DC [r: 8 + Intelligence + Proficiency] Intelligence Save or take => [t: Any = 7d6] ([t: floor(Any/2)]) damage.",
+    "macrocode": "<b><font color=\"Purple\">Illusory Dragon</font></b> => DC [r: 8 + Intelligence + Proficiency] Intelligence Save or take => [t: Any = 7d6] ([t: floor(Any/2)]) damage.",
     "macrocodecrit": "",
     "subcategories": "Wizard",
     "spell_levels": "8th Level Spell"
@@ -2106,7 +2117,7 @@
     "description": "",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Illusory Dragon (illusion)</font></b> => DC [r: 8 + INPUT + Proficiency] Investigation Save or illusion stays active.",
+    "macrocode": "<b><font color=\"Purple\">Illusory Dragon</font></b> => DC [r: 8 + INPUT + Proficiency] Investigation Save or illusion stays active.",
     "macrocodecrit": "",
     "subcategories": "Wizard",
     "spell_levels": "8th Level Spell"
@@ -2132,6 +2143,17 @@
     "macrocodecrit": "",
     "subcategories": "Sorcerer,Wizard",
     "spell_levels": "5th Level Spell"
+  },
+  {
+    "id": 415,
+    "name": "Imprisonment",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Imprisonment</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or be bound by the spell (Restrained, fall asleep).",
+    "macrocodecrit": "",
+    "subcategories": "Warlock,Wizard",
+    "spell_levels": "9th Level Spell"
   },
   {
     "id": 51,
@@ -2508,6 +2530,17 @@
     "spell_levels": "5th Level Spell"
   },
   {
+    "id": 420,
+    "name": "Mass Heal",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Mass Heal</font></b> => [t: 700] <font color=\"Red\">➕</font> healing, divided as you choose among any number of creatures that you can see within range. Creatures healed by this spell are also cured of all diseases and any effect making them Blinded or Deafened.",
+    "macrocodecrit": "",
+    "subcategories": "Cleric",
+    "spell_levels": "9th Level Spell"
+  },
+  {
     "id": 222,
     "name": "Mass Healing Word",
     "description": "Replace INPUT with spellcasting ability.",
@@ -2517,6 +2550,17 @@
     "macrocodecrit": "",
     "subcategories": "Bard,Cleric",
     "spell_levels": "3rd Level Spell"
+  },
+  {
+    "id": 417,
+    "name": "Mass Polymorph",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Mass Polymorph</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or up to 10 creatures that you can see within range transforms into a new form.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Sorcerer,Wizard",
+    "spell_levels": "9th Level Spell"
   },
   {
     "id": 341,
@@ -2627,6 +2671,17 @@
     "macrocodecrit": "",
     "subcategories": "Sorcerer,Warlock,Wizard",
     "spell_levels": "6th Level Spell"
+  },
+  {
+    "id": 418,
+    "name": "Meteor Swarm",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Meteor Swarm</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 20d6] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage + [t: Blu = 20d6] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Sorcerer,Wizard",
+    "spell_levels": "9th Level Spell"
   },
   {
     "id": 64,
@@ -3019,7 +3074,7 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Spellcasting Classes",
     "subcategory": "",
-    "macrocode": "<b><font color=\"Purple\">Prismatic Spray (violet)</font></b> => On fail, the target is Blinded. DC [r: 8 + INPUT + Proficiency] Wisdom Save or the creature is transported to another plane of existence of the DM’s choosing and is no longer Blinded. On success, ends the blindness.",
+    "macrocode": "<b><font color=\"Purple\">Prismatic Spray (violet)</font></b> => On fail, the target is Blinded. DC [r: 8 + INPUT + Proficiency] Wisdom Save or the creature is transported to another plane of existence of the DM’s choosing. On fail/success, creature is no longer Blinded.",
     "macrocodecrit": "",
     "subcategories": "Bard,Sorcerer,Wizard",
     "spell_levels": "7th Level Spell"
@@ -3034,6 +3089,105 @@
     "macrocodecrit": "",
     "subcategories": "Bard,Sorcerer,Wizard",
     "spell_levels": "7th Level Spell"
+  },
+  {
+    "id": 427,
+    "name": "Prismatic Wall (blue)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Prismatic Wall (blue)</font></b> => [t: Col = 10d6] ([t: floor(Col/2)]) <font color=\"Blue\">❄</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Wizard",
+    "spell_levels": "9th Level Spell"
+  },
+  {
+    "id": 421,
+    "name": "Prismatic Wall (cast)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Prismatic Wall</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or become Blinded for 1 minute.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Wizard",
+    "spell_levels": "9th Level Spell"
+  },
+  {
+    "id": 422,
+    "name": "Prismatic Wall (enter)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Prismatic Wall</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or be affected by that layer’s properties.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Wizard",
+    "spell_levels": "9th Level Spell"
+  },
+  {
+    "id": 426,
+    "name": "Prismatic Wall (green)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Prismatic Wall (green)</font></b> => [t: Poi = 10d6] ([t: floor(Poi/2)]) <font color=\"Green\">☠</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Wizard",
+    "spell_levels": "9th Level Spell"
+  },
+  {
+    "id": 428,
+    "name": "Prismatic Wall (indigo)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Prismatic Wall (indigo)</font></b> => On fail, the target is Restrained. DC [r: 8 + INPUT + Proficiency] Constitution Save. If it successfully saves three times, the spell ends. If it fails its save three times, it permanently turns to stone with the Petrified condition.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Wizard",
+    "spell_levels": "9th Level Spell"
+  },
+  {
+    "id": 424,
+    "name": "Prismatic Wall (orange)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Prismatic Wall (orange)</font></b> => [t: Aci = 10d6] ([t: floor(Aci/2)]) <font color=\"Green\">🔥</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Wizard",
+    "spell_levels": "9th Level Spell"
+  },
+  {
+    "id": 423,
+    "name": "Prismatic Wall (red)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Prismatic Wall (red)</font></b> => [t: Fir = 10d6] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Wizard",
+    "spell_levels": "9th Level Spell"
+  },
+  {
+    "id": 429,
+    "name": "Prismatic Wall (violet)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Prismatic Wall (violet)</font></b> => On fail, the target is Blinded. DC [r: 8 + INPUT + Proficiency] Wisdom Save or the creature is transported to another plane of existence of the DM’s choosing. On fail/success, creature is no longer Blinded.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Wizard",
+    "spell_levels": "9th Level Spell"
+  },
+  {
+    "id": 425,
+    "name": "Prismatic Wall (yellow)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Prismatic Wall (yellow)</font></b> => [t: Lig = 10d6] ([t: floor(Lig/2)]) <font color=\"Blue\">✴</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Wizard",
+    "spell_levels": "9th Level Spell"
   },
   {
     "id": 78,
@@ -3067,6 +3221,17 @@
     "macrocodecrit": "",
     "subcategories": "Bard,Wizard",
     "spell_levels": "7th Level Spell"
+  },
+  {
+    "id": 430,
+    "name": "Psychic Scream",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Psychic Scream</font></b> => DC [r: 8 + INPUT + Proficiency] Intelligence Save or take => [t: Psy = 14d6] ([t: floor(Psy/2)]) <font color=\"Purple\">👁</font> damage. On fail, is Stunned.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Sorcerer,Warlock,Wizard",
+    "spell_levels": "9th Level Spell"
   },
   {
     "id": 147,
@@ -3663,6 +3828,61 @@
     "spell_levels": "4th Level Spell"
   },
   {
+    "id": 437,
+    "name": "Storm of Vengeance (cast)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Storm of Vengeance</font></b> => DC [r: 8 + Wisdom + Proficiency] Constitution Save or take => [t: Thu = 2d6] <font color=\"Gray\">💥</font> damage + becomes Deafened for 5 minutes.",
+    "macrocodecrit": "",
+    "subcategories": "Druid",
+    "spell_levels": "9th Level Spell"
+  },
+  {
+    "id": 438,
+    "name": "Storm of Vengeance (round2)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Storm of Vengeance</font></b> => [t: 1d6] <font color=\"Green\">🔥</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Druid",
+    "spell_levels": "9th Level Spell"
+  },
+  {
+    "id": 439,
+    "name": "Storm of Vengeance (round3)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Storm of Vengeance</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Lig = 10d6] ([t: floor(Lig/2)]) <font color=\"Blue\">✴</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Druid",
+    "spell_levels": "9th Level Spell"
+  },
+  {
+    "id": 440,
+    "name": "Storm of Vengeance (round4)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Storm of Vengeance</font></b> => [t: 2d6] <font color=\"Silver\">🔨</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Druid",
+    "spell_levels": "9th Level Spell"
+  },
+  {
+    "id": 441,
+    "name": "Storm of Vengeance (round5+)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Storm of Vengeance</font></b> => [t: 1d6] <font color=\"Blue\">❄</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Druid",
+    "spell_levels": "9th Level Spell"
+  },
+  {
     "id": 159,
     "name": "Suggestion",
     "description": "Replace INPUT with spellcasting ability.",
@@ -4026,6 +4246,17 @@
     "spell_levels": "3rd Level Spell"
   },
   {
+    "id": 431,
+    "name": "Time Stop",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Time Stop</font></b> => DC [t: 1d4 + 1] turns in a row, during which you can use actions and move as normal.",
+    "macrocodecrit": "",
+    "subcategories": "Sorcerer,Wizard",
+    "spell_levels": "9th Level Spell"
+  },
+  {
     "id": 70,
     "name": "Toll the Dead",
     "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe spell’s damage increases by one die when you reach 5th level (2d8 or 2d12), 11th level (3d8 or 3d12), and 17th level (4d8 or 4d12).\r\n\r\nRemember to edit the damage dice according to level.",
@@ -4090,6 +4321,17 @@
     "macrocodecrit": "<b><font color=\"Teal\">Trident Crit Damage</font></b> => [t: 2d8 + Strength] <font color=\"Silver\">📍</font> damage!",
     "subcategories": "Martial Melee Weapons",
     "spell_levels": null
+  },
+  {
+    "id": 432,
+    "name": "True Polymorph",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">True Polymorph</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or it is affected by this spell.",
+    "macrocodecrit": "",
+    "subcategories": "Bard,Warlock,Wizard",
+    "spell_levels": "9th Level Spell"
   },
   {
     "id": 412,
@@ -4334,6 +4576,28 @@
     "spell_levels": "2nd Level Spell"
   },
   {
+    "id": 434,
+    "name": "Weird (active)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Weird</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or take => [t: Psy = 4d10] <font color=\"Purple\">👁</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Warlock,Wizard",
+    "spell_levels": "9th Level Spell"
+  },
+  {
+    "id": 433,
+    "name": "Weird (cast)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Weird</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or a creature becomes Frightened.",
+    "macrocodecrit": "",
+    "subcategories": "Warlock,Wizard",
+    "spell_levels": "9th Level Spell"
+  },
+  {
     "id": 46,
     "name": "Whip (dexterity)",
     "description": "A dexterity-based weapon used with an attack action.",
@@ -4387,6 +4651,28 @@
     "macrocodecrit": "",
     "subcategories": "Druid,Ranger",
     "spell_levels": "3rd Level Spell"
+  },
+  {
+    "id": 436,
+    "name": "Wish (recovery)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Wish</font></b> => [t: 2d4] days.",
+    "macrocodecrit": "",
+    "subcategories": "Sorcerer,Wizard",
+    "spell_levels": "9th Level Spell"
+  },
+  {
+    "id": 435,
+    "name": "Wish (weakened)",
+    "description": "",
+    "category": "Spellcasting Classes",
+    "subcategory": "",
+    "macrocode": "<b><font color=\"Purple\">Wish</font></b> => [t: 1d10] <font color=\"Purple\">💀</font> damage.",
+    "macrocodecrit": "",
+    "subcategories": "Sorcerer,Wizard",
+    "spell_levels": "9th Level Spell"
   },
   {
     "id": 132,
