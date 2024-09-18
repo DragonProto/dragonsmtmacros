@@ -902,6 +902,83 @@
     "spell_levels": "1st Level Spell"
   },
   {
+    "id": 444,
+    "name": "D10 Short Rest",
+    "description": "",
+    "category": "Other",
+    "subcategory": "Short Rest",
+    "macrocode": "[h: input(\"Hit_Dice\")]\r\n<b><font color=\"Maroon\">Short rest</font></b> => Used [t: Hit_Dice] Hit Dice => [t: roll(Hit_Dice,10 + Hit_Dice*Constitution)] <font color=\"Red\">➕</font> healing.",
+    "macrocodecrit": "",
+    "subcategories": "Short Rest",
+    "spell_levels": null
+  },
+  {
+    "id": 445,
+    "name": "D12 Short Rest",
+    "description": "",
+    "category": "Other",
+    "subcategory": "Short Rest",
+    "macrocode": "[h: input(\"Hit_Dice\")]\r\n<b><font color=\"Maroon\">Short rest</font></b> => Used [t: Hit_Dice] Hit Dice => [t: roll(Hit_Dice,12 + Hit_Dice*Constitution)] <font color=\"Red\">➕</font> healing.",
+    "macrocodecrit": "",
+    "subcategories": "Short Rest",
+    "spell_levels": null
+  },
+  {
+    "id": 447,
+    "name": "D20",
+    "description": "",
+    "category": "Other",
+    "subcategory": "Dice Rolls",
+    "macrocode": "[h: input(\"Modifier\")]\r\n<b><font color=\"Orange\">d20 + [r: Modifier]</font></b> => [h: Dice = 1d20]\r\n[t: Dice + Modifier - Exhaustion]\r\n<font color=\"Green\">[r,if(Dice==20): \", Crit!\"]</font>\r\n<font color=\"Red\">[r,if(Dice==1): \", Critfail!\"]</font>",
+    "macrocodecrit": "",
+    "subcategories": "Dice Rolls",
+    "spell_levels": null
+  },
+  {
+    "id": 446,
+    "name": "D20 Advantage",
+    "description": "",
+    "category": "Other",
+    "subcategory": "Dice Rolls",
+    "macrocode": "[h: input(\"Modifier\")]\r\n[h: Die_1 = 1d20]\r\n[h: Die_2 = 1d20]\r\n[h, if(Die_1 >= Die_2), CODE:{\r\n\t[h: Dice = Die_1]\r\n};{\r\n\t[h: Dice = Die_2]\r\n}]\r\n<b><font color=\"Orange\">2d20 + [r: Modifier] (adv)</font></b> => <font color=\"Gray\">([r: Die_1] vs [r: Die_2])</font> => [t: Dice + Modifier - Exhaustion]\r\n<font color=\"Green\">[r,if(Dice==20): \", Crit!\"]</font>\r\n<font color=\"Red\">[r,if(Dice==1): \", Critfail! (That's 1 in 400)\"]</font>",
+    "macrocodecrit": "",
+    "subcategories": "Dice Rolls",
+    "spell_levels": null
+  },
+  {
+    "id": 448,
+    "name": "D20 Disadvantage",
+    "description": "",
+    "category": "Other",
+    "subcategory": "Dice Rolls",
+    "macrocode": "[h: input(\"Modifier\")]\r\n[h: Die_1 = 1d20]\r\n[h: Die_2 = 1d20]\r\n[h, if(Die_1 <= Die_2), CODE:{\r\n\t[h: Dice = Die_1]\r\n};{\r\n\t[h: Dice = Die_2]\r\n}]\r\n<b><font color=\"Orange\">2d20 + [r: Modifier] (dis)</font></b> => <font color=\"Gray\">([r: Die_1] vs [r: Die_2])</font> => [t: Dice + Modifier - Exhaustion]\r\n<font color=\"Green\">[r,if(Dice==20): \", Crit! (That's 1 in 400)\"]</font>\r\n<font color=\"Red\">[r,if(Dice==1): \", Critfail!\"]</font>",
+    "macrocodecrit": "",
+    "subcategories": "Dice Rolls",
+    "spell_levels": null
+  },
+  {
+    "id": 442,
+    "name": "D6 Short Rest",
+    "description": "",
+    "category": "Other",
+    "subcategory": "Short Rest",
+    "macrocode": "[h: input(\"Hit_Dice\")]\r\n<b><font color=\"Maroon\">Short rest</font></b> => Used [t: Hit_Dice] Hit Dice => [t: roll(Hit_Dice,6 + Hit_Dice*Constitution)] <font color=\"Red\">➕</font> healing.",
+    "macrocodecrit": "",
+    "subcategories": "Short Rest",
+    "spell_levels": null
+  },
+  {
+    "id": 443,
+    "name": "D8 Short Rest",
+    "description": "",
+    "category": "Other",
+    "subcategory": "Short Rest",
+    "macrocode": "[h: input(\"Hit_Dice\")]\r\n<b><font color=\"Maroon\">Short rest</font></b> => Used [t: Hit_Dice] Hit Dice => [t: roll(Hit_Dice,8 + Hit_Dice*Constitution)] <font color=\"Red\">➕</font> healing.",
+    "macrocodecrit": "",
+    "subcategories": "Short Rest",
+    "spell_levels": null
+  },
+  {
     "id": 5,
     "name": "Dagger (dexterity)",
     "description": "A dexterity-based weapon used with an attack action.\r\n\r\nRemove Dexterity damage if used in off-hand.",
@@ -4370,7 +4447,7 @@
     "id": 144,
     "name": "Unarmed Strike",
     "description": "A strength-based attack action.",
-    "category": "Other",
+    "category": "Weapons",
     "subcategory": "Special",
     "macrocode": "<b><font color=\"Green\">Unarmed Strike Damage</font></b> => [t: 1 + Strength] damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Unarmed Strike Crit Damage</font></b> => [t: 1 + Strength] damage!",
