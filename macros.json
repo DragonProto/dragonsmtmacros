@@ -572,6 +572,39 @@
     "spell_levels": "1st Level Spell"
   },
   {
+    "id": 462,
+    "name": "Charisma Attack",
+    "description": "",
+    "category": "Other",
+    "subcategory": "Dice Rolls",
+    "macrocode": "[h: Modifier = Proficiency + Charisma - Exhaustion]\r\n<b><font color=\"Orange\">Charisma Attack</font></b> \r\n=> [h: Dice = 1d20][t: Dice + Modifier]\r\n<font color=\"Green\">[r,if(Dice==20): \", Crit!\"]\r\n<font color=\"Red\">[r,if(Dice==1): \", Critfail!\"]",
+    "macrocodecrit": "",
+    "subcategories": "Dice Rolls",
+    "spell_levels": null
+  },
+  {
+    "id": 463,
+    "name": "Charisma Attack Advantage",
+    "description": "",
+    "category": "Other",
+    "subcategory": "Dice Rolls",
+    "macrocode": "[h: Modifier = Proficiency + Charisma - Exhaustion]\r\n[h: Die_1 = 1d20]\r\n[h: Die_2 = 1d20]\r\n[h, if(Die_1 >= Die_2), CODE:{\r\n\t[h: Dice = Die_1]\r\n};{\r\n\t[h: Dice = Die_2]\r\n}]\r\n<b><font color=\"Orange\">Charisma Attack (adv)</font></b> => <font color=\"Gray\">([r: Die_1] vs [r: Die_2])</font> => [t: Dice + Modifier]\r\n<font color=\"Green\">[r,if(Dice==20): \", Crit!\"]\r\n<font color=\"Red\">[r,if(Dice==1): \", Critfail! (That's 1 in 400)\"]",
+    "macrocodecrit": "",
+    "subcategories": "Dice Rolls",
+    "spell_levels": null
+  },
+  {
+    "id": 461,
+    "name": "Charisma Attack Disadvantage",
+    "description": "",
+    "category": "Other",
+    "subcategory": "Dice Rolls",
+    "macrocode": "[h: Modifier = Proficiency + Charisma - Exhaustion]\r\n[h: Die_1 = 1d20]\r\n[h: Die_2 = 1d20]\r\n[h, if(Die_1 <= Die_2), CODE:{\r\n\t[h: Dice = Die_1]\r\n};{\r\n\t[h: Dice = Die_2]\r\n}]\r\n<b><font color=\"Orange\">Charisma Attack (dis)</font></b> => <font color=\"Gray\">([r: Die_1] vs [r: Die_2])</font> => [t: Dice + Modifier]\r\n<font color=\"Green\">[r,if(Dice==20): \", Crit! (That's 1 in 400)\"]\r\n<font color=\"Red\">[r,if(Dice==1): \", Critfail!\"]",
+    "macrocodecrit": "",
+    "subcategories": "Dice Rolls",
+    "spell_levels": null
+  },
+  {
     "id": 242,
     "name": "Charm Monster",
     "description": "Replace INPUT with spellcasting ability.",
@@ -1076,6 +1109,39 @@
     "macrocodecrit": "",
     "subcategories": "Bard,Sorcerer,Wizard",
     "spell_levels": "2nd Level Spell"
+  },
+  {
+    "id": 453,
+    "name": "Dexterity Attack",
+    "description": "",
+    "category": "Other",
+    "subcategory": "Dice Rolls",
+    "macrocode": "[h: Modifier = Proficiency + Dexterity - Exhaustion]\r\n<b><font color=\"Orange\">Dexterity Attack</font></b> \r\n=> [h: Dice = 1d20][t: Dice + Modifier]\r\n<font color=\"Green\">[r,if(Dice==20): \", Crit!\"]\r\n<font color=\"Red\">[r,if(Dice==1): \", Critfail!\"]",
+    "macrocodecrit": "",
+    "subcategories": "Dice Rolls",
+    "spell_levels": null
+  },
+  {
+    "id": 454,
+    "name": "Dexterity Attack Advantage",
+    "description": "",
+    "category": "Other",
+    "subcategory": "Dice Rolls",
+    "macrocode": "[h: Modifier = Proficiency + Dexterity - Exhaustion]\r\n[h: Die_1 = 1d20]\r\n[h: Die_2 = 1d20]\r\n[h, if(Die_1 >= Die_2), CODE:{\r\n\t[h: Dice = Die_1]\r\n};{\r\n\t[h: Dice = Die_2]\r\n}]\r\n<b><font color=\"Orange\">Dexterity Attack (adv)</font></b> => <font color=\"Gray\">([r: Die_1] vs [r: Die_2])</font> => [t: Dice + Modifier]\r\n<font color=\"Green\">[r,if(Dice==20): \", Crit!\"]\r\n<font color=\"Red\">[r,if(Dice==1): \", Critfail! (That's 1 in 400)\"]",
+    "macrocodecrit": "",
+    "subcategories": "Dice Rolls",
+    "spell_levels": null
+  },
+  {
+    "id": 452,
+    "name": "Dexterity Attack Disadvantage",
+    "description": "",
+    "category": "Other",
+    "subcategory": "Dice Rolls",
+    "macrocode": "[h: Modifier = Proficiency + Dexterity - Exhaustion]\r\n[h: Die_1 = 1d20]\r\n[h: Die_2 = 1d20]\r\n[h, if(Die_1 <= Die_2), CODE:{\r\n\t[h: Dice = Die_1]\r\n};{\r\n\t[h: Dice = Die_2]\r\n}]\r\n<b><font color=\"Orange\">Dexterity Attack (dis)</font></b> => <font color=\"Gray\">([r: Die_1] vs [r: Die_2])</font> => [t: Dice + Modifier]\r\n<font color=\"Green\">[r,if(Dice==20): \", Crit! (That's 1 in 400)\"]\r\n<font color=\"Red\">[r,if(Dice==1): \", Critfail!\"]",
+    "macrocodecrit": "",
+    "subcategories": "Dice Rolls",
+    "spell_levels": null
   },
   {
     "id": 175,
@@ -2299,6 +2365,39 @@
     "spell_levels": "5th Level Spell"
   },
   {
+    "id": 456,
+    "name": "Intelligence Attack",
+    "description": "",
+    "category": "Other",
+    "subcategory": "Dice Rolls",
+    "macrocode": "[h: Modifier = Proficiency + Intelligence - Exhaustion]\r\n<b><font color=\"Orange\">Intelligence Attack</font></b> \r\n=> [h: Dice = 1d20][t: Dice + Modifier]\r\n<font color=\"Green\">[r,if(Dice==20): \", Crit!\"]\r\n<font color=\"Red\">[r,if(Dice==1): \", Critfail!\"]",
+    "macrocodecrit": "",
+    "subcategories": "Dice Rolls",
+    "spell_levels": null
+  },
+  {
+    "id": 457,
+    "name": "Intelligence Attack Advantage",
+    "description": "",
+    "category": "Other",
+    "subcategory": "Dice Rolls",
+    "macrocode": "[h: Modifier = Proficiency + Intelligence - Exhaustion]\r\n[h: Die_1 = 1d20]\r\n[h: Die_2 = 1d20]\r\n[h, if(Die_1 >= Die_2), CODE:{\r\n\t[h: Dice = Die_1]\r\n};{\r\n\t[h: Dice = Die_2]\r\n}]\r\n<b><font color=\"Orange\">Intelligence Attack (adv)</font></b> => <font color=\"Gray\">([r: Die_1] vs [r: Die_2])</font> => [t: Dice + Modifier]\r\n<font color=\"Green\">[r,if(Dice==20): \", Crit!\"]\r\n<font color=\"Red\">[r,if(Dice==1): \", Critfail! (That's 1 in 400)\"]",
+    "macrocodecrit": "",
+    "subcategories": "Dice Rolls",
+    "spell_levels": null
+  },
+  {
+    "id": 455,
+    "name": "Intelligence Attack Disadvantage",
+    "description": "",
+    "category": "Other",
+    "subcategory": "Dice Rolls",
+    "macrocode": "[h: Modifier = Proficiency + Intelligence - Exhaustion]\r\n[h: Die_1 = 1d20]\r\n[h: Die_2 = 1d20]\r\n[h, if(Die_1 <= Die_2), CODE:{\r\n\t[h: Dice = Die_1]\r\n};{\r\n\t[h: Dice = Die_2]\r\n}]\r\n<b><font color=\"Orange\">Intelligence Attack (dis)</font></b> => <font color=\"Gray\">([r: Die_1] vs [r: Die_2])</font> => [t: Dice + Modifier]\r\n<font color=\"Green\">[r,if(Dice==20): \", Crit! (That's 1 in 400)\"]\r\n<font color=\"Red\">[r,if(Dice==1): \", Critfail!\"]",
+    "macrocodecrit": "",
+    "subcategories": "Dice Rolls",
+    "spell_levels": null
+  },
+  {
     "id": 335,
     "name": "Investiture of Flame (action)\r\n",
     "description": "Replace INPUT with spellcasting ability.",
@@ -3344,6 +3443,105 @@
     "spell_levels": null
   },
   {
+    "id": 469,
+    "name": "Quick Dice D10",
+    "description": "",
+    "category": "Other",
+    "subcategory": "Dice Rolls",
+    "macrocode": "[h: input(\"Dice_Number\")]\r\n[h: input(\"Modifier\")]\r\n[h, if(Dice_Number == \"0\"), CODE:{\r\n\t[h: Num = 1]\r\n};{\r\n\t[h: Num = Dice_Number]\r\n}]\r\n<b><font color=\"Maroon\">[r: Num]d10 + [r: Modifier]</font></b> => [h: Dice = roll(Num,10)][t: Dice + Modifier]",
+    "macrocodecrit": "",
+    "subcategories": "Dice Rolls",
+    "spell_levels": null
+  },
+  {
+    "id": 472,
+    "name": "Quick Dice D100",
+    "description": "",
+    "category": "Other",
+    "subcategory": "Dice Rolls",
+    "macrocode": "[h: input(\"Dice_Number\")]\r\n[h: input(\"Modifier\")]\r\n[h, if(Dice_Number == \"0\"), CODE:{\r\n\t[h: Num = 1]\r\n};{\r\n\t[h: Num = Dice_Number]\r\n}]\r\n<b><font color=\"Maroon\">[r: Num]d100 + [r: Modifier]</font></b> => [h: Dice = roll(Num,100)][t: Dice + Modifier]",
+    "macrocodecrit": "",
+    "subcategories": "Dice Rolls",
+    "spell_levels": null
+  },
+  {
+    "id": 470,
+    "name": "Quick Dice D12",
+    "description": "",
+    "category": "Other",
+    "subcategory": "Dice Rolls",
+    "macrocode": "[h: input(\"Dice_Number\")]\r\n[h: input(\"Modifier\")]\r\n[h, if(Dice_Number == \"0\"), CODE:{\r\n\t[h: Num = 1]\r\n};{\r\n\t[h: Num = Dice_Number]\r\n}]\r\n<b><font color=\"Maroon\">[r: Num]d12 + [r: Modifier]</font></b> => [h: Dice = roll(Num,12)][t: Dice + Modifier]",
+    "macrocodecrit": "",
+    "subcategories": "Dice Rolls",
+    "spell_levels": null
+  },
+  {
+    "id": 464,
+    "name": "Quick Dice D2",
+    "description": "",
+    "category": "Other",
+    "subcategory": "Dice Rolls",
+    "macrocode": "[h: input(\"Dice_Number\")]\r\n[h: input(\"Modifier\")]\r\n[h, if(Dice_Number == \"0\"), CODE:{\r\n\t[h: Num = 1]\r\n};{\r\n\t[h: Num = Dice_Number]\r\n}]\r\n<b><font color=\"Maroon\">[r: Num]d2 + [r: Modifier]</font></b> => [h: Dice = roll(Num,2)][t: Dice + Modifier]",
+    "macrocodecrit": "",
+    "subcategories": "Dice Rolls",
+    "spell_levels": null
+  },
+  {
+    "id": 471,
+    "name": "Quick Dice D20",
+    "description": "",
+    "category": "Other",
+    "subcategory": "Dice Rolls",
+    "macrocode": "[h: input(\"Dice_Number\")]\r\n[h: input(\"Modifier\")]\r\n[h, if(Dice_Number == \"0\"), CODE:{\r\n\t[h: Num = 1]\r\n};{\r\n\t[h: Num = Dice_Number]\r\n}]\r\n<b><font color=\"Maroon\">[r: Num]d20 + [r: Modifier]</font></b> => [h: Dice = roll(Num,20)][t: Dice + Modifier]",
+    "macrocodecrit": "",
+    "subcategories": "Dice Rolls",
+    "spell_levels": null
+  },
+  {
+    "id": 465,
+    "name": "Quick Dice D3",
+    "description": "",
+    "category": "Other",
+    "subcategory": "Dice Rolls",
+    "macrocode": "[h: input(\"Dice_Number\")]\r\n[h: input(\"Modifier\")]\r\n[h, if(Dice_Number == \"0\"), CODE:{\r\n\t[h: Num = 1]\r\n};{\r\n\t[h: Num = Dice_Number]\r\n}]\r\n<b><font color=\"Maroon\">[r: Num]d3 + [r: Modifier]</font></b> => [h: Dice = roll(Num,3)][t: Dice + Modifier]",
+    "macrocodecrit": "",
+    "subcategories": "Dice Rolls",
+    "spell_levels": null
+  },
+  {
+    "id": 466,
+    "name": "Quick Dice D4",
+    "description": "",
+    "category": "Other",
+    "subcategory": "Dice Rolls",
+    "macrocode": "[h: input(\"Dice_Number\")]\r\n[h: input(\"Modifier\")]\r\n[h, if(Dice_Number == \"0\"), CODE:{\r\n\t[h: Num = 1]\r\n};{\r\n\t[h: Num = Dice_Number]\r\n}]\r\n<b><font color=\"Maroon\">[r: Num]d4 + [r: Modifier]</font></b> => [h: Dice = roll(Num,4)][t: Dice + Modifier]",
+    "macrocodecrit": "",
+    "subcategories": "Dice Rolls",
+    "spell_levels": null
+  },
+  {
+    "id": 467,
+    "name": "Quick Dice D6",
+    "description": "",
+    "category": "Other",
+    "subcategory": "Dice Rolls",
+    "macrocode": "[h: input(\"Dice_Number\")]\r\n[h: input(\"Modifier\")]\r\n[h, if(Dice_Number == \"0\"), CODE:{\r\n\t[h: Num = 1]\r\n};{\r\n\t[h: Num = Dice_Number]\r\n}]\r\n<b><font color=\"Maroon\">[r: Num]d6 + [r: Modifier]</font></b> => [h: Dice = roll(Num,6)][t: Dice + Modifier]",
+    "macrocodecrit": "",
+    "subcategories": "Dice Rolls",
+    "spell_levels": null
+  },
+  {
+    "id": 468,
+    "name": "Quick Dice D8",
+    "description": "",
+    "category": "Other",
+    "subcategory": "Dice Rolls",
+    "macrocode": "[h: input(\"Dice_Number\")]\r\n[h: input(\"Modifier\")]\r\n[h, if(Dice_Number == \"0\"), CODE:{\r\n\t[h: Num = 1]\r\n};{\r\n\t[h: Num = Dice_Number]\r\n}]\r\n<b><font color=\"Maroon\">[r: Num]d8 + [r: Modifier]</font></b> => [h: Dice = roll(Num,8)][t: Dice + Modifier]",
+    "macrocodecrit": "",
+    "subcategories": "Dice Rolls",
+    "spell_levels": null
+  },
+  {
     "id": 35,
     "name": "Rapier (dexterity)",
     "description": "A dexterity-based weapon used with an attack action.",
@@ -3960,6 +4158,39 @@
     "spell_levels": "9th Level Spell"
   },
   {
+    "id": 450,
+    "name": "Strength Attack",
+    "description": "",
+    "category": "Other",
+    "subcategory": "Dice Rolls",
+    "macrocode": "[h: Modifier = Proficiency + Strength - Exhaustion]\r\n<b><font color=\"Orange\">Strength Attack</font></b> \r\n=> [h: Dice = 1d20][t: Dice + Modifier]\r\n<font color=\"Green\">[r,if(Dice==20): \", Crit!\"]\r\n<font color=\"Red\">[r,if(Dice==1): \", Critfail!\"]",
+    "macrocodecrit": "",
+    "subcategories": "Dice Rolls",
+    "spell_levels": null
+  },
+  {
+    "id": 451,
+    "name": "Strength Attack Advantage",
+    "description": "",
+    "category": "Other",
+    "subcategory": "Dice Rolls",
+    "macrocode": "[h: Modifier = Proficiency + Strength - Exhaustion]\r\n[h: Die_1 = 1d20]\r\n[h: Die_2 = 1d20]\r\n[h, if(Die_1 >= Die_2), CODE:{\r\n\t[h: Dice = Die_1]\r\n};{\r\n\t[h: Dice = Die_2]\r\n}]\r\n<b><font color=\"Orange\">Strength Attack (adv)</font></b> => <font color=\"Gray\">([r: Die_1] vs [r: Die_2])</font> => [t: Dice + Modifier]\r\n<font color=\"Green\">[r,if(Dice==20): \", Crit!\"]\r\n<font color=\"Red\">[r,if(Dice==1): \", Critfail! (That's 1 in 400)\"]",
+    "macrocodecrit": "",
+    "subcategories": "Dice Rolls",
+    "spell_levels": null
+  },
+  {
+    "id": 449,
+    "name": "Strength Attack Disadvantage",
+    "description": "",
+    "category": "Other",
+    "subcategory": "Dice Rolls",
+    "macrocode": "[h: Modifier = Proficiency + Strength - Exhaustion]\r\n[h: Die_1 = 1d20]\r\n[h: Die_2 = 1d20]\r\n[h, if(Die_1 <= Die_2), CODE:{\r\n\t[h: Dice = Die_1]\r\n};{\r\n\t[h: Dice = Die_2]\r\n}]\r\n<b><font color=\"Orange\">Strength Attack (dis)</font></b> => <font color=\"Gray\">([r: Die_1] vs [r: Die_2])</font> => [t: Dice + Modifier]\r\n<font color=\"Green\">[r,if(Dice==20): \", Crit! (That's 1 in 400)\"]\r\n<font color=\"Red\">[r,if(Dice==1): \", Critfail!\"]",
+    "macrocodecrit": "",
+    "subcategories": "Dice Rolls",
+    "spell_levels": null
+  },
+  {
     "id": 159,
     "name": "Suggestion",
     "description": "Replace INPUT with spellcasting ability.",
@@ -4332,6 +4563,39 @@
     "macrocodecrit": "",
     "subcategories": "Sorcerer,Wizard",
     "spell_levels": "9th Level Spell"
+  },
+  {
+    "id": 474,
+    "name": "Token Name",
+    "description": "Replace INPUT with the changed name.",
+    "category": "Other",
+    "subcategory": "Token",
+    "macrocode": "[h: setName(\"INPUT\")]",
+    "macrocodecrit": "",
+    "subcategories": "Token",
+    "spell_levels": null
+  },
+  {
+    "id": 473,
+    "name": "Token Picture",
+    "description": "Replace INPUT with the name of the token you want to copy the picture from (in the format \"image:TOKENNAME\").",
+    "category": "Other",
+    "subcategory": "Token",
+    "macrocode": "[h: setTokenImage(\"INPUT\")]",
+    "macrocodecrit": "",
+    "subcategories": "Token",
+    "spell_levels": null
+  },
+  {
+    "id": 475,
+    "name": "Token Size",
+    "description": "Replace INPUT with the changed size.",
+    "category": "Other",
+    "subcategory": "Token",
+    "macrocode": "[h: setSize(\"INPUT\")]",
+    "macrocodecrit": "",
+    "subcategories": "Token",
+    "spell_levels": null
   },
   {
     "id": 70,
@@ -4728,6 +4992,39 @@
     "macrocodecrit": "",
     "subcategories": "Druid,Ranger",
     "spell_levels": "3rd Level Spell"
+  },
+  {
+    "id": 459,
+    "name": "Wisdom Attack",
+    "description": "",
+    "category": "Other",
+    "subcategory": "Dice Rolls",
+    "macrocode": "[h: Modifier = Proficiency + Wisdom - Exhaustion]\r\n<b><font color=\"Orange\">Wisdom Attack</font></b> \r\n=> [h: Dice = 1d20][t: Dice + Modifier]\r\n<font color=\"Green\">[r,if(Dice==20): \", Crit!\"]\r\n<font color=\"Red\">[r,if(Dice==1): \", Critfail!\"]",
+    "macrocodecrit": "",
+    "subcategories": "Dice Rolls",
+    "spell_levels": null
+  },
+  {
+    "id": 460,
+    "name": "Wisdom Attack Advantage",
+    "description": "",
+    "category": "Other",
+    "subcategory": "Dice Rolls",
+    "macrocode": "[h: Modifier = Proficiency + Wisdom - Exhaustion]\r\n[h: Die_1 = 1d20]\r\n[h: Die_2 = 1d20]\r\n[h, if(Die_1 >= Die_2), CODE:{\r\n\t[h: Dice = Die_1]\r\n};{\r\n\t[h: Dice = Die_2]\r\n}]\r\n<b><font color=\"Orange\">Wisdom Attack (adv)</font></b> => <font color=\"Gray\">([r: Die_1] vs [r: Die_2])</font> => [t: Dice + Modifier]\r\n<font color=\"Green\">[r,if(Dice==20): \", Crit!\"]\r\n<font color=\"Red\">[r,if(Dice==1): \", Critfail! (That's 1 in 400)\"]",
+    "macrocodecrit": "",
+    "subcategories": "Dice Rolls",
+    "spell_levels": null
+  },
+  {
+    "id": 458,
+    "name": "Wisdom Attack Disadvantage",
+    "description": "",
+    "category": "Other",
+    "subcategory": "Dice Rolls",
+    "macrocode": "[h: Modifier = Proficiency + Wisdom - Exhaustion]\r\n[h: Die_1 = 1d20]\r\n[h: Die_2 = 1d20]\r\n[h, if(Die_1 <= Die_2), CODE:{\r\n\t[h: Dice = Die_1]\r\n};{\r\n\t[h: Dice = Die_2]\r\n}]\r\n<b><font color=\"Orange\">Wisdom Attack (dis)</font></b> => <font color=\"Gray\">([r: Die_1] vs [r: Die_2])</font> => [t: Dice + Modifier]\r\n<font color=\"Green\">[r,if(Dice==20): \", Crit! (That's 1 in 400)\"]\r\n<font color=\"Red\">[r,if(Dice==1): \", Critfail!\"]",
+    "macrocodecrit": "",
+    "subcategories": "Dice Rolls",
+    "spell_levels": null
   },
   {
     "id": 436,
