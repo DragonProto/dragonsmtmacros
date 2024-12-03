@@ -1,9 +1,7 @@
-.image-style {
-
-    width: 300px;
-    
-    height: auto;
-    
-    border: 5px solid black;
-    
+.banner-image {
+    /* positions the banner image */
+    width: 100vw;
+    height: 30vh;
+    object-fit: cover;
+    object-position: 0 36%;
     }
