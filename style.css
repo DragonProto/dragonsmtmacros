@@ -5,3 +5,14 @@
     object-fit: cover;
     object-position: 0 36%;
     }
+
+.title {
+    /* Centeres title */
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.custom-width {
+    box-align: center;
+    width: 90vw;
+}
