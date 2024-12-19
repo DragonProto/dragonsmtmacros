@@ -38,15 +38,28 @@ fetch('macros.json')
         collapseDiv.setAttribute("aria-labelledby", headingId);
         collapseDiv.setAttribute("data-parent", "#accordion");
         
-        //Add description to cardBody
-        const cardBody = document.createElement("div");
-        cardBody.className = "card-body";
-
+        //Add description to card
+        const cardDesc = document.createElement("div");
+        cardDesc.className = "card-body";
         //Add description to it
-        cardBody.textContent = item.description;
+        cardDesc.textContent = item.description;
 
-        // Append to cardBody
-        collapseDiv.appendChild(cardBody);
+         //Add macro code to card
+        const cardMacro = document.createElement("div");
+        cardMacro.className = "card-body";
+        //Add description to it
+        cardMacro.textContent = item.macrocode;
+
+        //Add macro code to card
+        const cardMacroCrit = document.createElement("div");
+        cardMacroCrit.className = "card-body";
+        //Add description to it
+        cardMacroCrit.textContent = item.macrocodecrit;
+
+        // Append card desc, macro code & macro code crit to card
+        collapseDiv.appendChild(cardDesc);
+        collapseDiv.appendChild(cardMacro);
+        collapseDiv.appendChild(cardMacroCrit);
 
         // Assemble the card (appendChild is combining)
         card.appendChild(cardHeader);
