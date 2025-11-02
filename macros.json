@@ -412,7 +412,7 @@
     "name": "Hold Person",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "2nd Level",
-    "macrocode": "<b><font color=\"Purple\">Hold Person</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or be Paralyzed.",
+    "macrocode": "<b><font color=\"Purple\">Hold Person</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or become Paralyzed.",
     "macrocodecrit": ""
   },
   {
@@ -756,7 +756,7 @@
     "name": "Charm Person",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "1st Level",
-    "macrocode": "<b><font color=\"Purple\">Charm Person</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or be Charmed. The charmed creature regards you as a friendly acquaintance.",
+    "macrocode": "<b><font color=\"Purple\">Charm Person</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or become Charmed. The charmed creature regards you as a friendly acquaintance.",
     "macrocodecrit": ""
   },
   {
@@ -764,7 +764,7 @@
     "name": "Color Spray",
     "description": "",
     "category": "1st Level",
-    "macrocode": "<b><font color=\"Purple\">Color Spray</font></b> => [t: 6d10] hit points affected be Blinded.",
+    "macrocode": "<b><font color=\"Purple\">Color Spray</font></b> => [t: 6d10] hit points affected become Blinded.",
     "macrocodecrit": ""
   },
   {
@@ -2644,7 +2644,7 @@
     "name": "Investiture of Stone",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "6th Level",
-    "macrocode": "<b><font color=\"Purple\">Investiture of Stone</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or be knocked Prone.",
+    "macrocode": "<b><font color=\"Purple\">Investiture of Stone</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or become knocked Prone.",
     "macrocodecrit": ""
   },
   {
@@ -3020,7 +3020,7 @@
     "name": "Symbol (sleep)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "7th Level",
-    "macrocode": "<b><font color=\"Purple\">Symbol (sleep)</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or falls unconscious for 10 minutes.",
+    "macrocode": "<b><font color=\"Purple\">Symbol (sleep)</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or fall unconscious for 10 minutes.",
     "macrocodecrit": ""
   },
   {
