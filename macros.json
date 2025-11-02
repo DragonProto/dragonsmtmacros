@@ -11,7 +11,7 @@
     "id": 2,
     "name": "Acid Splash",
     "description": "Replace INPUT with spellcasting ability.\r\n\r\nThis spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).\r\n\r\nRemember to edit the damage dice according to level.",
-    "category": "Cantrip",
+    "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Acid Splash</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: 1d6] <font color=\"Green\">🔥</font> damage.",
     "macrocodecrit": ""
   },
@@ -419,7 +419,7 @@
     "id": 53,
     "name": "Booming Blade Movement Damage",
     "description": "This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).\r\n\r\nRemember to edit the damage dice according to level.",
-    "category": "Cantrip",
+    "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Booming Blade Movement Damage</font></b> => [t: 1d8] <font color=\"Gray\">💥</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Booming Blade Movement Crit Damage</font></b> => [t: 2d8] <font color=\"Gray\">💥</font> damage!"
   },
@@ -427,7 +427,7 @@
     "id": 54,
     "name": "Booming Blade Extra Damage",
     "description": "This spell’s damage increases by 1d8 when you reach 11th level (2d8), and 17th level (3d8).\r\n\r\nRemember to edit the damage dice according to level.",
-    "category": "Cantrip",
+    "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Booming Blade Extra Damage</font></b> => [t: 1d8] <font color=\"Gray\">💥</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Booming Blade Extra Crit Damage</font></b> => [t: 2d8] <font color=\"Gray\">💥</font> damage!"
   },
@@ -435,7 +435,7 @@
     "id": 55,
     "name": "Chill Touch",
     "description": "A spell used with a spell attack action.\r\n\r\nThis spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).\r\n\r\nRemember to edit the damage dice according to level.",
-    "category": "Cantrip",
+    "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Chill Touch Damage</font></b> => [t: 1d8] <font color=\"Purple\">💀</font> damage + it can’t regain hit points until the start of your next turn + if you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn.",
     "macrocodecrit": "<b><font color=\"Teal\">Chill Touch Crit Damage</font></b> => [t: 2d8] <font color=\"Purple\">💀</font> damage + it can’t regain hit points until the start of your next turn + if you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn!"
   },
@@ -443,7 +443,7 @@
     "id": 56,
     "name": "Create Bonfire",
     "description": "Replace INPUT with spellcasting ability.\r\n\r\nThis spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).\r\n\r\nRemember to edit the damage dice according to level.",
-    "category": "Cantrip",
+    "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Create Bonfire</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: 1d8] <font color=\"Orange\">🔥</font> damage.",
     "macrocodecrit": ""
   },
@@ -451,7 +451,7 @@
     "id": 57,
     "name": "Fire Bolt",
     "description": "A spell used with a spell attack action.\r\n\r\nThis spell’s damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).\r\n\r\nRemember to edit the damage dice according to level.",
-    "category": "Cantrip",
+    "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Fire Bolt Damage</font></b> => [t: 1d10] <font color=\"Orange\">🔥</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Fire Bolt Crit Damage</font></b> => [t: 2d10] <font color=\"Orange\">🔥</font> damage!"
   },
@@ -459,7 +459,7 @@
     "id": 58,
     "name": "Frostbite",
     "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).\r\n\r\nRemember to edit the damage dice according to level.",
-    "category": "Cantrip",
+    "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Frostbite</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: 1d6] <font color=\"Blue\">❄</font> damage + it has disadvantage on the next weapon attack roll it makes before the end of its next turn.",
     "macrocodecrit": ""
   },
@@ -467,7 +467,7 @@
     "id": 59,
     "name": "Green-Flame Blade Leap Damage",
     "description": "Replace INPUT with spellcasting ability modifier.\r\n\r\nThis spell’s damage increases by 1d8 when you reach 5th level (1d8), 11th level (2d8), and 17th level (3d8).\r\n\r\nRemember to edit the damage dice according to level.",
-    "category": "Cantrip",
+    "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Green-Flame Blade Leap Damage</font></b> => [t: 0d8 + INPUT] <font color=\"Orange\">🔥</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Green-Flame Blade Leap Crit Damage</font></b> => [t: 0d8 + INPUT] <font color=\"Orange\">🔥</font> damage!"
   },
@@ -475,7 +475,7 @@
     "id": 60,
     "name": "Green-Flame Blade Extra Damage",
     "description": "This spell’s damage increases by 1d8 when you reach 5th level (1d8), 11th level (2d8), and 17th level (3d8).\r\n\r\nRemember to edit the damage dice according to level.",
-    "category": "Cantrip",
+    "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Green-Flame Blade Extra Damage</font></b> => [t: 1d8] <font color=\"Orange\">🔥</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Green-Flame Blade Extra Crit Damage</font></b> => [t: 2d8] <font color=\"Orange\">🔥</font> damage!"
   },
@@ -483,15 +483,15 @@
     "id": 61,
     "name": "Gust",
     "description": "Replace INPUT with spellcasting ability.",
-    "category": "Cantrip",
-    "macrocode": "<b><font color=\"Purple\">Gust</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or be pushed up to 5 feet away from you.",
+    "category": "Cantrips",
+    "macrocode": "<b><font color=\"Purple\">Gust</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or become pushed up to 5 feet away from you.",
     "macrocodecrit": ""
   },
   {
     "id": 62,
     "name": "Infestation",
     "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).\r\n\r\nRemember to edit the damage dice according to level.",
-    "category": "Cantrip",
+    "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Infestation</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: 1d6] <font color=\"Green\">☠</font> damage + move 5 feet in listed direction [t: 1d4] if it can move and its speed is at least 5 feet.",
     "macrocodecrit": ""
   },
@@ -499,7 +499,7 @@
     "id": 63,
     "name": "Lightning Lure",
     "description": "Replace INPUT with spellcasting ability.\r\n\r\nThis spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).\r\n\r\nRemember to edit the damage dice according to level.",
-    "category": "Cantrip",
+    "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Lightning Lure</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or be pulled up to 10 feet in a straight line toward you + take => [t: 1d8] <font color=\"Blue\">✴</font> damage if it is within 5 feet of you.",
     "macrocodecrit": ""
   },
@@ -507,7 +507,7 @@
     "id": 64,
     "name": "Mind Sliver",
     "description": "Replace INPUT with spellcasting ability.\r\n\r\nThis spell’s damage increases by 1d6 when you reach certain levels: 5th level (2d6), 11th level (3d6), and 17th level (4d6).\r\n\r\nRemember to edit the damage dice according to level.",
-    "category": "Cantrip",
+    "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Mind Sliver</font></b> => DC [r: 8 + INPUT + Proficiency] Intelligence Save or take => [t: 1d6] <font color=\"Purple\">👁</font> damage + subtract [t: 1d4] from the next saving throw it makes before the end of your next turn.",
     "macrocodecrit": ""
   },
@@ -515,7 +515,7 @@
     "id": 65,
     "name": "Poison Spray",
     "description": "Replace INPUT with spellcasting ability.\r\n\r\nThis spell’s damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12).\r\n\r\nRemember to edit the damage dice according to level.",
-    "category": "Cantrip",
+    "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Poison Spray</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: 1d12] <font color=\"Green\">☠</font> damage.",
     "macrocodecrit": ""
   },
@@ -523,7 +523,7 @@
     "id": 66,
     "name": "Ray of Frost",
     "description": "A spell used with a spell attack action.\r\n\r\nThe spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).\r\n\r\nRemember to edit the damage dice according to level.",
-    "category": "Cantrip",
+    "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Ray of Frost Damage</font></b> => [t: 1d8] <font color=\"Blue\">❄</font> damage + its speed is reduced by 10 feet until the start of your next turn.",
     "macrocodecrit": "<b><font color=\"Teal\">Ray of Frost Crit Damage</font></b> => [t: 2d8] <font color=\"Blue\">❄</font> damage + its speed is reduced by 10 feet until the start of your next turn!"
   },
@@ -531,7 +531,7 @@
     "id": 67,
     "name": "Shocking Grasp",
     "description": "A spell used with a spell attack action.\r\n\r\nThe spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).\r\n\r\nRemember to edit the damage dice according to level.",
-    "category": "Cantrip",
+    "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Shocking Grasp Damage</font></b> => [t: 1d8] <font color=\"Blue\">✴</font> damage + can’t take reactions until the start of its next turn.",
     "macrocodecrit": "<b><font color=\"Teal\">Shocking Grasp Crit Damage</font></b> => [t: 2d8] <font color=\"Blue\">✴</font> damage + can’t take reactions until the start of its next turn!"
   },
@@ -539,7 +539,7 @@
     "id": 68,
     "name": "Sword Burst",
     "description": "Replace INPUT with spellcasting ability.\r\n\r\nThis spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).\r\n\r\nRemember to edit the damage dice according to level.",
-    "category": "Cantrip",
+    "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Sword Burst Damage</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: 1d6] <font color=\"Blue\">✊</font> damage.",
     "macrocodecrit": ""
   },
@@ -547,7 +547,7 @@
     "id": 69,
     "name": "Thunderclap",
     "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).\r\n\r\nRemember to edit the damage dice according to level.",
-    "category": "Cantrip",
+    "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Thunderclap Damage</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: 1d6] <font color=\"Gray\">💥</font> damage.",
     "macrocodecrit": ""
   },
@@ -555,7 +555,7 @@
     "id": 70,
     "name": "Toll the Dead",
     "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe spell’s damage increases by one die when you reach 5th level (2d8 or 2d12), 11th level (3d8 or 3d12), and 17th level (4d8 or 4d12).\r\n\r\nRemember to edit the damage dice according to level.",
-    "category": "Cantrip",
+    "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Toll the Dead</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or take => [t: 1d8] ([t: 1d12] if the target is hurt) <font color=\"Purple\">💀</font> damage.",
     "macrocodecrit": ""
   },
@@ -563,7 +563,7 @@
     "id": 71,
     "name": "Eldritch Blast",
     "description": "A spell used with a spell attack action.",
-    "category": "Cantrip",
+    "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Eldritch Blast Damage</font></b> => [t: 1d10] <font color=\"Blue\">✊</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Eldritch Blast Crit Damage</font></b> => [t: 2d10] <font color=\"Blue\">✊</font> damage!"
   },
@@ -571,7 +571,7 @@
     "id": 72,
     "name": "Eldritch Blast (agonizing blast)",
     "description": "A spell used with a spell attack action.",
-    "category": "Cantrip",
+    "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Eldritch Blast Damage</font></b> => [t: 1d10 + Charisma] <font color=\"Blue\">✊</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Eldritch Blast Crit Damage</font></b> => [t: 2d10 + Charisma] <font color=\"Blue\">✊</font> damage!"
   },
@@ -579,7 +579,7 @@
     "id": 73,
     "name": "Eldritch Blast (repelling blast)",
     "description": "A spell used with a spell attack action.",
-    "category": "Cantrip",
+    "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Eldritch Blast Damage</font></b> => [t: 1d10] <font color=\"Blue\">✊</font> damage + push the creature up to 10 feet away from you in a straight line.",
     "macrocodecrit": "<b><font color=\"Teal\">Eldritch Blast Crit Damage</font></b> => [t: 2d10] <font color=\"Blue\">✊</font> damage + push the creature up to 10 feet away from you in a straight line!"
   },
@@ -587,7 +587,7 @@
     "id": 74,
     "name": "Eldritch Blast (agonizing blast + repelling blast)",
     "description": "A spell used with a spell attack action.",
-    "category": "Cantrip",
+    "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Eldritch Blast Damage</font></b> => [t: 1d10 + Charisma] <font color=\"Blue\">✊</font> damage + push the creature up to 10 feet away from you in a straight line.",
     "macrocodecrit": "<b><font color=\"Teal\">Eldritch Blast Crit Damage</font></b> => [t: 2d10 + Charisma] <font color=\"Blue\">✊</font> damage + push the creature up to 10 feet away from you in a straight line!"
   },
@@ -595,7 +595,7 @@
     "id": 75,
     "name": "Magic Stone",
     "description": "Replace INPUT with spellcasting ability.\r\n\r\nA spell used with a spell attack action.",
-    "category": "Cantrip",
+    "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Magic Stone Damage</font></b> => [t: 1d6 + INPUT] <font color=\"Silver\">🔨</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Magic Stone Crit Damage</font></b> => [t: 2d6 + INPUT] <font color=\"Silver\">🔨</font> damage!"
   },
@@ -603,7 +603,7 @@
     "id": 76,
     "name": "Guidance",
     "description": "",
-    "category": "Cantrip",
+    "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Guidance</font></b> => [t: 1d4].",
     "macrocodecrit": ""
   },
@@ -611,7 +611,7 @@
     "id": 77,
     "name": "Primal Savagery",
     "description": "A spell used with a spell attack action.\r\n\r\nThe spell’s damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).\r\n\r\nRemember to edit the damage dice according to level.",
-    "category": "Cantrip",
+    "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Primal Savagery Damage</font></b> => [t: 1d10] <font color=\"Green\">🔥</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Primal Savagery Crit Damage</font></b> => [t: 2d10] <font color=\"Green\">🔥</font> damage!"
   },
@@ -619,7 +619,7 @@
     "id": 78,
     "name": "Produce Flame",
     "description": "A spell used with a spell attack action.\r\n\r\nThis spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).\r\n\r\nRemember to edit the damage dice according to level.",
-    "category": "Cantrip",
+    "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Produce Flame Damage</font></b> => [t: 1d8] <font color=\"Orange\">🔥</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Produce Flame Crit Damage</font></b> => [t: 2d8] <font color=\"Orange\">🔥</font> damage!"
   },
@@ -627,7 +627,7 @@
     "id": 79,
     "name": "Resistance",
     "description": "",
-    "category": "Cantrip",
+    "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Resistance</font></b> => [t: 1d4].",
     "macrocodecrit": ""
   },
@@ -635,7 +635,7 @@
     "id": 80,
     "name": "Shillelagh",
     "description": "A spell used with a spell attack action.",
-    "category": "Cantrip",
+    "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Shillelagh Damage</font></b> => [t: 1d8 + Wisdom] <font color=\"Silver\">🔨</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Shillelagh Crit Damage</font></b> => [t: 2d8 + Wisdom] <font color=\"Silver\">🔨</font> damage!"
   },
@@ -643,7 +643,7 @@
     "id": 81,
     "name": "Thorn Whip",
     "description": "A spell used with a spell attack action.\r\n\r\nThis spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).\r\n\r\nRemember to edit the damage dice according to level.",
-    "category": "Cantrip",
+    "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Thorn Whip Damage</font></b> => [t: 1d6] <font color=\"Silver\">📍</font> damage + if the creature is Large or smaller, you pull the creature up to 10 feet closer to you.",
     "macrocodecrit": "<b><font color=\"Teal\">Thorn Whip Crit Damage</font></b> => [t: 2d6] <font color=\"Silver\">📍</font> damage + if the creature is Large or smaller, you pull the creature up to 10 feet closer to you!"
   },
@@ -651,7 +651,7 @@
     "id": 82,
     "name": "Sacred Flame",
     "description": "The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).\r\n\r\nRemember to edit the damage dice according to level.",
-    "category": "Cantrip",
+    "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Sacred Flame</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: 1d8] <font color=\"Orange\">☀</font> damage.",
     "macrocodecrit": ""
   },
@@ -659,7 +659,7 @@
     "id": 83,
     "name": "Word of Radiance",
     "description": "The spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).\r\n\r\nRemember to edit the damage dice according to level.",
-    "category": "Cantrip",
+    "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Word of Radiance</font></b> => DC [r: 8 + Wisdom + Proficiency] Constitution Save or take => [t: 1d6] <font color=\"Orange\">☀</font> damage.",
     "macrocodecrit": ""
   },
@@ -667,7 +667,7 @@
     "id": 84,
     "name": "Vicious Mockery",
     "description": "This spell’s damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).\r\n\r\nRemember to edit the damage dice according to level.",
-    "category": "Cantrip",
+    "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Vicious Mockery</font></b> => DC [r: 8 + Charisma + Proficiency] Wisdom Save or take => [t: 1d4] <font color=\"Purple\">👁</font> damage + have disadvantage on the next attack roll it makes before the end of its next turn.",
     "macrocodecrit": ""
   },
@@ -740,7 +740,7 @@
     "name": "Animal Friendship",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "1st Level",
-    "macrocode": "<b><font color=\"Purple\">Animal Friendship</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or be Charmed.",
+    "macrocode": "<b><font color=\"Purple\">Animal Friendship</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or become Charmed.",
     "macrocodecrit": ""
   },
   {
@@ -1339,7 +1339,7 @@
     "id": 174,
     "name": "Minor Illusion",
     "description": "Replace INPUT with spellcasting ability.",
-    "category": "Cantrip",
+    "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Minor Illusion</font></b> => DC [r: 8 + INPUT + Proficiency] Investigation Save or illusion stays active.",
     "macrocodecrit": ""
   },
@@ -2292,7 +2292,7 @@
     "name": "Hold Monster",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Hold Monster</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or be Paralyzed.",
+    "macrocode": "<b><font color=\"Purple\">Hold Monster</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or become Paralyzed.",
     "macrocodecrit": ""
   },
   {
@@ -3164,7 +3164,7 @@
     "name": "Holy Aura",
     "description": "",
     "category": "8th Level",
-    "macrocode": "<b><font color=\"Purple\">Holy Aura</font></b> => DC [r: 8 + Wisdom + Proficiency] Constitution Save or be Blinded.",
+    "macrocode": "<b><font color=\"Purple\">Holy Aura</font></b> => DC [r: 8 + Wisdom + Proficiency] Constitution Save or become Blinded.",
     "macrocodecrit": ""
   },
   {
@@ -3260,7 +3260,7 @@
     "name": "Imprisonment",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "9th Level",
-    "macrocode": "<b><font color=\"Purple\">Imprisonment</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or be bound by the spell (Restrained, fall asleep).",
+    "macrocode": "<b><font color=\"Purple\">Imprisonment</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or become bound by the spell (Restrained, fall asleep).",
     "macrocodecrit": ""
   },
   {

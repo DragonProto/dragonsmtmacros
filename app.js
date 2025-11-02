@@ -78,7 +78,7 @@
       const frag = document.createDocumentFragment();
       sorted.forEach((m) => {
         const item = document.createElement('div');
-        item.className = 'list-group-item';
+        item.className = 'list-group-item mb-2 border rounded-3';
 
         // Header row with title only
         const header = document.createElement('div');
