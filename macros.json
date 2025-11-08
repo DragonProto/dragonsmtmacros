@@ -10,7 +10,7 @@
   {
     "id": 2,
     "name": "Acid Splash",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThis spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).\r\n\r\nRemember to edit the damage dice according to level.",
+    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).",
     "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Acid Splash</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: 1d6] <font color=\"Green\">🔥</font> damage.",
     "macrocodecrit": ""
@@ -417,7 +417,7 @@
   },
   {
     "id": 53,
-    "name": "Booming Blade Movement Damage",
+    "name": "Booming Blade Movement Damage (5E)",
     "description": "This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).\r\n\r\nRemember to edit the damage dice according to level.",
     "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Booming Blade Movement Damage</font></b> => [t: 1d8] <font color=\"Gray\">💥</font> damage.",
@@ -425,7 +425,7 @@
   },
   {
     "id": 54,
-    "name": "Booming Blade Extra Damage",
+    "name": "Booming Blade Extra Damage (5E)",
     "description": "This spell’s damage increases by 1d8 when you reach 11th level (2d8), and 17th level (3d8).\r\n\r\nRemember to edit the damage dice according to level.",
     "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Booming Blade Extra Damage</font></b> => [t: 1d8] <font color=\"Gray\">💥</font> damage.",
@@ -673,7 +673,7 @@
   },
   {
     "id": 85,
-    "name": "Absorb Elements",
+    "name": "Absorb Elements (5E)",
     "description": "",
     "category": "1st Level",
     "macrocode": "<b><font color=\"Purple\">Absorb Elements</font></b> => [t: 1d6].",
@@ -970,7 +970,7 @@
   {
     "id": 127,
     "name": "Burning Hands",
-    "description": "Replace INPUT with spellcasting ability.",
+    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe damage increases by 1d6 for each spell slot level above 1.",
     "category": "1st Level",
     "macrocode": "<b><font color=\"Purple\">Burning Hands</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 3d6] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage.",
     "macrocodecrit": ""
@@ -1018,7 +1018,7 @@
   {
     "id": 133,
     "name": "Armor of Agathys",
-    "description": "When you cast this spell using a spell slot of 2nd level or higher, both the temporary hit points and the cold damage increase by 5 for each slot.",
+    "description": " The Temporary Hit Points and the Cold damage both increase by 5 for each spell slot level above 1.",
     "category": "1st Level",
     "macrocode": "<b><font color=\"Purple\">Armor of Agathys</font></b> => [t: 5] <font color=\"Blue\">❄</font> damage/temporary hit points.",
     "macrocodecrit": ""
@@ -1034,7 +1034,7 @@
   {
     "id": 135,
     "name": "Arms of Hadar",
-    "description": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.",
+    "description": "The damage increases by 1d6 for each spell slot level above 1.",
     "category": "1st Level",
     "macrocode": "<b><font color=\"Purple\">Arms of Hadar</font></b> => DC [r: 8 + Charisma + Proficiency] Strength Save or take => [t: Nec = 2d6] ([t: floor(Nec/2)]) <font color=\"Purple\">💀</font> damage. On fail, can’t take reactions until its next turn.",
     "macrocodecrit": ""
@@ -1090,7 +1090,7 @@
   {
     "id": 142,
     "name": "Aid",
-    "description": "",
+    "description": "Each target’s Hit Points increase by 5 for each spell slot level above 2.",
     "category": "2nd Level",
     "macrocode": "<b><font color=\"Purple\">Aid</font></b> => [t: 5] hit points + hit point maximum.",
     "macrocodecrit": ""
@@ -1098,9 +1098,9 @@
   {
     "id": 143,
     "name": "Alter Self (natural weapons)",
-    "description": "A strength-based attack action.",
+    "description": "A spell used with a spell attack action.\r\n\r\nReplace INPUT with spellcasting ability.",
     "category": "2nd Level",
-    "macrocode": "<b><font color=\"Purple\">Alter Self Damage</font></b> => [t: 1d4 + Strength] damage.",
+    "macrocode": "<b><font color=\"Purple\">Alter Self Damage</font></b> => [t: 1d6 + INPUT] damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Alter Self Crit Damage</font></b> => [t: 2d6 + Strength + 1] damage!"
   },
   {
@@ -1110,14 +1110,6 @@
     "category": "Special",
     "macrocode": "<b><font color=\"Green\">Unarmed Strike Damage</font></b> => [t: 1 + Strength] damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Unarmed Strike Crit Damage</font></b> => [t: 1 + Strength] damage!"
-  },
-  {
-    "id": 145,
-    "name": "Enhance Ability (bear’s endurance)",
-    "description": "",
-    "category": "2nd Level",
-    "macrocode": "<b><font color=\"Purple\">Enhance Ability</font></b> => [t: 2d6] temporary hit points.",
-    "macrocodecrit": ""
   },
   {
     "id": 146,
@@ -1329,7 +1321,7 @@
   },
   {
     "id": 173,
-    "name": "Branding Smite",
+    "name": "Branding Smite (5E)",
     "description": "A spell used with an attack action.",
     "category": "2nd Level",
     "macrocode": "<b><font color=\"Purple\">Branding Smite Extra Damage</font></b> => [t: 2d6] <font color=\"Orange\">☀</font> damage + becomes visible if it is invisible, and the target sheds dim light in a 5-foot radius and can’t become invisible until the spell ends.",
@@ -1377,7 +1369,7 @@
   },
   {
     "id": 179,
-    "name": "Ashardalon's Stride",
+    "name": "Ashardalon's Stride (5E)",
     "description": "",
     "category": "3nd Level",
     "macrocode": "<b><font color=\"Purple\">Ashardalon's Stride</font></b> => [t: 1d6] <font color=\"Orange\">🔥</font> damage.",
@@ -1396,7 +1388,7 @@
     "name": "Bestow Curse (cursed save)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "3nd Level",
-    "macrocode": "<b><font color=\"Purple\">Bestow Curse</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or it wastes its action that turn doing nothing.",
+    "macrocode": "<b><font color=\"Purple\">Bestow Curse</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or it is forced to Dodge.",
     "macrocodecrit": ""
   },
   {
@@ -1410,10 +1402,10 @@
   {
     "id": 183,
     "name": "Blinding Smite",
-    "description": "A spell used with an attack action.",
+    "description": "A spell used with an attack action.\r\n\r\nThe extra damage increases by 1d8 for each spell slot level above 3.",
     "category": "3nd Level",
-    "macrocode": "<b><font color=\"Purple\">Blinding Smite Extra Damage</font></b> => [t: 3d8] <font color=\"Orange\">☀</font> damage + DC [r: 8 + Charisma + Proficiency] Constitution Save or become Blinded.",
-    "macrocodecrit": "<b><font color=\"Teal\">Blinding Smite Extra Crit Damage</font></b> => [t: 6d8] <font color=\"Orange\">☀</font> damage + DC [r: 8 + Charisma + Proficiency] Constitution Save or become Blinded!"
+    "macrocode": "<b><font color=\"Purple\">Blinding Smite Extra Damage</font></b> => [t: 3d8] <font color=\"Orange\">☀</font> damage + become Blinded.",
+    "macrocodecrit": "<b><font color=\"Teal\">Blinding Smite Extra Crit Damage</font></b> => [t: 6d8] <font color=\"Orange\">☀</font> damage + become Blinded!"
   },
   {
     "id": 184,
@@ -1425,7 +1417,7 @@
   },
   {
     "id": 185,
-    "name": "Aganazzar's Scorcher",
+    "name": "Aganazzar's Scorcher (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "2nd Level",
     "macrocode": "<b><font color=\"Purple\">Aganazzar's Scorcher</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 3d8] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage.",
@@ -1809,7 +1801,7 @@
   },
   {
     "id": 233,
-    "name": "Antagonize",
+    "name": "Antagonize (5E)",
     "description": "Replace INPUT with spellcasting ability.\r\n\r\nWhen you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d4 for each slot level above 3rd.",
     "category": "3nd Level",
     "macrocode": "<b><font color=\"Purple\">Antagonize</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or take => [t: Psy = 4d4] ([t: floor(Psy/2)]) <font color=\"Purple\">👁</font> damage + fall under the effect of the spell.",
@@ -1874,7 +1866,7 @@
   {
     "id": 241,
     "name": "Blight",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nWhen you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th.",
+    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe damage increases by 1d8 for each spell slot level above 4.",
     "category": "4th Level",
     "macrocode": "<b><font color=\"Purple\">Blight</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Nec = 8d8] ([t: floor(Nec/2)]) <font color=\"Purple\">💀</font> damage. ",
     "macrocodecrit": ""
@@ -2084,61 +2076,45 @@
     "name": "Banishing Smite",
     "description": "A spell used with an attack action.",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Banishing Smite Extra Damage</font></b> => [t: 5d10] <font color=\"Blue\">✊</font> damage. If this attack reduces the target to 50 hit points of fewer, you banish it.",
-    "macrocodecrit": "<b><font color=\"Teal\">Banishing Smite Extra Crit Damage</font></b> => [t: 10d10] <font color=\"Blue\">✊</font> damage. If this attack reduces the target to 50 hit points of fewer, you banish it!"
-  },
-  {
-    "id": 268,
-    "name": "Animate Objects (tiny)",
-    "description": "A spell used with a dexterity attack action.",
-    "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Animate Object Damage</font></b> => [t: 1d4 + Dexterity] damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Animate Object Crit Damage</font></b> => [t: 2d4 + Dexterity] damage!"
-  },
-  {
-    "id": 269,
-    "name": "Animate Objects (small)",
-    "description": "A spell used with a dexterity attack action.",
-    "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Animate Object Damage</font></b> => [t: 1d8 + Dexterity] damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Animate Object Crit Damage</font></b> => [t: 2d8 + Dexterity] damage!"
+    "macrocode": "<b><font color=\"Purple\">Banishing Smite Extra Damage</font></b> => [t: 5d10] <font color=\"Blue\">✊</font> damage. If this attack reduces the target to 50 hit points of fewer => DC [r: 8 + INPUT + Proficiency] Charisma Save or the target gets banished.",
+    "macrocodecrit": "<b><font color=\"Teal\">Banishing Smite Extra Crit Damage</font></b> => [t: 10d10] <font color=\"Blue\">✊</font> damage. If this attack reduces the target to 50 hit points of fewer => DC [r: 8 + INPUT + Proficiency] Charisma Save or the target gets banished!"
   },
   {
     "id": 270,
-    "name": "Animate Objects (medium)",
-    "description": "A spell used with a dexterity attack action.",
+    "name": "Animate Objects (medium or smaller)",
+    "description": "A spell used with a spell attack action.\r\n\r\nReplace INPUT with spellcasting ability.",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Animate Object Damage</font></b> => [t: 2d6 + Dexterity] damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Animate Object Crit Damage</font></b> => [t: 4d6 + Dexterity] damage!"
+    "macrocode": "<b><font color=\"Purple\">Animate Object Damage</font></b> => [t: 1d4 + 3 + INPUT] damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Animate Object Crit Damage</font></b> => [t: 2d4 + 3 + INPUT] damage!"
   },
   {
     "id": 271,
     "name": "Animate Objects (large)",
-    "description": "A spell used with a strength attack action.",
+    "description": "A spell used with a spell attack action.\r\n\r\nReplace INPUT with spellcasting ability.",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Animate Object Damage</font></b> => [t: 2d10 + Strength] damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Animate Object Crit Damage</font></b> => [t: 4d10 + Strength] damage!"
+    "macrocode": "<b><font color=\"Purple\">Animate Object Damage</font></b> => [t: 2d6 + 3 + INPUT] damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Animate Object Crit Damage</font></b> => [t: 4d6 + 3 + INPUT] damage!"
   },
   {
     "id": 272,
     "name": "Animate Objects (huge)",
-    "description": "A spell used with a strength attack action.",
+    "description": "A spell used with a spell attack action.\r\n\r\nReplace INPUT with spellcasting ability.",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Animate Object Damage</font></b> => [t: 2d12 + Strength] damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Animate Object Crit Damage</font></b> => [t: 4d12 + Strength] damage!"
+    "macrocode": "<b><font color=\"Purple\">Animate Object Damage</font></b> => [t: 2d12 + 3 + INPUT] damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Animate Object Crit Damage</font></b> => [t: 4d12 + 3 + INPUT] damage!"
   },
   {
     "id": 273,
     "name": "Bigby's Hand (clenched fist)",
-    "description": "A spell used with a spell attack action.",
+    "description": "A spell used with a spell attack action.\r\n\r\nThe damage of the Clenched Fist increases by 2d8 for each spell slot level above 5.",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Bigby's Hand (clenched fist) Damage</font></b> => [t: 4d8] <font color=\"Blue\">✊</font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Bigby's Hand (clenched fist) Crit Damage</font></b> => [t: 8d8] <font color=\"Blue\">✊</font> damage!"
+    "macrocode": "<b><font color=\"Purple\">Bigby's Hand (clenched fist) Damage</font></b> => [t: 5d8] <font color=\"Blue\">✊</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Bigby's Hand (clenched fist) Crit Damage</font></b> => [t: 10d8] <font color=\"Blue\">✊</font> damage!"
   },
   {
     "id": 274,
     "name": "Bigby's Hand (forceful hand)",
-    "description": "",
+    "description": "Replace INPUT with spellcasting ability.",
     "category": "5th Level",
     "macrocode": "<b><font color=\"Purple\">Bigby's Hand (forceful hand)</font></b> => DC [r: 1d20 + Strength] Athletics Save or the hand pushes the target up to [t: 5 + (5 * INPUT)] feet.",
     "macrocodecrit": ""
@@ -2146,9 +2122,9 @@
   {
     "id": 275,
     "name": "Bigby's Hand (grasping hand damage)",
-    "description": "Replace INPUT with spellcasting ability.",
+    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe damage of the Grasping Hand increases by 2d6 for each spell slot level above 5.",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Bigby's Hand (grasping hand) Damage</font></b> => [t: 2d6 + INPUT] <font color=\"Silver\">🔨</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Bigby's Hand (grasping hand) Damage</font></b> => [t: 4d6 + INPUT] <font color=\"Silver\">🔨</font> damage.",
     "macrocodecrit": ""
   },
   {
@@ -2156,7 +2132,7 @@
     "name": "Bigby's Hand (grasping hand grapple)",
     "description": "",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Bigby's Hand (grasping hand)</font></b> => DC [r: 1d20 + Strength] Acrobatics/Athletics Save or become Grappled.",
+    "macrocode": "<b><font color=\"Purple\">Bigby's Hand (grasping hand)</font></b> => DC [r: 1d20 + Strength] Dexterity Save or become Grappled.",
     "macrocodecrit": ""
   },
   {
@@ -2521,7 +2497,7 @@
   },
   {
     "id": 322,
-    "name": "Bones of the Earth (cast)",
+    "name": "Bones of the Earth (cast) (5E)",
     "description": "",
     "category": "6th Level",
     "macrocode": "<b><font color=\"Purple\">Bones of the Earth</font></b> => DC [r: 8 + Wisdom + Proficiency] Strength Save or be lifted by the pillar.",
@@ -2529,7 +2505,7 @@
   },
   {
     "id": 323,
-    "name": "Bones of the Earth (crushed)",
+    "name": "Bones of the Earth (crushed) (5E)",
     "description": "",
     "category": "6th Level",
     "macrocode": "<b><font color=\"Purple\">Bones of the Earth</font></b> => [t: 6d6] <font color=\"Silver\">🔨</font> damage + is Restrained, pinched between the pillar and the obstacle.",
@@ -2537,7 +2513,7 @@
   },
   {
     "id": 324,
-    "name": "Bones of the Earth (escape)",
+    "name": "Bones of the Earth (escape) (5E)",
     "description": "",
     "category": "6th Level",
     "macrocode": "<b><font color=\"Purple\">Bones of the Earth</font></b> => DC [r: 8 + Wisdom + Proficiency] Strength/Dexterity Save or the creature is still Restrained.",
@@ -3081,7 +3057,7 @@
   },
   {
     "id": 393,
-    "name": "Abi-Dalzim's Horrid Wilting",
+    "name": "Abi-Dalzim's Horrid Wilting (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "8th Level",
     "macrocode": "<b><font color=\"Purple\">Abi-Dalzim's Horrid Wilting</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Nec = 10d8] ([t: floor(Nec/2)]) <font color=\"Purple\">💀</font> damage.",
@@ -3249,7 +3225,7 @@
   },
   {
     "id": 414,
-    "name": "Blade of Disaster",
+    "name": "Blade of Disaster (5E)",
     "description": "A spell used with a spell attack action.",
     "category": "9th Level",
     "macrocode": "<b><font color=\"Purple\">Blade of Disaster Damage</font></b> => [t: 4d12] <font color=\"Blue\">✊</font> damage.",
@@ -3733,6 +3709,22 @@
     "description": "Replace INPUT with the changed size.",
     "category": "Token",
     "macrocode": "[h: setSize(\"INPUT\")]",
+    "macrocodecrit": ""
+  },
+  {
+    "id": 476,
+    "name": "Befuddlement",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "8th Level",
+    "macrocode": "<b><font color=\"Purple\">Befuddlement</font></b> => DC [r: 8 + INPUT + Proficiency] Intelligence Save or take => [t: Psy = 10d12] ([t: floor(Psy/2)]) <font color=\"Purple\">👁</font> damage + can't cast spells or take the Magic action. ",
+    "macrocodecrit": ""
+  },
+  {
+    "id": 477,
+    "name": "Blade Ward",
+    "description": "",
+    "category": "Cantrips",
+    "macrocode": "<b><font color=\"Purple\">Blade Ward</font></b> => [t: 1d4].",
     "macrocodecrit": ""
   }
 ]
