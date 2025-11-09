@@ -18,9 +18,9 @@
   {
     "id": 3,
     "name": "Cure Wounds",
-    "description": "Replace INPUT with spellcasting ability.",
+    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe healing increases by 2d8 for each spell slot level above 1.",
     "category": "1st Level",
-    "macrocode": "<b><font color=\"Purple\">Cure Wounds</font></b> => [t: 1d8 + INPUT] <font color=\"Red\">➕</font> healing.",
+    "macrocode": "<b><font color=\"Purple\">Cure Wounds</font></b> => [t: 2d8 + INPUT] <font color=\"Red\">➕</font> healing.",
     "macrocodecrit": ""
   },
   {
@@ -434,14 +434,14 @@
   {
     "id": 55,
     "name": "Chill Touch",
-    "description": "A spell used with a spell attack action.\r\n\r\nThis spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).\r\n\r\nRemember to edit the damage dice according to level.",
+    "description": "A spell used with a spell attack action.\r\n\r\nThe damage increases by 1d10 when you reach levels 5 (2d10), 11 (3d10), and 17 (4d10).",
     "category": "Cantrips",
-    "macrocode": "<b><font color=\"Purple\">Chill Touch Damage</font></b> => [t: 1d8] <font color=\"Purple\">💀</font> damage + it can’t regain hit points until the start of your next turn + if you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn.",
-    "macrocodecrit": "<b><font color=\"Teal\">Chill Touch Crit Damage</font></b> => [t: 2d8] <font color=\"Purple\">💀</font> damage + it can’t regain hit points until the start of your next turn + if you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn!"
+    "macrocode": "<b><font color=\"Purple\">Chill Touch Damage</font></b> => [t: 1d10] <font color=\"Purple\">💀</font> damage + it can’t regain hit points until the start of your next turn.",
+    "macrocodecrit": "<b><font color=\"Teal\">Chill Touch Crit Damage</font></b> => [t: 2d10] <font color=\"Purple\">💀</font> damage + it can’t regain hit points until the start of your next turn."
   },
   {
     "id": 56,
-    "name": "Create Bonfire",
+    "name": "Create Bonfire (5E)",
     "description": "Replace INPUT with spellcasting ability.\r\n\r\nThis spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).\r\n\r\nRemember to edit the damage dice according to level.",
     "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Create Bonfire</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: 1d8] <font color=\"Orange\">🔥</font> damage.",
@@ -681,7 +681,7 @@
   },
   {
     "id": 86,
-    "name": "Catapult",
+    "name": "Catapult (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "1st Level",
     "macrocode": "<b><font color=\"Purple\">Catapult</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: 3d8] <font color=\"Silver\">🔨</font> damage.",
@@ -762,9 +762,9 @@
   {
     "id": 99,
     "name": "Color Spray",
-    "description": "",
+    "description": "Replace INPUT with spellcasting ability.",
     "category": "1st Level",
-    "macrocode": "<b><font color=\"Purple\">Color Spray</font></b> => [t: 6d10] hit points affected become Blinded.",
+    "macrocode": "<b><font color=\"Purple\">Color Spray</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or become Blinded.",
     "macrocodecrit": ""
   },
   {
@@ -841,7 +841,7 @@
   },
   {
     "id": 111,
-    "name": "Ceremony (coming of age)",
+    "name": "Ceremony (coming of age) (5E)",
     "description": "",
     "category": "1st Level",
     "macrocode": "<b><font color=\"Purple\">Ceremony</font></b> => [t: 1d4].",
@@ -977,7 +977,7 @@
   },
   {
     "id": 128,
-    "name": "Chaos Bolt",
+    "name": "Chaos Bolt (5E)",
     "description": "A spell used with a spell attack action.",
     "category": "1st Level",
     "macrocode": "<b><font color=\"Purple\">Chaos Bolt Damage</font></b> => [h: Dice1 = 1d8][h: Dice2 = 1d8][t: Dice1 + Dice2 + 1d6] damage. Damage type: [t: Dice1].",
@@ -986,7 +986,7 @@
   {
     "id": 129,
     "name": "Chromatic Orb",
-    "description": "A spell used with a spell attack action.",
+    "description": "A spell used with a spell attack action.\r\n\r\n The damage increases by 1d8 for each spell slot level above 1.",
     "category": "1st Level",
     "macrocode": "<b><font color=\"Purple\">Chromatic Orb Damage</font></b> => [t: 3d8] damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Chromatic Orb Crit Damage</font></b> => [t: 6d8] damage!"
@@ -1018,7 +1018,7 @@
   {
     "id": 133,
     "name": "Armor of Agathys",
-    "description": " The Temporary Hit Points and the Cold damage both increase by 5 for each spell slot level above 1.",
+    "description": "The temporary hit points and the cold damage both increase by 5 for each spell slot level above 1.",
     "category": "1st Level",
     "macrocode": "<b><font color=\"Purple\">Armor of Agathys</font></b> => [t: 5] <font color=\"Blue\">❄</font> damage/temporary hit points.",
     "macrocodecrit": ""
@@ -1041,7 +1041,7 @@
   },
   {
     "id": 136,
-    "name": "Cause Fear",
+    "name": "Cause Fear (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "1st Level",
     "macrocode": "<b><font color=\"Purple\">Cause Fear</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or become Frightened of you.",
@@ -1154,7 +1154,7 @@
   {
     "id": 151,
     "name": "Cloud of Daggers",
-    "description": "",
+    "description": "The damage increases by 2d4 for each spell slot level above 2.",
     "category": "2nd Level",
     "macrocode": "<b><font color=\"Purple\">Cloud of Daggers</font></b> => [t: 4d4] <font color=\"Silver\">🔪</font> damage.",
     "macrocodecrit": ""
@@ -1412,7 +1412,7 @@
     "name": "Cordon of Arrows",
     "description": "",
     "category": "2nd Level",
-    "macrocode": "<b><font color=\"Purple\">Cordon of Arrows</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: 1d6] <font color=\"Silver\">📍</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Cordon of Arrows</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: 2d4] <font color=\"Silver\">📍</font> damage.",
     "macrocodecrit": ""
   },
   {
@@ -1538,7 +1538,7 @@
   {
     "id": 200,
     "name": "Call Lightning (cast)",
-    "description": "",
+    "description": "The damage increases by 1d10 for each spell slot level above 3.",
     "category": "3nd Level",
     "macrocode": "<b><font color=\"Purple\">Call Lightning</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Lig = 3d10] ([t: floor(Lig/2)]) <font color=\"Blue\">✴</font> damage.",
     "macrocodecrit": ""
@@ -1546,7 +1546,7 @@
   {
     "id": 201,
     "name": "Call Lightning (storm)",
-    "description": "",
+    "description": "The damage increases by 1d10 for each spell slot level above 3.",
     "category": "3nd Level",
     "macrocode": "<b><font color=\"Purple\">Call Lightning</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Lig = 4d10] ([t: floor(Lig/2)]) <font color=\"Blue\">✴</font> damage.",
     "macrocodecrit": ""
@@ -1554,9 +1554,9 @@
   {
     "id": 202,
     "name": "Conjure Barrage",
-    "description": "",
+    "description": "A spell used with a strength/dexterity attack action.\r\n\r\nThe damage increases by 1d8 for each spell slot level above 3.",
     "category": "3nd Level",
-    "macrocode": "<b><font color=\"Purple\">Conjure Barrage</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Any = 3d8] ([t: floor(Any/2)]) damage.",
+    "macrocode": "<b><font color=\"Purple\">Conjure Barrage</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Any = 5d8] ([t: floor(Any/2)]) <font color=\"Blue\">✊</font> damage.",
     "macrocodecrit": ""
   },
   {
@@ -2108,15 +2108,15 @@
     "name": "Bigby's Hand (clenched fist)",
     "description": "A spell used with a spell attack action.\r\n\r\nThe damage of the Clenched Fist increases by 2d8 for each spell slot level above 5.",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Bigby's Hand (clenched fist) Damage</font></b> => [t: 5d8] <font color=\"Blue\">✊</font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Bigby's Hand (clenched fist) Crit Damage</font></b> => [t: 10d8] <font color=\"Blue\">✊</font> damage!"
+    "macrocode": "<b><font color=\"Purple\">Bigby's Hand Damage</font></b> => [t: 5d8] <font color=\"Blue\">✊</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Bigby's Hand Crit Damage</font></b> => [t: 10d8] <font color=\"Blue\">✊</font> damage!"
   },
   {
     "id": 274,
     "name": "Bigby's Hand (forceful hand)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Bigby's Hand (forceful hand)</font></b> => DC [r: 1d20 + Strength] Athletics Save or the hand pushes the target up to [t: 5 + (5 * INPUT)] feet.",
+    "macrocode": "<b><font color=\"Purple\">Bigby's Hand</font></b> => DC [r: 1d20 + Strength] Athletics Save or the hand pushes the target up to [t: 5 + (5 * INPUT)] feet.",
     "macrocodecrit": ""
   },
   {
@@ -2124,7 +2124,7 @@
     "name": "Bigby's Hand (grasping hand damage)",
     "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe damage of the Grasping Hand increases by 2d6 for each spell slot level above 5.",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Bigby's Hand (grasping hand) Damage</font></b> => [t: 4d6 + INPUT] <font color=\"Silver\">🔨</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Bigby's Hand Damage</font></b> => [t: 4d6 + INPUT] <font color=\"Silver\">🔨</font> damage.",
     "macrocodecrit": ""
   },
   {
@@ -2132,13 +2132,13 @@
     "name": "Bigby's Hand (grasping hand grapple)",
     "description": "",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Bigby's Hand (grasping hand)</font></b> => DC [r: 1d20 + Strength] Dexterity Save or become Grappled.",
+    "macrocode": "<b><font color=\"Purple\">Bigby's Hand</font></b> => DC [r: 1d20 + Strength] Dexterity Save or become Grappled.",
     "macrocodecrit": ""
   },
   {
     "id": 277,
     "name": "Cloudkill",
-    "description": "Replace INPUT with spellcasting ability.",
+    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe damage increases by 1d8 for each spell slot level above 5.",
     "category": "5th Level",
     "macrocode": "<b><font color=\"Purple\">Cloudkill</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Poi = 5d8] ([t: floor(Poi/2)]) <font color=\"Green\">☠</font> damage.",
     "macrocodecrit": ""
@@ -2146,7 +2146,7 @@
   {
     "id": 278,
     "name": "Cone of Cold",
-    "description": "Replace INPUT with spellcasting ability.",
+    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe damage increases by 1d8 for each spell slot level above 5.",
     "category": "5th Level",
     "macrocode": "<b><font color=\"Purple\">Cone of Cold</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Col = 8d8] ([t: floor(Col/2)]) <font color=\"Blue\">❄</font> damage. A creature killed by this spell becomes a frozen statue.",
     "macrocodecrit": ""
@@ -2156,7 +2156,7 @@
     "name": "Conjure Volley",
     "description": "A spell used with a strength/dexterity attack action.",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Conjure Volley Damage</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Any = 8d8] ([t: floor(Any/2)]) damage.",
+    "macrocode": "<b><font color=\"Purple\">Conjure Volley Damage</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Any = 8d8] ([t: floor(Any/2)]) <font color=\"Blue\">✊</font> damage.",
     "macrocodecrit": ""
   },
   {
@@ -2164,15 +2164,7 @@
     "name": "Contact Other Plane",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Contact Other Plane</font></b> => DC [r: 8 + INPUT + Proficiency] Intelligence Save or take => [t: 6d6] <font color=\"Purple\">👁</font> damage + are insane until you finish a long rest.",
-    "macrocodecrit": ""
-  },
-  {
-    "id": 281,
-    "name": "Contagion (cast)",
-    "description": "A spell used with a spell attack action.",
-    "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Contagion</font></b> => The target is Poisoned.",
+    "macrocode": "<b><font color=\"Purple\">Contact Other Plane</font></b> => DC [r: 8 + INPUT + Proficiency] Intelligence Save or take => [t: 6d6] <font color=\"Purple\">👁</font> damage + Incapacitated until you finish a long rest.",
     "macrocodecrit": ""
   },
   {
@@ -2180,12 +2172,12 @@
     "name": "Contagion (active)",
     "description": "",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Contagion</font></b> => DC [r: 8 + Wisdom + Proficiency] Constitution Save. If the target succeeds on three of these saves, it is no longer poisoned. If the target fails three of these saves, the target is no longer poisoned, but choose one of the spell's diseases.",
+    "macrocode": "<b><font color=\"Purple\">Contagion</font></b> => DC [r: 8 + Wisdom + Proficiency] Constitution Save or take => [t: 11d8] <font color=\"Purple\">💀</font> damage + become Poisoned.",
     "macrocodecrit": ""
   },
   {
     "id": 283,
-    "name": "Control Winds",
+    "name": "Control Winds (5E)",
     "description": "A spell used with a spell attack action.",
     "category": "5th Level",
     "macrocode": "<b><font color=\"Purple\">Control Winds</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or the creature is knocked Prone.",
@@ -2484,7 +2476,7 @@
     "name": "Wrath Of Nature (rocks)",
     "description": "A spell used with a spell attack action.",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Wrath Of Nature (rocks) Damage</font></b> => [t: 3d8] <font color=\"Silver\">🔨</font> damage + DC [r: 8 + Wisdom + Proficiency] Strength Save or fall Prone.",
+    "macrocode": "<b><font color=\"Purple\">Wrath Of Nature Damage</font></b> => [t: 3d8] <font color=\"Silver\">🔨</font> damage + DC [r: 8 + Wisdom + Proficiency] Strength Save or fall Prone.",
     "macrocodecrit": "<b><font color=\"Teal\">Wrath Of Nature (rocks) Crit Damage</font></b> => [t: 6d8] <font color=\"Silver\">🔨</font> damage + DC [r: 8 + Wisdom + Proficiency] Strength Save or fall Prone!"
   },
   {
@@ -2530,14 +2522,14 @@
   {
     "id": 326,
     "name": "Circle of Death",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nWhen you cast this spell using a spell slot of 7th level or higher, the damage increases by 2d6 for each slot level above 6th.",
+    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe damage increases by 2d8 for each spell slot level above 6.",
     "category": "6th Level",
-    "macrocode": "<b><font color=\"Purple\">Circle of Death</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Nec = 8d6] ([t: floor(Nec/2)]) <font color=\"Purple\">💀</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Circle of Death</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Nec = 8d8] ([t: floor(Nec/2)]) <font color=\"Purple\">💀</font> damage.",
     "macrocodecrit": ""
   },
   {
     "id": 327,
-    "name": "Create Homunculus",
+    "name": "Create Homunculus (5E)",
     "description": "",
     "category": "6th Level",
     "macrocode": "<b><font color=\"Purple\">Create Homunculus</font></b> => [t: 2d4] <font color=\"Silver\">📍</font> damage.",
@@ -2761,7 +2753,7 @@
   },
   {
     "id": 356,
-    "name": "Crown of Stars",
+    "name": "Crown of Stars (5E)",
     "description": "A spell used with a spell attack action.",
     "category": "7th Level",
     "macrocode": "<b><font color=\"Purple\">Crown of Stars Damage</font></b> => [t: 4d12] <font color=\"Orange\">☀</font> damage.",
@@ -3068,7 +3060,7 @@
     "name": "Antipathy/Sympathy (antipathy)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "8th Level",
-    "macrocode": "<b><font color=\"Purple\">Antipathy/Sympathy (antipathy)</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or become Frightened + fall under the effects of the spell.",
+    "macrocode": "<b><font color=\"Purple\">Antipathy/Sympathy</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or become Frightened + fall under the effects of the spell.",
     "macrocodecrit": ""
   },
   {
@@ -3076,7 +3068,7 @@
     "name": "Antipathy/Sympathy (sympathy)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "8th Level",
-    "macrocode": "<b><font color=\"Purple\">Antipathy/Sympathy (antipathy)</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or use its movement on each of its turns to enter the area or move within reach of the target + fall under the effects of the spell.",
+    "macrocode": "<b><font color=\"Purple\">Antipathy/Sympathy</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or use its movement on each of its turns to enter the area or move within reach of the target + fall under the effects of the spell.",
     "macrocodecrit": ""
   },
   {
@@ -3388,7 +3380,7 @@
     "name": "Wish (weakened)",
     "description": "",
     "category": "9th Level",
-    "macrocode": "<b><font color=\"Purple\">Wish</font></b> => [t: 1d10] <font color=\"Purple\">💀</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Wish (weakened)</font></b> => [t: 1d10] <font color=\"Purple\">💀</font> damage.",
     "macrocodecrit": ""
   },
   {
@@ -3396,7 +3388,7 @@
     "name": "Wish (recovery)",
     "description": "",
     "category": "9th Level",
-    "macrocode": "<b><font color=\"Purple\">Wish</font></b> => [t: 2d4] days.",
+    "macrocode": "<b><font color=\"Purple\">Wish (recovery)</font></b> => [t: 2d4] days.",
     "macrocodecrit": ""
   },
   {
@@ -3725,6 +3717,78 @@
     "description": "",
     "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Blade Ward</font></b> => [t: 1d4].",
+    "macrocodecrit": ""
+  },
+  {
+    "id": 478,
+    "name": "Conjure Animals",
+    "description": "The damage increases by 1d10 for each spell slot level above 3.",
+    "category": "3th Level",
+    "macrocode": "<b><font color=\"Purple\">Conjure Animals</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: 3d10] <font color=\"Silver\">🔪</font> damage.",
+    "macrocodecrit": ""
+  },
+  {
+    "id": 479,
+    "name": "Conjure Celestial (healing light)",
+    "description": "The healing and damage increase by 1d12 for each spell slot level above 7.",
+    "category": "7th Level",
+    "macrocode": "<b><font color=\"Purple\">Conjure Celestial</font></b> => [t: 4d12 + Wisdom] <font color=\"Red\">➕</font> healing.",
+    "macrocodecrit": ""
+  },
+  {
+    "id": 480,
+    "name": "Conjure Celestial (searing light)",
+    "description": "The healing and damage increase by 1d12 for each spell slot level above 7.",
+    "category": "7th Level",
+    "macrocode": "<b><font color=\"Purple\">Conjure Celestial</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Rad = 6d12] ([t: floor(Rad/2)]) <font color=\"Orange\">☀️</font> damage.",
+    "macrocodecrit": ""
+  },
+  {
+    "id": 481,
+    "name": "Conjure Elemental",
+    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe damage increases by 1d8 for each spell slot level above 5.",
+    "category": "5th Level",
+    "macrocode": "<b><font color=\"Purple\">Conjure Elemental</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Any = 8d8] ([t: floor(Any/2)]) damage. On fail, it is Restrained until the spells ends.",
+    "macrocodecrit": ""
+  },
+  {
+    "id": 482,
+    "name": "Conjure Fey",
+    "description": "A spell used with an spell attack action.\r\n\r\nThe damage increases by 1d12 for each spell slot level above 6.",
+    "category": "6th Level",
+    "macrocode": "<b><font color=\"Purple\">Conjure Fey Damage</font></b> => [t: 3d12 + Wisdom] <font color=\"Purple\">👁️</font> damage + the target becomes Frightened.",
+    "macrocodecrit": "<b><font color=\"Teal\">Conjure Fey Crit Damage</font></b> => [t: 6d12 + Wisdom] <font color=\"Purple\">👁️</font> damage + the target becomes Frightened!"
+  },
+  {
+    "id": 483,
+    "name": "Conjure Minor Elementals",
+    "description": "A spell used with an attack action.\r\n\r\nThe damage increases by 1d8 for each spell slot level above 4.",
+    "category": "4th Level",
+    "macrocode": "<b><font color=\"Purple\">Conjure Minor Elementals Damage</font></b> => [t: 2d8] damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Conjure Minor Elementals Crit Damage</font></b> => [t: 4d8] damage!"
+  },
+  {
+    "id": 484,
+    "name": "Conjure Woodland Beings",
+    "description": "The damage increases by 1d8 for each spell slot level above 4.",
+    "category": "4th Level",
+    "macrocode": "<b><font color=\"Purple\">Conjure Woodland Beings</font></b> => DC [r: 8 + Wisdom + Proficiency] Wisdom Save or take => [t: For = 5d8] ([t: floor(For/2)]) <font color=\"Blue\">✊</font> damage.",
+    "macrocodecrit": ""
+  },
+  {
+    "id": 485,
+    "name": "Control Water (whirlpool)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "4th Level",
+    "macrocode": "<b><font color=\"Purple\">Control Water</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or take => [t: Blu = 2d8] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage.",
+    "macrocodecrit": ""
+  },
+  {
+    "id": 486,
+    "name": "Counterspell",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "3nd Level",
+    "macrocode": "<b><font color=\"Purple\">Counterspell</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or the spell dissipates with no effect.",
     "macrocodecrit": ""
   }
 ]
