@@ -562,7 +562,7 @@
   {
     "id": 71,
     "name": "Eldritch Blast",
-    "description": "A spell used with a spell attack action.",
+    "description": "A spell used with a spell attack action.\r\n\r\nThe spell creates two beams at level 5, three beams at level 11, and four beams at level 17. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.",
     "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Eldritch Blast Damage</font></b> => [t: 1d10] <font color=\"Blue\">✊</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Eldritch Blast Crit Damage</font></b> => [t: 2d10] <font color=\"Blue\">✊</font> damage!"
@@ -570,7 +570,7 @@
   {
     "id": 72,
     "name": "Eldritch Blast (agonizing blast)",
-    "description": "A spell used with a spell attack action.",
+    "description": "A spell used with a spell attack action.\r\n\r\nThe spell creates two beams at level 5, three beams at level 11, and four beams at level 17. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.",
     "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Eldritch Blast Damage</font></b> => [t: 1d10 + Charisma] <font color=\"Blue\">✊</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Eldritch Blast Crit Damage</font></b> => [t: 2d10 + Charisma] <font color=\"Blue\">✊</font> damage!"
@@ -578,7 +578,7 @@
   {
     "id": 73,
     "name": "Eldritch Blast (repelling blast)",
-    "description": "A spell used with a spell attack action.",
+    "description": "A spell used with a spell attack action.\r\n\r\nThe spell creates two beams at level 5, three beams at level 11, and four beams at level 17. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.",
     "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Eldritch Blast Damage</font></b> => [t: 1d10] <font color=\"Blue\">✊</font> damage + push the creature up to 10 feet away from you in a straight line.",
     "macrocodecrit": "<b><font color=\"Teal\">Eldritch Blast Crit Damage</font></b> => [t: 2d10] <font color=\"Blue\">✊</font> damage + push the creature up to 10 feet away from you in a straight line!"
@@ -586,7 +586,7 @@
   {
     "id": 74,
     "name": "Eldritch Blast (agonizing blast + repelling blast)",
-    "description": "A spell used with a spell attack action.",
+    "description": "A spell used with a spell attack action.\r\n\r\nThe spell creates two beams at level 5, three beams at level 11, and four beams at level 17. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.",
     "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Eldritch Blast Damage</font></b> => [t: 1d10 + Charisma] <font color=\"Blue\">✊</font> damage + push the creature up to 10 feet away from you in a straight line.",
     "macrocodecrit": "<b><font color=\"Teal\">Eldritch Blast Crit Damage</font></b> => [t: 2d10 + Charisma] <font color=\"Blue\">✊</font> damage + push the creature up to 10 feet away from you in a straight line!"
@@ -778,14 +778,14 @@
   {
     "id": 101,
     "name": "Dissonant Whispers",
-    "description": "",
+    "description": "The damage increases by 1d6 for each spell slot level above 1.",
     "category": "1st Level",
-    "macrocode": "<b><font color=\"Purple\">Dissonant Whispers</font></b> =>DC [r: 8 + Charisma + Proficiency] Wisdom Save or take => [t: Psy = 3d6] ([t: floor(Psy/2)]) <font color=\"Purple\">👁</font> damage. On fail, must immediately use its reaction, if available, to move as far as its speed allows away from you",
+    "macrocode": "<b><font color=\"Purple\">Dissonant Whispers</font></b> =>DC [r: 8 + Charisma + Proficiency] Wisdom Save or take => [t: Psy = 3d6] ([t: floor(Psy/2)]) <font color=\"Purple\">👁</font> damage. On fail, must immediately use its reaction, if available, to move as far as its speed allows away from you.",
     "macrocodecrit": ""
   },
   {
     "id": 103,
-    "name": "Earth Tremor",
+    "name": "Earth Tremor (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "1st Level",
     "macrocode": "<b><font color=\"Purple\">Earth Tremor</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: 1d6] <font color=\"Silver\">🔨</font> damage + is knocked Prone.",
@@ -938,7 +938,7 @@
   {
     "id": 123,
     "name": "Ensnaring Strike (restrained)",
-    "description": "A spell used with an attack action.",
+    "description": "A spell used with an attack action.\r\n\r\nThe damage increases by 1d6 for each spell slot level above 1.",
     "category": "1st Level",
     "macrocode": "<b><font color=\"Purple\">Ensnaring Strike Extra Damage</font></b> => [t: 1d6] <font color=\"Silver\">📍</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Ensnaring Strike Extra Crit Damage</font></b> => [t: 2d6] <font color=\"Silver\">📍</font> damage!"
@@ -1180,7 +1180,7 @@
     "name": "Enthrall",
     "description": "",
     "category": "2nd Level",
-    "macrocode": "<b><font color=\"Purple\">Enthrall</font></b> => DC [r: 8 + Charisma + Proficiency] Wisdom Save or the target has disadvantage on Perception checks made to perceive any creature other than you until the spell ends or until the target can no longer hear you.",
+    "macrocode": "<b><font color=\"Purple\">Enthrall</font></b> => DC [r: 8 + Charisma + Proficiency] Wisdom Save or the target has -10 penalty to Perception checks and Passive Perception checks until the spell ends.",
     "macrocodecrit": ""
   },
   {
@@ -1241,7 +1241,7 @@
   },
   {
     "id": 163,
-    "name": "Dust Devil",
+    "name": "Dust Devil (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "2nd Level",
     "macrocode": "<b><font color=\"Purple\">Dust Devil</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or take => [t: Blu = 1d8] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage. On fail, is pushed 10 feet away.",
@@ -1249,7 +1249,7 @@
   },
   {
     "id": 164,
-    "name": "Earthbind",
+    "name": "Earthbind (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "2nd Level",
     "macrocode": "<b><font color=\"Purple\">Earthbind</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or its flying speed is reduced to 0 feet.",
@@ -1363,7 +1363,7 @@
     "id": 178,
     "name": "Aura of Vitality",
     "description": "",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Aura of Vitality</font></b> => [t: 2d6] <font color=\"Red\">➕</font> healing.",
     "macrocodecrit": ""
   },
@@ -1371,7 +1371,7 @@
     "id": 179,
     "name": "Ashardalon's Stride (5E)",
     "description": "",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Ashardalon's Stride</font></b> => [t: 1d6] <font color=\"Orange\">🔥</font> damage.",
     "macrocodecrit": ""
   },
@@ -1379,7 +1379,7 @@
     "id": 180,
     "name": "Bestow Curse (cast)",
     "description": "Replace INPUT with spellcasting ability.",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Bestow Curse</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or become Cursed.",
     "macrocodecrit": ""
   },
@@ -1387,7 +1387,7 @@
     "id": 181,
     "name": "Bestow Curse (cursed save)",
     "description": "Replace INPUT with spellcasting ability.",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Bestow Curse</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or it is forced to Dodge.",
     "macrocodecrit": ""
   },
@@ -1395,7 +1395,7 @@
     "id": 182,
     "name": "Bestow Curse (cursed damage)",
     "description": "A spell used with an attack action.",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Bestow Curse Extra Damage</font></b> => [t: 1d8] <font color=\"Purple\">💀</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Bestow Curse Extra Crit Damage</font></b> => [t: 2d8] <font color=\"Purple\">💀</font> damage!"
   },
@@ -1403,7 +1403,7 @@
     "id": 183,
     "name": "Blinding Smite",
     "description": "A spell used with an attack action.\r\n\r\nThe extra damage increases by 1d8 for each spell slot level above 3.",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Blinding Smite Extra Damage</font></b> => [t: 3d8] <font color=\"Orange\">☀</font> damage + become Blinded.",
     "macrocodecrit": "<b><font color=\"Teal\">Blinding Smite Extra Crit Damage</font></b> => [t: 6d8] <font color=\"Orange\">☀</font> damage + become Blinded!"
   },
@@ -1426,9 +1426,9 @@
   {
     "id": 186,
     "name": "Dragon's Breath",
-    "description": "Replace INPUT with spellcasting ability.",
+    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe damage increases by 1d6 for each spell slot level above 2.",
     "category": "2nd Level",
-    "macrocode": "<b><font color=\"Purple\">Dragon's Breath</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 3d6] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Dragon's Breath</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Any = 3d6] ([t: floor(Any/2)]) damage.",
     "macrocodecrit": ""
   },
   {
@@ -1539,7 +1539,7 @@
     "id": 200,
     "name": "Call Lightning (cast)",
     "description": "The damage increases by 1d10 for each spell slot level above 3.",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Call Lightning</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Lig = 3d10] ([t: floor(Lig/2)]) <font color=\"Blue\">✴</font> damage.",
     "macrocodecrit": ""
   },
@@ -1547,7 +1547,7 @@
     "id": 201,
     "name": "Call Lightning (storm)",
     "description": "The damage increases by 1d10 for each spell slot level above 3.",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Call Lightning</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Lig = 4d10] ([t: floor(Lig/2)]) <font color=\"Blue\">✴</font> damage.",
     "macrocodecrit": ""
   },
@@ -1555,7 +1555,7 @@
     "id": 202,
     "name": "Conjure Barrage",
     "description": "A spell used with a strength/dexterity attack action.\r\n\r\nThe damage increases by 1d8 for each spell slot level above 3.",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Conjure Barrage</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Any = 5d8] ([t: floor(Any/2)]) <font color=\"Blue\">✊</font> damage.",
     "macrocodecrit": ""
   },
@@ -1563,31 +1563,31 @@
     "id": 203,
     "name": "Crusader's Mantle",
     "description": "A spell used with an attack action.",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Crusader's Mantle Extra Damage</font></b> => [t: 1d4] <font color=\"Orange\">☀</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Crusader's Mantle Extra Crit Damage</font></b> => [t: 2d4] <font color=\"Orange\">☀</font> damage!"
   },
   {
     "id": 204,
     "name": "Elemental Weapon",
-    "description": "A spell used with an attack action.",
-    "category": "3nd Level",
+    "description": "A spell used with an attack action.\r\n\r\nIf you use a level 5–6 spell slot, the bonus to attack rolls increases to +2, and the extra damage increases to 2d4. If you use a level 7+ spell slot, the bonus increases to +3, and the extra damage increases to 3d4.",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Elemental Weapon Extra Damage</font></b> => [t: 1d4] damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Elemental Weapon Extra Crit Damage</font></b> => [t: 2d4] damage!"
   },
   {
     "id": 205,
-    "name": "Enemies Abound",
+    "name": "Enemies Abound (5E)",
     "description": "Replace INPUT with spellcasting ability.",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Enemies Abound</font></b> => DC [r: 8 + INPUT + Proficiency] Intelligence Save or the target loses the ability to distinguish friend from foe, regarding all creatures it can see as enemies.",
     "macrocodecrit": ""
   },
   {
     "id": 206,
-    "name": "Erupting Earth",
+    "name": "Erupting Earth (5E)",
     "description": "Replace INPUT with spellcasting ability.",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Erupting Earth</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Blu = 3d12] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage.",
     "macrocodecrit": ""
   },
@@ -1595,7 +1595,7 @@
     "id": 207,
     "name": "Fast Friends",
     "description": "Replace INPUT with spellcasting ability.",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Fast Friends</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or become Charmed. While the creature is charmed in this way, it undertakes to perform any services or activities you ask of it in a friendly manner, to the best of its ability.",
     "macrocodecrit": ""
   },
@@ -1603,7 +1603,7 @@
     "id": 208,
     "name": "Fear",
     "description": "Replace INPUT with spellcasting ability.",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Fear</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or drop whatever it is holding and become Frightened.",
     "macrocodecrit": ""
   },
@@ -1611,7 +1611,7 @@
     "id": 209,
     "name": "Fireball",
     "description": "Replace INPUT with spellcasting ability.",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Fireball</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 8d6] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage.",
     "macrocodecrit": ""
   },
@@ -1619,7 +1619,7 @@
     "id": 210,
     "name": "Flame Arrows",
     "description": "A spell used with an attack action.",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Flame Arrows Extra Damage</font></b> => [t: 1d6] <font color=\"Orange\">🔥</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Flame Arrows Extra Crit Damage</font></b> => [t: 2d6] <font color=\"Orange\">🔥</font> damage!"
   },
@@ -1627,7 +1627,7 @@
     "id": 211,
     "name": "Glyph of Warding (hidden)",
     "description": "Replace INPUT with spellcasting ability.",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Glyph of Warding</font></b> => DC [r: 8 + INPUT + Proficiency] Investigation Save or glyph stays hidden.",
     "macrocodecrit": ""
   },
@@ -1635,7 +1635,7 @@
     "id": 212,
     "name": "Glyph of Warding (explosive runes)",
     "description": "Replace INPUT with spellcasting ability.",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Glyph of Warding (explosive runes)\r\n</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Any = 5d8] ([t: floor(Any/2)]) damage.",
     "macrocodecrit": ""
   },
@@ -1643,7 +1643,7 @@
     "id": 213,
     "name": "Hunger Of Hadar (start)",
     "description": "",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Hunger Of Hadar</font></b> => [t: 2d6] <font color=\"Blue\">❄</font> damage + and creatures fully within the area are Blinded.",
     "macrocodecrit": ""
   },
@@ -1651,7 +1651,7 @@
     "id": 214,
     "name": "Hunger Of Hadar (end)",
     "description": "",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Hunger Of Hadar</font></b> => DC [r: 8 + Charisma + Proficiency] Dexterity Save or take => [t: 2d6] <font color=\"Green\">🔥</font> damage + and creatures fully within the area are Blinded.",
     "macrocodecrit": ""
   },
@@ -1659,7 +1659,7 @@
     "id": 215,
     "name": "Hypnotic Pattern",
     "description": "Replace INPUT with spellcasting ability.",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Hypnotic Pattern</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or the creature becomes Charmed. While Charmed by this spell, the creature is Incapacitated and has a speed of 0.",
     "macrocodecrit": ""
   },
@@ -1667,7 +1667,7 @@
     "id": 216,
     "name": "Incite Greed",
     "description": "Replace INPUT with spellcasting ability.",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Incite Greed</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or be Charmed. While Charmed in this way, a creature can do nothing but use its movement to approach you in a safe manner.",
     "macrocodecrit": ""
   },
@@ -1675,7 +1675,7 @@
     "id": 217,
     "name": "Life Transference",
     "description": "",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Life Transference</font></b> => [t: Hea = 4d8] <font color=\"Purple\">💀</font> damage taken + [t: floor(Hea/2)] <font color=\"Red\">➕</font> healing.",
     "macrocodecrit": ""
   },
@@ -1683,7 +1683,7 @@
     "id": 218,
     "name": "Lightning Arrow (dexterity)",
     "description": "A spell used with a dexterity attack action.",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Lightning Arrow Damage</font></b> => [h: Lig = 4d8][t: Lig + Dexterity] ([t: floor(Lig/2) + Dexterity]) <font color=\"Blue\">✴</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Lightning Arrow Crit Damage</font></b> => [h: Lightning = 8d8][t: Lightning + Dexterity] ([t: floor(Lightning/2) + Dexterity]) <font color=\"Blue\">✴</font> damage!"
   },
@@ -1691,7 +1691,7 @@
     "id": 219,
     "name": "Lightning Arrow (strength)",
     "description": "A spell used with a strength attack action.",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Lightning Arrow Damage</font></b> => [h: Lig = 4d8][t: Lig + Strength] ([t: floor(Lig/2) + Strength]) <font color=\"Blue\">✴</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Lightning Arrow Crit Damage</font></b> => [h: Lightning = 8d8][t: Lightning + Strength] ([t: floor(Lightning/2) + Strength]) <font color=\"Blue\">✴</font> damage!"
   },
@@ -1699,7 +1699,7 @@
     "id": 220,
     "name": "Lightning Bolt",
     "description": "Replace INPUT with spellcasting ability.",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Lightning Bolt</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Lig = 8d6] ([t: floor(Lig/2)]) <font color=\"Blue\">✴</font> damage.",
     "macrocodecrit": ""
   },
@@ -1707,7 +1707,7 @@
     "id": 221,
     "name": "Major Image",
     "description": "Replace INPUT with spellcasting ability.",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Major Image</font></b> => DC [r: 8 + INPUT + Proficiency] Investigation Save or illusion stays active.",
     "macrocodecrit": ""
   },
@@ -1715,7 +1715,7 @@
     "id": 222,
     "name": "Mass Healing Word",
     "description": "Replace INPUT with spellcasting ability.",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Mass Healing Word</font></b> => [t: 1d4 + INPUT] <font color=\"Red\">➕</font> healing.",
     "macrocodecrit": ""
   },
@@ -1723,7 +1723,7 @@
     "id": 223,
     "name": "Meld into Stone",
     "description": "",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Meld into Stone</font></b> => [t: 6d6] <font color=\"Silver\">🔨</font> damage.",
     "macrocodecrit": ""
   },
@@ -1731,7 +1731,7 @@
     "id": 224,
     "name": "Melf's Minute Meteors",
     "description": "Replace INPUT with spellcasting ability.",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Melf's Minute Meteors</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 2d6] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage.",
     "macrocodecrit": ""
   },
@@ -1739,7 +1739,7 @@
     "id": 225,
     "name": "Motivational Speech",
     "description": "",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Motivational Speech</font></b> => [t: 5] temporary hit points + has advantage on Wisdom saving throws.",
     "macrocodecrit": ""
   },
@@ -1747,7 +1747,7 @@
     "id": 226,
     "name": "Sleet Storm",
     "description": "Replace INPUT with spellcasting ability.",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Sleet Storm</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or it fall Prone + if Concentrating => DC [r: 8 + INPUT + Proficiency] Constitution Save or lose Concentration.",
     "macrocodecrit": ""
   },
@@ -1755,7 +1755,7 @@
     "id": 227,
     "name": "Slow",
     "description": "Replace INPUT with spellcasting ability.",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Slow</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or fall under the effect of the spell.",
     "macrocodecrit": ""
   },
@@ -1763,7 +1763,7 @@
     "id": 228,
     "name": "Spirit Shroud",
     "description": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for every two slot levels above 3rd.",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Spirit Shroud Extra Damage</font></b> => [t: 1d8] damage + fall under the effect of the spell.",
     "macrocodecrit": "<b><font color=\"Teal\">Spirit Shroud Extra Crit Damage</font></b> => [t: 2d8] damage + fall under the effect of the spell!"
   },
@@ -1771,7 +1771,7 @@
     "id": 229,
     "name": "Stinking Cloud",
     "description": "Replace INPUT with spellcasting ability.",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Stinking Cloud</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or the creature spends its action that turn retching and reeling.",
     "macrocodecrit": ""
   },
@@ -1779,7 +1779,7 @@
     "id": 230,
     "name": "Thunder Step",
     "description": "Replace INPUT with spellcasting ability.\r\n\r\nWhen you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d10 for each slot level above 3rd.",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Thunder Step</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Thu = 3d10] ([t: floor(Thu/2)]) <font color=\"Gray\">💥</font> damage.",
     "macrocodecrit": ""
   },
@@ -1787,7 +1787,7 @@
     "id": 231,
     "name": "Tidal Wave",
     "description": "Replace INPUT with spellcasting ability.",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Tidal Wave</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Blu = 4d8] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage. On fail, fall Prone.",
     "macrocodecrit": ""
   },
@@ -1795,7 +1795,7 @@
     "id": 232,
     "name": "Vampiric Touch",
     "description": "A spell used with a spell attack action.\r\n\r\nWhen you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Vampiric Touch Damage</font></b> => [t: Hea = 3d6] <font color=\"Purple\">💀</font> damage + you regain [t: floor(Hea/2)] hit points.",
     "macrocodecrit": "<b><font color=\"Teal\">Vampiric Touch Crit Damage</font></b> => [t: Vampiric = 6d6] <font color=\"Purple\">💀</font> damage + you regain [t: floor(Vampiric/2)] hit points!"
   },
@@ -1803,7 +1803,7 @@
     "id": 233,
     "name": "Antagonize (5E)",
     "description": "Replace INPUT with spellcasting ability.\r\n\r\nWhen you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d4 for each slot level above 3rd.",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Antagonize</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or take => [t: Psy = 4d4] ([t: floor(Psy/2)]) <font color=\"Purple\">👁</font> damage + fall under the effect of the spell.",
     "macrocodecrit": ""
   },
@@ -1811,7 +1811,7 @@
     "id": 234,
     "name": "Spirit Guardians",
     "description": "",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Spirit Guardians</font></b> => DC [r: 8 + Wisdom + Proficiency] Wisdom Save or take => [t: Any = 3d8] ([t: floor(Any/2)]) damage.",
     "macrocodecrit": ""
   },
@@ -1819,13 +1819,13 @@
     "id": 235,
     "name": "Wind Wall",
     "description": "",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Wind Wall</font></b> => DC [r: 8 + Wisdom + Proficiency] Strength Save or take => [t: Blu = 3d8] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage.",
     "macrocodecrit": ""
   },
   {
     "id": 236,
-    "name": "Elemental Bane (cast)",
+    "name": "Elemental Bane (cast) (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "4th Level",
     "macrocode": "<b><font color=\"Purple\">Elemental Bane</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or be affected by the spell for its duration.",
@@ -1833,7 +1833,7 @@
   },
   {
     "id": 237,
-    "name": "Elemental Bane (attacked)",
+    "name": "Elemental Bane (attacked) (5E)",
     "description": "A spell used with an attack action.",
     "category": "4th Level",
     "macrocode": "<b><font color=\"Purple\">Elemental Bane Extra Damage</font></b> => [t: 2d6] damage.",
@@ -2185,7 +2185,7 @@
   },
   {
     "id": 284,
-    "name": "Dawn",
+    "name": "Dawn (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "5th Level",
     "macrocode": "<b><font color=\"Purple\">Dawn</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Rad = 4d10] ([t: floor(Rad/2)]) <font color=\"Orange\">☀</font> damage.",
@@ -2217,7 +2217,7 @@
   },
   {
     "id": 288,
-    "name": "Enervation (cast)",
+    "name": "Enervation (cast) (5E)",
     "description": "Replace INPUT with spellcasting ability.\r\n\r\nWhen you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.",
     "category": "5th Level",
     "macrocode": "<b><font color=\"Purple\">Enervation</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Nec = 4d8] ([t: floor(Nec/2)]) <font color=\"Purple\">💀</font> damage + you regain [t: Hea] ([t: floor(Hea/2)]) hit points.",
@@ -2225,7 +2225,7 @@
   },
   {
     "id": 289,
-    "name": "Enervation (action)",
+    "name": "Enervation (action) (5E)",
     "description": "When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.",
     "category": "5th Level",
     "macrocode": "<b><font color=\"Purple\">Enervation</font></b> => [t: Enervation = 4d8] <font color=\"Purple\">💀</font> damage + you regain [t: Enervation] hit points.",
@@ -2538,7 +2538,7 @@
   {
     "id": 328,
     "name": "Disintegrate",
-    "description": "Replace INPUT with spellcasting ability.",
+    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe damage increases by 3d6 for each spell slot level above 6.",
     "category": "6th Level",
     "macrocode": "<b><font color=\"Purple\">Disintegrate</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: 10d6 + 40] <font color=\"Blue\">✊</font> damage.",
     "macrocodecrit": ""
@@ -2762,15 +2762,15 @@
   {
     "id": 357,
     "name": "Delayed Blast Fireball (cast)",
-    "description": "Replace INPUT with spellcasting ability.",
+    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe base damage increases by 1d6 for each spell slot level above 7.",
     "category": "7th Level",
-    "macrocode": "<b><font color=\"Purple\">Delayed Blast Fireball</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 12d6] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage. If at the end of your turn the bead has not yet detonated, the damage increases by [t: 1d6].",
+    "macrocode": "<b><font color=\"Purple\">Delayed Blast Fireball</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 12d6] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage. If at the end of your turn the bead has not yet detonated, the damage increases by [t: Fire = 1d6] ([t: floor(Fire/2)]).",
     "macrocodecrit": ""
   },
   {
     "id": 358,
     "name": "Delayed Blast Fireball (bead)",
-    "description": "Replace INPUT with spellcasting ability.",
+    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe base damage increases by 1d6 for each spell slot level above 7.",
     "category": "7th Level",
     "macrocode": "<b><font color=\"Purple\">Delayed Blast Fireball</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or the spell ends immediately, causing the bead to erupt in flame.",
     "macrocodecrit": ""
@@ -2785,7 +2785,7 @@
   },
   {
     "id": 360,
-    "name": "Draconic Transformation",
+    "name": "Draconic Transformation (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "7th Level",
     "macrocode": "<b><font color=\"Purple\">Draconic Transformation</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: For = 6d8] ([t: floor(For/2)]) <font color=\"Blue\">✊</font> damage.",
@@ -3088,14 +3088,6 @@
     "macrocodecrit": ""
   },
   {
-    "id": 398,
-    "name": "Earthquake (concentration)",
-    "description": "Replace INPUT with spellcasting ability.",
-    "category": "8th Level",
-    "macrocode": "<b><font color=\"Purple\">Earthquake (concentration)</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or the creature’s Concentration is broken.",
-    "macrocodecrit": ""
-  },
-  {
     "id": 399,
     "name": "Earthquake (area)",
     "description": "Replace INPUT with spellcasting ability.",
@@ -3116,7 +3108,7 @@
     "name": "Earthquake (structures)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "8th Level",
-    "macrocode": "<b><font color=\"Purple\">Earthquake (structures)</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Blu = 5d6] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage. On fail, is knocked Prone, and is buried in the rubble.",
+    "macrocode": "<b><font color=\"Purple\">Earthquake (structures)</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Blu = 12d6] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage. On fail, is knocked Prone, and is buried in the rubble.",
     "macrocodecrit": ""
   },
   {
@@ -3723,7 +3715,7 @@
     "id": 478,
     "name": "Conjure Animals",
     "description": "The damage increases by 1d10 for each spell slot level above 3.",
-    "category": "3th Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Conjure Animals</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: 3d10] <font color=\"Silver\">🔪</font> damage.",
     "macrocodecrit": ""
   },
@@ -3787,8 +3779,16 @@
     "id": 486,
     "name": "Counterspell",
     "description": "Replace INPUT with spellcasting ability.",
-    "category": "3nd Level",
+    "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Counterspell</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or the spell dissipates with no effect.",
     "macrocodecrit": ""
+  },
+  {
+    "id": 487,
+    "name": "Divine Smite",
+    "description": "A spell used with an attack action.",
+    "category": "1st Level",
+    "macrocode": "<b><font color=\"Purple\">Divine Smite Extra Damage</font></b> => [t: 2d8] <font color=\"Orange\">☀</font> damage. The damage increases by [t: 1d8] if the target is a Fiend or an Undead.",
+    "macrocodecrit": "<b><font color=\"Teal\">Divine Smite Extra Crit Damage</font></b> => [t: 4d8] <font color=\"Orange\">☀</font> damage. The damage increases by [t: 2d8] if the target is a Fiend or an Undead!"
   }
 ]

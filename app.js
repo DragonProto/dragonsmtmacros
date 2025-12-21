@@ -25,7 +25,7 @@
       'cantrips',
       '1st level',
       '2nd level',
-      '3nd level',
+      '3rd level',
       '4th level',
       '5th level',
       '6th level',
