@@ -489,7 +489,7 @@
   },
   {
     "id": 62,
-    "name": "Infestation",
+    "name": "Infestation (5E)",
     "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).\r\n\r\nRemember to edit the damage dice according to level.",
     "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Infestation</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: 1d6] <font color=\"Green\">☠</font> damage + move 5 feet in listed direction [t: 1d4] if it can move and its speed is at least 5 feet.",
@@ -497,7 +497,7 @@
   },
   {
     "id": 63,
-    "name": "Lightning Lure",
+    "name": "Lightning Lure (5E)",
     "description": "Replace INPUT with spellcasting ability.\r\n\r\nThis spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).\r\n\r\nRemember to edit the damage dice according to level.",
     "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Lightning Lure</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or be pulled up to 10 feet in a straight line toward you + take => [t: 1d8] <font color=\"Blue\">✴</font> damage if it is within 5 feet of you.",
@@ -506,7 +506,7 @@
   {
     "id": 64,
     "name": "Mind Sliver",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThis spell’s damage increases by 1d6 when you reach certain levels: 5th level (2d6), 11th level (3d6), and 17th level (4d6).\r\n\r\nRemember to edit the damage dice according to level.",
+    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).",
     "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Mind Sliver</font></b> => DC [r: 8 + INPUT + Proficiency] Intelligence Save or take => [t: 1d6] <font color=\"Purple\">👁</font> damage + subtract [t: 1d4] from the next saving throw it makes before the end of your next turn.",
     "macrocodecrit": ""
@@ -593,7 +593,7 @@
   },
   {
     "id": 75,
-    "name": "Magic Stone",
+    "name": "Magic Stone (5E)",
     "description": "Replace INPUT with spellcasting ability.\r\n\r\nA spell used with a spell attack action.",
     "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Magic Stone Damage</font></b> => [t: 1d6 + INPUT] <font color=\"Silver\">🔨</font> damage.",
@@ -858,10 +858,10 @@
   {
     "id": 113,
     "name": "Inflict Wounds",
-    "description": "A spell used with a spell attack action.",
+    "description": "",
     "category": "1st Level",
-    "macrocode": "<b><font color=\"Purple\">Inflict Wounds Damage</font></b> => [t: 3d10] <font color=\"Purple\">💀</font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Inflict Wounds Crit Damage</font></b> => [t: 6d10] <font color=\"Purple\">💀</font> damage!"
+    "macrocode": "<b><font color=\"Purple\">Inflict Wounds</font></b> => DC [r: 8 + Wisdom + Proficiency] Constitution Save or take => [t: Nec = 2d10] ([t: floor(Nec/2)]) <font color=\"Purple\">💀</font> damage.",
+    "macrocodecrit": ""
   },
   {
     "id": 114,
@@ -876,8 +876,8 @@
     "name": "Ice Knife",
     "description": "A spell used with a spell attack action.",
     "category": "1st Level",
-    "macrocode": "<b><font color=\"Purple\">Ice Knife Damage</font></b> => [t: 1d10] <font color=\"Silver\">📍</font> damage + DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: 2d6] <font color=\"Green\">❄</font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Ice Knife Crit Damage</font></b> => [t: 2d10] <font color=\"Silver\">📍</font> damage + DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: 4d6] <font color=\"Green\">❄</font> damage!"
+    "macrocode": "<b><font color=\"Purple\">Ice Knife Damage</font></b> => [t: 1d10] <font color=\"Silver\">📍</font> damage + DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: 2d6] <font color=\"Blue\">❄</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Ice Knife Crit Damage</font></b> => [t: 2d10] <font color=\"Silver\">📍</font> damage + DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: 4d6] <font color=\"Blue\">❄</font> damage!"
   },
   {
     "id": 116,
@@ -996,7 +996,7 @@
     "name": "Magic Missile",
     "description": "",
     "category": "1st Level",
-    "macrocode": "<b><font color=\"Purple\">Magic Missile</font></b> => [h: Missile = 1d4 + 1][t: 3 * Missile] <font color=\"Blue\">✊</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Magic Missile</font></b> => [t: Missile = 1d4 + 1] <font color=\"Blue\">✊</font> damage.",
     "macrocodecrit": ""
   },
   {
@@ -1073,7 +1073,7 @@
   },
   {
     "id": 140,
-    "name": "Jim's Magic Missile",
+    "name": "Jim's Magic Missile (5E)",
     "description": "A spell used with a spell attack action.",
     "category": "1st Level",
     "macrocode": "<b><font color=\"Purple\">Jim's Magic Missile Damage</font></b> => [t: 2d4] <font color=\"Blue\">✊</font> damage.",
@@ -1433,7 +1433,7 @@
   },
   {
     "id": 187,
-    "name": "Maximillian's Earthen Grasp (restrained)",
+    "name": "Maximillian's Earthen Grasp (restrained) (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "2nd Level",
     "macrocode": "<b><font color=\"Purple\">Maximillian's Earthen Grasp</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or take => [t: Blu = 2d6] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage.",
@@ -1441,7 +1441,7 @@
   },
   {
     "id": 188,
-    "name": "Maximillian's Earthen Grasp (cast)",
+    "name": "Maximillian's Earthen Grasp (cast) (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "2nd Level",
     "macrocode": "<b><font color=\"Purple\">Maximillian's Earthen Grasp</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or take => [t: 2d6] <font color=\"Silver\">🔨</font> damage + is Restrained.",
@@ -1450,7 +1450,7 @@
   {
     "id": 189,
     "name": "Mind Spike",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nWhen you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.",
+    "description": "Replace INPUT with spellcasting ability.",
     "category": "2nd Level",
     "macrocode": "<b><font color=\"Purple\">Mind Spike</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or take => [t: Psy = 3d8] ([t: floor(Psy/2)]) <font color=\"Purple\">👁</font> damage. On fail, you also always know the target's location.",
     "macrocodecrit": ""
@@ -1505,7 +1505,7 @@
   },
   {
     "id": 196,
-    "name": "Jim's Glowing Coin",
+    "name": "Jim's Glowing Coin (5E)",
     "description": "",
     "category": "2nd Level",
     "macrocode": "<b><font color=\"Purple\">Jim's Glowing Coin</font></b> => DC [r: 8 + Intelligence + Proficiency] Wisdom Save or a creature has disadvantage on Perception checks and initiative rolls.",
@@ -1521,19 +1521,11 @@
   },
   {
     "id": 198,
-    "name": "Melf's Acid Arrow (cast)",
+    "name": "Melf's Acid Arrow",
     "description": "A spell used with a spell attack action.",
     "category": "2nd Level",
     "macrocode": "<b><font color=\"Purple\">Melf's Acid Arrow Damage</font></b> => [t: Aci = 4d4] ([t: floor(Aci/2)]) <font color=\"Green\">🔥</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Melf's Acid Arrow Crit Damage</font></b> => [t: Acid = 8d4] ([t: floor(Acid/2)]) <font color=\"Green\">🔥</font> damage!"
-  },
-  {
-    "id": 199,
-    "name": "Melf's Acid Arrow (splash)",
-    "description": "A spell used with a spell attack action.",
-    "category": "2nd Level",
-    "macrocode": "<b><font color=\"Purple\">Melf's Acid Arrow Damage</font></b> => [t: 2d4] <font color=\"Green\">🔥</font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Melf's Acid Arrow Crit Damage</font></b> => [t: 4d4] <font color=\"Green\">🔥</font> damage!"
   },
   {
     "id": 200,
@@ -1665,7 +1657,7 @@
   },
   {
     "id": 216,
-    "name": "Incite Greed",
+    "name": "Incite Greed (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Incite Greed</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or be Charmed. While Charmed in this way, a creature can do nothing but use its movement to approach you in a safe manner.",
@@ -1673,7 +1665,7 @@
   },
   {
     "id": 217,
-    "name": "Life Transference",
+    "name": "Life Transference (5E)",
     "description": "",
     "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Life Transference</font></b> => [t: Hea = 4d8] <font color=\"Purple\">💀</font> damage taken + [t: floor(Hea/2)] <font color=\"Red\">➕</font> healing.",
@@ -1681,19 +1673,11 @@
   },
   {
     "id": 218,
-    "name": "Lightning Arrow (dexterity)",
-    "description": "A spell used with a dexterity attack action.",
+    "name": "Lightning Arrow",
+    "description": "A spell used with an attack action.",
     "category": "3rd Level",
-    "macrocode": "<b><font color=\"Purple\">Lightning Arrow Damage</font></b> => [h: Lig = 4d8][t: Lig + Dexterity] ([t: floor(Lig/2) + Dexterity]) <font color=\"Blue\">✴</font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Lightning Arrow Crit Damage</font></b> => [h: Lightning = 8d8][t: Lightning + Dexterity] ([t: floor(Lightning/2) + Dexterity]) <font color=\"Blue\">✴</font> damage!"
-  },
-  {
-    "id": 219,
-    "name": "Lightning Arrow (strength)",
-    "description": "A spell used with a strength attack action.",
-    "category": "3rd Level",
-    "macrocode": "<b><font color=\"Purple\">Lightning Arrow Damage</font></b> => [h: Lig = 4d8][t: Lig + Strength] ([t: floor(Lig/2) + Strength]) <font color=\"Blue\">✴</font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Lightning Arrow Crit Damage</font></b> => [h: Lightning = 8d8][t: Lightning + Strength] ([t: floor(Lightning/2) + Strength]) <font color=\"Blue\">✴</font> damage!"
+    "macrocode": "<b><font color=\"Purple\">Lightning Arrow Damage</font></b> => [t: Lig = 4d8] ([t: floor(Lig/2)]) <font color=\"Blue\">✴</font> damage. Each creature within 10 feet of the target => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Ligh = 2d8] ([t: floor(Ligh/2)]) <font color=\"Blue\">✴</font> damage.",
+    "macrocodecrit": ""
   },
   {
     "id": 220,
@@ -1716,7 +1700,7 @@
     "name": "Mass Healing Word",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "3rd Level",
-    "macrocode": "<b><font color=\"Purple\">Mass Healing Word</font></b> => [t: 1d4 + INPUT] <font color=\"Red\">➕</font> healing.",
+    "macrocode": "<b><font color=\"Purple\">Mass Healing Word</font></b> => [t: 2d4 + INPUT] <font color=\"Red\">➕</font> healing.",
     "macrocodecrit": ""
   },
   {
@@ -1729,7 +1713,7 @@
   },
   {
     "id": 224,
-    "name": "Melf's Minute Meteors",
+    "name": "Melf's Minute Meteors (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Melf's Minute Meteors</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 2d6] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage.",
@@ -1956,7 +1940,7 @@
     "name": "Ice Storm",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "4th Level",
-    "macrocode": "<b><font color=\"Purple\">Ice Storm</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Blu = 2d8] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage + [t: Col = 4d6] ([t: floor(Col/2)]) <font color=\"Blue\">❄</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Ice Storm</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Blu = 2d10] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage + [t: Col = 4d6] ([t: floor(Col/2)]) <font color=\"Blue\">❄</font> damage.",
     "macrocodecrit": ""
   },
   {
@@ -2273,7 +2257,7 @@
   },
   {
     "id": 296,
-    "name": "Immolation (cast)",
+    "name": "Immolation (cast) (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "5th Level",
     "macrocode": "<b><font color=\"Purple\">Immolation</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 7d6] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage. On fail, the target also burns.",
@@ -2281,7 +2265,7 @@
   },
   {
     "id": 297,
-    "name": "Immolation (burning)",
+    "name": "Immolation (burning) (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "5th Level",
     "macrocode": "<b><font color=\"Purple\">Immolation</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 3d6] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage.",
@@ -2297,7 +2281,7 @@
   },
   {
     "id": 299,
-    "name": "Maelstrom",
+    "name": "Maelstrom (5E)",
     "description": "",
     "category": "5th Level",
     "macrocode": "<b><font color=\"Purple\">Maelstrom</font></b> => DC [r: 8 + Wisdom + Proficiency] Strength Save or take => [t: Blu = 4d10] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage + be pulled 10 feet toward the center.",
@@ -2308,7 +2292,7 @@
     "name": "Mass Cure Wounds",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Mass Cure Wounds</font></b> => [t: 3d8 + INPUT] <font color=\"Red\">➕</font> healing.",
+    "macrocode": "<b><font color=\"Purple\">Mass Cure Wounds</font></b> => [t: 5d8 + INPUT] <font color=\"Red\">➕</font> healing.",
     "macrocodecrit": ""
   },
   {
@@ -2577,7 +2561,7 @@
   },
   {
     "id": 335,
-    "name": "Investiture of Flame (action)\r\n",
+    "name": "Investiture of Flame (action) (5E)\r\n",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "6th Level",
     "macrocode": "<b><font color=\"Purple\">Investiture of Flame</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 4d8] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage.",
@@ -2585,7 +2569,7 @@
   },
   {
     "id": 336,
-    "name": "Investiture of Flame (cast)",
+    "name": "Investiture of Flame (cast) (5E)",
     "description": "",
     "category": "6th Level",
     "macrocode": "<b><font color=\"Purple\">Investiture of Flame</font></b> => [t: 1d10] <font color=\"Orange\">🔥</font> damage.",
@@ -2593,7 +2577,7 @@
   },
   {
     "id": 337,
-    "name": "Investiture of Ice",
+    "name": "Investiture of Ice (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "6th Level",
     "macrocode": "<b><font color=\"Purple\">Investiture of Ice</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Col = 4d6] ([t: floor(Col/2)]) <font color=\"Blue\">❄</font> damage. On fail, has its speed halved until the start of your next turn.",
@@ -2601,7 +2585,7 @@
   },
   {
     "id": 338,
-    "name": "Investiture of Stone",
+    "name": "Investiture of Stone (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "6th Level",
     "macrocode": "<b><font color=\"Purple\">Investiture of Stone</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or become knocked Prone.",
@@ -2609,7 +2593,7 @@
   },
   {
     "id": 339,
-    "name": "Investiture of Wind",
+    "name": "Investiture of Wind (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "6th Level",
     "macrocode": "<b><font color=\"Purple\">Investiture of Wind</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Blu = 2d10] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage. On fail,  a Large or smaller creature is also pushed up to 10 feet away from the center of the cube.",
@@ -2628,12 +2612,12 @@
     "name": "Mass Suggestion",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "6th Level",
-    "macrocode": "<b><font color=\"Purple\">Mass Suggestion</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or it pursues the course of action you described to the best of its ability.",
+    "macrocode": "<b><font color=\"Purple\">Mass Suggestion</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or become Charmed.",
     "macrocodecrit": ""
   },
   {
     "id": 342,
-    "name": "Mental Prison (cast)",
+    "name": "Mental Prison (cast) (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "6th Level",
     "macrocode": "<b><font color=\"Purple\">Mental Prison</font></b> => [t: 5d10] <font color=\"Purple\">👁</font> damage + DC [r: 8 + INPUT + Proficiency] Intelligence Save or the target is Blinded, Deafened and is Restrained inside whatever form the illusion takes.",
@@ -2641,7 +2625,7 @@
   },
   {
     "id": 343,
-    "name": "Mental Prison (escape)",
+    "name": "Mental Prison (escape) (5E)",
     "description": "",
     "category": "6th Level",
     "macrocode": "<b><font color=\"Purple\">Mental Prison</font></b> => [t: 10d10] <font color=\"Purple\">👁</font> damage.",
@@ -3121,7 +3105,7 @@
   },
   {
     "id": 404,
-    "name": "Illusory Dragon (cast)",
+    "name": "Illusory Dragon (cast) (5E)",
     "description": "",
     "category": "8th Level",
     "macrocode": "<b><font color=\"Purple\">Illusory Dragon</font></b> => DC [r: 8 + Intelligence + Proficiency] Wisdom Save or become Frightened of it for 1 minute.",
@@ -3129,7 +3113,7 @@
   },
   {
     "id": 405,
-    "name": "Illusory Dragon (cone)",
+    "name": "Illusory Dragon (cone) (5E)",
     "description": "",
     "category": "8th Level",
     "macrocode": "<b><font color=\"Purple\">Illusory Dragon</font></b> => DC [r: 8 + Intelligence + Proficiency] Intelligence Save or take => [t: Any = 7d6] ([t: floor(Any/2)]) damage.",
@@ -3137,7 +3121,7 @@
   },
   {
     "id": 406,
-    "name": "Illusory Dragon (illusion)",
+    "name": "Illusory Dragon (illusion) (5E)",
     "description": "",
     "category": "8th Level",
     "macrocode": "<b><font color=\"Purple\">Illusory Dragon</font></b> => DC [r: 8 + INPUT + Proficiency] Investigation Save or illusion stays active.",
@@ -3153,7 +3137,7 @@
   },
   {
     "id": 408,
-    "name": "Maddening Darkness",
+    "name": "Maddening Darkness (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "8th Level",
     "macrocode": "<b><font color=\"Purple\">Maddening Darkness</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or take => [t: Psy = 8d8] ([t: floor(Psy/2)]) <font color=\"Purple\">👁</font> damage.",
@@ -3212,12 +3196,12 @@
     "name": "Imprisonment",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "9th Level",
-    "macrocode": "<b><font color=\"Purple\">Imprisonment</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or become bound by the spell (Restrained, fall asleep).",
+    "macrocode": "<b><font color=\"Purple\">Imprisonment</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or become imprisoned and affected by one of the spell's effects.",
     "macrocodecrit": ""
   },
   {
     "id": 417,
-    "name": "Mass Polymorph",
+    "name": "Mass Polymorph (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "9th Level",
     "macrocode": "<b><font color=\"Purple\">Mass Polymorph</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or up to 10 creatures that you can see within range transforms into a new form.",
@@ -3236,7 +3220,7 @@
     "name": "Heal",
     "description": "",
     "category": "6th Level",
-    "macrocode": "<b><font color=\"Purple\">Heal</font></b> => [t: 70] <font color=\"Red\">➕</font> healing. The spell also ends the conditions Blinded, Deafened, and Poisoned on the target.",
+    "macrocode": "<b><font color=\"Purple\">Heal</font></b> => [t: 70] <font color=\"Red\">➕</font> healing. The spell also removes the conditions Blinded, Deafened, and Poisoned on the target.",
     "macrocodecrit": ""
   },
   {
@@ -3244,7 +3228,7 @@
     "name": "Mass Heal",
     "description": "",
     "category": "9th Level",
-    "macrocode": "<b><font color=\"Purple\">Mass Heal</font></b> => [t: 700] <font color=\"Red\">➕</font> healing, divided as you choose among any number of creatures that you can see within range. Creatures healed by this spell are also cured of all diseases and any effect making them Blinded or Deafened.",
+    "macrocode": "<b><font color=\"Purple\">Mass Heal</font></b> => [t: 700] <font color=\"Red\">➕</font> healing, divided as you choose among any number of creatures that you can see within range. The spell also removes the conditions Blinded, Deafened, and Poisoned on the targets.",
     "macrocodecrit": ""
   },
   {
@@ -3805,6 +3789,14 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Friends</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or become Charmed.",
+    "macrocodecrit": ""
+  },
+  {
+    "id": 491,
+    "name": "Jallarzi's Storm of Radiance",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "5th Level",
+    "macrocode": "<b><font color=\"Purple\">Jallarzi's Storm of Radiance</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Rad = 2d10] ([t: floor(Rad/2)]) <font color=\"Orange\">☀</font> damage + [t: Thu = 2d10] ([t: floor(Thu/2)]) <font color=\"Gray\">💥</font> damage. While inside the storm, become Blinded + Deafened.",
     "macrocodecrit": ""
   }
 ]
