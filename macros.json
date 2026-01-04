@@ -18,7 +18,7 @@
   {
     "id": 3,
     "name": "Cure Wounds",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe healing increases by 2d8 for each spell slot level above 1.",
+    "description": "Replace INPUT with spellcasting ability.",
     "category": "1st Level",
     "macrocode": "<b><font color=\"Purple\">Cure Wounds</font></b> => [t: 2d8 + INPUT] <font color=\"Red\">➕</font> healing.",
     "macrocodecrit": ""
@@ -418,7 +418,7 @@
   {
     "id": 53,
     "name": "Booming Blade Movement Damage (5E)",
-    "description": "This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).\r\n\r\nRemember to edit the damage dice according to level.",
+    "description": "This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
     "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Booming Blade Movement Damage</font></b> => [t: 1d8] <font color=\"Gray\">💥</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Booming Blade Movement Crit Damage</font></b> => [t: 2d8] <font color=\"Gray\">💥</font> damage!"
@@ -426,7 +426,7 @@
   {
     "id": 54,
     "name": "Booming Blade Extra Damage (5E)",
-    "description": "This spell’s damage increases by 1d8 when you reach 11th level (2d8), and 17th level (3d8).\r\n\r\nRemember to edit the damage dice according to level.",
+    "description": "This spell’s damage increases by 1d8 when you reach 11th level (2d8), and 17th level (3d8).",
     "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Booming Blade Extra Damage</font></b> => [t: 1d8] <font color=\"Gray\">💥</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Booming Blade Extra Crit Damage</font></b> => [t: 2d8] <font color=\"Gray\">💥</font> damage!"
@@ -442,7 +442,7 @@
   {
     "id": 56,
     "name": "Create Bonfire (5E)",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThis spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).\r\n\r\nRemember to edit the damage dice according to level.",
+    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThis spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
     "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Create Bonfire</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: 1d8] <font color=\"Orange\">🔥</font> damage.",
     "macrocodecrit": ""
@@ -450,7 +450,7 @@
   {
     "id": 57,
     "name": "Fire Bolt",
-    "description": "A spell used with a spell attack action.\r\n\r\nThe damage increases by 1d10 when you reach levels 5 (2d10), 11 (3d10), and 17 (4d10).\r\n\r\nRemember to edit the damage dice according to level.",
+    "description": "A spell used with a spell attack action.\r\n\r\nThe damage increases by 1d10 when you reach levels 5 (2d10), 11 (3d10), and 17 (4d10).",
     "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Fire Bolt Damage</font></b> => [t: 1d10] <font color=\"Orange\">🔥</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Fire Bolt Crit Damage</font></b> => [t: 2d10] <font color=\"Orange\">🔥</font> damage!"
@@ -458,7 +458,7 @@
   {
     "id": 58,
     "name": "Frostbite (5E)",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).\r\n\r\nRemember to edit the damage dice according to level.",
+    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
     "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Frostbite</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: 1d6] <font color=\"Blue\">❄</font> damage + it has disadvantage on the next weapon attack roll it makes before the end of its next turn.",
     "macrocodecrit": ""
@@ -466,7 +466,7 @@
   {
     "id": 59,
     "name": "Green-Flame Blade Leap Damage (5E)",
-    "description": "Replace INPUT with spellcasting ability modifier.\r\n\r\nThis spell’s damage increases by 1d8 when you reach 5th level (1d8), 11th level (2d8), and 17th level (3d8).\r\n\r\nRemember to edit the damage dice according to level.",
+    "description": "Replace INPUT with spellcasting ability modifier.\r\n\r\nThis spell’s damage increases by 1d8 when you reach 5th level (1d8), 11th level (2d8), and 17th level (3d8).",
     "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Green-Flame Blade Leap Damage</font></b> => [t: 0d8 + INPUT] <font color=\"Orange\">🔥</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Green-Flame Blade Leap Crit Damage</font></b> => [t: 0d8 + INPUT] <font color=\"Orange\">🔥</font> damage!"
@@ -474,7 +474,7 @@
   {
     "id": 60,
     "name": "Green-Flame Blade Extra Damage (5E)",
-    "description": "This spell’s damage increases by 1d8 when you reach 5th level (1d8), 11th level (2d8), and 17th level (3d8).\r\n\r\nRemember to edit the damage dice according to level.",
+    "description": "This spell’s damage increases by 1d8 when you reach 5th level (1d8), 11th level (2d8), and 17th level (3d8).",
     "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Green-Flame Blade Extra Damage</font></b> => [t: 1d8] <font color=\"Orange\">🔥</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Green-Flame Blade Extra Crit Damage</font></b> => [t: 2d8] <font color=\"Orange\">🔥</font> damage!"
@@ -562,7 +562,7 @@
   {
     "id": 71,
     "name": "Eldritch Blast",
-    "description": "A spell used with a spell attack action.\r\n\r\nThe spell creates two beams at level 5, three beams at level 11, and four beams at level 17. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.",
+    "description": "A spell used with a spell attack action.",
     "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Eldritch Blast Damage</font></b> => [t: 1d10] <font color=\"Blue\">✊</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Eldritch Blast Crit Damage</font></b> => [t: 2d10] <font color=\"Blue\">✊</font> damage!"
@@ -570,7 +570,7 @@
   {
     "id": 72,
     "name": "Eldritch Blast (agonizing blast)",
-    "description": "A spell used with a spell attack action.\r\n\r\nThe spell creates two beams at level 5, three beams at level 11, and four beams at level 17. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.",
+    "description": "A spell used with a spell attack action.",
     "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Eldritch Blast (agonizing blast) Damage</font></b> => [t: 1d10 + Charisma] <font color=\"Blue\">✊</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Eldritch Blast (agonizing blast) Crit Damage</font></b> => [t: 2d10 + Charisma] <font color=\"Blue\">✊</font> damage!"
@@ -578,7 +578,7 @@
   {
     "id": 73,
     "name": "Eldritch Blast (repelling blast)",
-    "description": "A spell used with a spell attack action.\r\n\r\nThe spell creates two beams at level 5, three beams at level 11, and four beams at level 17. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.",
+    "description": "A spell used with a spell attack action.",
     "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Eldritch Blast (repelling blast) Damage</font></b> => [t: 1d10] <font color=\"Blue\">✊</font> damage + push the creature up to 10 feet away from you in a straight line.",
     "macrocodecrit": "<b><font color=\"Teal\">Eldritch Blast (repelling blast) Crit Damage</font></b> => [t: 2d10] <font color=\"Blue\">✊</font> damage + push the creature up to 10 feet away from you in a straight line!"
@@ -586,7 +586,7 @@
   {
     "id": 74,
     "name": "Eldritch Blast (agonizing + repelling blast)",
-    "description": "A spell used with a spell attack action.\r\n\r\nThe spell creates two beams at level 5, three beams at level 11, and four beams at level 17. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.",
+    "description": "A spell used with a spell attack action.",
     "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Eldritch Blast (agonizing + repelling blast) Damage</font></b> => [t: 1d10 + Charisma] <font color=\"Blue\">✊</font> damage + push the creature up to 10 feet away from you in a straight line.",
     "macrocodecrit": "<b><font color=\"Teal\">Eldritch Blast (agonizing + repelling blast) Crit Damage</font></b> => [t: 2d10 + Charisma] <font color=\"Blue\">✊</font> damage + push the creature up to 10 feet away from you in a straight line!"
@@ -698,7 +698,7 @@
   {
     "id": 88,
     "name": "False Life",
-    "description": "You gain 5 additional Temporary Hit Points for each spell slot level above 1.",
+    "description": "",
     "category": "1st Level",
     "macrocode": "<b><font color=\"Purple\">False Life</font></b> => [t: 2d4 + 4] temporary hit points.",
     "macrocodecrit": ""
@@ -778,7 +778,7 @@
   {
     "id": 101,
     "name": "Dissonant Whispers",
-    "description": "The damage increases by 1d6 for each spell slot level above 1.",
+    "description": "",
     "category": "1st Level",
     "macrocode": "<b><font color=\"Purple\">Dissonant Whispers</font></b> =>DC [r: 8 + Charisma + Proficiency] Wisdom Save or take => [t: Psy = 3d6] ([t: floor(Psy/2)]) <font color=\"Purple\">👁</font> damage. On fail, must immediately use its reaction, if available, to move as far as its speed allows away from you.",
     "macrocodecrit": ""
@@ -796,7 +796,7 @@
     "name": "Healing Word",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "1st Level",
-    "macrocode": "<b><font color=\"Purple\">Healing Word</font></b> => [t: 1d4 + INPUT] <font color=\"Red\">➕</font> healing.",
+    "macrocode": "<b><font color=\"Purple\">Healing Word</font></b> => [t: 2d4 + INPUT] <font color=\"Red\">➕</font> healing.",
     "macrocodecrit": ""
   },
   {
@@ -850,7 +850,7 @@
   {
     "id": 112,
     "name": "Guiding Bolt",
-    "description": "A spell used with a spell attack action.\r\n\r\nThe damage increases by 1d6 for each spell slot level above 1.",
+    "description": "A spell used with a spell attack action.",
     "category": "1st Level",
     "macrocode": "<b><font color=\"Purple\">Guiding Bolt Damage</font></b> => [t: 4d6] <font color=\"Orange\">☀</font> damage + the next attack roll made against this target before the end of your next turn has advantage.",
     "macrocodecrit": "<b><font color=\"Teal\">Guiding Bolt Crit Damage</font></b> => [t: 8d6] <font color=\"Orange\">☀</font> damage + the next attack roll made against this target before the end of your next turn has advantage!"
@@ -938,7 +938,7 @@
   {
     "id": 123,
     "name": "Ensnaring Strike (restrained)",
-    "description": "A spell used with an attack action.\r\n\r\nThe damage increases by 1d6 for each spell slot level above 1.",
+    "description": "A spell used with an attack action.",
     "category": "1st Level",
     "macrocode": "<b><font color=\"Purple\">Ensnaring Strike (restrained) Extra Damage</font></b> => [t: 1d6] <font color=\"Silver\">📍</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Ensnaring Strike (restrained) Extra Crit Damage</font></b> => [t: 2d6] <font color=\"Silver\">📍</font> damage!"
@@ -956,8 +956,8 @@
     "name": "Hunter's Mark",
     "description": "A spell used with an attack action.",
     "category": "1st Level",
-    "macrocode": "<b><font color=\"Purple\">Hunter's Mark Extra Damage</font></b> => [t: 1d6] damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Hunter's Mark Extra Crit Damage</font></b> => [t: 2d6] damage!"
+    "macrocode": "<b><font color=\"Purple\">Hunter's Mark Extra Damage</font></b> => [t: 1d6] <font color=\"Blue\">✊</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Hunter's Mark Extra Crit Damage</font></b> => [t: 2d6] <font color=\"Blue\">✊</font> damage!"
   },
   {
     "id": 126,
@@ -970,7 +970,7 @@
   {
     "id": 127,
     "name": "Burning Hands",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe damage increases by 1d6 for each spell slot level above 1.",
+    "description": "Replace INPUT with spellcasting ability.",
     "category": "1st Level",
     "macrocode": "<b><font color=\"Purple\">Burning Hands</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 3d6] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage.",
     "macrocodecrit": ""
@@ -986,7 +986,7 @@
   {
     "id": 129,
     "name": "Chromatic Orb",
-    "description": "A spell used with a spell attack action.\r\n\r\n The damage increases by 1d8 for each spell slot level above 1.",
+    "description": "A spell used with a spell attack action.",
     "category": "1st Level",
     "macrocode": "<b><font color=\"Purple\">Chromatic Orb Damage</font></b> => [t: 3d8] damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Chromatic Orb Crit Damage</font></b> => [t: 6d8] damage!"
@@ -1018,7 +1018,7 @@
   {
     "id": 133,
     "name": "Armor of Agathys",
-    "description": "The temporary hit points and the cold damage both increase by 5 for each spell slot level above 1.",
+    "description": "",
     "category": "1st Level",
     "macrocode": "<b><font color=\"Purple\">Armor of Agathys</font></b> => [t: 5] <font color=\"Blue\">❄</font> damage/temporary hit points.",
     "macrocodecrit": ""
@@ -1034,7 +1034,7 @@
   {
     "id": 135,
     "name": "Arms of Hadar",
-    "description": "The damage increases by 1d6 for each spell slot level above 1.",
+    "description": "",
     "category": "1st Level",
     "macrocode": "<b><font color=\"Purple\">Arms of Hadar</font></b> => DC [r: 8 + Charisma + Proficiency] Strength Save or take => [t: Nec = 2d6] ([t: floor(Nec/2)]) <font color=\"Purple\">💀</font> damage. On fail, can’t take reactions until its next turn.",
     "macrocodecrit": ""
@@ -1050,7 +1050,7 @@
   {
     "id": 137,
     "name": "Hellish Rebuke",
-    "description": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st.",
+    "description": "",
     "category": "1st Level",
     "macrocode": "<b><font color=\"Purple\">Hellish Rebuke</font></b> => DC [r: 8 + Charisma + Proficiency] Dexterity Save or take => [t: Fir = 2d10] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage.",
     "macrocodecrit": ""
@@ -1090,7 +1090,7 @@
   {
     "id": 142,
     "name": "Aid",
-    "description": "Each target’s Hit Points increase by 5 for each spell slot level above 2.",
+    "description": "",
     "category": "2nd Level",
     "macrocode": "<b><font color=\"Purple\">Aid</font></b> => [t: 5] hit points + hit point maximum.",
     "macrocodecrit": ""
@@ -1154,7 +1154,7 @@
   {
     "id": 151,
     "name": "Cloud of Daggers",
-    "description": "The damage increases by 2d4 for each spell slot level above 2.",
+    "description": "",
     "category": "2nd Level",
     "macrocode": "<b><font color=\"Purple\">Cloud of Daggers</font></b> => [t: 4d4] <font color=\"Silver\">🔪</font> damage.",
     "macrocodecrit": ""
@@ -1258,7 +1258,7 @@
   {
     "id": 165,
     "name": "Flame Blade",
-    "description": "A spell used with a spell attack action.\r\n\r\nReplace INPUT with spellcasting ability.\r\n\r\nThe damage increases by 1d6 for each spell slot level above 2.",
+    "description": "A spell used with a spell attack action.\r\n\r\nReplace INPUT with spellcasting ability.",
     "category": "2nd Level",
     "macrocode": "<b><font color=\"Purple\">Flame Blade Damage</font></b> => [t: 3d6 + INPUT] <font color=\"Orange\">🔥</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Flame Blade Crit Damage</font></b> => [t: 6d6  + INPUT] <font color=\"Orange\">🔥</font> damage!"
@@ -1266,7 +1266,7 @@
   {
     "id": 166,
     "name": "Flaming Sphere",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe damage increases by 1d6 for each spell slot level above 2.",
+    "description": "Replace INPUT with spellcasting ability.",
     "category": "2nd Level",
     "macrocode": "<b><font color=\"Purple\">Flaming Sphere</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 2d6] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage.",
     "macrocodecrit": ""
@@ -1281,7 +1281,7 @@
   },
   {
     "id": 168,
-    "name": "Healing Spirit",
+    "name": "Healing Spirit (5E)",
     "description": "",
     "category": "2nd Level",
     "macrocode": "<b><font color=\"Purple\">Healing Spirit</font></b> => [t: 1d6] <font color=\"Red\">➕</font> healing.",
@@ -1402,7 +1402,7 @@
   {
     "id": 183,
     "name": "Blinding Smite",
-    "description": "A spell used with an attack action.\r\n\r\nThe extra damage increases by 1d8 for each spell slot level above 3.",
+    "description": "A spell used with an attack action.",
     "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Blinding Smite Extra Damage</font></b> => [t: 3d8] <font color=\"Orange\">☀</font> damage + become Blinded.",
     "macrocodecrit": "<b><font color=\"Teal\">Blinding Smite Extra Crit Damage</font></b> => [t: 6d8] <font color=\"Orange\">☀</font> damage + become Blinded!"
@@ -1426,7 +1426,7 @@
   {
     "id": 186,
     "name": "Dragon's Breath",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe damage increases by 1d6 for each spell slot level above 2.",
+    "description": "Replace INPUT with spellcasting ability.",
     "category": "2nd Level",
     "macrocode": "<b><font color=\"Purple\">Dragon's Breath</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Any = 3d6] ([t: floor(Any/2)]) damage.",
     "macrocodecrit": ""
@@ -1538,7 +1538,7 @@
   {
     "id": 200,
     "name": "Call Lightning (bolt)",
-    "description": "The damage increases by 1d10 for each spell slot level above 3.",
+    "description": "",
     "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Call Lightning (bolt)</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Lig = 3d10] ([t: floor(Lig/2)]) <font color=\"Blue\">✴</font> damage.",
     "macrocodecrit": ""
@@ -1546,7 +1546,7 @@
   {
     "id": 201,
     "name": "Call Lightning (storm)",
-    "description": "The damage increases by 1d10 for each spell slot level above 3.",
+    "description": "",
     "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Call Lightning (storm)</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Lig = 4d10] ([t: floor(Lig/2)]) <font color=\"Blue\">✴</font> damage.",
     "macrocodecrit": ""
@@ -1554,7 +1554,7 @@
   {
     "id": 202,
     "name": "Conjure Barrage",
-    "description": "A spell used with a strength/dexterity attack action.\r\n\r\nThe damage increases by 1d8 for each spell slot level above 3.",
+    "description": "A spell used with a strength/dexterity attack action.",
     "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Conjure Barrage</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Any = 5d8] ([t: floor(Any/2)]) <font color=\"Blue\">✊</font> damage.",
     "macrocodecrit": ""
@@ -1570,7 +1570,7 @@
   {
     "id": 204,
     "name": "Elemental Weapon",
-    "description": "A spell used with an attack action.\r\n\r\nIf you use a level 5–6 spell slot, the bonus to attack rolls increases to +2, and the extra damage increases to 2d4. If you use a level 7+ spell slot, the bonus increases to +3, and the extra damage increases to 3d4.",
+    "description": "A spell used with an attack action.",
     "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Elemental Weapon Extra Damage</font></b> => [t: 1d4] damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Elemental Weapon Extra Crit Damage</font></b> => [t: 2d4] damage!"
@@ -1610,7 +1610,7 @@
   {
     "id": 209,
     "name": "Fireball",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe damage increases by 1d6 for each spell slot level above 3.",
+    "description": "Replace INPUT with spellcasting ability.",
     "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Fireball</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 8d6] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage.",
     "macrocodecrit": ""
@@ -1634,7 +1634,7 @@
   {
     "id": 212,
     "name": "Glyph of Warding (damage)",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe damage of an explosive rune increases by 1d8 for each spell slot level above 3.",
+    "description": "Replace INPUT with spellcasting ability.",
     "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Glyph of Warding (damage)</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Any = 5d8] ([t: floor(Any/2)]) damage.",
     "macrocodecrit": ""
@@ -1802,7 +1802,7 @@
   {
     "id": 233,
     "name": "Antagonize (5E)",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nWhen you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d4 for each slot level above 3rd.",
+    "description": "Replace INPUT with spellcasting ability.",
     "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Antagonize</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or take => [t: Psy = 4d4] ([t: floor(Psy/2)]) <font color=\"Purple\">👁</font> damage + fall under the effect of the spell.",
     "macrocodecrit": ""
@@ -1866,7 +1866,7 @@
   {
     "id": 241,
     "name": "Blight",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe damage increases by 1d8 for each spell slot level above 4.",
+    "description": "Replace INPUT with spellcasting ability.",
     "category": "4th Level",
     "macrocode": "<b><font color=\"Purple\">Blight</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Nec = 8d8] ([t: floor(Nec/2)]) <font color=\"Purple\">💀</font> damage. ",
     "macrocodecrit": ""
@@ -2082,7 +2082,7 @@
   {
     "id": 270,
     "name": "Animate Objects (medium or smaller)",
-    "description": "A spell used with a spell attack action.\r\n\r\nReplace INPUT with spellcasting ability.\r\n\r\nThe creature’s Slam damage increases by 1d4 (Medium or smaller), 1d6 (Large), or 1d12 (Huge) for each spell slot level above 5.",
+    "description": "A spell used with a spell attack action.\r\n\r\nReplace INPUT with spellcasting ability.",
     "category": "5th Level",
     "macrocode": "<b><font color=\"Purple\">Animate Object (medium or smaller) Damage</font></b> => [t: 1d4 + 3 + INPUT] damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Animate Object (medium or smaller) Crit Damage</font></b> => [t: 2d4 + 3 + INPUT] damage!"
@@ -2090,7 +2090,7 @@
   {
     "id": 271,
     "name": "Animate Objects (large)",
-    "description": "A spell used with a spell attack action.\r\n\r\nReplace INPUT with spellcasting ability.\r\n\r\nThe creature’s Slam damage increases by 1d4 (Medium or smaller), 1d6 (Large), or 1d12 (Huge) for each spell slot level above 5.",
+    "description": "A spell used with a spell attack action.\r\n\r\nReplace INPUT with spellcasting ability.",
     "category": "5th Level",
     "macrocode": "<b><font color=\"Purple\">Animate Objects (large) Damage</font></b> => [t: 2d6 + 3 + INPUT] damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Animate Object (large) Crit Damage</font></b> => [t: 4d6 + 3 + INPUT] damage!"
@@ -2098,7 +2098,7 @@
   {
     "id": 272,
     "name": "Animate Objects (huge)",
-    "description": "A spell used with a spell attack action.\r\n\r\nReplace INPUT with spellcasting ability.\r\n\r\nThe creature’s Slam damage increases by 1d4 (Medium or smaller), 1d6 (Large), or 1d12 (Huge) for each spell slot level above 5.",
+    "description": "A spell used with a spell attack action.\r\n\r\nReplace INPUT with spellcasting ability.",
     "category": "5th Level",
     "macrocode": "<b><font color=\"Purple\">Animate Object (huge) Damage</font></b> => [t: 2d12 + 3 + INPUT] damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Animate Object (huge) Crit Damage</font></b> => [t: 4d12 + 3 + INPUT] damage!"
@@ -2106,7 +2106,7 @@
   {
     "id": 273,
     "name": "Bigby's Hand (clenched fist)",
-    "description": "A spell used with a spell attack action.\r\n\r\nThe damage of the Clenched Fist increases by 2d8 for each spell slot level above 5.",
+    "description": "A spell used with a spell attack action.",
     "category": "5th Level",
     "macrocode": "<b><font color=\"Purple\">Bigby's Hand (clenched fist) Damage</font></b> => [t: 5d8] <font color=\"Blue\">✊</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Bigby's Hand (clenched fist) Crit Damage</font></b> => [t: 10d8] <font color=\"Blue\">✊</font> damage!"
@@ -2122,7 +2122,7 @@
   {
     "id": 275,
     "name": "Bigby's Hand (grasping hand damage)",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe damage of the Grasping Hand increases by 2d6 for each spell slot level above 5.",
+    "description": "Replace INPUT with spellcasting ability.",
     "category": "5th Level",
     "macrocode": "<b><font color=\"Purple\">Bigby's Hand (grasping hand damage)</font></b> => [t: 4d6 + INPUT] <font color=\"Silver\">🔨</font> damage.",
     "macrocodecrit": ""
@@ -2138,7 +2138,7 @@
   {
     "id": 277,
     "name": "Cloudkill",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe damage increases by 1d8 for each spell slot level above 5.",
+    "description": "Replace INPUT with spellcasting ability.",
     "category": "5th Level",
     "macrocode": "<b><font color=\"Purple\">Cloudkill</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Poi = 5d8] ([t: floor(Poi/2)]) <font color=\"Green\">☠</font> damage.",
     "macrocodecrit": ""
@@ -2146,7 +2146,7 @@
   {
     "id": 278,
     "name": "Cone of Cold",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe damage increases by 1d8 for each spell slot level above 5.",
+    "description": "Replace INPUT with spellcasting ability.",
     "category": "5th Level",
     "macrocode": "<b><font color=\"Purple\">Cone of Cold</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Col = 8d8] ([t: floor(Col/2)]) <font color=\"Blue\">❄</font> damage. A creature killed by this spell becomes a frozen statue.",
     "macrocodecrit": ""
@@ -2218,7 +2218,7 @@
   {
     "id": 288,
     "name": "Enervation (cast) (5E)",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nWhen you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.",
+    "description": "Replace INPUT with spellcasting ability.",
     "category": "5th Level",
     "macrocode": "<b><font color=\"Purple\">Enervation (cast)</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Nec = 4d8] ([t: floor(Nec/2)]) <font color=\"Purple\">💀</font> damage + you regain [t: Hea] ([t: floor(Hea/2)]) hit points.",
     "macrocodecrit": ""
@@ -2226,7 +2226,7 @@
   {
     "id": 289,
     "name": "Enervation (action) (5E)",
-    "description": "When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.",
+    "description": "",
     "category": "5th Level",
     "macrocode": "<b><font color=\"Purple\">Enervation (action)</font></b> => [t: Enervation = 4d8] <font color=\"Purple\">💀</font> damage + you regain [t: Enervation] hit points.",
     "macrocodecrit": ""
@@ -2234,7 +2234,7 @@
   {
     "id": 290,
     "name": "Flame Strike",
-    "description": "The Fire damage and the Radiant damage increase by 1d6 for each spell slot level above 5.",
+    "description": "",
     "category": "5th Level",
     "macrocode": "<b><font color=\"Purple\">Flame Strike</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Fir = 5d6] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage + [t: Rad = 5d6] ([t: floor(Rad/2)]) <font color=\"Orange\">☀</font> damage.",
     "macrocodecrit": ""
@@ -2248,14 +2248,6 @@
     "macrocodecrit": ""
   },
   {
-    "id": 292,
-    "name": "Hallow",
-    "description": "",
-    "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Hallow</font></b> => DC [r: 8 + Wisdom + Proficiency] Charisma Save or be affected by one of the following effects in the spell's area.",
-    "macrocodecrit": ""
-  },
-  {
     "id": 293,
     "name": "Hold Monster",
     "description": "Replace INPUT with spellcasting ability.",
@@ -2265,7 +2257,7 @@
   },
   {
     "id": 294,
-    "name": "Holy Weapon (active)",
+    "name": "Holy Weapon (active) (5E)",
     "description": "A spell used with an attack action.",
     "category": "5th Level",
     "macrocode": "<b><font color=\"Purple\">Holy Weapon Extra Damage</font></b> => [t: 2d8] <font color=\"Orange\">☀</font> damage.",
@@ -2273,7 +2265,7 @@
   },
   {
     "id": 295,
-    "name": "Holy Weapon (burst)",
+    "name": "Holy Weapon (burst) (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "5th Level",
     "macrocode": "<b><font color=\"Purple\">Holy Weapon</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Rad = 4d8] ([t: floor(Rad/2)]) <font color=\"Orange\">☀</font> damage. On fail, it is Blinded for 1 minute.",
@@ -2522,7 +2514,7 @@
   {
     "id": 326,
     "name": "Circle of Death",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe damage increases by 2d8 for each spell slot level above 6.",
+    "description": "Replace INPUT with spellcasting ability.",
     "category": "6th Level",
     "macrocode": "<b><font color=\"Purple\">Circle of Death</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Nec = 8d8] ([t: floor(Nec/2)]) <font color=\"Purple\">💀</font> damage.",
     "macrocodecrit": ""
@@ -2538,7 +2530,7 @@
   {
     "id": 328,
     "name": "Disintegrate",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe damage increases by 3d6 for each spell slot level above 6.",
+    "description": "Replace INPUT with spellcasting ability.",
     "category": "6th Level",
     "macrocode": "<b><font color=\"Purple\">Disintegrate</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: 10d6 + 40] <font color=\"Blue\">✊</font> damage.",
     "macrocodecrit": ""
@@ -2572,7 +2564,7 @@
     "name": "Harm",
     "description": "",
     "category": "6th Level",
-    "macrocode": "<b><font color=\"Purple\">Harm</font></b> => DC [r: 8 + Wisdom + Proficiency] Constitution Save or take => [t: Nec = 14d6] ([t: floor(Nec/2)]) <font color=\"Purple\">💀</font> damage. On fail, its hit point maximum is reduced by [t: Nec] for 1 hour.",
+    "macrocode": "<b><font color=\"Purple\">Harm</font></b> => DC [r: 8 + Wisdom + Proficiency] Constitution Save or take => [t: Nec = 14d6] ([t: floor(Nec/2)]) <font color=\"Purple\">💀</font> damage. Hit point maximum is reduced by an amount equal to the Necrotic damage taken.",
     "macrocodecrit": ""
   },
   {
@@ -2762,7 +2754,7 @@
   {
     "id": 357,
     "name": "Delayed Blast Fireball (cast)",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe base damage increases by 1d6 for each spell slot level above 7.",
+    "description": "Replace INPUT with spellcasting ability.",
     "category": "7th Level",
     "macrocode": "<b><font color=\"Purple\">Delayed Blast Fireball (cast)</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 12d6] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage. If at the end of your turn the bead has not yet detonated, the damage increases by [t: Fire = 1d6] ([t: floor(Fire/2)]).",
     "macrocodecrit": ""
@@ -2770,7 +2762,7 @@
   {
     "id": 358,
     "name": "Delayed Blast Fireball (bead)",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe base damage increases by 1d6 for each spell slot level above 7.",
+    "description": "Replace INPUT with spellcasting ability.",
     "category": "7th Level",
     "macrocode": "<b><font color=\"Purple\">Delayed Blast Fireball (bead)</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or the spell ends immediately, causing the bead to erupt in flame.",
     "macrocodecrit": ""
@@ -3244,7 +3236,7 @@
     "name": "Heal",
     "description": "",
     "category": "6th Level",
-    "macrocode": "<b><font color=\"Purple\">Heal</font></b> => [t: 70] <font color=\"Red\">➕</font> healing. The spell also ends Blindness, Deafness, and any diseases affecting the target.",
+    "macrocode": "<b><font color=\"Purple\">Heal</font></b> => [t: 70] <font color=\"Red\">➕</font> healing. The spell also ends the conditions Blinded, Deafened, and Poisoned on the target.",
     "macrocodecrit": ""
   },
   {
@@ -3714,7 +3706,7 @@
   {
     "id": 478,
     "name": "Conjure Animals",
-    "description": "The damage increases by 1d10 for each spell slot level above 3.",
+    "description": "",
     "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Conjure Animals</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: 3d10] <font color=\"Silver\">🔪</font> damage.",
     "macrocodecrit": ""
@@ -3722,7 +3714,7 @@
   {
     "id": 479,
     "name": "Conjure Celestial (healing light)",
-    "description": "The healing and damage increase by 1d12 for each spell slot level above 7.",
+    "description": "",
     "category": "7th Level",
     "macrocode": "<b><font color=\"Purple\">Conjure Celestial (healing light)</font></b> => [t: 4d12 + Wisdom] <font color=\"Red\">➕</font> healing.",
     "macrocodecrit": ""
@@ -3730,7 +3722,7 @@
   {
     "id": 480,
     "name": "Conjure Celestial (searing light)",
-    "description": "The healing and damage increase by 1d12 for each spell slot level above 7.",
+    "description": "",
     "category": "7th Level",
     "macrocode": "<b><font color=\"Purple\">Conjure Celestial (searing light)</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Rad = 6d12] ([t: floor(Rad/2)]) <font color=\"Orange\">☀️</font> damage.",
     "macrocodecrit": ""
@@ -3738,7 +3730,7 @@
   {
     "id": 481,
     "name": "Conjure Elemental",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe damage increases by 1d8 for each spell slot level above 5.",
+    "description": "Replace INPUT with spellcasting ability.",
     "category": "5th Level",
     "macrocode": "<b><font color=\"Purple\">Conjure Elemental</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Any = 8d8] ([t: floor(Any/2)]) damage. On fail, it is Restrained until the spells ends.",
     "macrocodecrit": ""
@@ -3746,7 +3738,7 @@
   {
     "id": 482,
     "name": "Conjure Fey",
-    "description": "A spell used with an spell attack action.\r\n\r\nThe damage increases by 1d12 for each spell slot level above 6.",
+    "description": "A spell used with an spell attack action.",
     "category": "6th Level",
     "macrocode": "<b><font color=\"Purple\">Conjure Fey Damage</font></b> => [t: 3d12 + Wisdom] <font color=\"Purple\">👁️</font> damage + the target becomes Frightened.",
     "macrocodecrit": "<b><font color=\"Teal\">Conjure Fey Crit Damage</font></b> => [t: 6d12 + Wisdom] <font color=\"Purple\">👁️</font> damage + the target becomes Frightened!"
@@ -3754,7 +3746,7 @@
   {
     "id": 483,
     "name": "Conjure Minor Elementals",
-    "description": "A spell used with an attack action.\r\n\r\nThe damage increases by 1d8 for each spell slot level above 4.",
+    "description": "A spell used with an attack action.",
     "category": "4th Level",
     "macrocode": "<b><font color=\"Purple\">Conjure Minor Elementals Damage</font></b> => [t: 2d8] damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Conjure Minor Elementals Crit Damage</font></b> => [t: 4d8] damage!"
@@ -3762,7 +3754,7 @@
   {
     "id": 484,
     "name": "Conjure Woodland Beings",
-    "description": "The damage increases by 1d8 for each spell slot level above 4.",
+    "description": "",
     "category": "4th Level",
     "macrocode": "<b><font color=\"Purple\">Conjure Woodland Beings</font></b> => DC [r: 8 + Wisdom + Proficiency] Wisdom Save or take => [t: For = 5d8] ([t: floor(For/2)]) <font color=\"Blue\">✊</font> damage.",
     "macrocodecrit": ""
