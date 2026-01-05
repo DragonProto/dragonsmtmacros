@@ -1188,7 +1188,7 @@
     "name": "Mirror Image",
     "description": "",
     "category": "2nd Level",
-    "macrocode": "<b><font color=\"Purple\">Mirror Image</font></b> => [t: 1d20].",
+    "macrocode": "<b><font color=\"Purple\">Mirror Image</font></b> => [t: 1d6].",
     "macrocodecrit": ""
   },
   {
@@ -1293,14 +1293,6 @@
     "description": "",
     "category": "2nd Level",
     "macrocode": "<b><font color=\"Purple\">Moonbeam</font></b> => DC [r: 8 + Wisdom + Proficiency] Constitution Save or take => [t: Rad = 2d10] ([t: floor(Rad/2)]) <font color=\"Orange\">☀</font> damage.",
-    "macrocodecrit": ""
-  },
-  {
-    "id": 170,
-    "name": "Pass Without Trace",
-    "description": "",
-    "category": "2nd Level",
-    "macrocode": "<b><font color=\"Purple\">Pass Without Trace</font></b> => each creature you choose within 30 feet of you has a +10 bonus to Stealth checks and can’t be tracked except by magical means.",
     "macrocodecrit": ""
   },
   {
@@ -1436,7 +1428,7 @@
     "name": "Maximillian's Earthen Grasp (restrained) (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "2nd Level",
-    "macrocode": "<b><font color=\"Purple\">Maximillian's Earthen Grasp</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or take => [t: Blu = 2d6] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Maximillian's Earthen Grasp (restrained)</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or take => [t: Blu = 2d6] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage.",
     "macrocodecrit": ""
   },
   {
@@ -1444,7 +1436,7 @@
     "name": "Maximillian's Earthen Grasp (cast) (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "2nd Level",
-    "macrocode": "<b><font color=\"Purple\">Maximillian's Earthen Grasp</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or take => [t: 2d6] <font color=\"Silver\">🔨</font> damage + is Restrained.",
+    "macrocode": "<b><font color=\"Purple\">Maximillian's Earthen Grasp (cast)</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or take => [t: 2d6] <font color=\"Silver\">🔨</font> damage + is Restrained.",
     "macrocodecrit": ""
   },
   {
@@ -1721,7 +1713,7 @@
   },
   {
     "id": 225,
-    "name": "Motivational Speech",
+    "name": "Motivational Speech (5E)",
     "description": "",
     "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Motivational Speech</font></b> => [t: 5] temporary hit points + has advantage on Wisdom saving throws.",
@@ -1826,17 +1818,17 @@
   {
     "id": 238,
     "name": "Mordenkainen's Faithful Hound",
-    "description": "A spell used with a spell attack action.",
+    "description": "",
     "category": "4th Level",
-    "macrocode": "<b><font color=\"Purple\">Mordenkainen's Faithful Hound Damage</font></b> => [t: 4d8] <font color=\"Silver\">📍</font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Mordenkainen's Faithful Hound Crit Damage</font></b> => [t: 8d8] <font color=\"Silver\">📍</font> damage!"
+    "macrocode": "<b><font color=\"Purple\">Mordenkainen’s Faithful Hound</font></b> => DC [r: 8 + Intelligence + Proficiency] Dexterity Save or take => [t: 4d8] <font color=\"Blue\">✊</font> damage.",
+    "macrocodecrit": ""
   },
   {
     "id": 239,
     "name": "Otiluke's Resilient Sphere",
     "description": "",
     "category": "4th Level",
-    "macrocode": "<b><font color=\"Purple\">Otiluke's Resilient Sphere</font></b> => DC [r: 8 + Intelligence + Proficiency] Dexterity Save or the creature is enclosed for the duration.",
+    "macrocode": "<b><font color=\"Purple\">Otiluke's Resilient Sphere</font></b> => DC [r: 8 + Intelligence + Proficiency] Dexterity Save or become enclosed for the duration.",
     "macrocodecrit": ""
   },
   {
@@ -2297,7 +2289,7 @@
   },
   {
     "id": 301,
-    "name": "Modify Memory",
+    "name": "Modify Memory (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "5th Level",
     "macrocode": "<b><font color=\"Purple\">Modify Memory</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or the target becomes Charmed + fall under the effect of the spell.",
@@ -2305,10 +2297,10 @@
   },
   {
     "id": 302,
-    "name": "Negative Energy Flood (default)",
+    "name": "Negative Energy Flood (default) (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Negative Energy Flood</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Nec = 5d12] ([t: floor(Nec/2)]) <font color=\"Purple\">💀</font> damage. A target killed by this damage rises up as a zombie at the start of your next turn.",
+    "macrocode": "<b><font color=\"Purple\">Negative Energy Flood (default)</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Nec = 5d12] ([t: floor(Nec/2)]) <font color=\"Purple\">💀</font> damage. A target killed by this damage rises up as a zombie at the start of your next turn.",
     "macrocodecrit": ""
   },
   {
@@ -2316,7 +2308,7 @@
     "name": "Negative Energy Flood (undead)",
     "description": "",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Negative Energy Flood</font></b> => The target gains [h: Hea = 5d12] [t: floor(Hea/2)] temporary hit points.",
+    "macrocode": "<b><font color=\"Purple\">Negative Energy Flood (undead)</font></b> => The target gains [h: Hea = 5d12] [t: floor(Hea/2)] temporary hit points.",
     "macrocodecrit": ""
   },
   {
@@ -2620,7 +2612,7 @@
     "name": "Mental Prison (cast) (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "6th Level",
-    "macrocode": "<b><font color=\"Purple\">Mental Prison</font></b> => [t: 5d10] <font color=\"Purple\">👁</font> damage + DC [r: 8 + INPUT + Proficiency] Intelligence Save or the target is Blinded, Deafened and is Restrained inside whatever form the illusion takes.",
+    "macrocode": "<b><font color=\"Purple\">Mental Prison (cast)</font></b> => [t: 5d10] <font color=\"Purple\">👁</font> damage + DC [r: 8 + INPUT + Proficiency] Intelligence Save or the target is Blinded, Deafened and is Restrained inside whatever form the illusion takes.",
     "macrocodecrit": ""
   },
   {
@@ -2628,7 +2620,7 @@
     "name": "Mental Prison (escape) (5E)",
     "description": "",
     "category": "6th Level",
-    "macrocode": "<b><font color=\"Purple\">Mental Prison</font></b> => [t: 10d10] <font color=\"Purple\">👁</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Mental Prison (escape)</font></b> => [t: 10d10] <font color=\"Purple\">👁</font> damage.",
     "macrocodecrit": ""
   },
   {
@@ -2641,10 +2633,10 @@
   },
   {
     "id": 345,
-    "name": "Otiluke's Freezing Sphere (ice)",
+    "name": "Otiluke's Freezing Sphere (trapped)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "6th Level",
-    "macrocode": "<b><font color=\"Purple\">Otiluke's Freezing Sphere</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or be trapped in the ice.",
+    "macrocode": "<b><font color=\"Purple\">Otiluke's Freezing Sphere (trapped)</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or be trapped in the ice.",
     "macrocodecrit": ""
   },
   {
@@ -2794,10 +2786,10 @@
   {
     "id": 364,
     "name": "Mordenkainen's Sword",
-    "description": "A spell used with a spell attack action.",
+    "description": "A spell used with a spell attack action.\r\n\r\nReplace INPUT with spellcasting ability.",
     "category": "7th Level",
-    "macrocode": "<b><font color=\"Purple\">Mordenkainen's Sword Damage</font></b> => [t: 3d10] <font color=\"Blue\">✊</font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Mordenkainen's Sword Crit Damage</font></b> => [t: 6d10] <font color=\"Blue\">✊</font> damage!"
+    "macrocode": "<b><font color=\"Purple\">Mordenkainen's Sword Damage</font></b> => [t: 4d12 + INPUT] <font color=\"Blue\">✊</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Mordenkainen's Sword Crit Damage</font></b> => [t: 8d12 + INPUT] <font color=\"Blue\">✊</font> damage!"
   },
   {
     "id": 365,
@@ -3797,6 +3789,14 @@
     "description": "Replace INPUT with spellcasting ability.",
     "category": "5th Level",
     "macrocode": "<b><font color=\"Purple\">Jallarzi's Storm of Radiance</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Rad = 2d10] ([t: floor(Rad/2)]) <font color=\"Orange\">☀</font> damage + [t: Thu = 2d10] ([t: floor(Thu/2)]) <font color=\"Gray\">💥</font> damage. While inside the storm, become Blinded + Deafened.",
+    "macrocodecrit": ""
+  },
+  {
+    "id": 492,
+    "name": "Otto's Irresistible Dance",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "6th Level",
+    "macrocode": "<b><font color=\"Purple\">Otto's Irresistible Dance</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or become Charmed. On a success, the target dances comically until the end of its next turn.",
     "macrocodecrit": ""
   }
 ]
