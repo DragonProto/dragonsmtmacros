@@ -436,8 +436,8 @@
     "name": "Chill Touch",
     "description": "A spell used with a spell attack action.\r\n\r\nThe damage increases by 1d10 when you reach levels 5 (2d10), 11 (3d10), and 17 (4d10).",
     "category": "Cantrips",
-    "macrocode": "<b><font color=\"Purple\">Chill Touch Damage</font></b> => [t: 1d10] <font color=\"Purple\">💀</font> damage + it can’t regain hit points until the start of your next turn.",
-    "macrocodecrit": "<b><font color=\"Teal\">Chill Touch Crit Damage</font></b> => [t: 2d10] <font color=\"Purple\">💀</font> damage + it can’t regain hit points until the start of your next turn."
+    "macrocode": "<b><font color=\"Purple\">Chill Touch Damage</font></b> => [t: 1d10] <font color=\"Purple\">💀</font> damage + it can’t regain hit points.",
+    "macrocodecrit": "<b><font color=\"Teal\">Chill Touch Crit Damage</font></b> => [t: 2d10] <font color=\"Purple\">💀</font> damage + it can’t regain hit points."
   },
   {
     "id": 56,
@@ -514,26 +514,26 @@
   {
     "id": 65,
     "name": "Poison Spray",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThis spell’s damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12).\r\n\r\nRemember to edit the damage dice according to level.",
+    "description": "A spell used with a spell attack action.\r\n\r\nThe damage increases by 1d12 when you reach levels 5 (2d12), 11 (3d12), and 17 (4d12).",
     "category": "Cantrips",
-    "macrocode": "<b><font color=\"Purple\">Poison Spray</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: 1d12] <font color=\"Green\">☠</font> damage.",
-    "macrocodecrit": ""
+    "macrocode": "<b><font color=\"Purple\">Poison Spray Damage</font></b> => [t: 1d12] <font color=\"Green\">☠</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Poison Spray Crit Damage</font></b> => [t: 2d12] <font color=\"Green\">☠</font> damage!"
   },
   {
     "id": 66,
     "name": "Ray of Frost",
-    "description": "A spell used with a spell attack action.\r\n\r\nThe spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).\r\n\r\nRemember to edit the damage dice according to level.",
+    "description": "A spell used with a spell attack action.\r\n\r\nThe damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).",
     "category": "Cantrips",
-    "macrocode": "<b><font color=\"Purple\">Ray of Frost Damage</font></b> => [t: 1d8] <font color=\"Blue\">❄</font> damage + its speed is reduced by 10 feet until the start of your next turn.",
-    "macrocodecrit": "<b><font color=\"Teal\">Ray of Frost Crit Damage</font></b> => [t: 2d8] <font color=\"Blue\">❄</font> damage + its speed is reduced by 10 feet until the start of your next turn!"
+    "macrocode": "<b><font color=\"Purple\">Ray of Frost Damage</font></b> => [t: 1d8] <font color=\"Blue\">❄</font> damage + its speed is reduced by 10 feet.",
+    "macrocodecrit": "<b><font color=\"Teal\">Ray of Frost Crit Damage</font></b> => [t: 2d8] <font color=\"Blue\">❄</font> damage + its speed is reduced by 10 feet."
   },
   {
     "id": 67,
     "name": "Shocking Grasp",
-    "description": "A spell used with a spell attack action.\r\n\r\nThe spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).\r\n\r\nRemember to edit the damage dice according to level.",
+    "description": "A spell used with a spell attack action.\r\n\r\nThe damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).",
     "category": "Cantrips",
-    "macrocode": "<b><font color=\"Purple\">Shocking Grasp Damage</font></b> => [t: 1d8] <font color=\"Blue\">✴</font> damage + can’t take reactions until the start of its next turn.",
-    "macrocodecrit": "<b><font color=\"Teal\">Shocking Grasp Crit Damage</font></b> => [t: 2d8] <font color=\"Blue\">✴</font> damage + can’t take reactions until the start of its next turn!"
+    "macrocode": "<b><font color=\"Purple\">Shocking Grasp Damage</font></b> => [t: 1d8] <font color=\"Blue\">✴</font> damage + can’t take a reaction.",
+    "macrocodecrit": "<b><font color=\"Teal\">Shocking Grasp Crit Damage</font></b> => [t: 2d8] <font color=\"Blue\">✴</font> damage + can’t take a reaction."
   },
   {
     "id": 68,
@@ -609,7 +609,7 @@
   },
   {
     "id": 77,
-    "name": "Primal Savagery",
+    "name": "Primal Savagery (5E)",
     "description": "A spell used with a spell attack action.\r\n\r\nThe spell’s damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).\r\n\r\nRemember to edit the damage dice according to level.",
     "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Primal Savagery Damage</font></b> => [t: 1d10] <font color=\"Green\">🔥</font> damage.",
@@ -618,7 +618,7 @@
   {
     "id": 78,
     "name": "Produce Flame",
-    "description": "A spell used with a spell attack action.\r\n\r\nThis spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).\r\n\r\nRemember to edit the damage dice according to level.",
+    "description": "A spell used with a spell attack action.\r\n\r\nThe damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).",
     "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Produce Flame Damage</font></b> => [t: 1d8] <font color=\"Orange\">🔥</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Produce Flame Crit Damage</font></b> => [t: 2d8] <font color=\"Orange\">🔥</font> damage!"
@@ -634,10 +634,10 @@
   {
     "id": 80,
     "name": "Shillelagh",
-    "description": "A spell used with a spell attack action.",
+    "description": "A spell used with a spell attack action.\r\n\r\nThe damage die changes when you reach levels 5 (d10), 11 (d12), and 17 (2d6).",
     "category": "Cantrips",
-    "macrocode": "<b><font color=\"Purple\">Shillelagh Damage</font></b> => [t: 1d8 + Wisdom] <font color=\"Silver\">🔨</font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Shillelagh Crit Damage</font></b> => [t: 2d8 + Wisdom] <font color=\"Silver\">🔨</font> damage!"
+    "macrocode": "<b><font color=\"Purple\">Shillelagh Damage</font></b> => [t: 1d8 + Wisdom] damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Shillelagh Crit Damage</font></b> => [t: 2d8 + Wisdom] damage!"
   },
   {
     "id": 81,
@@ -650,7 +650,7 @@
   {
     "id": 82,
     "name": "Sacred Flame",
-    "description": "The spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).\r\n\r\nRemember to edit the damage dice according to level.",
+    "description": "The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).",
     "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Sacred Flame</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: 1d8] <font color=\"Orange\">☀</font> damage.",
     "macrocodecrit": ""
@@ -721,10 +721,10 @@
   },
   {
     "id": 93,
-    "name": "Snare (triggered)",
+    "name": "Snare (triggered) (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "1st Level",
-    "macrocode": "<b><font color=\"Purple\">Snare</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or fall Prone and be hoisted into the air until it hangs upside down 3 feet above the protected surface, where it is Restrained.",
+    "macrocode": "<b><font color=\"Purple\">Snare</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or fall Prone and be hoisted into the air hanging upside down Restrained.",
     "macrocodecrit": ""
   },
   {
@@ -810,9 +810,9 @@
   {
     "id": 107,
     "name": "Sleep",
-    "description": "",
+    "description": "Replace INPUT with spellcasting ability.",
     "category": "1st Level",
-    "macrocode": "<b><font color=\"Purple\">Sleep</font></b> => [t: 5d8] hit points of creatures this spell can affect.",
+    "macrocode": "<b><font color=\"Purple\">Sleep</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or become Incapacitated.",
     "macrocodecrit": ""
   },
   {
@@ -906,10 +906,10 @@
   {
     "id": 119,
     "name": "Searing Smite (lingering)",
-    "description": "Replace INPUT with spellcasting ability.",
+    "description": "",
     "category": "1st Level",
-    "macrocode": "<b><font color=\"Purple\">Searing Smite Extra Damage</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: 1d6] <font color=\"Orange\">🔥</font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Searing Smite Extra Crit Damage</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: 2d6] <font color=\"Orange\">🔥</font> damage!"
+    "macrocode": "<b><font color=\"Purple\">Searing Smite Damage</font></b> => [t: 1d6] <font color=\"Orange\">🔥</font> damage + DC [r: 8 + Charisma + Proficiency] Constitution Save or the spell continues.",
+    "macrocodecrit": ""
   },
   {
     "id": 120,
@@ -1002,10 +1002,10 @@
   {
     "id": 131,
     "name": "Ray of Sickness",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nA spell used with a spell attack action.",
+    "description": "A spell used with a spell attack action.",
     "category": "1st Level",
-    "macrocode": "<b><font color=\"Purple\">Ray of Sickness Damage</font></b> => [t: 2d8] <font color=\"Green\">☠</font> damage + DC [r: 8 + INPUT + Proficiency] Constitution Save or it is also Poisoned until the end of your next turn.",
-    "macrocodecrit": "<b><font color=\"Teal\">Ray of Sickness Crit Damage</font></b> => [t: 4d8] <font color=\"Green\">☠</font> damage + DC [r: 8 + INPUT + Proficiency] Constitution Save or it is also Poisoned until the end of your next turn!"
+    "macrocode": "<b><font color=\"Purple\">Ray of Sickness Damage</font></b> => [t: 2d8] <font color=\"Green\">☠</font> damage + become Poisoned.",
+    "macrocodecrit": "<b><font color=\"Teal\">Ray of Sickness Crit Damage</font></b> => [t: 4d8] <font color=\"Green\">☠</font> damage + become Poisoned!"
   },
   {
     "id": 132,
@@ -1026,7 +1026,7 @@
   {
     "id": 134,
     "name": "Shatter",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nWhen you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.",
+    "description": "Replace INPUT with spellcasting ability.",
     "category": "2nd Level",
     "macrocode": "<b><font color=\"Purple\">Shatter</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Thu = 3d8] ([t: floor(Thu/2)]) <font color=\"Gray\">💥</font> damage.",
     "macrocodecrit": ""
@@ -1036,7 +1036,7 @@
     "name": "Arms of Hadar",
     "description": "",
     "category": "1st Level",
-    "macrocode": "<b><font color=\"Purple\">Arms of Hadar</font></b> => DC [r: 8 + Charisma + Proficiency] Strength Save or take => [t: Nec = 2d6] ([t: floor(Nec/2)]) <font color=\"Purple\">💀</font> damage. On fail, can’t take reactions until its next turn.",
+    "macrocode": "<b><font color=\"Purple\">Arms of Hadar</font></b> => DC [r: 8 + Charisma + Proficiency] Strength Save or take => [t: Nec = 2d6] ([t: floor(Nec/2)]) <font color=\"Purple\">💀</font> damage. On fail, can’t take reactions.",
     "macrocodecrit": ""
   },
   {
@@ -1121,10 +1121,10 @@
   },
   {
     "id": 147,
-    "name": "Pyrotechnics (fireworks)",
+    "name": "Pyrotechnics (fireworks) (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "2nd Level",
-    "macrocode": "<b><font color=\"Purple\">Pyrotechnics</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or become Blinded until the end of your next turn.",
+    "macrocode": "<b><font color=\"Purple\">Pyrotechnics</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or become Blinded.",
     "macrocodecrit": ""
   },
   {
@@ -1196,15 +1196,15 @@
     "name": "Phantasmal Force (damage)",
     "description": "",
     "category": "2nd Level",
-    "macrocode": "<b><font color=\"Purple\">Phantasmal Force</font></b> => [t: 1d6] <font color=\"Purple\">👁</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Phantasmal Force</font></b> => [t: 2d8] <font color=\"Purple\">👁</font> damage.",
     "macrocodecrit": ""
   },
   {
     "id": 158,
-    "name": "Spray Of Cards",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nWhen you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d10 for each slot level above 2nd.",
+    "name": "Spray Of Cards (5E)",
+    "description": "Replace INPUT with spellcasting ability.",
     "category": "2nd Level",
-    "macrocode": "<b><font color=\"Purple\">Spray Of Cards</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: For = 2d10] ([t: floor(For/2)]) <font color=\"Blue\">✊</font> damage + has the Blinded condition until the end of its next turn.",
+    "macrocode": "<b><font color=\"Purple\">Spray Of Cards</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: For = 2d10] ([t: floor(For/2)]) <font color=\"Blue\">✊</font> damage + become Blinded.",
     "macrocodecrit": ""
   },
   {
@@ -1226,9 +1226,9 @@
   {
     "id": 161,
     "name": "Prayer of Healing",
-    "description": "Replace INPUT with spellcasting ability.",
+    "description": "",
     "category": "2nd Level",
-    "macrocode": "<b><font color=\"Purple\">Prayer of Healing</font></b> => [t: 2d8 + INPUT] <font color=\"Red\">➕</font> healing.",
+    "macrocode": "<b><font color=\"Purple\">Prayer of Healing</font></b> => [t: 2d8] <font color=\"Red\">➕</font> healing.",
     "macrocodecrit": ""
   },
   {
@@ -1308,7 +1308,7 @@
     "name": "Phantasmal Force (illusion)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "2nd Level",
-    "macrocode": "<b><font color=\"Purple\">Phantasmal Force</font></b> => DC [r: 8 + INPUT + Proficiency] Intelligence Save or stay convinced by a phantasmal illusion.",
+    "macrocode": "<b><font color=\"Purple\">Phantasmal Force (Illusion)</font></b> => DC [r: 8 + INPUT + Proficiency] Intelligence (Investigation) Save or be convinced by the phantasmal illusion.",
     "macrocodecrit": ""
   },
   {
@@ -1345,7 +1345,7 @@
   },
   {
     "id": 177,
-    "name": "Snare (check)",
+    "name": "Snare (check) (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "1st Level",
     "macrocode": "<b><font color=\"Purple\">Snare</font></b> => DC [r: 8 + INPUT + Proficiency] Investigation Save or trap stays hidden.",
@@ -1449,7 +1449,7 @@
   },
   {
     "id": 190,
-    "name": "Rime's Binding Ice",
+    "name": "Rime's Binding Ice (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "2nd Level",
     "macrocode": "<b><font color=\"Purple\">Rime's Binding Ice</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Col = 3d8] ([t: floor(Col/2)]) <font color=\"Blue\">❄</font> damage. On fail, is hindered by ice and has its speed reduced to 0.",
@@ -1465,23 +1465,23 @@
   },
   {
     "id": 192,
-    "name": "Shadow Blade (strength)",
-    "description": "A spell used with a strength attack action.\r\n\r\nWhen you cast this spell using a 3rd- or 4th-level spell slot, the damage increases to 3d8. When you cast it using a 5th- or 6th-level spell slot, the damage increases to 4d8. When you cast it using a spell slot of 7th level or higher, the damage increases to 5d8.",
+    "name": "Shadow Blade (strength) (5E)",
+    "description": "A spell used with a strength attack action.",
     "category": "2nd Level",
     "macrocode": "<b><font color=\"Purple\">Shadow Blade Damage</font></b> => [t: 2d8 + Strength] <font color=\"Purple\">👁</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Shadow Blade Crit Damage</font></b> => [t: 4d8 + Strength] <font color=\"Purple\">👁</font> damage!"
   },
   {
     "id": 193,
-    "name": "Shadow Blade (dexterity)",
-    "description": "A spell used with a dexterity attack action.\r\n\r\nWhen you cast this spell using a 3rd- or 4th-level spell slot, the damage increases to 3d8. When you cast it using a 5th- or 6th-level spell slot, the damage increases to 4d8. When you cast it using a spell slot of 7th level or higher, the damage increases to 5d8.",
+    "name": "Shadow Blade (dexterity) (5E)",
+    "description": "A spell used with a dexterity attack action.",
     "category": "2nd Level",
     "macrocode": "<b><font color=\"Purple\">Shadow Blade Damage</font></b> => [t: 2d8 + Dexterity] <font color=\"Purple\">👁</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Shadow Blade Crit Damage</font></b> => [t: 4d8 + Dexterity] <font color=\"Purple\">👁</font> damage!"
   },
   {
     "id": 194,
-    "name": "Snilloc's Snowball Storm",
+    "name": "Snilloc's Snowball Storm (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "2nd Level",
     "macrocode": "<b><font color=\"Purple\">Snilloc's Snowball Storm</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Col = 3d6] ([t: floor(Col/2)]) <font color=\"Blue\">❄</font> damage.",
@@ -1724,7 +1724,7 @@
     "name": "Sleet Storm",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "3rd Level",
-    "macrocode": "<b><font color=\"Purple\">Sleet Storm</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or it fall Prone + if Concentrating => DC [r: 8 + INPUT + Proficiency] Constitution Save or lose Concentration.",
+    "macrocode": "<b><font color=\"Purple\">Sleet Storm</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or fall Prone.",
     "macrocodecrit": ""
   },
   {
@@ -1737,8 +1737,8 @@
   },
   {
     "id": 228,
-    "name": "Spirit Shroud",
-    "description": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for every two slot levels above 3rd.",
+    "name": "Spirit Shroud (5E)",
+    "description": "",
     "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Spirit Shroud Extra Damage</font></b> => [t: 1d8] damage + fall under the effect of the spell.",
     "macrocodecrit": "<b><font color=\"Teal\">Spirit Shroud Extra Crit Damage</font></b> => [t: 2d8] damage + fall under the effect of the spell!"
@@ -1900,8 +1900,8 @@
     "name": "Grasping Vine",
     "description": "A spell used with a spell attack action.",
     "category": "4th Level",
-    "macrocode": "<b><font color=\"Purple\">Grasping Vine Damage</font></b> => [t: 4d8] <font color=\"Silver\">🔨</font> damage + get pulled up to 30 feet towards the vine + becomes Grappled.",
-    "macrocodecrit": "<b><font color=\"Teal\">Grasping Vine Crit Damage</font></b> => [t: 8d8] <font color=\"Silver\">🔨</font> damage + get pulled up to 30 feet towards the vine + becomes Grappled!"
+    "macrocode": "<b><font color=\"Purple\">Grasping Vine Damage</font></b> => [t: 4d8] <font color=\"Silver\">🔨</font> damage + get pulled up to 30 feet towards the vine + become Grappled.",
+    "macrocodecrit": "<b><font color=\"Teal\">Grasping Vine Crit Damage</font></b> => [t: 8d8] <font color=\"Silver\">🔨</font> damage + get pulled up to 30 feet towards the vine + become Grappled!"
   },
   {
     "id": 249,
@@ -1937,18 +1937,10 @@
   },
   {
     "id": 253,
-    "name": "Phantasmal Killer (cast)",
+    "name": "Phantasmal Killer",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "4th Level",
-    "macrocode": "<b><font color=\"Purple\">Phantasmal Killer</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or the target becomes Frightened.",
-    "macrocodecrit": ""
-  },
-  {
-    "id": 254,
-    "name": "Phantasmal Killer (end)",
-    "description": "Replace INPUT with spellcasting ability.",
-    "category": "4th Level",
-    "macrocode": "<b><font color=\"Purple\">Phantasmal Killer</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or take => [t: 4d10] <font color=\"Purple\">👁</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Phantasmal Killer</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or take => [t: Psy = 4d10] ([t: floor(Psy/2)]) <font color=\"Purple\">👁</font> damage.",
     "macrocodecrit": ""
   },
   {
@@ -1956,20 +1948,20 @@
     "name": "Polymorph",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "4th Level",
-    "macrocode": "<b><font color=\"Purple\">Polymorph</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or a creature that you can see within range transforms into a new form.",
+    "macrocode": "<b><font color=\"Purple\">Polymorph</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or shape-shift into beast form for the duration.",
     "macrocodecrit": ""
   },
   {
     "id": 256,
-    "name": "Raulothim's Psychic Lance",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nWhen you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d6 for each slot level above 4th.",
+    "name": "Raulothim's Psychic Lance (5E)",
+    "description": "Replace INPUT with spellcasting ability.",
     "category": "4th Level",
-    "macrocode": "<b><font color=\"Purple\">Raulothim's Psychic Lance</font></b> => DC [r: 8 + INPUT + Proficiency] Intelligence Save or take => [t: Blu = 7d6] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage + is Incapacitated until the start of your next turn. On fail, isn’t Incapacitated.",
+    "macrocode": "<b><font color=\"Purple\">Raulothim's Psychic Lance</font></b> => DC [r: 8 + INPUT + Proficiency] Intelligence Save or take => [t: Blu = 7d6] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage + is Incapacitated. On fail, isn’t Incapacitated.",
     "macrocodecrit": ""
   },
   {
     "id": 257,
-    "name": "Shadow Of Moil",
+    "name": "Shadow Of Moil (5E)",
     "description": "",
     "category": "4th Level",
     "macrocode": "<b><font color=\"Purple\">Shadow Of Moil</font></b> => [t: 2d8] <font color=\"Purple\">💀</font> damage.",
@@ -1977,10 +1969,10 @@
   },
   {
     "id": 258,
-    "name": "Sickening Radiance",
+    "name": "Sickening Radiance (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "4th Level",
-    "macrocode": "<b><font color=\"Purple\">Sickening Radiance</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: 4d10] <font color=\"Orange\">☀</font> damage + it suffers one level of Exhaustion and emits a dim, greenish light in a 5-foot radius.",
+    "macrocode": "<b><font color=\"Purple\">Sickening Radiance</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: 4d10] <font color=\"Orange\">☀</font> damage + it suffers one level of Exhaustion.",
     "macrocodecrit": ""
   },
   {
@@ -1988,8 +1980,8 @@
     "name": "Staggering Smite",
     "description": "A spell used with an attack action.",
     "category": "4th Level",
-    "macrocode": "<b><font color=\"Purple\">Staggering Smite Extra Damage</font></b> => [t: 4d6] <font color=\"Purple\">👁</font> damage + => DC [r: 8 + Charisma + Proficiency] Wisdom Save or it has disadvantage on attack rolls and ability checks, and can’t take reactions, until the end of its next turn.",
-    "macrocodecrit": "<b><font color=\"Teal\">Staggering Smite Extra Crit Damage</font></b> => [t: 8d6] <font color=\"Purple\">👁</font> damage + => DC [r: 8 + Charisma + Proficiency] Wisdom Save or it has disadvantage on attack rolls and ability checks, and can’t take reactions, until the end of its next turn!"
+    "macrocode": "<b><font color=\"Purple\">Staggering Smite Extra Damage</font></b> => [t: 4d6] <font color=\"Purple\">👁</font> damage + => DC [r: 8 + Charisma + Proficiency] Wisdom Save or become Stunned.",
+    "macrocodecrit": "<b><font color=\"Teal\">Staggering Smite Extra Crit Damage</font></b> => [t: 8d6] <font color=\"Purple\">👁</font> damage + => DC [r: 8 + Charisma + Proficiency] Wisdom Save or become Stunned!"
   },
   {
     "id": 260,
@@ -2332,7 +2324,7 @@
     "name": "Seeming (inspect)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Seeming</font></b> => DC [r: 8 + INPUT + Proficiency] Investigation Save or it becomes aware that the target is disguised.",
+    "macrocode": "<b><font color=\"Purple\">Seeming</font></b> => DC [r: 8 + INPUT + Proficiency] Investigation Save or illusion stays active",
     "macrocodecrit": ""
   },
   {
@@ -2649,7 +2641,7 @@
   },
   {
     "id": 347,
-    "name": "Scatter",
+    "name": "Scatter (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "6th Level",
     "macrocode": "<b><font color=\"Purple\">Scatter</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or fail to resist this spell.",
@@ -2657,7 +2649,7 @@
   },
   {
     "id": 348,
-    "name": "Soul Cage",
+    "name": "Soul Cage (5E)",
     "description": "",
     "category": "6th Level",
     "macrocode": "<b><font color=\"Purple\">Soul Cage</font></b> => [t: 2d8] <font color=\"Red\">➕</font> healing.",
@@ -2732,7 +2724,7 @@
     "name": "Delayed Blast Fireball (cast)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "7th Level",
-    "macrocode": "<b><font color=\"Purple\">Delayed Blast Fireball (cast)</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 12d6] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage. If at the end of your turn the bead has not yet detonated, the damage increases by [t: Fire = 1d6] ([t: floor(Fire/2)]).",
+    "macrocode": "<b><font color=\"Purple\">Delayed Blast Fireball (cast)</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 12d6] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage. If at the end of your turn the bead has not yet detonated, the damage increases by [t: Fire = 1d6] each turn.",
     "macrocodecrit": ""
   },
   {
@@ -2792,19 +2784,11 @@
     "macrocodecrit": "<b><font color=\"Teal\">Mordenkainen's Sword Crit Damage</font></b> => [t: 8d12 + INPUT] <font color=\"Blue\">✊</font> damage!"
   },
   {
-    "id": 365,
-    "name": "Plane Shift",
-    "description": "A spell used with a spell attack action.",
-    "category": "7th Level",
-    "macrocode": "<b><font color=\"Purple\">Plane Shift</font></b> => DC [r: 8 + INPUT + Proficiency] Charisma Save or it is transported to a random location on the plane of existence you specify.",
-    "macrocodecrit": ""
-  },
-  {
     "id": 366,
-    "name": "Power Word: Pain",
+    "name": "Power Word Kill",
     "description": "Replace INPUT with spellcasting ability.",
-    "category": "7th Level",
-    "macrocode": "<b><font color=\"Purple\">Power Word: Pain</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or the casting fails and the spell is wasted.",
+    "category": "9th Level",
+    "macrocode": "<b><font color=\"Purple\">Power Word Kill</font></b> => [t: 12d12] <font color=\"Purple\">👁</font> damage.",
     "macrocodecrit": ""
   },
   {
@@ -2812,47 +2796,15 @@
     "name": "Prismatic Spray (cast)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "7th Level",
-    "macrocode": "<b><font color=\"Purple\">Prismatic Spray</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save. Target gets affected by the following ray: [t: 1d8].",
+    "macrocode": "<b><font color=\"Purple\">Prismatic Spray</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or target gets affected by the following ray: [t: 1d8].",
     "macrocodecrit": ""
   },
   {
     "id": 368,
-    "name": "Prismatic Spray (red)",
+    "name": "Prismatic Spray (damage)",
     "description": "",
     "category": "7th Level",
-    "macrocode": "<b><font color=\"Purple\">Prismatic Spray (red)</font></b> => [t: Fir = 10d6] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage.",
-    "macrocodecrit": ""
-  },
-  {
-    "id": 369,
-    "name": "Prismatic Spray (orange)",
-    "description": "",
-    "category": "7th Level",
-    "macrocode": "<b><font color=\"Purple\">Prismatic Spray (orange)</font></b> => [t: Aci = 10d6] ([t: floor(Aci/2)]) <font color=\"Green\">🔥</font> damage.",
-    "macrocodecrit": ""
-  },
-  {
-    "id": 370,
-    "name": "Prismatic Spray (yellow)",
-    "description": "",
-    "category": "7th Level",
-    "macrocode": "<b><font color=\"Purple\">Prismatic Spray (yellow)</font></b> => [t: Lig = 10d6] ([t: floor(Lig/2)]) <font color=\"Blue\">✴</font> damage.",
-    "macrocodecrit": ""
-  },
-  {
-    "id": 371,
-    "name": "Prismatic Spray (green)",
-    "description": "",
-    "category": "7th Level",
-    "macrocode": "<b><font color=\"Purple\">Prismatic Spray (green)</font></b> => [t: Poi = 10d6] ([t: floor(Poi/2)]) <font color=\"Green\">☠</font> damage.",
-    "macrocodecrit": ""
-  },
-  {
-    "id": 372,
-    "name": "Prismatic Spray (blue)",
-    "description": "",
-    "category": "7th Level",
-    "macrocode": "<b><font color=\"Purple\">Prismatic Spray (blue)</font></b> => [t: Col = 10d6] ([t: floor(Col/2)]) <font color=\"Blue\">❄</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Prismatic Spray (damage)</font></b> => [t: Dam = 12d6] ([t: floor(Dam/2)]) damage.",
     "macrocodecrit": ""
   },
   {
@@ -2860,7 +2812,7 @@
     "name": "Prismatic Spray (indigo)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "7th Level",
-    "macrocode": "<b><font color=\"Purple\">Prismatic Spray (indigo)</font></b> => On fail, the target is Restrained. DC [r: 8 + INPUT + Proficiency] Constitution Save. If it successfully saves three times, the spell ends. If it fails its save three times, it permanently turns to stone with the Petrified condition.",
+    "macrocode": "<b><font color=\"Purple\">Prismatic Spray (indigo)</font></b> => Become Restrained. DC [r: 8 + INPUT + Proficiency] Constitution Save or petrification progresses.",
     "macrocodecrit": ""
   },
   {
@@ -2868,7 +2820,7 @@
     "name": "Prismatic Spray (violet)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "7th Level",
-    "macrocode": "<b><font color=\"Purple\">Prismatic Spray (violet)</font></b> => On fail, the target is Blinded. DC [r: 8 + INPUT + Proficiency] Wisdom Save or the creature is transported to another plane of existence of the DM’s choosing. On fail/success, creature is no longer Blinded.",
+    "macrocode": "<b><font color=\"Purple\">Prismatic Spray (violet)</font></b> => Become Blinded. DC [r: 8 + INPUT + Proficiency] Wisdom Save or the creature is transported to another plane of existence.",
     "macrocodecrit": ""
   },
   {
@@ -2892,7 +2844,7 @@
     "name": "Reverse Gravity",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "7th Level",
-    "macrocode": "<b><font color=\"Purple\">Reverse Gravity</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save. On success, grab onto a fixed object it can reach, thus avoiding the fall.",
+    "macrocode": "<b><font color=\"Purple\">Reverse Gravity</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or fail to grab a fixed object within reach.",
     "macrocodecrit": ""
   },
   {
@@ -3136,14 +3088,6 @@
     "macrocodecrit": ""
   },
   {
-    "id": 409,
-    "name": "Power Word: Stun",
-    "description": "Replace INPUT with spellcasting ability.",
-    "category": "8th Level",
-    "macrocode": "<b><font color=\"Purple\">Power Word: Stun</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or the target stays Stunned.",
-    "macrocodecrit": ""
-  },
-  {
     "id": 410,
     "name": "Sunburst",
     "description": "Replace INPUT with spellcasting ability.",
@@ -3208,27 +3152,11 @@
     "macrocodecrit": ""
   },
   {
-    "id": 419,
-    "name": "Heal",
-    "description": "",
-    "category": "6th Level",
-    "macrocode": "<b><font color=\"Purple\">Heal</font></b> => [t: 70] <font color=\"Red\">➕</font> healing. The spell also removes the conditions Blinded, Deafened, and Poisoned on the target.",
-    "macrocodecrit": ""
-  },
-  {
-    "id": 420,
-    "name": "Mass Heal",
-    "description": "",
-    "category": "9th Level",
-    "macrocode": "<b><font color=\"Purple\">Mass Heal</font></b> => [t: 700] <font color=\"Red\">➕</font> healing, divided as you choose among any number of creatures that you can see within range. The spell also removes the conditions Blinded, Deafened, and Poisoned on the targets.",
-    "macrocodecrit": ""
-  },
-  {
     "id": 421,
-    "name": "Prismatic Wall (cast)",
+    "name": "Prismatic Wall (light)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "9th Level",
-    "macrocode": "<b><font color=\"Purple\">Prismatic Wall</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or become Blinded for 1 minute.",
+    "macrocode": "<b><font color=\"Purple\">Prismatic Wall</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or become Blinded.",
     "macrocodecrit": ""
   },
   {
@@ -3241,42 +3169,10 @@
   },
   {
     "id": 423,
-    "name": "Prismatic Wall (red)",
+    "name": "Prismatic Wall (damage)",
     "description": "",
     "category": "9th Level",
-    "macrocode": "<b><font color=\"Purple\">Prismatic Wall (red)</font></b> => [t: Fir = 10d6] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage.",
-    "macrocodecrit": ""
-  },
-  {
-    "id": 424,
-    "name": "Prismatic Wall (orange)",
-    "description": "",
-    "category": "9th Level",
-    "macrocode": "<b><font color=\"Purple\">Prismatic Wall (orange)</font></b> => [t: Aci = 10d6] ([t: floor(Aci/2)]) <font color=\"Green\">🔥</font> damage.",
-    "macrocodecrit": ""
-  },
-  {
-    "id": 425,
-    "name": "Prismatic Wall (yellow)",
-    "description": "",
-    "category": "9th Level",
-    "macrocode": "<b><font color=\"Purple\">Prismatic Wall (yellow)</font></b> => [t: Lig = 10d6] ([t: floor(Lig/2)]) <font color=\"Blue\">✴</font> damage.",
-    "macrocodecrit": ""
-  },
-  {
-    "id": 426,
-    "name": "Prismatic Wall (green)",
-    "description": "",
-    "category": "9th Level",
-    "macrocode": "<b><font color=\"Purple\">Prismatic Wall (green)</font></b> => [t: Poi = 10d6] ([t: floor(Poi/2)]) <font color=\"Green\">☠</font> damage.",
-    "macrocodecrit": ""
-  },
-  {
-    "id": 427,
-    "name": "Prismatic Wall (blue)",
-    "description": "",
-    "category": "9th Level",
-    "macrocode": "<b><font color=\"Purple\">Prismatic Wall (blue)</font></b> => [t: Col = 10d6] ([t: floor(Col/2)]) <font color=\"Blue\">❄</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Prismatic Wall (damage)</font></b> => [t: Dam = 12d6] ([t: floor(Dam/2)]) damage.",
     "macrocodecrit": ""
   },
   {
@@ -3284,7 +3180,7 @@
     "name": "Prismatic Wall (indigo)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "9th Level",
-    "macrocode": "<b><font color=\"Purple\">Prismatic Wall (indigo)</font></b> => On fail, the target is Restrained. DC [r: 8 + INPUT + Proficiency] Constitution Save. If it successfully saves three times, the spell ends. If it fails its save three times, it permanently turns to stone with the Petrified condition.",
+    "macrocode": "<b><font color=\"Purple\">Prismatic Wall (indigo)</font></b> => Become Restrained. DC [r: 8 + INPUT + Proficiency] Constitution Save or petrification progresses.",
     "macrocodecrit": ""
   },
   {
@@ -3292,12 +3188,12 @@
     "name": "Prismatic Wall (violet)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "9th Level",
-    "macrocode": "<b><font color=\"Purple\">Prismatic Wall (violet)</font></b> => On fail, the target is Blinded. DC [r: 8 + INPUT + Proficiency] Wisdom Save or the creature is transported to another plane of existence of the DM’s choosing. On fail/success, creature is no longer Blinded.",
+    "macrocode": "<b><font color=\"Purple\">Prismatic Wall (violet)</font></b> => Become Blinded. DC [r: 8 + INPUT + Proficiency] Wisdom Save or the creature is transported to another plane of existence.",
     "macrocodecrit": ""
   },
   {
     "id": 430,
-    "name": "Psychic Scream",
+    "name": "Psychic Scream (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "9th Level",
     "macrocode": "<b><font color=\"Purple\">Psychic Scream</font></b> => DC [r: 8 + INPUT + Proficiency] Intelligence Save or take => [t: Psy = 14d6] ([t: floor(Psy/2)]) <font color=\"Purple\">👁</font> damage. On fail, is Stunned.",
@@ -3716,8 +3612,8 @@
     "name": "Conjure Fey",
     "description": "A spell used with an spell attack action.",
     "category": "6th Level",
-    "macrocode": "<b><font color=\"Purple\">Conjure Fey Damage</font></b> => [t: 3d12 + Wisdom] <font color=\"Purple\">👁️</font> damage + the target becomes Frightened.",
-    "macrocodecrit": "<b><font color=\"Teal\">Conjure Fey Crit Damage</font></b> => [t: 6d12 + Wisdom] <font color=\"Purple\">👁️</font> damage + the target becomes Frightened!"
+    "macrocode": "<b><font color=\"Purple\">Conjure Fey Damage</font></b> => [t: 3d12 + Wisdom] <font color=\"Purple\">👁️</font> damage + become Frightened.",
+    "macrocodecrit": "<b><font color=\"Teal\">Conjure Fey Crit Damage</font></b> => [t: 6d12 + Wisdom] <font color=\"Purple\">👁️</font> damage + become Frightened!"
   },
   {
     "id": 483,
@@ -3798,5 +3694,13 @@
     "category": "6th Level",
     "macrocode": "<b><font color=\"Purple\">Otto's Irresistible Dance</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or become Charmed. On a success, the target dances comically until the end of its next turn.",
     "macrocodecrit": ""
+  },
+  {
+    "id": 493,
+    "name": "Shining Smite",
+    "description": "A spell used with an attack action.",
+    "category": "2nd Level",
+    "macrocode": "<b><font color=\"Purple\">Shining Smite Extra Damage</font></b> => [t: 2d6] <font color=\"Orange\">☀</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Shining Smite Extra Crit Damage</font></b> => [t: 4d6] <font color=\"Orange\">☀</font> damage!"
   }
 ]
