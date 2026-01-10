@@ -220,8 +220,8 @@
     "name": "Lance",
     "description": "A strength-based weapon used with an attack action.",
     "category": "Martial Melee Weapons",
-    "macrocode": "<b><font color=\"Green\">Lance Damage</font></b> => [t: 1d12 + Strength] <font color=\"Silver\">📍</font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Lance Crit Damage</font></b> => [t: 2d12 + Strength] <font color=\"Silver\">📍</font> damage!"
+    "macrocode": "<b><font color=\"Green\">Lance Damage</font></b> => [t: 1d10 + Strength] <font color=\"Silver\">📍</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Lance Crit Damage</font></b> => [t: 2d10 + Strength] <font color=\"Silver\">📍</font> damage!"
   },
   {
     "id": 29,
@@ -316,20 +316,20 @@
     "name": "Trident (one-handed)",
     "description": "A strength-based weapon used with an attack action.",
     "category": "Martial Melee Weapons",
-    "macrocode": "<b><font color=\"Green\">Trident Damage</font></b> => [t: 1d6 + Strength] <font color=\"Silver\">📍</font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Trident Crit Damage</font></b> => [t: 2d6 + Strength] <font color=\"Silver\">📍</font> damage!"
+    "macrocode": "<b><font color=\"Green\">Trident Damage</font></b> => [t: 1d8 + Strength] <font color=\"Silver\">📍</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Trident Crit Damage</font></b> => [t: 2d8 + Strength] <font color=\"Silver\">📍</font> damage!"
   },
   {
     "id": 41,
     "name": "Trident (two-handed)",
     "description": "A strength-based weapon used with an attack action.",
     "category": "Martial Melee Weapons",
-    "macrocode": "<b><font color=\"Green\">Trident Damage</font></b> => [t: 1d8 + Strength] <font color=\"Silver\">📍</font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Trident Crit Damage</font></b> => [t: 2d8 + Strength] <font color=\"Silver\">📍</font> damage!"
+    "macrocode": "<b><font color=\"Green\">Trident Damage</font></b> => [t: 1d10 + Strength] <font color=\"Silver\">📍</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Trident Crit Damage</font></b> => [t: 2d10 + Strength] <font color=\"Silver\">📍</font> damage!"
   },
   {
     "id": 42,
-    "name": "War pick",
+    "name": "War pick (one-handed)",
     "description": "A strength-based weapon used with an attack action.",
     "category": "Martial Melee Weapons",
     "macrocode": "<b><font color=\"Green\">War pick Damage</font></b> => [t: 1d8 + Strength] <font color=\"Silver\">📍</font> damage.",
@@ -3710,5 +3710,37 @@
     "category": "5th Level",
     "macrocode": "<b><font color=\"Purple\">Yolande’s Regal Presence</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or take => [t: Psy = 4d6] ([t: floor(Psy/2)]) <font color=\"Purple\">👁</font> damage + become Prone.",
     "macrocodecrit": ""
+  },
+  {
+    "id": 498,
+    "name": "Topple",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "Special",
+    "macrocode": "<b><font color=\"Green\">Topple</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or become Prone.",
+    "macrocodecrit": ""
+  },
+  {
+    "id": 499,
+    "name": "War pick (two-handed)",
+    "description": "A strength-based weapon used with an attack action.",
+    "category": "Martial Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">War pick Damage</font></b> => [t: 1d10 + Strength] <font color=\"Silver\">📍</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">War pick Crit Damage</font></b> => [t: 2d10 + Strength] <font color=\"Silver\">📍</font> damage!"
+  },
+  {
+    "id": 500,
+    "name": "Musket",
+    "description": "A dexterity-based weapon used with an attack action.",
+    "category": "Martial Ranged Weapons",
+    "macrocode": "<b><font color=\"Green\">Musket Damage</font></b> => [t: 1d12 + Dexterity] <font color=\"Silver\">📍</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Musket Crit Damage</font></b> => [t: 2d12 + Dexterity] <font color=\"Silver\">📍</font> damage!"
+  },
+  {
+    "id": 501,
+    "name": "Pistol",
+    "description": "A dexterity-based weapon used with an attack action.",
+    "category": "Martial Ranged Weapons",
+    "macrocode": "<b><font color=\"Green\">Pistol Damage</font></b> => [t: 1d10 + Dexterity] <font color=\"Silver\">📍</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Pistol Crit Damage</font></b> => [t: 2d10 + Dexterity] <font color=\"Silver\">📍</font> damage!"
   }
 ]
