@@ -546,7 +546,7 @@
   {
     "id": 69,
     "name": "Thunderclap",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).\r\n\r\nRemember to edit the damage dice according to level.",
+    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).",
     "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Thunderclap Damage</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: 1d6] <font color=\"Gray\">💥</font> damage.",
     "macrocodecrit": ""
@@ -554,7 +554,7 @@
   {
     "id": 70,
     "name": "Toll the Dead",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe spell’s damage increases by one die when you reach 5th level (2d8 or 2d12), 11th level (3d8 or 3d12), and 17th level (4d8 or 4d12).\r\n\r\nRemember to edit the damage dice according to level.",
+    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe damage increases by one die when you reach levels 5 (2d8 or 2d12), 11 (3d8 or 3d12), and 17 (4d8 or 4d12).",
     "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Toll the Dead</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or take => [t: 1d8] ([t: 1d12] if the target is hurt) <font color=\"Purple\">💀</font> damage.",
     "macrocodecrit": ""
@@ -642,7 +642,7 @@
   {
     "id": 81,
     "name": "Thorn Whip",
-    "description": "A spell used with a spell attack action.\r\n\r\nThis spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).\r\n\r\nRemember to edit the damage dice according to level.",
+    "description": "A spell used with a spell attack action.\r\n\r\nThe damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).",
     "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Thorn Whip Damage</font></b> => [t: 1d6] <font color=\"Silver\">📍</font> damage + if the creature is Large or smaller, you pull the creature up to 10 feet closer to you.",
     "macrocodecrit": "<b><font color=\"Teal\">Thorn Whip Crit Damage</font></b> => [t: 2d6] <font color=\"Silver\">📍</font> damage + if the creature is Large or smaller, you pull the creature up to 10 feet closer to you!"
@@ -658,7 +658,7 @@
   {
     "id": 83,
     "name": "Word of Radiance",
-    "description": "The spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).\r\n\r\nRemember to edit the damage dice according to level.",
+    "description": "The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).",
     "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Word of Radiance</font></b> => DC [r: 8 + Wisdom + Proficiency] Constitution Save or take => [t: 1d6] <font color=\"Orange\">☀</font> damage.",
     "macrocodecrit": ""
@@ -666,9 +666,9 @@
   {
     "id": 84,
     "name": "Vicious Mockery",
-    "description": "This spell’s damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).\r\n\r\nRemember to edit the damage dice according to level.",
+    "description": "The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).",
     "category": "Cantrips",
-    "macrocode": "<b><font color=\"Purple\">Vicious Mockery</font></b> => DC [r: 8 + Charisma + Proficiency] Wisdom Save or take => [t: 1d4] <font color=\"Purple\">👁</font> damage + have disadvantage on the next attack roll it makes before the end of its next turn.",
+    "macrocode": "<b><font color=\"Purple\">Vicious Mockery</font></b> => DC [r: 8 + Charisma + Proficiency] Wisdom Save or take => [t: 1d6] <font color=\"Purple\">👁</font> damage.",
     "macrocodecrit": ""
   },
   {
@@ -820,7 +820,7 @@
     "name": "Tasha's Hideous Laughter",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "1st Level",
-    "macrocode": "<b><font color=\"Purple\">Tasha's Hideous Laughter</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or fall Prone, becoming Incapacitated.",
+    "macrocode": "<b><font color=\"Purple\">Tasha's Hideous Laughter</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or become Prone + Incapacitated.",
     "macrocodecrit": ""
   },
   {
@@ -916,16 +916,16 @@
     "name": "Thunderous Smite",
     "description": "A spell used with an attack action.",
     "category": "1st Level",
-    "macrocode": "<b><font color=\"Purple\">Thunderous Smite Extra Damage</font></b> => [t: 2d6] <font color=\"Gray\">💥</font> damage (+ if the target is a creature => DC [r: 8 + Charisma + Proficiency] Strength Save or be pushed 10 feet away from you and knocked Prone.",
-    "macrocodecrit": "<b><font color=\"Teal\">Thunderous Smite Extra Crit Damage</font></b> => [t: 4d6] <font color=\"Gray\">💥</font> damage (+ if the target is a creature => DC [r: 8 + Charisma + Proficiency] Strength Save or be pushed 10 feet away from you and knocked Prone!"
+    "macrocode": "<b><font color=\"Purple\">Thunderous Smite Extra Damage</font></b> => [t: 2d6] <font color=\"Gray\">💥</font> damage. If the target is a creature => DC [r: 8 + Charisma + Proficiency] Strength Save or be pushed 10 feet away from you + become Prone.",
+    "macrocodecrit": "<b><font color=\"Teal\">Thunderous Smite Extra Crit Damage</font></b> => [t: 4d6] <font color=\"Gray\">💥</font> damage. If the target is a creature => DC [r: 8 + Charisma + Proficiency] Strength Save or be pushed 10 feet away from you + become Prone!"
   },
   {
     "id": 121,
     "name": "Wrathful Smite",
     "description": "A spell used with an attack action.",
     "category": "1st Level",
-    "macrocode": "<b><font color=\"Purple\">Wrathful Smite Extra Damage</font></b> => [t: 1d6] <font color=\"Purple\">👁</font> damage (+ if the target is a creature => DC [r: 8 + Charisma + Proficiency] Wisdom Save or be Frightened of you.",
-    "macrocodecrit": "<b><font color=\"Teal\">Wrathful Smite Extra Crit Damage</font></b> => [t: 2d6] <font color=\"Purple\">👁</font> damage (+ if the target is a creature => DC [r: 8 + Charisma + Proficiency] Wisdom Save or be Frightened of you!"
+    "macrocode": "<b><font color=\"Purple\">Wrathful Smite Extra Damage</font></b> => [t: 1d6] <font color=\"Purple\">👁</font> damage + DC [r: 8 + Charisma + Proficiency] Wisdom Save or become Frightened.",
+    "macrocodecrit": "<b><font color=\"Teal\">Wrathful Smite Extra Crit Damage</font></b> => [t: 2d6] <font color=\"Purple\">👁</font> damage + DC [r: 8 + Charisma + Proficiency] Wisdom Save or become Frightened!"
   },
   {
     "id": 122,
@@ -961,11 +961,11 @@
   },
   {
     "id": 126,
-    "name": "Zephyr Strike",
+    "name": "Zephyr Strike (5E)",
     "description": "A spell used with an attack action.",
     "category": "1st Level",
-    "macrocode": "<b><font color=\"Purple\">Zephyr Strike Extra Damage</font></b> => [t: 1d8] damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Zephyr Strike Extra Crit Damage</font></b> => [t: 2d8] damage!"
+    "macrocode": "<b><font color=\"Purple\">Zephyr Strike Extra Damage</font></b> => [t: 1d8] <font color=\"Blue\">✊</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Zephyr Strike Extra Crit Damage</font></b> => [t: 2d8] <font color=\"Blue\">✊</font> damage!"
   },
   {
     "id": 127,
@@ -1009,11 +1009,11 @@
   },
   {
     "id": 132,
-    "name": "Witch Bolt",
-    "description": "A spell used with a spell attack action.\r\n\r\nWhen you cast this spell using a spell slot of 2nd level or higher, the initial damage increases by 1d12 for each slot level above 1st.",
+    "name": "Witch Bolt (cast)",
+    "description": "A spell used with a spell attack action.",
     "category": "1st Level",
-    "macrocode": "<b><font color=\"Purple\">Witch Bolt Damage</font></b> => [t: 1d12] <font color=\"Blue\">✴</font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Witch Bolt Crit Damage</font></b> => [t: 2d12] <font color=\"Blue\">✴</font> damage!"
+    "macrocode": "<b><font color=\"Purple\">Witch Bolt Damage (cast)</font></b> => [t: 2d12] <font color=\"Blue\">✴</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Witch Bolt Crit Damage (cast)</font></b> => [t: 4d12] <font color=\"Blue\">✴</font> damage!"
   },
   {
     "id": 133,
@@ -1132,7 +1132,7 @@
     "name": "Web (stuck)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "2nd Level",
-    "macrocode": "<b><font color=\"Purple\">Web</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or the creature is Restrained as long as it remains in the webs or until it breaks free.",
+    "macrocode": "<b><font color=\"Purple\">Web (stuck)</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or become Restrained.",
     "macrocodecrit": ""
   },
   {
@@ -1140,7 +1140,7 @@
     "name": "Web (fire)",
     "description": "",
     "category": "2nd Level",
-    "macrocode": "<b><font color=\"Purple\">Web</font></b> => [t: 2d4] <font color=\"Orange\">🔥</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Web (fire)</font></b> => [t: 2d4] <font color=\"Orange\">🔥</font> damage.",
     "macrocodecrit": ""
   },
   {
@@ -1220,7 +1220,7 @@
     "name": "Zone of Truth",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "2nd Level",
-    "macrocode": "<b><font color=\"Purple\">Zone of Truth</font></b> => DC [r: 8 + INPUT + Proficiency] Charisma Save or a creature can’t speak a deliberate lie while in the radius.",
+    "macrocode": "<b><font color=\"Purple\">Zone of Truth</font></b> => DC [r: 8 + INPUT + Proficiency] Charisma Save or a creature can’t speak a deliberate lie.",
     "macrocodecrit": ""
   },
   {
@@ -1753,27 +1753,27 @@
   },
   {
     "id": 230,
-    "name": "Thunder Step",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nWhen you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d10 for each slot level above 3rd.",
+    "name": "Thunder Step (5E)",
+    "description": "Replace INPUT with spellcasting ability.",
     "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Thunder Step</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Thu = 3d10] ([t: floor(Thu/2)]) <font color=\"Gray\">💥</font> damage.",
     "macrocodecrit": ""
   },
   {
     "id": 231,
-    "name": "Tidal Wave",
+    "name": "Tidal Wave (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "3rd Level",
-    "macrocode": "<b><font color=\"Purple\">Tidal Wave</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Blu = 4d8] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage. On fail, fall Prone.",
+    "macrocode": "<b><font color=\"Purple\">Tidal Wave</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Blu = 4d8] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage. On fail, become Prone.",
     "macrocodecrit": ""
   },
   {
     "id": 232,
     "name": "Vampiric Touch",
-    "description": "A spell used with a spell attack action.\r\n\r\nWhen you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.",
+    "description": "A spell used with a spell attack action.",
     "category": "3rd Level",
-    "macrocode": "<b><font color=\"Purple\">Vampiric Touch Damage</font></b> => [t: Hea = 3d6] <font color=\"Purple\">💀</font> damage + you regain [t: floor(Hea/2)] hit points.",
-    "macrocodecrit": "<b><font color=\"Teal\">Vampiric Touch Crit Damage</font></b> => [t: Vampiric = 6d6] <font color=\"Purple\">💀</font> damage + you regain [t: floor(Vampiric/2)] hit points!"
+    "macrocode": "<b><font color=\"Purple\">Vampiric Touch Damage</font></b> => [t: Nec = 3d6] <font color=\"Purple\">💀</font> damage + you regain [t: floor(Nec/2)] hit points.",
+    "macrocodecrit": "<b><font color=\"Teal\">Vampiric Touch Crit Damage</font></b> => [t: Nec = 6d6] <font color=\"Purple\">💀</font> damage + you regain [t: floor(Nec/2)] hit points!"
   },
   {
     "id": 233,
@@ -1796,7 +1796,7 @@
     "name": "Wind Wall",
     "description": "",
     "category": "3rd Level",
-    "macrocode": "<b><font color=\"Purple\">Wind Wall</font></b> => DC [r: 8 + Wisdom + Proficiency] Strength Save or take => [t: Blu = 3d8] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Wind Wall</font></b> => DC [r: 8 + Wisdom + Proficiency] Strength Save or take => [t: Blu = 4d8] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage.",
     "macrocodecrit": ""
   },
   {
@@ -2020,7 +2020,7 @@
     "name": "Wall of Fire (cast)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "4th Level",
-    "macrocode": "<b><font color=\"Purple\">Wall of Fire</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 5d8] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Wall of Fire (cast)</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 5d8] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage.",
     "macrocodecrit": ""
   },
   {
@@ -2028,15 +2028,15 @@
     "name": "Wall of Fire (active)",
     "description": "",
     "category": "4th Level",
-    "macrocode": "<b><font color=\"Purple\">Wall of Fire</font></b> => [t: 5d8] <font color=\"Orange\">🔥</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Wall of Fire (active)</font></b> => [t: 5d8] <font color=\"Orange\">🔥</font> damage.",
     "macrocodecrit": ""
   },
   {
     "id": 266,
-    "name": "Watery Sphere",
+    "name": "Watery Sphere (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "4th Level",
-    "macrocode": "<b><font color=\"Purple\">Watery Sphere</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or a creature is Restrained by the sphere and is engulfed by the water. On success, a creature is ejected from that space to the nearest unoccupied space outside it.",
+    "macrocode": "<b><font color=\"Purple\">Watery Sphere</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or become Restrained inside the sphere.",
     "macrocodecrit": ""
   },
   {
@@ -2356,7 +2356,7 @@
     "name": "Telekinesis (creature)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Telekinesis (creature)</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or you move the creature up to 30 feet in any direction, including upward but not beyond the range of this spell. Until the end of your next turn, the creature is Restrained in your telekinetic grip.",
+    "macrocode": "<b><font color=\"Purple\">Telekinesis (creature)</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or you move the creature up to 30 feet in any direction + become Restrained.",
     "macrocodecrit": ""
   },
   {
@@ -2364,20 +2364,20 @@
     "name": "Telekinesis (object)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Telekinesis (object)</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or you pull the object away from that creature and can move it up to 30 feet in any direction but not beyond the range of this spell.",
+    "macrocode": "<b><font color=\"Purple\">Telekinesis (object)</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or you pull the object away from that creature and can move it up to 30 feet in any direction.",
     "macrocodecrit": ""
   },
   {
     "id": 312,
-    "name": "Transmute Rock (rock to mud, ground)",
+    "name": "Transmute Rock (rock to mud, ground) (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Transmute Rock (rock to mud, ground)</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or a creature sinks into the mud and is Restrained.",
+    "macrocode": "<b><font color=\"Purple\">Transmute Rock (rock to mud, ground)</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or sink into the mud and become Restrained.",
     "macrocodecrit": ""
   },
   {
     "id": 313,
-    "name": "Transmute Rock (rock to mud, ceiling)",
+    "name": "Transmute Rock (rock to mud, ceiling) (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "5th Level",
     "macrocode": "<b><font color=\"Purple\">Transmute Rock (rock to mud, ceiling)</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Blu = 4d8] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage.",
@@ -2385,27 +2385,27 @@
   },
   {
     "id": 314,
-    "name": "Transmute Rock (mud to rock, ground)",
+    "name": "Transmute Rock (mud to rock, ground) (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Transmute Rock (mud to rock, ground)</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or a creature becomes Restrained by the rock.",
+    "macrocode": "<b><font color=\"Purple\">Transmute Rock (mud to rock, ground)</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or become Restrained by the rock.",
     "macrocodecrit": ""
   },
   {
     "id": 315,
-    "name": "Wall of Light (cast)",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nWhen you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.",
+    "name": "Wall of Light (cast) (5E)",
+    "description": "Replace INPUT with spellcasting ability.",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Wall of Light</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Rad = 4d8] ([t: floor(Rad/2)]) <font color=\"Orange\">☀</font> damage. On fail, become Blinded.",
+    "macrocode": "<b><font color=\"Purple\">Wall of Light (cast)</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Rad = 4d8] ([t: floor(Rad/2)]) <font color=\"Orange\">☀</font> damage. On fail, become Blinded.",
     "macrocodecrit": ""
   },
   {
     "id": 316,
-    "name": "Wall of Light (attack)",
+    "name": "Wall of Light (attack) (5E)",
     "description": "A spell used with a spell attack action.",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Wall of Light</font></b> => [t: 4d8] <font color=\"Orange\">☀</font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Wall of Light Crit Damage</font></b> => [t: 8d8] <font color=\"Orange\">☀</font> damage!"
+    "macrocode": "<b><font color=\"Purple\">Wall of Light (attack)</font></b> => [t: 4d8] <font color=\"Orange\">☀</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Wall of Light Crit Damage (attack)</font></b> => [t: 8d8] <font color=\"Orange\">☀</font> damage!"
   },
   {
     "id": 317,
@@ -2417,7 +2417,7 @@
   },
   {
     "id": 318,
-    "name": "Wrath Of Nature (trees)",
+    "name": "Wrath Of Nature (trees) (5E)",
     "description": "",
     "category": "5th Level",
     "macrocode": "<b><font color=\"Purple\">Wrath Of Nature (trees)</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: 4d6] <font color=\"Silver\">🔪</font> damage.",
@@ -2425,19 +2425,19 @@
   },
   {
     "id": 319,
-    "name": "Wrath Of Nature (roots and vines)",
+    "name": "Wrath Of Nature (roots & vines) (5E)",
     "description": "",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Wrath Of Nature (roots and vines)</font></b> => DC [r: 8 + Wisdom + Proficiency] Strength Save or become Restrained.",
+    "macrocode": "<b><font color=\"Purple\">Wrath Of Nature (roots & vines)</font></b> => DC [r: 8 + Wisdom + Proficiency] Strength Save or become Restrained.",
     "macrocodecrit": ""
   },
   {
     "id": 320,
-    "name": "Wrath Of Nature (rocks)",
+    "name": "Wrath Of Nature (rocks) (5E)",
     "description": "A spell used with a spell attack action.",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Wrath Of Nature Damage</font></b> => [t: 3d8] <font color=\"Silver\">🔨</font> damage + DC [r: 8 + Wisdom + Proficiency] Strength Save or fall Prone.",
-    "macrocodecrit": "<b><font color=\"Teal\">Wrath Of Nature (rocks) Crit Damage</font></b> => [t: 6d8] <font color=\"Silver\">🔨</font> damage + DC [r: 8 + Wisdom + Proficiency] Strength Save or fall Prone!"
+    "macrocode": "<b><font color=\"Purple\">Wrath Of Nature Damage</font></b> => [t: 3d8] <font color=\"Silver\">🔨</font> damage + DC [r: 8 + Wisdom + Proficiency] Strength Save or become Prone.",
+    "macrocodecrit": "<b><font color=\"Teal\">Wrath Of Nature (rocks) Crit Damage</font></b> => [t: 6d8] <font color=\"Silver\">🔨</font> damage + DC [r: 8 + Wisdom + Proficiency] Strength Save or become Prone!"
   },
   {
     "id": 321,
@@ -2664,16 +2664,8 @@
     "macrocodecrit": ""
   },
   {
-    "id": 350,
-    "name": "Tenser's Transformation (health)\r\n",
-    "description": "",
-    "category": "6th Level",
-    "macrocode": "<b><font color=\"Purple\">Tenser's Transformation</font></b> => [t: 50] temporary hit points.",
-    "macrocodecrit": ""
-  },
-  {
     "id": 351,
-    "name": "Tenser's Transformation (attack)",
+    "name": "Tenser's Transformation (5E)",
     "description": "A spell used with an attack action.",
     "category": "6th Level",
     "macrocode": "<b><font color=\"Purple\">Tenser's Transformation Extra Damage</font></b> => [t: 2d12] <font color=\"Blue\">✊</font> damage.",
@@ -2684,7 +2676,7 @@
     "name": "Wall of Ice (cast)",
     "description": "",
     "category": "6th Level",
-    "macrocode": "<b><font color=\"Purple\">Wall of Ice</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Col = 10d6] ([t: floor(Col/2)]) <font color=\"Blue\">❄</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Wall of Ice (cast)</font></b> => DC [r: 8 + Intelligence + Proficiency] Dexterity Save or take => [t: Col = 10d6] ([t: floor(Col/2)]) <font color=\"Blue\">❄</font> damage.",
     "macrocodecrit": ""
   },
   {
@@ -2692,7 +2684,7 @@
     "name": "Wall of Ice (enter)",
     "description": "",
     "category": "6th Level",
-    "macrocode": "<b><font color=\"Purple\">Wall of Ice</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Col = 5d6] ([t: floor(Col/2)]) <font color=\"Blue\">❄</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Wall of Ice (active)</font></b> => DC [r: 8 + Intelligence + Proficiency] Constitution Save or take => [t: Col = 5d6] ([t: floor(Col/2)]) <font color=\"Blue\">❄</font> damage.",
     "macrocodecrit": ""
   },
   {
@@ -2700,7 +2692,7 @@
     "name": "Wall of Thorns (cast)",
     "description": "",
     "category": "6th Level",
-    "macrocode": "<b><font color=\"Purple\">Wall of Thorns</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Pie = 7d8] ([t: floor(Pie/2)]) <font color=\"Silver\">📍</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Wall of Thorns (cast)</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Pie = 7d8] ([t: floor(Pie/2)]) <font color=\"Silver\">📍</font> damage.",
     "macrocodecrit": ""
   },
   {
@@ -2708,7 +2700,7 @@
     "name": "Wall of Thorns (enter)",
     "description": "",
     "category": "6th Level",
-    "macrocode": "<b><font color=\"Purple\">Wall of Thorns</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Sla = 7d8] ([t: floor(Sla/2)]) <font color=\"Silver\">🔪</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Wall of Thorns (enter)</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Sla = 7d8] ([t: floor(Sla/2)]) <font color=\"Silver\">🔪</font> damage.",
     "macrocodecrit": ""
   },
   {
@@ -2905,15 +2897,15 @@
   },
   {
     "id": 387,
-    "name": "Teleport (mishap)",
+    "name": "Teleport",
     "description": "",
     "category": "7th Level",
-    "macrocode": "<b><font color=\"Purple\">Teleport (mishap)</font></b> => [t: 3d10] <font color=\"Blue\">✊</font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Mordenkainen's Sword Crit Damage</font></b> => [t: 6d10] <font color=\"Blue\">✊</font> damage!"
+    "macrocode": "<b><font color=\"Purple\">Teleport</font></b> => [t: 3d10] <font color=\"Blue\">✊</font> damage.",
+    "macrocodecrit": ""
   },
   {
     "id": 388,
-    "name": "Temple of the Gods (enter)",
+    "name": "Temple of the Gods (enter) (5E)",
     "description": "",
     "category": "7th Level",
     "macrocode": "<b><font color=\"Purple\">Temple of the Gods</font></b> => DC [r: 8 + Wisdom + Proficiency] Charisma Save or it can’t enter the temple for 24 hours.",
@@ -2921,7 +2913,7 @@
   },
   {
     "id": 389,
-    "name": "Temple of the Gods (active)",
+    "name": "Temple of the Gods (active) (5E)",
     "description": "",
     "category": "7th Level",
     "macrocode": "<b><font color=\"Purple\">Temple of the Gods</font></b> => [t: 1d4].",
@@ -2929,7 +2921,7 @@
   },
   {
     "id": 390,
-    "name": "Tether Essence",
+    "name": "Tether Essence (5E)",
     "description": "",
     "category": "7th Level",
     "macrocode": "<b><font color=\"Purple\">Tether Essence</font></b> => DC [r: 8 + Intelligence + Proficiency] Constitution Save or the creatures are magically linked for the duration + fall under the effects of the spell.",
@@ -2937,7 +2929,7 @@
   },
   {
     "id": 391,
-    "name": "Whirlwind (enter)",
+    "name": "Whirlwind (enter) (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "7th Level",
     "macrocode": "<b><font color=\"Purple\">Whirlwind (enter)</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Blu = 10d6] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage + a Large or smaller creature that fails the save => DC [r: 8 + INPUT + Proficiency] Strength Save or become Restrained.",
@@ -2945,10 +2937,10 @@
   },
   {
     "id": 392,
-    "name": "Whirlwind (escape)",
+    "name": "Whirlwind (escape) (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "8th Level",
-    "macrocode": "<b><font color=\"Purple\">Whirlwind (escape)</font></b> => DC [r: 8 + INPUT + Proficiency] Strength/Dexterity Save. On success, the creature is no longer Restrained by the whirlwind and is hurled [t: 3d6 * 10] feet away from it in a random direction.",
+    "macrocode": "<b><font color=\"Purple\">Whirlwind (escape)</font></b> => DC [r: 8 + INPUT + Proficiency] Strength/Dexterity Save. On success, no longer Restrained and is hurled [t: 3d6 * 10] feet away from it in a random direction.",
     "macrocodecrit": ""
   },
   {
@@ -3084,7 +3076,7 @@
     "name": "Tsunami (cast)",
     "description": "",
     "category": "8th Level",
-    "macrocode": "<b><font color=\"Purple\">Tsunami</font></b> => DC [r: 8 + Wisdom + Proficiency] Strength Save or take => [t: Blu = 6d10] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Tsunami (cast)</font></b> => DC [r: 8 + Wisdom + Proficiency] Strength Save or take => [t: Blu = 6d10] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage.",
     "macrocodecrit": ""
   },
   {
@@ -3092,7 +3084,7 @@
     "name": "Tsunami (active)",
     "description": "",
     "category": "8th Level",
-    "macrocode": "[h: input(\"Tsunami_Strength\")]\r\n<b><font color=\"Purple\">Tsunami</font></b> => DC [r: 8 + Wisdom + Proficiency] Strength Save or take => [t: roll(Tsunami_Strength,10)] <font color=\"Silver\">🔨</font> damage.",
+    "macrocode": "[h: input(\"Dice_Number\")] [h, if(Dice_Number == \"0\"), CODE:{ [h: Num = 1] };{ [h: Num = Dice_Number] }] <b><font color=\"Purple\">Tsunami (active)</font></b> => DC [t: 8 + Wisdom + Proficiency] Strength Save or take => [h: Dice = roll(Num,10)] ([r: Num]d10) [t: Dice] <font color=\"Silver\">🔨</font> damage.",
     "macrocodecrit": ""
   },
   {
@@ -3100,7 +3092,7 @@
     "name": "Tsunami (escape)",
     "description": "",
     "category": "8th Level",
-    "macrocode": "<b><font color=\"Purple\">Tsunami</font></b> => DC [r: 8 + Wisdom + Proficiency] Athletics Save or it can’t move.",
+    "macrocode": "<b><font color=\"Purple\">Tsunami (escape)</font></b> => DC [r: 8 + Wisdom + Proficiency] Athletics Save or it can’t move.",
     "macrocodecrit": ""
   },
   {
@@ -3188,7 +3180,7 @@
     "name": "Time Stop",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "9th Level",
-    "macrocode": "<b><font color=\"Purple\">Time Stop</font></b> => DC [t: 1d4 + 1] turns in a row, during which you can use actions and move as normal.",
+    "macrocode": "<b><font color=\"Purple\">Time Stop</font></b> => DC [t: 1d4 + 1] turns.",
     "macrocodecrit": ""
   },
   {
@@ -3204,7 +3196,7 @@
     "name": "Weird (cast)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "9th Level",
-    "macrocode": "<b><font color=\"Purple\">Weird</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or a creature becomes Frightened.",
+    "macrocode": "<b><font color=\"Purple\">Weird (cast)</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or take => [t: Psy = 10d10] ([t: floor(Psy/2)]) <font color=\"Purple\">👁</font> damage + become Frightened.",
     "macrocodecrit": ""
   },
   {
@@ -3212,15 +3204,15 @@
     "name": "Weird (active)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "9th Level",
-    "macrocode": "<b><font color=\"Purple\">Weird</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or take => [t: Psy = 4d10] <font color=\"Purple\">👁</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Weird (active)</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or take => [t: 5d10] <font color=\"Purple\">👁</font> damage.",
     "macrocodecrit": ""
   },
   {
     "id": 435,
-    "name": "Wish (weakened)",
+    "name": "Wish (weak)",
     "description": "",
     "category": "9th Level",
-    "macrocode": "<b><font color=\"Purple\">Wish (weakened)</font></b> => [t: 1d10] <font color=\"Purple\">💀</font> damage.",
+    "macrocode": "[h: input(\"Dice_Number|1|Number of d10s to roll\")] [h: Num = max(1, floor(Dice_Number))] [h: Dice = roll(Num, 10)] <b><font color=\"Purple\">Wish (weak)</font></b> => ([r: Num]d10) = [t: Dice] <font color=\"Purple\">💀</font> damage.",
     "macrocodecrit": ""
   },
   {
@@ -3694,5 +3686,29 @@
     "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Starry Wisp Damage</font></b> => [t: 1d8] <font color=\"Orange\">☀</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Starry Wisp Crit Damage</font></b> => [t: 2d8] <font color=\"Orange\">☀</font> damage!"
+  },
+  {
+    "id": 495,
+    "name": "True Strike",
+    "description": "A spell used with a spell attack action.\r\n\r\nReplace INPUT with spellcasting ability.\r\n\r\nThe attack deals extra Radiant damage when you reach levels 5 (1d6), 11 (2d6), and 17 (3d6).",
+    "category": "Cantrips",
+    "macrocode": "<b><font color=\"Purple\">True Strike Extra Damage</font></b> => [t: 1d6] damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">True Strike Extra Crit Damage</font></b> => [t: 2d6] damage!"
+  },
+  {
+    "id": 496,
+    "name": "Witch Bolt (active)",
+    "description": "",
+    "category": "1st Level",
+    "macrocode": "<b><font color=\"Purple\">Witch Bolt (active)</font></b> => [t: 1d12] <font color=\"Blue\">✴</font> damage.",
+    "macrocodecrit": ""
+  },
+  {
+    "id": 497,
+    "name": "Yolande’s Regal Presence",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "5th Level",
+    "macrocode": "<b><font color=\"Purple\">Yolande’s Regal Presence</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or take => [t: Psy = 4d6] ([t: floor(Psy/2)]) <font color=\"Purple\">👁</font> damage + become Prone.",
+    "macrocodecrit": ""
   }
 ]
