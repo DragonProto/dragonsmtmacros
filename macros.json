@@ -417,19 +417,19 @@
   },
   {
     "id": 53,
-    "name": "Booming Blade Movement Damage (5E)",
-    "description": "This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+    "name": "Booming Blade (movement) (Tasha)",
+    "description": "A spell used with a spell attack action.\r\n\r\nThe damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).",
     "category": "Cantrips",
-    "macrocode": "<b><font color=\"Purple\">Booming Blade Movement Damage</font></b> => [t: 1d8] <font color=\"Gray\">💥</font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Booming Blade Movement Crit Damage</font></b> => [t: 2d8] <font color=\"Gray\">💥</font> damage!"
+    "macrocode": "<b><font color=\"Purple\">Booming Blade Movement Damage  (movement)</font></b> => [t: 1d8] <font color=\"Gray\">💥</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Booming Blade Movement Crit Damage (movement)</font></b> => [t: 2d8] <font color=\"Gray\">💥</font> damage!"
   },
   {
     "id": 54,
-    "name": "Booming Blade Extra Damage (5E)",
-    "description": "This spell’s damage increases by 1d8 when you reach 11th level (2d8), and 17th level (3d8).",
+    "name": "Booming Blade (attack) (Tasha)",
+    "description": "A spell used with a spell attack action.\r\n\r\nThe damage increases by 1d8 when you reach levels 5 (1d8), 11 (2d8), and 17 (3d8).",
     "category": "Cantrips",
-    "macrocode": "<b><font color=\"Purple\">Booming Blade Extra Damage</font></b> => [t: 1d8] <font color=\"Gray\">💥</font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Booming Blade Extra Crit Damage</font></b> => [t: 2d8] <font color=\"Gray\">💥</font> damage!"
+    "macrocode": "<b><font color=\"Purple\">Booming Blade Extra Damage (attack)</font></b> => [t: 1d8] <font color=\"Gray\">💥</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Booming Blade Extra Crit Damage  (attack)</font></b> => [t: 2d8] <font color=\"Gray\">💥</font> damage!"
   },
   {
     "id": 55,
@@ -441,8 +441,8 @@
   },
   {
     "id": 56,
-    "name": "Create Bonfire (5E)",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThis spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+    "name": "Create Bonfire (Xanathar)",
+    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).",
     "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Create Bonfire</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: 1d8] <font color=\"Orange\">🔥</font> damage.",
     "macrocodecrit": ""
@@ -457,48 +457,48 @@
   },
   {
     "id": 58,
-    "name": "Frostbite (5E)",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
+    "name": "Frostbite (Xanathar)",
+    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).",
     "category": "Cantrips",
-    "macrocode": "<b><font color=\"Purple\">Frostbite</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: 1d6] <font color=\"Blue\">❄</font> damage + it has disadvantage on the next weapon attack roll it makes before the end of its next turn.",
+    "macrocode": "<b><font color=\"Purple\">Frostbite</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: 1d6] <font color=\"Blue\">❄</font> damage.",
     "macrocodecrit": ""
   },
   {
     "id": 59,
-    "name": "Green-Flame Blade Leap Damage (5E)",
-    "description": "Replace INPUT with spellcasting ability modifier.\r\n\r\nThis spell’s damage increases by 1d8 when you reach 5th level (1d8), 11th level (2d8), and 17th level (3d8).",
+    "name": "Green-Flame Blade (leap) (Tasha)",
+    "description": "A spell used with a spell attack action.\r\n\r\nReplace INPUT with spellcasting ability.\r\n\r\nThis spell’s damage increases by 1d8 when you reach 5th level (1d8), 11th level (2d8), and 17th level (3d8).",
     "category": "Cantrips",
-    "macrocode": "<b><font color=\"Purple\">Green-Flame Blade Leap Damage</font></b> => [t: 0d8 + INPUT] <font color=\"Orange\">🔥</font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Green-Flame Blade Leap Crit Damage</font></b> => [t: 0d8 + INPUT] <font color=\"Orange\">🔥</font> damage!"
+    "macrocode": "<b><font color=\"Purple\">Green-Flame Blade Leap Damage (leap)</font></b> => [t: 0d8 + INPUT] <font color=\"Orange\">🔥</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Green-Flame Blade Leap Crit Damage (leap)</font></b> => [t: 0d8 + INPUT] <font color=\"Orange\">🔥</font> damage!"
   },
   {
     "id": 60,
-    "name": "Green-Flame Blade Extra Damage (5E)",
-    "description": "This spell’s damage increases by 1d8 when you reach 5th level (1d8), 11th level (2d8), and 17th level (3d8).",
+    "name": "Green-Flame Blade (attack) (Tasha)",
+    "description": "A spell used with an attack action.\r\n\r\nThe damage increases by 1d8 when you reach levels 5 (1d8), 11 (2d8), and 17 (3d8).",
     "category": "Cantrips",
-    "macrocode": "<b><font color=\"Purple\">Green-Flame Blade Extra Damage</font></b> => [t: 1d8] <font color=\"Orange\">🔥</font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Green-Flame Blade Extra Crit Damage</font></b> => [t: 2d8] <font color=\"Orange\">🔥</font> damage!"
+    "macrocode": "<b><font color=\"Purple\">Green-Flame Blade Extra Damage (attack)</font></b> => [t: 1d8] <font color=\"Orange\">🔥</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Green-Flame Blade Extra Crit Damage (attack)</font></b> => [t: 2d8] <font color=\"Orange\">🔥</font> damage!"
   },
   {
     "id": 61,
-    "name": "Gust (5E)",
+    "name": "Gust (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "Cantrips",
-    "macrocode": "<b><font color=\"Purple\">Gust</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or become pushed up to 5 feet away from you.",
+    "macrocode": "<b><font color=\"Purple\">Gust</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or become pushed up to 5 feet away.",
     "macrocodecrit": ""
   },
   {
     "id": 62,
-    "name": "Infestation (5E)",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).\r\n\r\nRemember to edit the damage dice according to level.",
+    "name": "Infestation (Xanathar)",
+    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).",
     "category": "Cantrips",
-    "macrocode": "<b><font color=\"Purple\">Infestation</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: 1d6] <font color=\"Green\">☠</font> damage + move 5 feet in listed direction [t: 1d4] if it can move and its speed is at least 5 feet.",
+    "macrocode": "<b><font color=\"Purple\">Infestation</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: 1d6] <font color=\"Green\">☠</font> damage + move 5 feet in listed direction [t: 1d4].",
     "macrocodecrit": ""
   },
   {
     "id": 63,
-    "name": "Lightning Lure (5E)",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThis spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).\r\n\r\nRemember to edit the damage dice according to level.",
+    "name": "Lightning Lure (Tasha)",
+    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).",
     "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Lightning Lure</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or be pulled up to 10 feet in a straight line toward you + take => [t: 1d8] <font color=\"Blue\">✴</font> damage if it is within 5 feet of you.",
     "macrocodecrit": ""
@@ -537,8 +537,8 @@
   },
   {
     "id": 68,
-    "name": "Sword Burst (5E)",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThis spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
+    "name": "Sword Burst (Tasha)",
+    "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).",
     "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Sword Burst Damage</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: 1d6] <font color=\"Blue\">✊</font> damage.",
     "macrocodecrit": ""
@@ -593,8 +593,8 @@
   },
   {
     "id": 75,
-    "name": "Magic Stone (5E)",
-    "description": "Replace INPUT with spellcasting ability.\r\n\r\nA spell used with a spell attack action.",
+    "name": "Magic Stone (Xanathar)",
+    "description": "A spell used with a spell attack action.\r\n\r\nReplace INPUT with spellcasting ability.",
     "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Magic Stone Damage</font></b> => [t: 1d6 + INPUT] <font color=\"Silver\">🔨</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Magic Stone Crit Damage</font></b> => [t: 2d6 + INPUT] <font color=\"Silver\">🔨</font> damage!"
@@ -609,8 +609,8 @@
   },
   {
     "id": 77,
-    "name": "Primal Savagery (5E)",
-    "description": "A spell used with a spell attack action.\r\n\r\nThe spell’s damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).\r\n\r\nRemember to edit the damage dice according to level.",
+    "name": "Primal Savagery (Xanathar)",
+    "description": "A spell used with a spell attack action.\r\n\r\nThe damage increases by 1d10 when you reach levels 5l (2d10), 11 (3d10), and 17 (4d10).",
     "category": "Cantrips",
     "macrocode": "<b><font color=\"Purple\">Primal Savagery Damage</font></b> => [t: 1d10] <font color=\"Green\">🔥</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Primal Savagery Crit Damage</font></b> => [t: 2d10] <font color=\"Green\">🔥</font> damage!"
@@ -673,15 +673,15 @@
   },
   {
     "id": 85,
-    "name": "Absorb Elements (5E)",
-    "description": "",
+    "name": "Absorb Elements (Xanathar)",
+    "description": "A spell used with an attack action.",
     "category": "1st Level",
-    "macrocode": "<b><font color=\"Purple\">Absorb Elements</font></b> => [t: 1d6].",
-    "macrocodecrit": ""
+    "macrocode": "<b><font color=\"Purple\">Absorb Elements Extra Damage</font></b> => [t: 1d6] damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Absorb Elements Extra Crit Damage</font></b> => [t: 2d6] damage!"
   },
   {
     "id": 86,
-    "name": "Catapult (5E)",
+    "name": "Catapult (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "1st Level",
     "macrocode": "<b><font color=\"Purple\">Catapult</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: 3d8] <font color=\"Silver\">🔨</font> damage.",
@@ -721,18 +721,18 @@
   },
   {
     "id": 93,
-    "name": "Snare (trigger) (5E)",
+    "name": "Snare (trigger) (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "1st Level",
-    "macrocode": "<b><font color=\"Purple\">Snare (trigger)</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or fall Prone and be hoisted into the air hanging upside down Restrained.",
+    "macrocode": "<b><font color=\"Purple\">Snare (trigger)</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or become Restrained.",
     "macrocodecrit": ""
   },
   {
     "id": 94,
-    "name": "Tasha's Caustic Brew (5E)",
+    "name": "Tasha's Caustic Brew (Tasha)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "1st Level",
-    "macrocode": "<b><font color=\"Purple\">Tasha's Caustic Brew</font></b> =>DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: 2d4] <font color=\"Green\">🔥</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Tasha's Caustic Brew</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or become covered in Acid. A creature covered in acid takes => [t: 2d4] <font color=\"Green\">🔥</font> damage.",
     "macrocodecrit": ""
   },
   {
@@ -785,10 +785,10 @@
   },
   {
     "id": 103,
-    "name": "Earth Tremor (5E)",
+    "name": "Earth Tremor (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "1st Level",
-    "macrocode": "<b><font color=\"Purple\">Earth Tremor</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: 1d6] <font color=\"Silver\">🔨</font> damage + is knocked Prone.",
+    "macrocode": "<b><font color=\"Purple\">Earth Tremor</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: 1d6] <font color=\"Silver\">🔨</font> damage + become Prone.",
     "macrocodecrit": ""
   },
   {
@@ -841,7 +841,7 @@
   },
   {
     "id": 111,
-    "name": "Ceremony (5E)",
+    "name": "Ceremony (Xanathar)",
     "description": "",
     "category": "1st Level",
     "macrocode": "<b><font color=\"Purple\">Ceremony</font></b> => [t: 1d4].",
@@ -961,7 +961,7 @@
   },
   {
     "id": 126,
-    "name": "Zephyr Strike (5E)",
+    "name": "Zephyr Strike (Xanathar)",
     "description": "A spell used with an attack action.",
     "category": "1st Level",
     "macrocode": "<b><font color=\"Purple\">Zephyr Strike Extra Damage</font></b> => [t: 1d8] <font color=\"Blue\">✊</font> damage.",
@@ -977,7 +977,7 @@
   },
   {
     "id": 128,
-    "name": "Chaos Bolt (5E)",
+    "name": "Chaos Bolt (Xanathar)",
     "description": "A spell used with a spell attack action.",
     "category": "1st Level",
     "macrocode": "<b><font color=\"Purple\">Chaos Bolt Damage</font></b> => [h: Dice1 = 1d8][h: Dice2 = 1d8][t: Dice1 + Dice2 + 1d6] damage. Damage type: [t: Dice1].",
@@ -1041,10 +1041,10 @@
   },
   {
     "id": 136,
-    "name": "Cause Fear (5E)",
+    "name": "Cause Fear (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "1st Level",
-    "macrocode": "<b><font color=\"Purple\">Cause Fear</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or become Frightened of you.",
+    "macrocode": "<b><font color=\"Purple\">Cause Fear</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or become Frightened.",
     "macrocodecrit": ""
   },
   {
@@ -1065,7 +1065,7 @@
   },
   {
     "id": 139,
-    "name": "Frost Fingers (5E)",
+    "name": "Frost Fingers (Icewind)",
     "description": "",
     "category": "1st Level",
     "macrocode": "<b><font color=\"Purple\">Frost Fingers</font></b> => DC [r: 8 + Intelligence + Proficiency] Constitution Save or take => [t: Col = 2d8] ([t: floor(Col/2)]) <font color=\"Blue\">❄</font> damage.",
@@ -1073,7 +1073,7 @@
   },
   {
     "id": 140,
-    "name": "Jim's Magic Missile (5E)",
+    "name": "Jim's Magic Missile (Acquisitions)",
     "description": "A spell used with a spell attack action.",
     "category": "1st Level",
     "macrocode": "<b><font color=\"Purple\">Jim's Magic Missile Damage</font></b> => [t: 2d4] <font color=\"Blue\">✊</font> damage.",
@@ -1121,7 +1121,7 @@
   },
   {
     "id": 147,
-    "name": "Pyrotechnics (5E)",
+    "name": "Pyrotechnics (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "2nd Level",
     "macrocode": "<b><font color=\"Purple\">Pyrotechnics</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or become Blinded.",
@@ -1201,7 +1201,7 @@
   },
   {
     "id": 158,
-    "name": "Spray Of Cards (5E)",
+    "name": "Spray Of Cards (Many Things)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "2nd Level",
     "macrocode": "<b><font color=\"Purple\">Spray Of Cards</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: For = 2d10] ([t: floor(For/2)]) <font color=\"Blue\">✊</font> damage + become Blinded.",
@@ -1241,18 +1241,18 @@
   },
   {
     "id": 163,
-    "name": "Dust Devil (5E)",
+    "name": "Dust Devil (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "2nd Level",
-    "macrocode": "<b><font color=\"Purple\">Dust Devil</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or take => [t: Blu = 1d8] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage. On fail, is pushed 10 feet away.",
+    "macrocode": "<b><font color=\"Purple\">Dust Devil</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or take => [t: Blu = 1d8] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage. On fail, become pushed 10 feet away.",
     "macrocodecrit": ""
   },
   {
     "id": 164,
-    "name": "Earthbind (5E)",
+    "name": "Earthbind (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "2nd Level",
-    "macrocode": "<b><font color=\"Purple\">Earthbind</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or its flying speed is reduced to 0 feet.",
+    "macrocode": "<b><font color=\"Purple\">Earthbind</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or flying speed is reduced to 0 feet.",
     "macrocodecrit": ""
   },
   {
@@ -1281,7 +1281,7 @@
   },
   {
     "id": 168,
-    "name": "Healing Spirit (5E)",
+    "name": "Healing Spirit (Xanathar)",
     "description": "",
     "category": "2nd Level",
     "macrocode": "<b><font color=\"Purple\">Healing Spirit</font></b> => [t: 1d6] <font color=\"Red\">➕</font> healing.",
@@ -1345,7 +1345,7 @@
   },
   {
     "id": 177,
-    "name": "Snare (check) (5E)",
+    "name": "Snare (check) (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "1st Level",
     "macrocode": "<b><font color=\"Purple\">Snare (check)</font></b> => DC [r: 8 + INPUT + Proficiency] Investigation Save or trap stays hidden.",
@@ -1361,7 +1361,7 @@
   },
   {
     "id": 179,
-    "name": "Ashardalon's Stride (5E)",
+    "name": "Ashardalon's Stride (Fizban)",
     "description": "",
     "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Ashardalon's Stride</font></b> => [t: 1d6] <font color=\"Orange\">🔥</font> damage.",
@@ -1409,7 +1409,7 @@
   },
   {
     "id": 185,
-    "name": "Aganazzar's Scorcher (5E)",
+    "name": "Aganazzar's Scorcher (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "2nd Level",
     "macrocode": "<b><font color=\"Purple\">Aganazzar's Scorcher</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 3d8] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage.",
@@ -1425,7 +1425,7 @@
   },
   {
     "id": 187,
-    "name": "Maximillian's Earthen Grasp (restrained) (5E)",
+    "name": "Maximillian's Earthen Grasp (restrained) (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "2nd Level",
     "macrocode": "<b><font color=\"Purple\">Maximillian's Earthen Grasp (restrained)</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or take => [t: Blu = 2d6] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage.",
@@ -1433,10 +1433,10 @@
   },
   {
     "id": 188,
-    "name": "Maximillian's Earthen Grasp (cast) (5E)",
+    "name": "Maximillian's Earthen Grasp (cast) (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "2nd Level",
-    "macrocode": "<b><font color=\"Purple\">Maximillian's Earthen Grasp (cast)</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or take => [t: 2d6] <font color=\"Silver\">🔨</font> damage + is Restrained.",
+    "macrocode": "<b><font color=\"Purple\">Maximillian's Earthen Grasp (cast)</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or take => [t: 2d6] <font color=\"Silver\">🔨</font> damage + become Restrained.",
     "macrocodecrit": ""
   },
   {
@@ -1449,10 +1449,10 @@
   },
   {
     "id": 190,
-    "name": "Rime's Binding Ice (5E)",
+    "name": "Rime's Binding Ice (Fizban)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "2nd Level",
-    "macrocode": "<b><font color=\"Purple\">Rime's Binding Ice</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Col = 3d8] ([t: floor(Col/2)]) <font color=\"Blue\">❄</font> damage. On fail, become hindered by ice and has its speed reduced to 0.",
+    "macrocode": "<b><font color=\"Purple\">Rime's Binding Ice</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Col = 3d8] ([t: floor(Col/2)]) <font color=\"Blue\">❄</font> damage. On fail, speed reduced to 0.",
     "macrocodecrit": ""
   },
   {
@@ -1465,7 +1465,7 @@
   },
   {
     "id": 192,
-    "name": "Shadow Blade (strength) (5E)",
+    "name": "Shadow Blade (strength) (Xanathar)",
     "description": "A spell used with a strength attack action.",
     "category": "2nd Level",
     "macrocode": "<b><font color=\"Purple\">Shadow Blade Damage</font></b> => [t: 2d8 + Strength] <font color=\"Purple\">👁</font> damage.",
@@ -1473,7 +1473,7 @@
   },
   {
     "id": 193,
-    "name": "Shadow Blade (dexterity) (5E)",
+    "name": "Shadow Blade (dexterity) (Xanathar)",
     "description": "A spell used with a dexterity attack action.",
     "category": "2nd Level",
     "macrocode": "<b><font color=\"Purple\">Shadow Blade Damage</font></b> => [t: 2d8 + Dexterity] <font color=\"Purple\">👁</font> damage.",
@@ -1481,7 +1481,7 @@
   },
   {
     "id": 194,
-    "name": "Snilloc's Snowball Storm (5E)",
+    "name": "Snilloc's Snowball Storm (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "2nd Level",
     "macrocode": "<b><font color=\"Purple\">Snilloc's Snowball Storm</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Col = 3d6] ([t: floor(Col/2)]) <font color=\"Blue\">❄</font> damage.",
@@ -1497,10 +1497,10 @@
   },
   {
     "id": 196,
-    "name": "Jim's Glowing Coin (5E)",
+    "name": "Jim's Glowing Coin (Acquisitions)",
     "description": "",
     "category": "2nd Level",
-    "macrocode": "<b><font color=\"Purple\">Jim's Glowing Coin</font></b> => DC [r: 8 + Intelligence + Proficiency] Wisdom Save or a creature has disadvantage on Perception checks and initiative rolls.",
+    "macrocode": "<b><font color=\"Purple\">Jim's Glowing Coin</font></b> => DC [r: 8 + Intelligence + Proficiency] Wisdom Save or become distracted.",
     "macrocodecrit": ""
   },
   {
@@ -1561,15 +1561,15 @@
   },
   {
     "id": 205,
-    "name": "Enemies Abound (5E)",
+    "name": "Enemies Abound (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "3rd Level",
-    "macrocode": "<b><font color=\"Purple\">Enemies Abound</font></b> => DC [r: 8 + INPUT + Proficiency] Intelligence Save or the target loses the ability to distinguish friend from foe, regarding all creatures it can see as enemies.",
+    "macrocode": "<b><font color=\"Purple\">Enemies Abound</font></b> => DC [r: 8 + INPUT + Proficiency] Intelligence Save or become affected by the spell.",
     "macrocodecrit": ""
   },
   {
     "id": 206,
-    "name": "Erupting Earth (5E)",
+    "name": "Erupting Earth (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Erupting Earth</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Blu = 3d12] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage.",
@@ -1577,10 +1577,10 @@
   },
   {
     "id": 207,
-    "name": "Fast Friends (5E)",
+    "name": "Fast Friends (Acquisitions)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "3rd Level",
-    "macrocode": "<b><font color=\"Purple\">Fast Friends</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or become Charmed. While the creature is charmed in this way, it undertakes to perform any services or activities you ask of it in a friendly manner, to the best of its ability.",
+    "macrocode": "<b><font color=\"Purple\">Fast Friends</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or become Charmed.",
     "macrocodecrit": ""
   },
   {
@@ -1601,7 +1601,7 @@
   },
   {
     "id": 210,
-    "name": "Flame Arrows (5E)",
+    "name": "Flame Arrows (Xanathar)",
     "description": "A spell used with an attack action.",
     "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Flame Arrows Extra Damage</font></b> => [t: 1d6] <font color=\"Orange\">🔥</font> damage.",
@@ -1649,15 +1649,15 @@
   },
   {
     "id": 216,
-    "name": "Incite Greed (5E)",
+    "name": "Incite Greed (Acquisition)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "3rd Level",
-    "macrocode": "<b><font color=\"Purple\">Incite Greed</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or be Charmed. While Charmed in this way, a creature can do nothing but use its movement to approach you in a safe manner.",
+    "macrocode": "<b><font color=\"Purple\">Incite Greed</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or become Charmed.",
     "macrocodecrit": ""
   },
   {
     "id": 217,
-    "name": "Life Transference (5E)",
+    "name": "Life Transference (Xanathar)",
     "description": "",
     "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Life Transference</font></b> => [t: Hea = 4d8] <font color=\"Purple\">💀</font> damage taken + [t: floor(Hea/2)] <font color=\"Red\">➕</font> healing.",
@@ -1705,18 +1705,10 @@
   },
   {
     "id": 224,
-    "name": "Melf's Minute Meteors (5E)",
+    "name": "Melf's Minute Meteors (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Melf's Minute Meteors</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 2d6] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage.",
-    "macrocodecrit": ""
-  },
-  {
-    "id": 225,
-    "name": "Motivational Speech (5E)",
-    "description": "",
-    "category": "3rd Level",
-    "macrocode": "<b><font color=\"Purple\">Motivational Speech</font></b> => [t: 5] temporary hit points + has advantage on Wisdom saving throws.",
     "macrocodecrit": ""
   },
   {
@@ -1737,8 +1729,8 @@
   },
   {
     "id": 228,
-    "name": "Spirit Shroud (5E)",
-    "description": "",
+    "name": "Spirit Shroud (Tasha)",
+    "description": "A spell used with an attack action.",
     "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Spirit Shroud Extra Damage</font></b> => [t: 1d8] damage + fall under the effect of the spell.",
     "macrocodecrit": "<b><font color=\"Teal\">Spirit Shroud Extra Crit Damage</font></b> => [t: 2d8] damage + fall under the effect of the spell!"
@@ -1753,7 +1745,7 @@
   },
   {
     "id": 230,
-    "name": "Thunder Step (5E)",
+    "name": "Thunder Step (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Thunder Step</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Thu = 3d10] ([t: floor(Thu/2)]) <font color=\"Gray\">💥</font> damage.",
@@ -1761,7 +1753,7 @@
   },
   {
     "id": 231,
-    "name": "Tidal Wave (5E)",
+    "name": "Tidal Wave (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Tidal Wave</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Blu = 4d8] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage. On fail, become Prone.",
@@ -1777,7 +1769,7 @@
   },
   {
     "id": 233,
-    "name": "Antagonize (5E)",
+    "name": "Antagonize (Many Things)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "3rd Level",
     "macrocode": "<b><font color=\"Purple\">Antagonize</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or take => [t: Psy = 4d4] ([t: floor(Psy/2)]) <font color=\"Purple\">👁</font> damage + fall under the effect of the spell.",
@@ -1801,15 +1793,15 @@
   },
   {
     "id": 236,
-    "name": "Elemental Bane (cast) (5E)",
+    "name": "Elemental Bane (cast) (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "4th Level",
-    "macrocode": "<b><font color=\"Purple\">Elemental Bane (cast)</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or be affected by the spell for its duration.",
+    "macrocode": "<b><font color=\"Purple\">Elemental Bane (cast)</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or become affected by the spell.",
     "macrocodecrit": ""
   },
   {
     "id": 237,
-    "name": "Elemental Bane (attacked) (5E)",
+    "name": "Elemental Bane (attacked) (Xanathar)",
     "description": "A spell used with an attack action.",
     "category": "4th Level",
     "macrocode": "<b><font color=\"Purple\">Elemental Bane (attacked) Extra Damage</font></b> => [t: 2d6] damage.",
@@ -1913,7 +1905,7 @@
   },
   {
     "id": 250,
-    "name": "Guardian of Nature (5E)",
+    "name": "Guardian of Nature (Xanathar)",
     "description": "A spell used with an attack action.",
     "category": "4th Level",
     "macrocode": "<b><font color=\"Purple\">Guardian of Nature Extra Damage</font></b> => [t: 1d6] <font color=\"Blue\">✊</font> damage.",
@@ -1953,15 +1945,15 @@
   },
   {
     "id": 256,
-    "name": "Raulothim's Psychic Lance (5E)",
+    "name": "Raulothim's Psychic Lance (Fizban)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "4th Level",
-    "macrocode": "<b><font color=\"Purple\">Raulothim's Psychic Lance</font></b> => DC [r: 8 + INPUT + Proficiency] Intelligence Save or take => [t: Blu = 7d6] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage + is Incapacitated. On fail, isn’t Incapacitated.",
+    "macrocode": "<b><font color=\"Purple\">Raulothim's Psychic Lance</font></b> => DC [r: 8 + INPUT + Proficiency] Intelligence Save or take => [t: Blu = 7d6] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage + become Incapacitated. On fail, isn’t Incapacitated.",
     "macrocodecrit": ""
   },
   {
     "id": 257,
-    "name": "Shadow Of Moil (5E)",
+    "name": "Shadow Of Moil (Xanathar)",
     "description": "",
     "category": "4th Level",
     "macrocode": "<b><font color=\"Purple\">Shadow Of Moil</font></b> => [t: 2d8] <font color=\"Purple\">💀</font> damage.",
@@ -1969,10 +1961,10 @@
   },
   {
     "id": 258,
-    "name": "Sickening Radiance (5E)",
+    "name": "Sickening Radiance (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "4th Level",
-    "macrocode": "<b><font color=\"Purple\">Sickening Radiance</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: 4d10] <font color=\"Orange\">☀</font> damage + it suffers one level of Exhaustion.",
+    "macrocode": "<b><font color=\"Purple\">Sickening Radiance</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: 4d10] <font color=\"Orange\">☀</font> damage + suffer one level of Exhaustion.",
     "macrocodecrit": ""
   },
   {
@@ -1985,7 +1977,7 @@
   },
   {
     "id": 260,
-    "name": "Storm Sphere (active) (5E)",
+    "name": "Storm Sphere (active) (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "4th Level",
     "macrocode": "<b><font color=\"Purple\">Storm Sphere (active)</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or take => [t: 2d6] <font color=\"Silver\">🔨</font> damage.",
@@ -1993,7 +1985,7 @@
   },
   {
     "id": 261,
-    "name": "Storm Sphere (bonus) (5E)",
+    "name": "Storm Sphere (bonus) (Xanathar)",
     "description": "A spell used with a spell attack action.",
     "category": "4th Level",
     "macrocode": "<b><font color=\"Purple\">Storm Sphere (bonus) Damage</font></b> => [t: 4d6] <font color=\"Blue\">✴</font> damage.",
@@ -2001,7 +1993,7 @@
   },
   {
     "id": 262,
-    "name": "Summon Greater Demon (5E)",
+    "name": "Summon Greater Demon (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "4th Level",
     "macrocode": "<b><font color=\"Purple\">Summon Greater Demon</font></b> => DC [r: 8 + INPUT + Proficiency] Charisma Save or your control of the demon ends.",
@@ -2033,10 +2025,10 @@
   },
   {
     "id": 266,
-    "name": "Watery Sphere (5E)",
+    "name": "Watery Sphere (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "4th Level",
-    "macrocode": "<b><font color=\"Purple\">Watery Sphere</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or become Restrained inside the sphere.",
+    "macrocode": "<b><font color=\"Purple\">Watery Sphere</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or become Restrained..",
     "macrocodecrit": ""
   },
   {
@@ -2145,15 +2137,15 @@
   },
   {
     "id": 283,
-    "name": "Control Winds (5E)",
+    "name": "Control Winds (Xanathar)",
     "description": "A spell used with a spell attack action.",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Control Winds</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or the creature is knocked Prone.",
+    "macrocode": "<b><font color=\"Purple\">Control Winds</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or become Prone.",
     "macrocodecrit": ""
   },
   {
     "id": 284,
-    "name": "Dawn (5E)",
+    "name": "Dawn (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "5th Level",
     "macrocode": "<b><font color=\"Purple\">Dawn</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Rad = 4d10] ([t: floor(Rad/2)]) <font color=\"Orange\">☀</font> damage.",
@@ -2185,18 +2177,18 @@
   },
   {
     "id": 288,
-    "name": "Enervation (cast) (5E)",
+    "name": "Enervation (cast) (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Enervation (cast)</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Nec = 4d8] ([t: floor(Nec/2)]) <font color=\"Purple\">💀</font> damage + you regain [t: Hea] ([t: floor(Hea/2)]) hit points.",
+    "macrocode": "<b><font color=\"Purple\">Enervation (cast)</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Nec = 4d8] ([t: floor(Nec/2)]) <font color=\"Purple\">💀</font> damage + regain ([t: floor(Nec/2)]) hit points.",
     "macrocodecrit": ""
   },
   {
     "id": 289,
-    "name": "Enervation (action) (5E)",
+    "name": "Enervation (action) (Xanathar)",
     "description": "",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Enervation (action)</font></b> => [t: Enervation = 4d8] <font color=\"Purple\">💀</font> damage + you regain [t: Enervation] hit points.",
+    "macrocode": "<b><font color=\"Purple\">Enervation (action)</font></b> => [t: Nec = 4d8] <font color=\"Purple\">💀</font> damage + regain ([t: floor(Nec/2)]) hit points.",
     "macrocodecrit": ""
   },
   {
@@ -2225,7 +2217,7 @@
   },
   {
     "id": 294,
-    "name": "Holy Weapon (active) (5E)",
+    "name": "Holy Weapon (active) (Xanathar)",
     "description": "A spell used with an attack action.",
     "category": "5th Level",
     "macrocode": "<b><font color=\"Purple\">Holy Weapon (active) Extra Damage</font></b> => [t: 2d8] <font color=\"Orange\">☀</font> damage.",
@@ -2233,7 +2225,7 @@
   },
   {
     "id": 295,
-    "name": "Holy Weapon (burst) (5E)",
+    "name": "Holy Weapon (burst) (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "5th Level",
     "macrocode": "<b><font color=\"Purple\">Holy Weapon (burst)</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Rad = 4d8] ([t: floor(Rad/2)]) <font color=\"Orange\">☀</font> damage. On fail, become Blinded.",
@@ -2241,18 +2233,18 @@
   },
   {
     "id": 296,
-    "name": "Immolation (cast) (5E)",
+    "name": "Immolation (cast) (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Immolation (cast)</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 7d6] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage. On fail, the target also burns.",
+    "macrocode": "<b><font color=\"Purple\">Immolation (cast)</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 8d6] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage.",
     "macrocodecrit": ""
   },
   {
     "id": 297,
-    "name": "Immolation (burn) (5E)",
+    "name": "Immolation (burn) (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Immolation (burn)</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 3d6] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Immolation (burn)</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 4d6] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage.",
     "macrocodecrit": ""
   },
   {
@@ -2265,10 +2257,10 @@
   },
   {
     "id": 299,
-    "name": "Maelstrom (5E)",
+    "name": "Maelstrom (Xanathar)",
     "description": "",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Maelstrom</font></b> => DC [r: 8 + Wisdom + Proficiency] Strength Save or take => [t: Blu = 4d10] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage + be pulled 10 feet toward the center.",
+    "macrocode": "<b><font color=\"Purple\">Maelstrom</font></b> => DC [r: 8 + Wisdom + Proficiency] Strength Save or take => [t: Blu = 6d6] <font color=\"Silver\">🔨</font> damage + be pulled 10 feet.",
     "macrocodecrit": ""
   },
   {
@@ -2284,23 +2276,23 @@
     "name": "Modify Memory (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Modify Memory</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or the target becomes Charmed + fall under the effect of the spell.",
+    "macrocode": "<b><font color=\"Purple\">Modify Memory</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or the target becomes Charmed + Incapacitated + fall under the effect of the spell.",
     "macrocodecrit": ""
   },
   {
     "id": 302,
-    "name": "Negative Energy Flood (default) (5E)",
+    "name": "Negative Energy Flood (default) (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Negative Energy Flood (default)</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Nec = 5d12] ([t: floor(Nec/2)]) <font color=\"Purple\">💀</font> damage. A target killed by this damage rises up as a zombie at the start of your next turn.",
+    "macrocode": "<b><font color=\"Purple\">Negative Energy Flood (default)</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Nec = 5d12] ([t: floor(Nec/2)]) <font color=\"Purple\">💀</font> damage.",
     "macrocodecrit": ""
   },
   {
     "id": 303,
-    "name": "Negative Energy Flood (undead)",
+    "name": "Negative Energy Flood (undead) (Xanathar)",
     "description": "",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Negative Energy Flood (undead)</font></b> => The target gains [h: Hea = 5d12] [t: floor(Hea/2)] temporary hit points.",
+    "macrocode": "<b><font color=\"Purple\">Negative Energy Flood (undead)</font></b> => Gain [h: Hea = 5d12] [t: floor(Hea/2)] temporary hit points.",
     "macrocodecrit": ""
   },
   {
@@ -2369,15 +2361,15 @@
   },
   {
     "id": 312,
-    "name": "Transmute Rock (rock to mud, ground) (5E)",
+    "name": "Transmute Rock (rock to mud, ground) (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Transmute Rock (rock to mud, ground)</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or sink into the mud and become Restrained.",
+    "macrocode": "<b><font color=\"Purple\">Transmute Rock (rock to mud, ground)</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or become Restrained.",
     "macrocodecrit": ""
   },
   {
     "id": 313,
-    "name": "Transmute Rock (rock to mud, ceiling) (5E)",
+    "name": "Transmute Rock (rock to mud, ceiling) (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "5th Level",
     "macrocode": "<b><font color=\"Purple\">Transmute Rock (rock to mud, ceiling)</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Blu = 4d8] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage.",
@@ -2385,15 +2377,15 @@
   },
   {
     "id": 314,
-    "name": "Transmute Rock (mud to rock, ground) (5E)",
+    "name": "Transmute Rock (mud to rock, ground) (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "5th Level",
-    "macrocode": "<b><font color=\"Purple\">Transmute Rock (mud to rock, ground)</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or become Restrained by the rock.",
+    "macrocode": "<b><font color=\"Purple\">Transmute Rock (mud to rock, ground)</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or become Restrained.",
     "macrocodecrit": ""
   },
   {
     "id": 315,
-    "name": "Wall of Light (cast) (5E)",
+    "name": "Wall of Light (cast) (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "5th Level",
     "macrocode": "<b><font color=\"Purple\">Wall of Light (cast)</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Rad = 4d8] ([t: floor(Rad/2)]) <font color=\"Orange\">☀</font> damage. On fail, become Blinded.",
@@ -2401,7 +2393,7 @@
   },
   {
     "id": 316,
-    "name": "Wall of Light (attack) (5E)",
+    "name": "Wall of Light (attack) (Xanathar)",
     "description": "A spell used with a spell attack action.",
     "category": "5th Level",
     "macrocode": "<b><font color=\"Purple\">Wall of Light (attack)</font></b> => [t: 4d8] <font color=\"Orange\">☀</font> damage.",
@@ -2417,7 +2409,7 @@
   },
   {
     "id": 318,
-    "name": "Wrath Of Nature (trees) (5E)",
+    "name": "Wrath Of Nature (trees) (Xanathar)",
     "description": "",
     "category": "5th Level",
     "macrocode": "<b><font color=\"Purple\">Wrath Of Nature (trees)</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: 4d6] <font color=\"Silver\">🔪</font> damage.",
@@ -2425,7 +2417,7 @@
   },
   {
     "id": 319,
-    "name": "Wrath Of Nature (roots & vines) (5E)",
+    "name": "Wrath Of Nature (roots & vines) (Xanathar)",
     "description": "",
     "category": "5th Level",
     "macrocode": "<b><font color=\"Purple\">Wrath Of Nature (roots & vines)</font></b> => DC [r: 8 + Wisdom + Proficiency] Strength Save or become Restrained.",
@@ -2433,7 +2425,7 @@
   },
   {
     "id": 320,
-    "name": "Wrath Of Nature (rocks) (5E)",
+    "name": "Wrath Of Nature (rocks) (Xanathar)",
     "description": "A spell used with a spell attack action.",
     "category": "5th Level",
     "macrocode": "<b><font color=\"Purple\">Wrath Of Nature Damage</font></b> => [t: 3d8] <font color=\"Silver\">🔨</font> damage + DC [r: 8 + Wisdom + Proficiency] Strength Save or become Prone.",
@@ -2449,7 +2441,7 @@
   },
   {
     "id": 322,
-    "name": "Bones of the Earth (cast) (5E)",
+    "name": "Bones of the Earth (cast) (Xanathar)",
     "description": "",
     "category": "6th Level",
     "macrocode": "<b><font color=\"Purple\">Bones of the Earth (cast))</font></b> => DC [r: 8 + Wisdom + Proficiency] Strength Save or be lifted by the pillar.",
@@ -2457,18 +2449,18 @@
   },
   {
     "id": 323,
-    "name": "Bones of the Earth (crushed) (5E)",
+    "name": "Bones of the Earth (crushed) (Xanathar)",
     "description": "",
     "category": "6th Level",
-    "macrocode": "<b><font color=\"Purple\">Bones of the Earth (crushed)</font></b> => [t: 6d6] <font color=\"Silver\">🔨</font> damage + is Restrained, pinched between the pillar and the obstacle.",
+    "macrocode": "<b><font color=\"Purple\">Bones of the Earth (crushed)</font></b> => [t: 6d6] <font color=\"Silver\">🔨</font> damage + become Restrained.",
     "macrocodecrit": ""
   },
   {
     "id": 324,
-    "name": "Bones of the Earth (escape) (5E)",
+    "name": "Bones of the Earth (escape) (Xanathar)",
     "description": "",
     "category": "6th Level",
-    "macrocode": "<b><font color=\"Purple\">Bones of the Earth (escape)</font></b> => DC [r: 8 + Wisdom + Proficiency] Strength/Dexterity Save or the creature is still Restrained.",
+    "macrocode": "<b><font color=\"Purple\">Bones of the Earth (escape)</font></b> => DC [r: 8 + Wisdom + Proficiency] Strength/Dexterity Save or stay Restrained.",
     "macrocodecrit": ""
   },
   {
@@ -2489,7 +2481,7 @@
   },
   {
     "id": 327,
-    "name": "Create Homunculus (5E)",
+    "name": "Create Homunculus (Xanathar)",
     "description": "",
     "category": "6th Level",
     "macrocode": "<b><font color=\"Purple\">Create Homunculus</font></b> => [t: 2d4] <font color=\"Silver\">📍</font> damage.",
@@ -2545,7 +2537,7 @@
   },
   {
     "id": 335,
-    "name": "Investiture of Flame (action) (5E)\r\n",
+    "name": "Investiture of Flame (action) (Xanathar)\r\n",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "6th Level",
     "macrocode": "<b><font color=\"Purple\">Investiture of Flame</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Fir = 4d8] ([t: floor(Fir/2)]) <font color=\"Orange\">🔥</font> damage.",
@@ -2553,7 +2545,7 @@
   },
   {
     "id": 336,
-    "name": "Investiture of Flame (cast) (5E)",
+    "name": "Investiture of Flame (cast) (Xanathar)",
     "description": "",
     "category": "6th Level",
     "macrocode": "<b><font color=\"Purple\">Investiture of Flame</font></b> => [t: 1d10] <font color=\"Orange\">🔥</font> damage.",
@@ -2561,26 +2553,26 @@
   },
   {
     "id": 337,
-    "name": "Investiture of Ice (5E)",
+    "name": "Investiture of Ice (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "6th Level",
-    "macrocode": "<b><font color=\"Purple\">Investiture of Ice</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Col = 4d6] ([t: floor(Col/2)]) <font color=\"Blue\">❄</font> damage. On fail, has its speed halved until the start of your next turn.",
+    "macrocode": "<b><font color=\"Purple\">Investiture of Ice</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Col = 4d6] ([t: floor(Col/2)]) <font color=\"Blue\">❄</font> damage.",
     "macrocodecrit": ""
   },
   {
     "id": 338,
-    "name": "Investiture of Stone (5E)",
+    "name": "Investiture of Stone (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "6th Level",
-    "macrocode": "<b><font color=\"Purple\">Investiture of Stone</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or become knocked Prone.",
+    "macrocode": "<b><font color=\"Purple\">Investiture of Stone</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or become Prone.",
     "macrocodecrit": ""
   },
   {
     "id": 339,
-    "name": "Investiture of Wind (5E)",
+    "name": "Investiture of Wind (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "6th Level",
-    "macrocode": "<b><font color=\"Purple\">Investiture of Wind</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Blu = 2d10] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage. On fail,  a Large or smaller creature is also pushed up to 10 feet away from the center of the cube.",
+    "macrocode": "<b><font color=\"Purple\">Investiture of Wind</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Blu = 2d10] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage.",
     "macrocodecrit": ""
   },
   {
@@ -2601,15 +2593,15 @@
   },
   {
     "id": 342,
-    "name": "Mental Prison (cast) (5E)",
+    "name": "Mental Prison (cast) (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "6th Level",
-    "macrocode": "<b><font color=\"Purple\">Mental Prison (cast)</font></b> => [t: 5d10] <font color=\"Purple\">👁</font> damage + DC [r: 8 + INPUT + Proficiency] Intelligence Save or the target is Blinded, Deafened and is Restrained inside whatever form the illusion takes.",
+    "macrocode": "<b><font color=\"Purple\">Mental Prison (cast)</font></b> => DC [r: 8 + INPUT + Proficiency] Intelligence Save or take => [t: Psy = 5d10] <font color=\"Purple\">👁</font> damage. On fail, become Restrained.",
     "macrocodecrit": ""
   },
   {
     "id": 343,
-    "name": "Mental Prison (escape) (5E)",
+    "name": "Mental Prison (escape) (Xanathar)",
     "description": "",
     "category": "6th Level",
     "macrocode": "<b><font color=\"Purple\">Mental Prison (escape)</font></b> => [t: 10d10] <font color=\"Purple\">👁</font> damage.",
@@ -2641,15 +2633,15 @@
   },
   {
     "id": 347,
-    "name": "Scatter (5E)",
+    "name": "Scatter (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "6th Level",
-    "macrocode": "<b><font color=\"Purple\">Scatter</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or fail to resist this spell.",
+    "macrocode": "<b><font color=\"Purple\">Scatter</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or become teleported.",
     "macrocodecrit": ""
   },
   {
     "id": 348,
-    "name": "Soul Cage (5E)",
+    "name": "Soul Cage (Xanathar)",
     "description": "",
     "category": "6th Level",
     "macrocode": "<b><font color=\"Purple\">Soul Cage</font></b> => [t: 2d8] <font color=\"Red\">➕</font> healing.",
@@ -2665,7 +2657,7 @@
   },
   {
     "id": 351,
-    "name": "Tenser's Transformation (5E)",
+    "name": "Tenser's Transformation (damage) (Xanathar)",
     "description": "A spell used with an attack action.",
     "category": "6th Level",
     "macrocode": "<b><font color=\"Purple\">Tenser's Transformation Extra Damage</font></b> => [t: 2d12] <font color=\"Blue\">✊</font> damage.",
@@ -2705,7 +2697,7 @@
   },
   {
     "id": 356,
-    "name": "Crown of Stars (5E)",
+    "name": "Crown of Stars (Xanathar)",
     "description": "A spell used with a spell attack action.",
     "category": "7th Level",
     "macrocode": "<b><font color=\"Purple\">Crown of Stars Damage</font></b> => [t: 4d12] <font color=\"Orange\">☀</font> damage.",
@@ -2737,7 +2729,7 @@
   },
   {
     "id": 360,
-    "name": "Draconic Transformation (5E)",
+    "name": "Draconic Transformation (Fizban)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "7th Level",
     "macrocode": "<b><font color=\"Purple\">Draconic Transformation</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: For = 6d8] ([t: floor(For/2)]) <font color=\"Blue\">✊</font> damage.",
@@ -2905,31 +2897,23 @@
   },
   {
     "id": 388,
-    "name": "Temple of the Gods (enter) (5E)",
+    "name": "Temple of the Gods (enter) (Xanathar)",
     "description": "",
     "category": "7th Level",
-    "macrocode": "<b><font color=\"Purple\">Temple of the Gods</font></b> => DC [r: 8 + Wisdom + Proficiency] Charisma Save or it can’t enter the temple for 24 hours.",
+    "macrocode": "<b><font color=\"Purple\">Temple of the Gods</font></b> => DC [r: 8 + Wisdom + Proficiency] Charisma Save or can’t enter the temple for 24 hours.",
     "macrocodecrit": ""
   },
   {
     "id": 389,
-    "name": "Temple of the Gods (active) (5E)",
+    "name": "Temple of the Gods (active) (Xanathar)",
     "description": "",
     "category": "7th Level",
     "macrocode": "<b><font color=\"Purple\">Temple of the Gods</font></b> => [t: 1d4].",
     "macrocodecrit": ""
   },
   {
-    "id": 390,
-    "name": "Tether Essence (5E)",
-    "description": "",
-    "category": "7th Level",
-    "macrocode": "<b><font color=\"Purple\">Tether Essence</font></b> => DC [r: 8 + Intelligence + Proficiency] Constitution Save or the creatures are magically linked for the duration + fall under the effects of the spell.",
-    "macrocodecrit": ""
-  },
-  {
     "id": 391,
-    "name": "Whirlwind (enter) (5E)",
+    "name": "Whirlwind (enter) (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "7th Level",
     "macrocode": "<b><font color=\"Purple\">Whirlwind (enter)</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Blu = 10d6] ([t: floor(Blu/2)]) <font color=\"Silver\">🔨</font> damage + a Large or smaller creature that fails the save => DC [r: 8 + INPUT + Proficiency] Strength Save or become Restrained.",
@@ -2937,18 +2921,18 @@
   },
   {
     "id": 392,
-    "name": "Whirlwind (escape) (5E)",
+    "name": "Whirlwind (escape) (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
-    "category": "8th Level",
-    "macrocode": "<b><font color=\"Purple\">Whirlwind (escape)</font></b> => DC [r: 8 + INPUT + Proficiency] Strength/Dexterity Save. On success, no longer Restrained and is hurled [t: 3d6 * 10] feet away from it in a random direction.",
+    "category": "7th Level",
+    "macrocode": "<b><font color=\"Purple\">Whirlwind (escape)</font></b> => DC [r: 8 + INPUT + Proficiency] Strength/Dexterity Save. On success, no longer Restrained and is hurled [t: 3d6 * 10] feet away.",
     "macrocodecrit": ""
   },
   {
     "id": 393,
-    "name": "Abi-Dalzim's Horrid Wilting (5E)",
+    "name": "Abi-Dalzim's Horrid Wilting (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "8th Level",
-    "macrocode": "<b><font color=\"Purple\">Abi-Dalzim's Horrid Wilting</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Nec = 10d8] ([t: floor(Nec/2)]) <font color=\"Purple\">💀</font> damage.",
+    "macrocode": "<b><font color=\"Purple\">Abi-Dalzim's Horrid Wilting</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Nec = 12d8] ([t: floor(Nec/2)]) <font color=\"Purple\">💀</font> damage.",
     "macrocodecrit": ""
   },
   {
@@ -3012,7 +2996,7 @@
     "name": "Feeblemind (5E)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "8th Level",
-    "macrocode": "<b><font color=\"Purple\">Feeblemind</font></b> => [t: Psy = 4d6] ([t: floor(Psy/2)]) <font color=\"Purple\">👁</font> damage + DC [r: 8 + INPUT + Proficiency] Intelligence Save or fall under the effects of the spell.",
+    "macrocode": "<b><font color=\"Purple\">Feeblemind</font></b> => [t: Psy = 4d6] ([t: floor(Psy/2)]) <font color=\"Purple\">👁</font> damage + DC [r: 8 + INPUT + Proficiency] Intelligence Save or become affected by the spell.",
     "macrocodecrit": ""
   },
   {
@@ -3025,15 +3009,15 @@
   },
   {
     "id": 404,
-    "name": "Illusory Dragon (cast) (5E)",
+    "name": "Illusory Dragon (cast) (Xanathar)",
     "description": "",
     "category": "8th Level",
-    "macrocode": "<b><font color=\"Purple\">Illusory Dragon (cast)</font></b> => DC [r: 8 + Intelligence + Proficiency] Wisdom Save or become Frightened of it for 1 minute.",
+    "macrocode": "<b><font color=\"Purple\">Illusory Dragon (cast)</font></b> => DC [r: 8 + Intelligence + Proficiency] Wisdom Save or become Frightened.",
     "macrocodecrit": ""
   },
   {
     "id": 405,
-    "name": "Illusory Dragon (cone) (5E)",
+    "name": "Illusory Dragon (cone) (Xanathar)",
     "description": "",
     "category": "8th Level",
     "macrocode": "<b><font color=\"Purple\">Illusory Dragon (cone)</font></b> => DC [r: 8 + Intelligence + Proficiency] Intelligence Save or take => [t: Any = 7d6] ([t: floor(Any/2)]) damage.",
@@ -3041,10 +3025,10 @@
   },
   {
     "id": 406,
-    "name": "Illusory Dragon (illusion) (5E)",
+    "name": "Illusory Dragon (illusion) (Xanathar)",
     "description": "",
     "category": "8th Level",
-    "macrocode": "<b><font color=\"Purple\">Illusory Dragon (illusion)</font></b> => DC [r: 8 + INPUT + Proficiency] Investigation Save or illusion stays active.",
+    "macrocode": "<b><font color=\"Purple\">Illusory Dragon (illusion)</font></b> => DC [r: 8 + Intelligence + Proficiency] Investigation Save or illusion stays active.",
     "macrocodecrit": ""
   },
   {
@@ -3057,7 +3041,7 @@
   },
   {
     "id": 408,
-    "name": "Maddening Darkness (5E)",
+    "name": "Maddening Darkness (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "8th Level",
     "macrocode": "<b><font color=\"Purple\">Maddening Darkness</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or take => [t: Psy = 8d8] ([t: floor(Psy/2)]) <font color=\"Purple\">👁</font> damage.",
@@ -3097,7 +3081,7 @@
   },
   {
     "id": 414,
-    "name": "Blade of Disaster (5E)",
+    "name": "Blade of Disaster (Tasha)",
     "description": "A spell used with a spell attack action.",
     "category": "9th Level",
     "macrocode": "<b><font color=\"Purple\">Blade of Disaster Damage</font></b> => [t: 4d12] <font color=\"Blue\">✊</font> damage.",
@@ -3113,10 +3097,10 @@
   },
   {
     "id": 417,
-    "name": "Mass Polymorph (5E)",
+    "name": "Mass Polymorph (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "9th Level",
-    "macrocode": "<b><font color=\"Purple\">Mass Polymorph</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or up to 10 creatures that you can see within range transforms into a new form.",
+    "macrocode": "<b><font color=\"Purple\">Mass Polymorph</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or shape-shift into beast form for the duration.",
     "macrocodecrit": ""
   },
   {
@@ -3169,7 +3153,7 @@
   },
   {
     "id": 430,
-    "name": "Psychic Scream (5E)",
+    "name": "Psychic Scream (Xanathar)",
     "description": "Replace INPUT with spellcasting ability.",
     "category": "9th Level",
     "macrocode": "<b><font color=\"Purple\">Psychic Scream</font></b> => DC [r: 8 + INPUT + Proficiency] Intelligence Save or take => [t: Psy = 14d6] ([t: floor(Psy/2)]) <font color=\"Purple\">👁</font> damage. On fail, is Stunned.",
@@ -3742,5 +3726,53 @@
     "category": "Martial Ranged Weapons",
     "macrocode": "<b><font color=\"Green\">Pistol Damage</font></b> => [t: 1d10 + Dexterity] <font color=\"Silver\">📍</font> damage.",
     "macrocodecrit": "<b><font color=\"Teal\">Pistol Crit Damage</font></b> => [t: 2d10 + Dexterity] <font color=\"Silver\">📍</font> damage!"
+  },
+  {
+    "id": 502,
+    "name": "Nathair's Mischief (surge)  (Fizban)",
+    "description": "",
+    "category": "2nd Level",
+    "macrocode": "<b><font color=\"Purple\">Nathair's Mischief (surge)</font></b> => [t: 1d4].",
+    "macrocodecrit": ""
+  },
+  {
+    "id": 503,
+    "name": "Nathair's Mischief (effect 1)  (Fizban)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "2nd Level",
+    "macrocode": "<b><font color=\"Purple\">Nathair's Mischief (effect 1)</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or become Charmed.",
+    "macrocodecrit": ""
+  },
+  {
+    "id": 504,
+    "name": "Nathair's Mischief (effect 2)  (Fizban)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "2nd Level",
+    "macrocode": "<b><font color=\"Purple\">Nathair's Mischief (effect 2)</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or become Blinded.",
+    "macrocodecrit": ""
+  },
+  {
+    "id": 505,
+    "name": "Nathair's Mischief (effect 3)  (Fizban)",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "2nd Level",
+    "macrocode": "<b><font color=\"Purple\">Nathair's Mischief (effect 3)</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or become Incapacitated.",
+    "macrocodecrit": ""
+  },
+  {
+    "id": 506,
+    "name": "Infernal Calling (Xanathar)",
+    "description": "",
+    "category": "5th Level",
+    "macrocode": "<b><font color=\"Purple\">Infernal Calling</font></b> => [t: 3d6].",
+    "macrocodecrit": ""
+  },
+  {
+    "id": 507,
+    "name": "Tenser’s Transformation (end) (Xanathar)",
+    "description": "",
+    "category": "6th Level",
+    "macrocode": "<b><font color=\"Purple\">Tenser’s Transformation</font></b> => DC [r: 8 + Intelligence + Proficiency] Constitution Save or suffer one level of Exhaustion.",
+    "macrocodecrit": ""
   }
 ]
