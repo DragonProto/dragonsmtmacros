@@ -16,3 +16,9 @@
     box-align: center;
     width: 90vw;
 }
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
