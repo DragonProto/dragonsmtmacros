@@ -22,3 +22,34 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+
+.transparent-nav {
+    background-color: rgba(255, 255, 255, 0.8); /* or whatever transparent bg you want */
+}
+
+.transparent-nav .btn {
+    opacity: 1 !important;
+    background-color: white; /* or your preferred button color */
+}
+
+.transparent-nav .btn-outline-primary {
+    color: #223832;
+    border-color: #223832;
+}
+
+.transparent-nav .btn-outline-primary:hover {
+    color: #ffffff;
+    background-color: #223832;
+    border-color: #223832;
+}
+
+.btn-light {
+    color: #223832;
+    border-color: #223832;
+}
+
+.btn-light:hover {
+    color: #ffffff;
+    background-color: #223832;
+    border-color: #223832;
+}
