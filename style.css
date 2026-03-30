@@ -19,7 +19,7 @@
 
 img {
     display: block;
-    margin-left: 10px;
+    margin-left: auto;
     margin-right: auto;
 }
 
@@ -38,25 +38,27 @@ img {
 }
 
 .transparent-nav .btn-outline-primary {
-    color: #223832;
-    border-color: #223832;
+    color: #ffffff;
+    background-color: #204040;
+    border-color: #204040;
 }
 
 .transparent-nav .btn-outline-primary:hover {
-    color: #bccfca;
-    background-color: #223832;
-    border-color: #223832;
+    color: #ffffff;
+    background-color: #406060;
+    border-color: #406060;
 }
 
 .btn-light {
-    color: #223832;
-    border-color: #223832;
+    color: #ffffff;
+    background-color: #204040;
+    border-color: #204040;
 }
 
 .btn-light:hover {
-    color: #bccfca;
-    background-color: #223832;
-    border-color: #223832;
+    color: #ffffff;
+    background-color: #406060;
+    border-color: #406060;
 }
 
 [id^="img"] {
@@ -74,4 +76,10 @@ img {
     align-self: flex-start;
     max-height: 90vh;
     overflow-y: auto;
+}
+
+.flex-grow-1 img {
+    display: block;
+    margin-left: 20px;
+    margin-right: auto;
 }
