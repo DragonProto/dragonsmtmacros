@@ -19,7 +19,7 @@
 
 img {
     display: block;
-    margin-left: auto;
+    margin-left: 10px;
     margin-right: auto;
 }
 
@@ -30,7 +30,7 @@ img {
 .transparent-nav .btn {
     opacity: 1;
     height: 52px;
-    background-color: #f5f8f8; /* or your preferred button color */
+    background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,5 +60,18 @@ img {
 }
 
 [id^="img"] {
-    scroll-margin-top: 130px; /* adjust to match the height of your sticky nav */
+    scroll-margin-top: 130px;
+}
+
+.side-nav {
+    position: sticky;
+    top: 10px;
+    width: 180px;
+    min-width: 180px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    max-height: 90vh;
+    overflow-y: auto;
 }
