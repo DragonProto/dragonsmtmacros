@@ -28,8 +28,13 @@ img {
 }
 
 .transparent-nav .btn {
-    opacity: 1 !important;
-    background-color: white; /* or your preferred button color */
+    opacity: 1;
+    height: 52px;
+    background-color: #f5f8f8; /* or your preferred button color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .transparent-nav .btn-outline-primary {
@@ -38,7 +43,7 @@ img {
 }
 
 .transparent-nav .btn-outline-primary:hover {
-    color: #ffffff;
+    color: #bccfca;
     background-color: #223832;
     border-color: #223832;
 }
@@ -49,7 +54,11 @@ img {
 }
 
 .btn-light:hover {
-    color: #ffffff;
+    color: #bccfca;
     background-color: #223832;
     border-color: #223832;
+}
+
+[id^="img"] {
+    scroll-margin-top: 130px; /* adjust to match the height of your sticky nav */
 }
