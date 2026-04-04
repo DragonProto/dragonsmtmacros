@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
-
 <body>
+    <div id="top"></div>
     <!-- Banner -->
     <div class="position-relative text-center">
         <img src="backgroundimage.jpg" class="banner-image w-100">
@@ -26,75 +25,211 @@
             </div>
         </div>
     </div>
-
     <!-- Main layout: side nav + images side by side -->
     <div class="container my-2 px-0">
         <div class="d-flex">
-
             <!-- Side nav -->
             <div class="side-nav transparent-nav">
-                <a class="btn btn-sm btn-outline-primary w-100 mb-2" href="#img1">Introduction: Welcome to Adventure</a>
-                <a class="btn btn-sm btn-outline-primary w-100 mb-2" href="#img2">Chapter 1: Playing the Game</a>
-                <a class="btn btn-sm btn-outline-primary w-100 mb-2" href="#img4">Chapter 2: Creating a Character</a>
-                <a class="btn btn-sm btn-outline-primary w-100 mb-2" href="#img6">Chapter 3: Character Classes</a>
-                <a class="btn btn-sm btn-outline-primary w-100 mb-2" href="#img10">Chapter 3: Character Classes (Continued)</a>
-                <a class="btn btn-sm btn-outline-primary w-100 mb-2" href="#img15">Chapter 4: Character Origins</a>
-                <a class="btn btn-sm btn-outline-primary w-100 mb-2" href="#img17">Chapter 5: Feats</a>
-                <a class="btn btn-sm btn-outline-primary w-100 mb-2" href="#img19">Chapter 6: Equipment</a>
-                <a class="btn btn-sm btn-outline-primary w-100 mb-2" href="#img21">Chapter 7: Spells</a>
-                <a class="btn btn-sm btn-outline-primary w-100 mb-2" href="#img30">Appendix A: The Multiverse</a>
-                <a class="btn btn-sm btn-outline-primary w-100 mb-2" href="#img31">Appendic B: Creature Stat Blocks</a>
-                <a class="btn btn-sm btn-outline-primary w-100 mb-2" href="#img33">Rules Glossary</a>
-            </div>
+                <!-- Chapter 1 dropdown -->
+                <div class="dropdown mb-2">
+                    <a class="btn btn-sm btn-outline-primary w-100 dropdown-toggle" href="#top">
+                        Introduction: Welcome to Adventure
+                    </a>
+                    <ul class="dropdown-menu w-100">
+                        <li><a class="dropdown-item" href="#img2">What You Need</a></li>
+                        <li><a class="dropdown-item" href="#img3">Using This Book</a></li>
+                        <li><a class="dropdown-item" href="#img4">Worlds of Adventure</a></li>
+                    </ul>
+                </div>
 
+                <!-- Chapter 1 dropdown -->
+                <div class="dropdown mb-2">
+                    <a class="btn btn-sm btn-outline-primary w-100 dropdown-toggle" href="#img5">
+                        Chapter 1: Playing the Game
+                    </a>
+                    <ul class="dropdown-menu w-100">
+                        <li><a class="dropdown-item" href="#img6">Player or DM?</a></li>
+                        <li><a class="dropdown-item" href="#img7">Rhythm of Play</a></li>
+                        <li><a class="dropdown-item" href="#img8">An Ongoing Game</a></li>
+                        <li><a class="dropdown-item" href="#img9">Dice</a></li>
+                        <li><a class="dropdown-item" href="#img10">The Six Abilities</a></li>
+                        <li><a class="dropdown-item" href="#img11">D20 Tests</a></li>
+                        <li><a class="dropdown-item" href="#img12">Proficiency</a></li>
+                        <li><a class="dropdown-item" href="#img13">Actions</a></li>
+                        <li><a class="dropdown-item" href="#img14">Social Interaction</a></li>
+                        <li><a class="dropdown-item" href="#img15">Exploration</a></li>
+                        <li><a class="dropdown-item" href="#img17">Combat</a></li>
+                        <li><a class="dropdown-item" href="#img18">Damage and Healing</a></li>
+                        <li><a class="dropdown-item" href="#img19">Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown mb-2">
+                    <a class="btn btn-sm btn-outline-primary w-100 dropdown-toggle" href="#img20">
+                        Chapter 2: Creating a Character
+                    </a>
+                    <ul class="dropdown-menu w-100">
+                        <li><a class="dropdown-item" href="#img21">Get Ready</a></li>
+                        <li><a class="dropdown-item" href="#img22">Create Your Character</a></li>
+                        <li><a class="dropdown-item" href="#img23">Level Advancement</a></li>
+                        <li><a class="dropdown-item" href="#img24">Starting at Higher Levels</a></li>
+                        <li><a class="dropdown-item" href="#img25">Multiclassing</a></li>
+                        <li><a class="dropdown-item" href="#img26">Trinkets</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown mb-2">
+                    <a class="btn btn-sm btn-outline-primary w-100 dropdown-toggle" href="#img28">
+                        Chapter 3: Character Classes
+                    </a>
+                    <ul class="dropdown-menu w-100">
+                        <li><a class="dropdown-item" href="#img29">Barbarian</a></li>
+                        <li><a class="dropdown-item" href="#img30">Bard</a></li>
+                        <li><a class="dropdown-item" href="#img32">Cleric</a></li>
+                        <li><a class="dropdown-item" href="#img33">Druid</a></li>
+                        <li><a class="dropdown-item" href="#img35">Fighter</a></li>
+                        <li><a class="dropdown-item" href="#img37">Monk</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown mb-2">
+                    <a class="btn btn-sm btn-outline-primary w-100 dropdown-toggle" href="#img38">
+                        Chapter 3: Character Classes (Continued)
+                    </a>
+                    <ul class="dropdown-menu w-100">
+                        <li><a class="dropdown-item" href="#img39">Paladin</a></li>
+                        <li><a class="dropdown-item" href="#img40">Ranger</a></li>
+                        <li><a class="dropdown-item" href="#img42">Rogue</a></li>
+                        <li><a class="dropdown-item" href="#img43">Sorcerer</a></li>
+                        <li><a class="dropdown-item" href="#img45">Warlock</a></li>
+                        <li><a class="dropdown-item" href="#img47">Wizard</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown mb-2">
+                    <a class="btn btn-sm btn-outline-primary w-100 dropdown-toggle" href="#img49">
+                        Chapter 4: Character Origins
+                    </a>
+                    <ul class="dropdown-menu w-100">
+                        <li><a class="dropdown-item" href="#img50">Origin Components</a></li>
+                        <li><a class="dropdown-item" href="#img51">Background Descriptions</a></li>
+                        <li><a class="dropdown-item" href="#img52">Species Descriptions</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown mb-2">
+                    <a class="btn btn-sm btn-outline-primary w-100 dropdown-toggle" href="#img54">
+                        Chapter 5: Feats
+                    </a>
+                    <ul class="dropdown-menu w-100">
+                        <li><a class="dropdown-item" href="#img55">Feat Descriptions</a></li>
+                        <li><a class="dropdown-item" href="#img56">Origin Feats</a></li>
+                        <li><a class="dropdown-item" href="#img57">General Feats</a></li>
+                        <li><a class="dropdown-item" href="#img59">Fighting Style Feats</a></li>
+                        <li><a class="dropdown-item" href="#img60">Epic Boon Feats</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown mb-2">
+                    <a class="btn btn-sm btn-outline-primary w-100 dropdown-toggle" href="#img62">
+                        Chapter 6: Equipment
+                    </a>
+                    <ul class="dropdown-menu w-100">
+                        <li><a class="dropdown-item" href="#img63">Coins</a></li>
+                        <li><a class="dropdown-item" href="#img64">Weapons</a></li>
+                        <li><a class="dropdown-item" href="#img65">Armor</a></li>
+                        <li><a class="dropdown-item" href="#img66">Tools</a></li>
+                        <li><a class="dropdown-item" href="#img67">Adventuring Gear</a></li>
+                        <li><a class="dropdown-item" href="#img69">Mounts and Vehicles</a></li>
+                        <li><a class="dropdown-item" href="#img70">Services</a></li>
+                        <li><a class="dropdown-item" href="#img71">Magic Items</a></li>
+                        <li><a class="dropdown-item" href="#img72">Crafting Equipment</a></li>
+                    </ul>
+                </div>
+
+            </div>
             <!-- Images -->
             <div class="flex-grow-1">
-                <div><img src="images/1.png" id="img1" alt="Page 1"></div>
-                <div><img src="images/2.png" id="img2" alt="Page 2"></div>
-                <div><img src="images/3.png" id="img3" alt="Page 3"></div>
-                <div><img src="images/4.png" id="img4" alt="Page 4"></div>
-                <div><img src="images/5.png" id="img5" alt="Page 5"></div>
-                <div><img src="images/6.png" id="img6" alt="Page 6"></div>
-                <div><img src="images/7.png" id="img7" alt="Page 7"></div>
-                <div><img src="images/8.png" id="img8" alt="Page 8"></div>
-                <div><img src="images/9.png" id="img9" alt="Page 9"></div>
-                <div><img src="images/10.png" id="img10" alt="Page 10"></div>
-                <div><img src="images/11.png" id="img11" alt="Page 11"></div>
-                <div><img src="images/12.png" id="img12" alt="Page 12"></div>
-                <div><img src="images/13.png" id="img13" alt="Page 13"></div>
-                <div><img src="images/14.png" id="img14" alt="Page 14"></div>
-                <div><img src="images/15.png" id="img15" alt="Page 15"></div>
-                <div><img src="images/16.png" id="img16" alt="Page 16"></div>
-                <div><img src="images/17.png" id="img17" alt="Page 17"></div>
-                <div><img src="images/18.png" id="img18" alt="Page 18"></div>
-                <div><img src="images/19.png" id="img19" alt="Page 19"></div>
-                <div><img src="images/20.png" id="img20" alt="Page 20"></div>
-                <div><img src="images/21.png" id="img21" alt="Page 21"></div>
-                <div><img src="images/22.png" id="img22" alt="Page 22"></div>
-                <div><img src="images/23.png" id="img23" alt="Page 23"></div>
-                <div><img src="images/24.png" id="img24" alt="Page 24"></div>
-                <div><img src="images/25.png" id="img25" alt="Page 25"></div>
-                <div><img src="images/26.png" id="img26" alt="Page 26"></div>
-                <div><img src="images/27.png" id="img27" alt="Page 27"></div>
-                <div><img src="images/28.png" id="img28" alt="Page 28"></div>
-                <div><img src="images/29.png" id="img29" alt="Page 29"></div>
-                <div><img src="images/30.png" id="img30" alt="Page 30"></div>
-                <div><img src="images/31.png" id="img31" alt="Page 31"></div>
-                <div><img src="images/32.png" id="img32" alt="Page 32"></div>
-                <div><img src="images/33.png" id="img33" alt="Page 33"></div>
-                <div><img src="images/34.png" id="img34" alt="Page 34"></div>
+                <div><img src="images/1.webp" id="img1"></div>
+                <div><img src="images/2.webp" id="img2"></div>
+                <div><img src="images/3.webp" id="img3"></div>
+                <div><img src="images/4.webp" id="img4"></div>
+                <div><img src="images/5.webp" id="img5"></div>
+                <div><img src="images/6.webp" id="img6"></div>
+                <div><img src="images/7.webp" id="img7"></div>
+                <div><img src="images/8.webp" id="img8"></div>
+                <div><img src="images/9.webp" id="img9"></div>
+                <div><img src="images/10.webp" id="img10"></div>
+                <div><img src="images/11.webp" id="img11"></div>
+                <div><img src="images/12.webp" id="img12"></div>
+                <div><img src="images/13.webp" id="img13"></div>
+                <div><img src="images/14.webp" id="img14"></div>
+                <div><img src="images/15.webp" id="img15"></div>
+                <div><img src="images/16.webp" id="img16"></div>
+                <div><img src="images/17.webp" id="img17"></div>
+                <div><img src="images/18.webp" id="img18"></div>
+                <div><img src="images/19.webp" id="img19"></div>
+                <div><img src="images/20.webp" id="img20"></div>
+                <div><img src="images/21.webp" id="img21"></div>
+                <div><img src="images/22.webp" id="img22"></div>
+                <div><img src="images/23.webp" id="img23"></div>
+                <div><img src="images/24.webp" id="img24"></div>
+                <div><img src="images/25.webp" id="img25"></div>
+                <div><img src="images/26.webp" id="img26"></div>
+                <div><img src="images/27.webp" id="img27"></div>
+                <div><img src="images/28.webp" id="img28"></div>
+                <div><img src="images/29.webp" id="img29"></div>
+                <div><img src="images/30.webp" id="img30"></div>
+                <div><img src="images/31.webp" id="img31"></div>
+                <div><img src="images/32.webp" id="img32"></div>
+                <div><img src="images/33.webp" id="img33"></div>
+                <div><img src="images/34.webp" id="img34"></div>
+                <div><img src="images/35.webp" id="img35"></div>
+                <div><img src="images/36.webp" id="img36"></div>
+                <div><img src="images/37.webp" id="img37"></div>
+                <div><img src="images/38.webp" id="img38"></div>
+                <div><img src="images/39.webp" id="img39"></div>
+                <div><img src="images/40.webp" id="img40"></div>
+                <div><img src="images/41.webp" id="img41"></div>
+                <div><img src="images/42.webp" id="img42"></div>
+                <div><img src="images/43.webp" id="img43"></div>
+                <div><img src="images/44.webp" id="img44"></div>
+                <div><img src="images/45.webp" id="img45"></div>
+                <div><img src="images/46.webp" id="img46"></div>
+                <div><img src="images/47.webp" id="img47"></div>
+                <div><img src="images/48.webp" id="img48"></div>
+                <div><img src="images/49.webp" id="img49"></div>
+                <div><img src="images/50.webp" id="img50"></div>
+                <div><img src="images/51.webp" id="img51"></div>
+                <div><img src="images/52.webp" id="img52"></div>
+                <div><img src="images/53.webp" id="img53"></div>
+                <div><img src="images/54.webp" id="img54"></div>
+                <div><img src="images/55.webp" id="img55"></div>
+                <div><img src="images/56.webp" id="img56"></div>
+                <div><img src="images/57.webp" id="img57"></div>
+                <div><img src="images/58.webp" id="img58"></div>
+                <div><img src="images/59.webp" id="img59"></div>
+                <div><img src="images/60.webp" id="img60"></div>
+                <div><img src="images/61.webp" id="img61"></div>
+                <div><img src="images/62.webp" id="img62"></div>
+                <div><img src="images/63.webp" id="img63"></div>
+                <div><img src="images/64.webp" id="img64"></div>
+                <div><img src="images/65.webp" id="img65"></div>
+                <div><img src="images/66.webp" id="img66"></div>
+                <div><img src="images/67.webp" id="img67"></div>
+                <div><img src="images/68.webp" id="img68"></div>
+                <div><img src="images/69.webp" id="img69"></div>
+                <div><img src="images/70.webp" id="img70"></div>
+                <div><img src="images/71.webp" id="img71"></div>
+                <div><img src="images/72.webp" id="img72"></div>
             </div>
-
         </div>
     </div>
-
     <!-- Footer spacer -->
     <div class="container">
         <div class="py-5"></div>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="app.js"></script>
 </body>
-
 </html>
