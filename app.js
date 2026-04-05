@@ -37,8 +37,8 @@
       'simple ranged weapons',
       'martial ranged weapons',
       'special',
-      'short rest',
       'dice rolls',
+      'short rest',
       'Tokens'
     ];
     const keyOf = (v) => {
@@ -63,7 +63,18 @@
     // Render function (sorted by category using same ORDER)
     const render = (items) => {
       // sort items by category order first, then by name
-      const sorted = [...items].sort((a, b) => {
+        const sorted = [...items].sort((a, b) => {
+        const q = normalize(searchInput ? searchInput.value : '');
+          if (q) {
+          const aStarts = normalize(a.name).startsWith(q);
+          const bStarts = normalize(b.name).startsWith(q);
+          if (aStarts && !bStarts) return -1;
+          if (!aStarts && bStarts) return 1;
+          const aTitle = normalize(a.name).includes(q);
+          const bTitle = normalize(b.name).includes(q);
+          if (aTitle && !bTitle) return -1;
+          if (!aTitle && bTitle) return 1;
+        }
         const ca = keyOf(a.category);
         const cb = keyOf(b.category);
         if (ca !== cb) return ca - cb;
