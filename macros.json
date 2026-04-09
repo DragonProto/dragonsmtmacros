@@ -61,7 +61,7 @@
     "description": "A strength-based weapon used with an attack action.",
     "category": "Simple Melee Weapons",
     "macrocode": "<b><font color=\"Green\">Javelin Damage</font></b> => [t: 1d6 + Strength] <font color=\"Silver\">📍</font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Handaxe Crit Damage</font></b> => [t: 2d6 + Dexterity] <font color=\"Silver\">🔪</font> damage!"
+    "macrocodecrit": "<b><font color=\"Teal\">Javelin Crit Damage</font></b> => [t: 2d6 + Strength] <font color=\"Silver\">📍</font> damage!"
   },
   {
     "id": 9,
