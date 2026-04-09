@@ -948,8 +948,8 @@
     "name": "Hail of Thorns",
     "description": "A spell used with an attack action.",
     "category": "1st Level",
-    "macrocode": "<b><font color=\"Purple\">Hail of Thorns Extra Damage</font></b> =>DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Pie = 1d10] ([t: floor(Pie/2)]) <font color=\"Silver\">📍</font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Hail of Thorns Extra Crit Damage</font></b> =>DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Hail = 2d10] ([t: floor(Hail/2)]) <font color=\"Silver\">📍</font> damage!"
+    "macrocode": "<b><font color=\"Purple\">Hail of Thorns Extra Damage</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Pie = 1d10] ([t: floor(Pie/2)]) <font color=\"Silver\">📍</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Hail of Thorns Extra Crit Damage</font></b> => DC [r: 8 + Wisdom + Proficiency] Dexterity Save or take => [t: Hail = 2d10] ([t: floor(Hail/2)]) <font color=\"Silver\">📍</font> damage!"
   },
   {
     "id": 125,
