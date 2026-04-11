@@ -3081,11 +3081,11 @@
   },
   {
     "id": 414,
-    "name": "Blade of Disaster (Tasha)",
+    "name": "Blade of Disaster",
     "description": "A spell used with a spell attack action.",
     "category": "9th Level",
-    "macrocode": "<b><font color=\"Purple\">Blade of Disaster Damage</font></b> => [t: 4d12] <font color=\"Blue\">✊</font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Blade of Disaster Crit Damage</font></b> => [t: 12d12] <font color=\"Blue\">✊</font> damage!"
+    "macrocode": "<b><font color=\"Purple\">Blade of Disaster Damage</font></b> => [t: 10d6] <font color=\"Blue\">✊</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Blade of Disaster Crit Damage</font></b> => [t: 20d6] <font color=\"Blue\">✊</font> damage!"
   },
   {
     "id": 415,
@@ -3570,7 +3570,7 @@
   {
     "id": 482,
     "name": "Conjure Fey",
-    "description": "A spell used with an spell attack action.",
+    "description": "A spell used with a spell attack action.",
     "category": "6th Level",
     "macrocode": "<b><font color=\"Purple\">Conjure Fey Damage</font></b> => [t: 3d12 + Wisdom] <font color=\"Purple\">👁️</font> damage + become Frightened.",
     "macrocodecrit": "<b><font color=\"Teal\">Conjure Fey Crit Damage</font></b> => [t: 6d12 + Wisdom] <font color=\"Purple\">👁️</font> damage + become Frightened!"
@@ -3773,6 +3773,142 @@
     "description": "",
     "category": "6th Level",
     "macrocode": "<b><font color=\"Purple\">Tenser’s Transformation</font></b> => DC [r: 8 + Intelligence + Proficiency] Constitution Save or suffer one level of Exhaustion.",
+    "macrocodecrit": ""
+  },
+  {
+    "id": 508,
+    "name": "Alustriel's Mooncloak",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "5th Level",
+    "macrocode": "<b><font color=\"Purple\">Alustriel's Mooncloak</font></b> => [t: 4d10 + INPUT] <font color=\"Red\">➕</font> healing.",
+    "macrocodecrit": ""
+  },
+  {
+    "id": 509,
+    "name": "Backlash",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "4th Level",
+    "macrocode": "<b><font color=\"Purple\">Backlash</font></b> => [t: 4d6 + INPUT] damage blocked + DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: For = 4d6] ([t: floor(For/2)]) <font color=\"Blue\">✊</font> damage.",
+    "macrocodecrit": ""
+  },
+  {
+    "id": 510,
+    "name": "Cacophonic Shield",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "3rd Level",
+    "macrocode": "<b><font color=\"Purple\">Cacophonic Shield</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Thu = 3d6] ([t: floor(Thu/2)]) <font color=\"Gray\">💥</font> damage. On fail, become Deafened.",
+    "macrocodecrit": ""
+  },
+  {
+    "id": 511,
+    "name": "Conjure Constructs (clockwork force)",
+    "description": "",
+    "category": "3rd Level",
+    "macrocode": "<b><font color=\"Purple\">Conjure Constructs</font></b> => DC [r: 8 + Intelligence + Proficiency] Dexterity Save or take => [t: For = 3d6] ([t: floor(For/2)]) <font color=\"Blue\">✊</font> damage.",
+    "macrocodecrit": ""
+  },
+  {
+    "id": 512,
+    "name": "Conjure Constructs (orderly ward)",
+    "description": "",
+    "category": "3rd Level",
+    "macrocode": "<b><font color=\"Purple\">Conjure Constructs (orderly ward)</font></b> => [t: 1d6 + Intelligence] temporary hit points.",
+    "macrocodecrit": ""
+  },
+  {
+    "id": 513,
+    "name": "Death Armor",
+    "description": "",
+    "category": "2nd Level",
+    "macrocode": "<b><font color=\"Purple\">Death Armor</font></b> => [t: 2d4] <font color=\"Purple\">💀</font> damage.",
+    "macrocodecrit": ""
+  },
+  {
+    "id": 514,
+    "name": "Dirge",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "6th Level",
+    "macrocode": "<b><font color=\"Purple\">Dirge</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Nec = 3d10] ([t: floor(Nec/2)]) <font color=\"Purple\">💀</font> damage. On fail, become Prone. On success, speed is halved.",
+    "macrocodecrit": ""
+  },
+  {
+    "id": 515,
+    "name": "Doomtide",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "4th Level",
+    "macrocode": "<b><font color=\"Purple\">Doomtide</font></b> => DC [r: 8 + INPUT + Proficiency] Wisdom Save or take => [t: Psy = 5d6] ([t: floor(Psy/2)]) <font color=\"Purple\">👁️</font> damage. On fail, subract [t: 1d6] from its saving throws.",
+    "macrocodecrit": ""
+  },
+  {
+    "id": 516,
+    "name": "Elminster's Effulgent Spheres",
+    "description": "A spell used with a spell attack action.",
+    "category": "6th Level",
+    "macrocode": "<b><font color=\"Purple\">Elminster's Effulgent Spheres Damage</font></b> => [t: 3d6] damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Elminster's Effulgent Spheres Crit Damage</font></b> => [t: 6d6] damage!"
+  },
+  {
+    "id": 517,
+    "name": "Holy Star of Mystra",
+    "description": "A spell used with a spell attack action.\r\n\r\nReplace INPUT with spellcasting ability.",
+    "category": "8th Level",
+    "macrocode": "<b><font color=\"Purple\">Holy Star of Mystra Damage</font></b> => [t: 4d10 + INPUT] damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Holy Star of Mystra Crit Damage</font></b> => [t: 8d10 + INPUT] damage!"
+  },
+  {
+    "id": 518,
+    "name": "Laeral's Silver Lance",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "3rd Level",
+    "macrocode": "<b><font color=\"Purple\">Laeral's Silver Lance</font></b> => DC [r: 8 + INPUT + Proficiency] Strength Save or take => [t: For = 3d10] ([t: floor(For/2)]) <font color=\"Blue\">✊️</font> damage. On fail, become Prone.",
+    "macrocodecrit": ""
+  },
+  {
+    "id": 519,
+    "name": "Simbul's Synostodweomer",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "7th Level",
+    "macrocode": "[h: input(\"Spell_Level\")]\r\n[h: input(\"Hit_Dice_Type\")]<b>\r\n<font color=\"Purple\">Simbul's Synostodweomer</font></b> => Used [t: Spell_Level] Hit Dice => [t: roll(Spell_Level,Hit_Dice_Type + INPUT)] <font color=\"Red\">➕</font> healing.",
+    "macrocodecrit": ""
+  },
+  {
+    "id": 520,
+    "name": "Songal's Elemental Suffusion",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "5th Level",
+    "macrocode": "<b><font color=\"Purple\">Songal's Elemental Suffusion</font></b> => DC [r: 8 + INPUT + Proficiency] Dexterity Save or take => [t: Any = 2d6] ([t: floor(Any/2)]) damage. On fail, become Prone.",
+    "macrocodecrit": ""
+  },
+  {
+    "id": 521,
+    "name": "Spellfire Flare",
+    "description": "A spell used with a spell attack action.",
+    "category": "1st Level",
+    "macrocode": "<b><font color=\"Purple\">Spellfire Flare Damage</font></b> => [t: 2d10] <font color=\"Orange\">☀️</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Spellfire Flare Crit Damage</font></b> => [t: 4d10] <font color=\"Orange\">☀️</font> damage!"
+  },
+  {
+    "id": 522,
+    "name": "Spellfire Storm",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "4th Level",
+    "macrocode": "<b><font color=\"Purple\">Spellfire Storm</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: Rad = 4d10] ([t: floor(Rad/2)]) <font color=\"Orange\">☀️</font> damage.",
+    "macrocodecrit": ""
+  },
+  {
+    "id": 523,
+    "name": "Syluné's Viper",
+    "description": "A spell used with a spell attack action.",
+    "category": "3rd Level",
+    "macrocode": "<b><font color=\"Purple\">Syluné's Viper Damage</font></b> => [t: 1d6] <font color=\"Blue\">✊</font> damage + become Poisoned.",
+    "macrocodecrit": ""
+  },
+  {
+    "id": 524,
+    "name": "Wardaway",
+    "description": "Replace INPUT with spellcasting ability.",
+    "category": "1st Level",
+    "macrocode": "<b><font color=\"Purple\">Wardaway Damage</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: 2d4] <font color=\"Blue\">✊</font> damage. On fail, speed is halved + can only take an action or bonus action.",
     "macrocodecrit": ""
   }
 ]

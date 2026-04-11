@@ -63,9 +63,9 @@
     // Render function (sorted by category using same ORDER)
     const render = (items) => {
       // sort items by category order first, then by name
-        const sorted = [...items].sort((a, b) => {
+      const sorted = [...items].sort((a, b) => {
         const q = normalize(searchInput ? searchInput.value : '');
-          if (q) {
+        if (q) {
           const aStarts = normalize(a.name).startsWith(q);
           const bStarts = normalize(b.name).startsWith(q);
           if (aStarts && !bStarts) return -1;
@@ -238,6 +238,7 @@
         if (categorySelect) categorySelect.value = '';
         applyFilters();
         searchInput?.focus();
+        clearBtn.style.display = 'none'; // add this line
       });
     }
 
@@ -246,3 +247,17 @@
     container.innerHTML = `<div class="list-group-item list-group-item-danger">Error loading macros: ${err.message}</div>`;
   }
 })();
+
+const searchInput = document.getElementById('search-input');
+const clearBtn = document.getElementById('clear-search');
+
+searchInput.addEventListener('input', () => {
+  clearBtn.style.display = searchInput.value ? 'block' : 'none';
+});
+
+clearBtn.addEventListener('click', () => {
+  searchInput.value = '';
+  clearBtn.style.display = 'none';
+  searchInput.dispatchEvent(new Event('input')); // triggers your existing search logic
+  searchInput.focus();
+});
