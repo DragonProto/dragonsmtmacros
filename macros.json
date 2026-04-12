@@ -1,13 +1,5 @@
 [
   {
-    "id": 1,
-    "name": "Club",
-    "description": "A strength-based weapon used with an attack action.\r\n\r\nRemove Strength damage if used in off-hand.",
-    "category": "Simple Melee Weapons",
-    "macrocode": "<b><font color=\"Green\">Club Damage</font></b> => [t: 1d4 + Strength] <font color=\"Silver\">🔨</font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Club Crit Damage</font></b> => [t: 2d4 + Strength] <font color=\"Silver\">🔨</font> damage!"
-  },
-  {
     "id": 2,
     "name": "Acid Splash",
     "description": "Replace INPUT with spellcasting ability.\r\n\r\nThe damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).",
@@ -57,11 +49,11 @@
   },
   {
     "id": 8,
-    "name": "Javelin",
+    "name": "Javelin (+slow)",
     "description": "A strength-based weapon used with an attack action.",
     "category": "Simple Melee Weapons",
-    "macrocode": "<b><font color=\"Green\">Javelin Damage</font></b> => [t: 1d6 + Strength] <font color=\"Silver\">📍</font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Javelin Crit Damage</font></b> => [t: 2d6 + Strength] <font color=\"Silver\">📍</font> damage!"
+    "macrocode": "<b><font color=\"Green\">Javelin Damage (+slow)</font></b> => [t: 1d6 + Strength] <font color=\"Silver\">📍</font> damage + reduce speed by 10 feet.",
+    "macrocodecrit": "<b><font color=\"Teal\">Javelin Crit Damage (+slow)</font></b> => [t: 2d6 + Strength] <font color=\"Silver\">📍</font> damage + reduce speed by 10 feet!"
   },
   {
     "id": 9,
@@ -153,11 +145,11 @@
   },
   {
     "id": 20,
-    "name": "Sling",
+    "name": "Sling (+slow)",
     "description": "A dexterity-based weapon used with an attack action.",
     "category": "Simple Ranged Weapons",
-    "macrocode": "<b><font color=\"Green\">Sling Damage</font></b> => [t: 1d4 + Dexterity] <font color=\"Silver\">🔨</font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Sling Crit Damage</font></b> => [t: 2d4 + Dexterity] <font color=\"Silver\">🔨</font> damage!"
+    "macrocode": "<b><font color=\"Green\">Sling Damage (+slow)</font></b> => [t: 1d4 + Dexterity] <font color=\"Silver\">🔨</font> damage + reduce speed by 10 feet.",
+    "macrocodecrit": "<b><font color=\"Teal\">Sling Crit Damage (+slow)</font></b> => [t: 2d4 + Dexterity] <font color=\"Silver\">🔨</font> damage + reduce speed by 10 feet!"
   },
   {
     "id": 21,
@@ -353,19 +345,19 @@
   },
   {
     "id": 45,
-    "name": "Whip (strength)",
+    "name": "Whip (strength) (+slow)",
     "description": "A strength-based weapon used with an attack action.",
     "category": "Martial Melee Weapons",
-    "macrocode": "<b><font color=\"Green\">Whip Damage</font></b> => [t: 1d4 + Strength] <font color=\"Silver\">🔪</font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Whip Crit Damage</font></b> => [t: 2d4 + Strength] <font color=\"Silver\">🔪</font> damage!"
+    "macrocode": "<b><font color=\"Green\">Whip Damage (+slow)</font></b> => [t: 1d4 + Strength] <font color=\"Silver\">🔪</font> damage + reduce speed by 10 feet.",
+    "macrocodecrit": "<b><font color=\"Teal\">Whip Crit Damage (+slow)</font></b> => [t: 2d4 + Strength] <font color=\"Silver\">🔪</font> damage + reduce speed by 10 feet!"
   },
   {
     "id": 46,
-    "name": "Whip (dexterity)",
+    "name": "Whip (dexterity) (+slow)",
     "description": "A dexterity-based weapon used with an attack action.",
     "category": "Martial Melee Weapons",
-    "macrocode": "<b><font color=\"Green\">Whip Damage</font></b> => [t: 1d4 + Dexterity] <font color=\"Silver\">🔪</font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Whip Crit Damage</font></b> => [t: 2d4 + Dexterity] <font color=\"Silver\">🔪</font> damage!"
+    "macrocode": "<b><font color=\"Green\">Whip Damage (+slow)</font></b> => [t: 1d4 + Dexterity] <font color=\"Silver\">🔪</font> damage + reduce speed by 10 feet.",
+    "macrocodecrit": "<b><font color=\"Teal\">Whip Crit Damage (+slow)</font></b> => [t: 2d4 + Dexterity] <font color=\"Silver\">🔪</font> damage + reduce speed by 10 feet!"
   },
   {
     "id": 47,
@@ -377,7 +369,7 @@
   },
   {
     "id": 48,
-    "name": "Crossbow, Hand",
+    "name": "Hand Crossbow",
     "description": "A dexterity-based weapon used with an attack action.\r\n\r\nRemove Dexterity damage if used in off-hand.",
     "category": "Martial Ranged Weapons",
     "macrocode": "<b><font color=\"Green\">Hand Crossbow Damage</font></b> => [t: 1d6 + Dexterity] <font color=\"Silver\">📍</font> damage.",
@@ -385,7 +377,7 @@
   },
   {
     "id": 49,
-    "name": "Crossbow, Heavy",
+    "name": "Heavy Crossbow",
     "description": "A dexterity-based weapon used with an attack action.",
     "category": "Martial Ranged Weapons",
     "macrocode": "<b><font color=\"Green\">Heavy Crossbow Damage</font></b> => [t: 1d10 + Dexterity] <font color=\"Silver\">📍</font> damage.",
@@ -393,11 +385,11 @@
   },
   {
     "id": 50,
-    "name": "Longbow",
+    "name": "Longbow (+slow)",
     "description": "A dexterity-based weapon used with an attack action.",
     "category": "Martial Ranged Weapons",
-    "macrocode": "<b><font color=\"Green\">Longbow Damage</font></b> => [t: 1d8 + Dexterity] <font color=\"Silver\">📍</font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Longbow Crit Damage</font></b> => [t: 2d8 + Dexterity] <font color=\"Silver\">📍</font> damage!"
+    "macrocode": "<b><font color=\"Green\">Longbow Damage (+slow)</font></b> => [t: 1d8 + Dexterity] <font color=\"Silver\">📍</font> damage + reduce speed by 10 feet.",
+    "macrocodecrit": "<b><font color=\"Teal\">Longbow Crit Damage (+slow)</font></b> => [t: 2d8 + Dexterity] <font color=\"Silver\">📍</font> damage + reduce speed by 10 feet!"
   },
   {
     "id": 51,
@@ -3249,33 +3241,33 @@
   },
   {
     "id": 442,
-    "name": "D6 Short Rest",
+    "name": "Short Rest D6",
     "description": "",
-    "category": "Short Rest",
+    "category": "Dice",
     "macrocode": "[h: input(\"Hit_Dice\")]\r\n<b><font color=\"Maroon\">Short rest</font></b> => Used [t: Hit_Dice] Hit Dice => [t: roll(Hit_Dice,6 + Hit_Dice*Constitution)] <font color=\"Red\">➕</font> healing.",
     "macrocodecrit": ""
   },
   {
     "id": 443,
-    "name": "D8 Short Rest",
+    "name": "Short Rest D8",
     "description": "",
-    "category": "Short Rest",
+    "category": "Dice",
     "macrocode": "[h: input(\"Hit_Dice\")]\r\n<b><font color=\"Maroon\">Short rest</font></b> => Used [t: Hit_Dice] Hit Dice => [t: roll(Hit_Dice,8 + Hit_Dice*Constitution)] <font color=\"Red\">➕</font> healing.",
     "macrocodecrit": ""
   },
   {
     "id": 444,
-    "name": "D10 Short Rest",
+    "name": "Short Rest D10",
     "description": "",
-    "category": "Short Rest",
+    "category": "Dice",
     "macrocode": "[h: input(\"Hit_Dice\")]\r\n<b><font color=\"Maroon\">Short rest</font></b> => Used [t: Hit_Dice] Hit Dice => [t: roll(Hit_Dice,10 + Hit_Dice*Constitution)] <font color=\"Red\">➕</font> healing.",
     "macrocodecrit": ""
   },
   {
     "id": 445,
-    "name": "D12 Short Rest",
+    "name": "Short Rest D20",
     "description": "",
-    "category": "Short Rest",
+    "category": "Dice",
     "macrocode": "[h: input(\"Hit_Dice\")]\r\n<b><font color=\"Maroon\">Short rest</font></b> => Used [t: Hit_Dice] Hit Dice => [t: roll(Hit_Dice,12 + Hit_Dice*Constitution)] <font color=\"Red\">➕</font> healing.",
     "macrocodecrit": ""
   },
@@ -3283,7 +3275,7 @@
     "id": 446,
     "name": "D20 Advantage",
     "description": "",
-    "category": "Dice Rolls",
+    "category": "Dice",
     "macrocode": "[h: input(\"Modifier\")]\r\n[h: Die_1 = 1d20]\r\n[h: Die_2 = 1d20]\r\n[h, if(Die_1 >= Die_2), CODE:{\r\n\t[h: Dice = Die_1]\r\n};{\r\n\t[h: Dice = Die_2]\r\n}]\r\n<b><font color=\"Orange\">2d20 + [r: Modifier] (adv)</font></b> => <font color=\"Gray\">([r: Die_1] vs [r: Die_2])</font> => [t: Dice + Modifier - Exhaustion]\r\n<font color=\"Green\">[r,if(Dice==20): \", Crit!\"]</font>\r\n<font color=\"Red\">[r,if(Dice==1): \", Critfail! (That's 1 in 400)\"]</font>",
     "macrocodecrit": ""
   },
@@ -3291,7 +3283,7 @@
     "id": 447,
     "name": "D20",
     "description": "",
-    "category": "Dice Rolls",
+    "category": "Dice",
     "macrocode": "[h: input(\"Modifier\")]\r\n<b><font color=\"Orange\">d20 + [r: Modifier]</font></b> => [h: Dice = 1d20]\r\n[t: Dice + Modifier - Exhaustion]\r\n<font color=\"Green\">[r,if(Dice==20): \", Crit!\"]</font>\r\n<font color=\"Red\">[r,if(Dice==1): \", Critfail!\"]</font>",
     "macrocodecrit": ""
   },
@@ -3299,7 +3291,7 @@
     "id": 448,
     "name": "D20 Disadvantage",
     "description": "",
-    "category": "Dice Rolls",
+    "category": "Dice",
     "macrocode": "[h: input(\"Modifier\")]\r\n[h: Die_1 = 1d20]\r\n[h: Die_2 = 1d20]\r\n[h, if(Die_1 <= Die_2), CODE:{\r\n\t[h: Dice = Die_1]\r\n};{\r\n\t[h: Dice = Die_2]\r\n}]\r\n<b><font color=\"Orange\">2d20 + [r: Modifier] (dis)</font></b> => <font color=\"Gray\">([r: Die_1] vs [r: Die_2])</font> => [t: Dice + Modifier - Exhaustion]\r\n<font color=\"Green\">[r,if(Dice==20): \", Crit! (That's 1 in 400)\"]</font>\r\n<font color=\"Red\">[r,if(Dice==1): \", Critfail!\"]</font>",
     "macrocodecrit": ""
   },
@@ -3307,7 +3299,7 @@
     "id": 449,
     "name": "Strength Attack Disadvantage",
     "description": "",
-    "category": "Dice Rolls",
+    "category": "Dice",
     "macrocode": "[h: Modifier = Proficiency + Strength - Exhaustion]\r\n[h: Die_1 = 1d20]\r\n[h: Die_2 = 1d20]\r\n[h, if(Die_1 <= Die_2), CODE:{\r\n\t[h: Dice = Die_1]\r\n};{\r\n\t[h: Dice = Die_2]\r\n}]\r\n<b><font color=\"Orange\">Strength Attack (dis)</font></b> => <font color=\"Gray\">([r: Die_1] vs [r: Die_2])</font> => [t: Dice + Modifier]\r\n<font color=\"Green\">[r,if(Dice==20): \", Crit! (That's 1 in 400)\"]\r\n<font color=\"Red\">[r,if(Dice==1): \", Critfail!\"]",
     "macrocodecrit": ""
   },
@@ -3315,7 +3307,7 @@
     "id": 450,
     "name": "Strength Attack",
     "description": "",
-    "category": "Dice Rolls",
+    "category": "Dice",
     "macrocode": "[h: Modifier = Proficiency + Strength - Exhaustion]\r\n<b><font color=\"Orange\">Strength Attack</font></b> \r\n=> [h: Dice = 1d20][t: Dice + Modifier]\r\n<font color=\"Green\">[r,if(Dice==20): \", Crit!\"]\r\n<font color=\"Red\">[r,if(Dice==1): \", Critfail!\"]",
     "macrocodecrit": ""
   },
@@ -3323,7 +3315,7 @@
     "id": 451,
     "name": "Strength Attack Advantage",
     "description": "",
-    "category": "Dice Rolls",
+    "category": "Dice",
     "macrocode": "[h: Modifier = Proficiency + Strength - Exhaustion]\r\n[h: Die_1 = 1d20]\r\n[h: Die_2 = 1d20]\r\n[h, if(Die_1 >= Die_2), CODE:{\r\n\t[h: Dice = Die_1]\r\n};{\r\n\t[h: Dice = Die_2]\r\n}]\r\n<b><font color=\"Orange\">Strength Attack (adv)</font></b> => <font color=\"Gray\">([r: Die_1] vs [r: Die_2])</font> => [t: Dice + Modifier]\r\n<font color=\"Green\">[r,if(Dice==20): \", Crit!\"]\r\n<font color=\"Red\">[r,if(Dice==1): \", Critfail! (That's 1 in 400)\"]",
     "macrocodecrit": ""
   },
@@ -3331,7 +3323,7 @@
     "id": 452,
     "name": "Dexterity Attack Disadvantage",
     "description": "",
-    "category": "Dice Rolls",
+    "category": "Dice",
     "macrocode": "[h: Modifier = Proficiency + Dexterity - Exhaustion]\r\n[h: Die_1 = 1d20]\r\n[h: Die_2 = 1d20]\r\n[h, if(Die_1 <= Die_2), CODE:{\r\n\t[h: Dice = Die_1]\r\n};{\r\n\t[h: Dice = Die_2]\r\n}]\r\n<b><font color=\"Orange\">Dexterity Attack (dis)</font></b> => <font color=\"Gray\">([r: Die_1] vs [r: Die_2])</font> => [t: Dice + Modifier]\r\n<font color=\"Green\">[r,if(Dice==20): \", Crit! (That's 1 in 400)\"]\r\n<font color=\"Red\">[r,if(Dice==1): \", Critfail!\"]",
     "macrocodecrit": ""
   },
@@ -3339,7 +3331,7 @@
     "id": 453,
     "name": "Dexterity Attack",
     "description": "",
-    "category": "Dice Rolls",
+    "category": "Dice",
     "macrocode": "[h: Modifier = Proficiency + Dexterity - Exhaustion]\r\n<b><font color=\"Orange\">Dexterity Attack</font></b> \r\n=> [h: Dice = 1d20][t: Dice + Modifier]\r\n<font color=\"Green\">[r,if(Dice==20): \", Crit!\"]\r\n<font color=\"Red\">[r,if(Dice==1): \", Critfail!\"]",
     "macrocodecrit": ""
   },
@@ -3347,7 +3339,7 @@
     "id": 454,
     "name": "Dexterity Attack Advantage",
     "description": "",
-    "category": "Dice Rolls",
+    "category": "Dice",
     "macrocode": "[h: Modifier = Proficiency + Dexterity - Exhaustion]\r\n[h: Die_1 = 1d20]\r\n[h: Die_2 = 1d20]\r\n[h, if(Die_1 >= Die_2), CODE:{\r\n\t[h: Dice = Die_1]\r\n};{\r\n\t[h: Dice = Die_2]\r\n}]\r\n<b><font color=\"Orange\">Dexterity Attack (adv)</font></b> => <font color=\"Gray\">([r: Die_1] vs [r: Die_2])</font> => [t: Dice + Modifier]\r\n<font color=\"Green\">[r,if(Dice==20): \", Crit!\"]\r\n<font color=\"Red\">[r,if(Dice==1): \", Critfail! (That's 1 in 400)\"]",
     "macrocodecrit": ""
   },
@@ -3355,7 +3347,7 @@
     "id": 455,
     "name": "Intelligence Attack Disadvantage",
     "description": "",
-    "category": "Dice Rolls",
+    "category": "Dice",
     "macrocode": "[h: Modifier = Proficiency + Intelligence - Exhaustion]\r\n[h: Die_1 = 1d20]\r\n[h: Die_2 = 1d20]\r\n[h, if(Die_1 <= Die_2), CODE:{\r\n\t[h: Dice = Die_1]\r\n};{\r\n\t[h: Dice = Die_2]\r\n}]\r\n<b><font color=\"Orange\">Intelligence Attack (dis)</font></b> => <font color=\"Gray\">([r: Die_1] vs [r: Die_2])</font> => [t: Dice + Modifier]\r\n<font color=\"Green\">[r,if(Dice==20): \", Crit! (That's 1 in 400)\"]\r\n<font color=\"Red\">[r,if(Dice==1): \", Critfail!\"]",
     "macrocodecrit": ""
   },
@@ -3363,7 +3355,7 @@
     "id": 456,
     "name": "Intelligence Attack",
     "description": "",
-    "category": "Dice Rolls",
+    "category": "Dice",
     "macrocode": "[h: Modifier = Proficiency + Intelligence - Exhaustion]\r\n<b><font color=\"Orange\">Intelligence Attack</font></b> \r\n=> [h: Dice = 1d20][t: Dice + Modifier]\r\n<font color=\"Green\">[r,if(Dice==20): \", Crit!\"]\r\n<font color=\"Red\">[r,if(Dice==1): \", Critfail!\"]",
     "macrocodecrit": ""
   },
@@ -3371,7 +3363,7 @@
     "id": 457,
     "name": "Intelligence Attack Advantage",
     "description": "",
-    "category": "Dice Rolls",
+    "category": "Dice",
     "macrocode": "[h: Modifier = Proficiency + Intelligence - Exhaustion]\r\n[h: Die_1 = 1d20]\r\n[h: Die_2 = 1d20]\r\n[h, if(Die_1 >= Die_2), CODE:{\r\n\t[h: Dice = Die_1]\r\n};{\r\n\t[h: Dice = Die_2]\r\n}]\r\n<b><font color=\"Orange\">Intelligence Attack (adv)</font></b> => <font color=\"Gray\">([r: Die_1] vs [r: Die_2])</font> => [t: Dice + Modifier]\r\n<font color=\"Green\">[r,if(Dice==20): \", Crit!\"]\r\n<font color=\"Red\">[r,if(Dice==1): \", Critfail! (That's 1 in 400)\"]",
     "macrocodecrit": ""
   },
@@ -3379,7 +3371,7 @@
     "id": 458,
     "name": "Wisdom Attack Disadvantage",
     "description": "",
-    "category": "Dice Rolls",
+    "category": "Dice",
     "macrocode": "[h: Modifier = Proficiency + Wisdom - Exhaustion]\r\n[h: Die_1 = 1d20]\r\n[h: Die_2 = 1d20]\r\n[h, if(Die_1 <= Die_2), CODE:{\r\n\t[h: Dice = Die_1]\r\n};{\r\n\t[h: Dice = Die_2]\r\n}]\r\n<b><font color=\"Orange\">Wisdom Attack (dis)</font></b> => <font color=\"Gray\">([r: Die_1] vs [r: Die_2])</font> => [t: Dice + Modifier]\r\n<font color=\"Green\">[r,if(Dice==20): \", Crit! (That's 1 in 400)\"]\r\n<font color=\"Red\">[r,if(Dice==1): \", Critfail!\"]",
     "macrocodecrit": ""
   },
@@ -3387,7 +3379,7 @@
     "id": 459,
     "name": "Wisdom Attack",
     "description": "",
-    "category": "Dice Rolls",
+    "category": "Dice",
     "macrocode": "[h: Modifier = Proficiency + Wisdom - Exhaustion]\r\n<b><font color=\"Orange\">Wisdom Attack</font></b> \r\n=> [h: Dice = 1d20][t: Dice + Modifier]\r\n<font color=\"Green\">[r,if(Dice==20): \", Crit!\"]\r\n<font color=\"Red\">[r,if(Dice==1): \", Critfail!\"]",
     "macrocodecrit": ""
   },
@@ -3395,7 +3387,7 @@
     "id": 460,
     "name": "Wisdom Attack Advantage",
     "description": "",
-    "category": "Dice Rolls",
+    "category": "Dice",
     "macrocode": "[h: Modifier = Proficiency + Wisdom - Exhaustion]\r\n[h: Die_1 = 1d20]\r\n[h: Die_2 = 1d20]\r\n[h, if(Die_1 >= Die_2), CODE:{\r\n\t[h: Dice = Die_1]\r\n};{\r\n\t[h: Dice = Die_2]\r\n}]\r\n<b><font color=\"Orange\">Wisdom Attack (adv)</font></b> => <font color=\"Gray\">([r: Die_1] vs [r: Die_2])</font> => [t: Dice + Modifier]\r\n<font color=\"Green\">[r,if(Dice==20): \", Crit!\"]\r\n<font color=\"Red\">[r,if(Dice==1): \", Critfail! (That's 1 in 400)\"]",
     "macrocodecrit": ""
   },
@@ -3403,7 +3395,7 @@
     "id": 461,
     "name": "Charisma Attack Disadvantage",
     "description": "",
-    "category": "Dice Rolls",
+    "category": "Dice",
     "macrocode": "[h: Modifier = Proficiency + Charisma - Exhaustion]\r\n[h: Die_1 = 1d20]\r\n[h: Die_2 = 1d20]\r\n[h, if(Die_1 <= Die_2), CODE:{\r\n\t[h: Dice = Die_1]\r\n};{\r\n\t[h: Dice = Die_2]\r\n}]\r\n<b><font color=\"Orange\">Charisma Attack (dis)</font></b> => <font color=\"Gray\">([r: Die_1] vs [r: Die_2])</font> => [t: Dice + Modifier]\r\n<font color=\"Green\">[r,if(Dice==20): \", Crit! (That's 1 in 400)\"]\r\n<font color=\"Red\">[r,if(Dice==1): \", Critfail!\"]",
     "macrocodecrit": ""
   },
@@ -3411,7 +3403,7 @@
     "id": 462,
     "name": "Charisma Attack",
     "description": "",
-    "category": "Dice Rolls",
+    "category": "Dice",
     "macrocode": "[h: Modifier = Proficiency + Charisma - Exhaustion]\r\n<b><font color=\"Orange\">Charisma Attack</font></b> \r\n=> [h: Dice = 1d20][t: Dice + Modifier]\r\n<font color=\"Green\">[r,if(Dice==20): \", Crit!\"]\r\n<font color=\"Red\">[r,if(Dice==1): \", Critfail!\"]",
     "macrocodecrit": ""
   },
@@ -3419,7 +3411,7 @@
     "id": 463,
     "name": "Charisma Attack Advantage",
     "description": "",
-    "category": "Dice Rolls",
+    "category": "Dice",
     "macrocode": "[h: Modifier = Proficiency + Charisma - Exhaustion]\r\n[h: Die_1 = 1d20]\r\n[h: Die_2 = 1d20]\r\n[h, if(Die_1 >= Die_2), CODE:{\r\n\t[h: Dice = Die_1]\r\n};{\r\n\t[h: Dice = Die_2]\r\n}]\r\n<b><font color=\"Orange\">Charisma Attack (adv)</font></b> => <font color=\"Gray\">([r: Die_1] vs [r: Die_2])</font> => [t: Dice + Modifier]\r\n<font color=\"Green\">[r,if(Dice==20): \", Crit!\"]\r\n<font color=\"Red\">[r,if(Dice==1): \", Critfail! (That's 1 in 400)\"]",
     "macrocodecrit": ""
   },
@@ -3427,7 +3419,7 @@
     "id": 464,
     "name": "Quick Dice D2",
     "description": "",
-    "category": "Dice Rolls",
+    "category": "Dice",
     "macrocode": "[h: input(\"Dice_Number\")]\r\n[h: input(\"Modifier\")]\r\n[h, if(Dice_Number == \"0\"), CODE:{\r\n\t[h: Num = 1]\r\n};{\r\n\t[h: Num = Dice_Number]\r\n}]\r\n<b><font color=\"Maroon\">[r: Num]d2 + [r: Modifier]</font></b> => [h: Dice = roll(Num,2)][t: Dice + Modifier]",
     "macrocodecrit": ""
   },
@@ -3435,7 +3427,7 @@
     "id": 465,
     "name": "Quick Dice D3",
     "description": "",
-    "category": "Dice Rolls",
+    "category": "Dice",
     "macrocode": "[h: input(\"Dice_Number\")]\r\n[h: input(\"Modifier\")]\r\n[h, if(Dice_Number == \"0\"), CODE:{\r\n\t[h: Num = 1]\r\n};{\r\n\t[h: Num = Dice_Number]\r\n}]\r\n<b><font color=\"Maroon\">[r: Num]d3 + [r: Modifier]</font></b> => [h: Dice = roll(Num,3)][t: Dice + Modifier]",
     "macrocodecrit": ""
   },
@@ -3443,7 +3435,7 @@
     "id": 466,
     "name": "Quick Dice D4",
     "description": "",
-    "category": "Dice Rolls",
+    "category": "Dice",
     "macrocode": "[h: input(\"Dice_Number\")]\r\n[h: input(\"Modifier\")]\r\n[h, if(Dice_Number == \"0\"), CODE:{\r\n\t[h: Num = 1]\r\n};{\r\n\t[h: Num = Dice_Number]\r\n}]\r\n<b><font color=\"Maroon\">[r: Num]d4 + [r: Modifier]</font></b> => [h: Dice = roll(Num,4)][t: Dice + Modifier]",
     "macrocodecrit": ""
   },
@@ -3451,7 +3443,7 @@
     "id": 467,
     "name": "Quick Dice D6",
     "description": "",
-    "category": "Dice Rolls",
+    "category": "Dice",
     "macrocode": "[h: input(\"Dice_Number\")]\r\n[h: input(\"Modifier\")]\r\n[h, if(Dice_Number == \"0\"), CODE:{\r\n\t[h: Num = 1]\r\n};{\r\n\t[h: Num = Dice_Number]\r\n}]\r\n<b><font color=\"Maroon\">[r: Num]d6 + [r: Modifier]</font></b> => [h: Dice = roll(Num,6)][t: Dice + Modifier]",
     "macrocodecrit": ""
   },
@@ -3459,7 +3451,7 @@
     "id": 468,
     "name": "Quick Dice D8",
     "description": "",
-    "category": "Dice Rolls",
+    "category": "Dice",
     "macrocode": "[h: input(\"Dice_Number\")]\r\n[h: input(\"Modifier\")]\r\n[h, if(Dice_Number == \"0\"), CODE:{\r\n\t[h: Num = 1]\r\n};{\r\n\t[h: Num = Dice_Number]\r\n}]\r\n<b><font color=\"Maroon\">[r: Num]d8 + [r: Modifier]</font></b> => [h: Dice = roll(Num,8)][t: Dice + Modifier]",
     "macrocodecrit": ""
   },
@@ -3467,7 +3459,7 @@
     "id": 469,
     "name": "Quick Dice D10",
     "description": "",
-    "category": "Dice Rolls",
+    "category": "Dice",
     "macrocode": "[h: input(\"Dice_Number\")]\r\n[h: input(\"Modifier\")]\r\n[h, if(Dice_Number == \"0\"), CODE:{\r\n\t[h: Num = 1]\r\n};{\r\n\t[h: Num = Dice_Number]\r\n}]\r\n<b><font color=\"Maroon\">[r: Num]d10 + [r: Modifier]</font></b> => [h: Dice = roll(Num,10)][t: Dice + Modifier]",
     "macrocodecrit": ""
   },
@@ -3475,7 +3467,7 @@
     "id": 470,
     "name": "Quick Dice D12",
     "description": "",
-    "category": "Dice Rolls",
+    "category": "Dice",
     "macrocode": "[h: input(\"Dice_Number\")]\r\n[h: input(\"Modifier\")]\r\n[h, if(Dice_Number == \"0\"), CODE:{\r\n\t[h: Num = 1]\r\n};{\r\n\t[h: Num = Dice_Number]\r\n}]\r\n<b><font color=\"Maroon\">[r: Num]d12 + [r: Modifier]</font></b> => [h: Dice = roll(Num,12)][t: Dice + Modifier]",
     "macrocodecrit": ""
   },
@@ -3483,7 +3475,7 @@
     "id": 471,
     "name": "Quick Dice D20",
     "description": "",
-    "category": "Dice Rolls",
+    "category": "Dice",
     "macrocode": "[h: input(\"Dice_Number\")]\r\n[h: input(\"Modifier\")]\r\n[h, if(Dice_Number == \"0\"), CODE:{\r\n\t[h: Num = 1]\r\n};{\r\n\t[h: Num = Dice_Number]\r\n}]\r\n<b><font color=\"Maroon\">[r: Num]d20 + [r: Modifier]</font></b> => [h: Dice = roll(Num,20)][t: Dice + Modifier]",
     "macrocodecrit": ""
   },
@@ -3491,7 +3483,7 @@
     "id": 472,
     "name": "Quick Dice D100",
     "description": "",
-    "category": "Dice Rolls",
+    "category": "Dice",
     "macrocode": "[h: input(\"Dice_Number\")]\r\n[h: input(\"Modifier\")]\r\n[h, if(Dice_Number == \"0\"), CODE:{\r\n\t[h: Num = 1]\r\n};{\r\n\t[h: Num = Dice_Number]\r\n}]\r\n<b><font color=\"Maroon\">[r: Num]d100 + [r: Modifier]</font></b> => [h: Dice = roll(Num,100)][t: Dice + Modifier]",
     "macrocodecrit": ""
   },
@@ -3696,14 +3688,6 @@
     "macrocodecrit": ""
   },
   {
-    "id": 498,
-    "name": "Topple",
-    "description": "Replace INPUT with spellcasting ability.",
-    "category": "Special",
-    "macrocode": "<b><font color=\"Green\">Topple</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or become Prone.",
-    "macrocodecrit": ""
-  },
-  {
     "id": 499,
     "name": "War pick (two-handed)",
     "description": "A strength-based weapon used with an attack action.",
@@ -3713,11 +3697,11 @@
   },
   {
     "id": 500,
-    "name": "Musket",
+    "name": "Musket (+slow)",
     "description": "A dexterity-based weapon used with an attack action.",
     "category": "Martial Ranged Weapons",
-    "macrocode": "<b><font color=\"Green\">Musket Damage</font></b> => [t: 1d12 + Dexterity] <font color=\"Silver\">📍</font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Musket Crit Damage</font></b> => [t: 2d12 + Dexterity] <font color=\"Silver\">📍</font> damage!"
+    "macrocode": "<b><font color=\"Green\">Musket Damage (+slow)</font></b> => [t: 1d12 + Dexterity] <font color=\"Silver\">📍</font> damage + reduce speed by 10 feet.",
+    "macrocodecrit": "<b><font color=\"Teal\">Musket Crit Damage (+slow)</font></b> => [t: 2d12 + Dexterity] <font color=\"Silver\">📍</font> damage + reduce speed by 10 feet!"
   },
   {
     "id": 501,
@@ -3910,5 +3894,357 @@
     "category": "1st Level",
     "macrocode": "<b><font color=\"Purple\">Wardaway Damage</font></b> => DC [r: 8 + INPUT + Proficiency] Constitution Save or take => [t: 2d4] <font color=\"Blue\">✊</font> damage. On fail, speed is halved + can only take an action or bonus action.",
     "macrocodecrit": ""
+  },
+  {
+    "id": 525,
+    "name": "Light Crossbow (+slow)",
+    "description": "A dexterity-based weapon used with an attack action.",
+    "category": "Simple Ranged Weapons",
+    "macrocode": "<b><font color=\"Green\">Light Crossbow Damage (+slow)</font></b> => [t: 1d8 + Dexterity] <font color=\"Silver\">📍</font> damage + reduce speed by 10 feet.",
+    "macrocodecrit": "<b><font color=\"Teal\">Light Crossbow Crit Damage (+slow)</font></b> => [t: 2d8 + Dexterity] <font color=\"Silver\">📍</font> damage + reduce speed by 10 feet!"
+  },
+  {
+    "id": 526,
+    "name": "Club (+slow)",
+    "description": "A strength-based weapon used with an attack action.\r\n\r\nRemove Strength damage if used in off-hand.",
+    "category": "Simple Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">Club Damage (+slow)</font></b> => [t: 1d4 + Strength] <font color=\"Silver\">🔨</font> damage + reduce speed by 10 feet.",
+    "macrocodecrit": "<b><font color=\"Teal\">Club Crit Damage (+slow)</font></b> => [t: 2d4 + Strength] <font color=\"Silver\">🔨</font> damage + reduce speed by 10 feet!"
+  },
+  {
+    "id": 527,
+    "name": "Sling",
+    "description": "A dexterity-based weapon used with an attack action.",
+    "category": "Simple Ranged Weapons",
+    "macrocode": "<b><font color=\"Green\">Sling Damage</font></b> => [t: 1d4 + Dexterity] <font color=\"Silver\">🔨</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Sling Crit Damage</font></b> => [t: 2d4 + Dexterity] <font color=\"Silver\">🔨</font> damage!"
+  },
+  {
+    "id": 528,
+    "name": "Javelin",
+    "description": "A strength-based weapon used with an attack action.",
+    "category": "Simple Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">Javelin Damage</font></b> => [t: 1d6 + Strength] <font color=\"Silver\">📍</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Javelin Crit Damage</font></b> => [t: 2d6 + Strength] <font color=\"Silver\">📍</font> damage!"
+  },
+  {
+    "id": 529,
+    "name": "Club",
+    "description": "A strength-based weapon used with an attack action.\r\n\r\nRemove Strength damage if used in off-hand.",
+    "category": "Simple Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">Club Damage</font></b> => [t: 1d4 + Strength] <font color=\"Silver\">🔨</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Club Crit Damage</font></b> => [t: 2d4 + Strength] <font color=\"Silver\">🔨</font> damage!"
+  },
+  {
+    "id": 530,
+    "name": "Longbow",
+    "description": "A dexterity-based weapon used with an attack action.",
+    "category": "Martial Ranged Weapons",
+    "macrocode": "<b><font color=\"Green\">Longbow Damage</font></b> => [t: 1d8 + Dexterity] <font color=\"Silver\">📍</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Longbow Crit Damage</font></b> => [t: 2d8 + Dexterity] <font color=\"Silver\">📍</font> damage!"
+  },
+  {
+    "id": 531,
+    "name": "Musket",
+    "description": "A dexterity-based weapon used with an attack action.",
+    "category": "Martial Ranged Weapons",
+    "macrocode": "<b><font color=\"Green\">Musket Damage</font></b> => [t: 1d12 + Dexterity] <font color=\"Silver\">📍</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Musket Crit Damage</font></b> => [t: 2d12 + Dexterity] <font color=\"Silver\">📍</font> damage!"
+  },
+  {
+    "id": 532,
+    "name": "Whip (strength)",
+    "description": "A strength-based weapon used with an attack action.",
+    "category": "Martial Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">Whip Damage</font></b> => [t: 1d4 + Strength] <font color=\"Silver\">🔪</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Whip Crit Damage</font></b> => [t: 2d4 + Strength] <font color=\"Silver\">🔪</font> damage!"
+  },
+  {
+    "id": 533,
+    "name": "Whip (dexterity)",
+    "description": "A dexterity-based weapon used with an attack action.",
+    "category": "Martial Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">Whip Damage</font></b> => [t: 1d4 + Dexterity] <font color=\"Silver\">🔪</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Whip Crit Damage</font></b> => [t: 2d4 + Dexterity] <font color=\"Silver\">🔪</font> damage!"
+  },
+  {
+    "id": 534,
+    "name": "Greatclub (+push)",
+    "description": "A strength-based weapon used with an attack action.",
+    "category": "Simple Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">Greatclub Damage (+push)</font></b> => [t: 1d8 + Strength] <font color=\"Silver\">🔨</font> damage + push up to 10 feet away.",
+    "macrocodecrit": "<b><font color=\"Teal\">Greatclub Crit Damage (+push)</font></b> => [t: 2d8 + Strength] <font color=\"Silver\">🔨</font> damage + push up to 10 feet away!"
+  },
+  {
+    "id": 535,
+    "name": "Pike (+push)",
+    "description": "A strength-based weapon used with an attack action.",
+    "category": "Martial Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">Pike Damage (+push)</font></b> => [t: 1d10 + Strength] <font color=\"Silver\">📍</font> damage  + push up to 10 feet away.",
+    "macrocodecrit": "<b><font color=\"Teal\">Pike Crit Damage (+push)</font></b> => [t: 2d10 + Strength] <font color=\"Silver\">📍</font> damage + push up to 10 feet away!"
+  },
+  {
+    "id": 536,
+    "name": "Warhammer (two-handed) (+push)",
+    "description": "A strength-based weapon used with an attack action.",
+    "category": "Martial Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">Warhammer Damage (+push)</font></b> => [t: 1d10 + Strength] <font color=\"Silver\">🔨</font> damage + push up to 10 feet away.",
+    "macrocodecrit": "<b><font color=\"Teal\">Warhammer Crit Damage (+push)</font></b> => [t: 2d10 + Strength] <font color=\"Silver\">🔨</font> damage + push up to 10 feet away!"
+  },
+  {
+    "id": 537,
+    "name": "Warhammer (one-handed) (+push)",
+    "description": "A strength-based weapon used with an attack action.",
+    "category": "Martial Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">Warhammer Damage (+push)</font></b> => [t: 1d8 + Strength] <font color=\"Silver\">🔨</font> damage + push up to 10 feet away.",
+    "macrocodecrit": "<b><font color=\"Teal\">Warhammer Crit Damage (+push)</font></b> => [t: 2d8 + Strength] <font color=\"Silver\">🔨</font> damage + push up to 10 feet away!"
+  },
+  {
+    "id": 538,
+    "name": "Heavy Crossbow (+push)",
+    "description": "A dexterity-based weapon used with an attack action.",
+    "category": "Martial Ranged Weapons",
+    "macrocode": "<b><font color=\"Green\">Heavy Crossbow Damage (+push)</font></b> => [t: 1d10 + Dexterity] <font color=\"Silver\">📍</font> damage + push up to 10 feet away.",
+    "macrocodecrit": "<b><font color=\"Teal\">Heavy Crossbow Crit Damage (+push)</font></b> => [t: 2d10 + Dexterity] <font color=\"Silver\">📍</font> damage + push up to 10 feet away!"
+  },
+  {
+    "id": 539,
+    "name": "Handaxe (+vex)",
+    "description": "A strength-based weapon used with an attack action.\r\n\r\nRemove Strength damage if used in off-hand.",
+    "category": "Simple Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">Handaxe Damage (+vex)</font></b> => [t: 1d6 + Strength] <font color=\"Silver\">🔪</font> damage + grants the attacker advantage on their next attack roll against you.",
+    "macrocodecrit": "<b><font color=\"Teal\">Handaxe Crit Damage (+vex)</font></b> => [t: 2d6 + Strength] <font color=\"Silver\">🔪</font> damage + grants the attacker advantage on their next attack roll against you!"
+  },
+  {
+    "id": 540,
+    "name": "Dart (dexterity) (+vex)",
+    "description": "A dexterity-based weapon used with an attack action.",
+    "category": "Simple Ranged Weapons",
+    "macrocode": "<b><font color=\"Green\">Dart Damage (+vex)</font></b> => [t: 1d4 + Dexterity] <font color=\"Silver\">📍</font> damage + grants the attacker advantage on their next attack roll against you.",
+    "macrocodecrit": "<b><font color=\"Teal\">Dart Crit Damage (+vex)</font></b> => [t: 2d4 + Dexterity] <font color=\"Silver\">📍</font> damage + grants the attacker advantage on their next attack roll against you!"
+  },
+  {
+    "id": 541,
+    "name": "Dart (strength) (+vex)",
+    "description": "A strength-based weapon used with an attack action.",
+    "category": "Simple Ranged Weapons",
+    "macrocode": "<b><font color=\"Green\">Dart Damage (+vex)</font></b> => [t: 1d4 + Strength] <font color=\"Silver\">📍</font> damage + grants the attacker advantage on their next attack roll against you.",
+    "macrocodecrit": "<b><font color=\"Teal\">Dart Crit Damage (+vex)</font></b> => [t: 2d4 + Strength] <font color=\"Silver\">📍</font> damage + grants the attacker advantage on their next attack roll against you!"
+  },
+  {
+    "id": 542,
+    "name": "Shortbow (+vex)",
+    "description": "A dexterity-based weapon used with an attack action.",
+    "category": "Simple Ranged Weapons",
+    "macrocode": "<b><font color=\"Green\">Shortbow Damage (+vex)</font></b> => [t: 1d6 + Dexterity] <font color=\"Silver\">📍</font> damage + grants the attacker advantage on their next attack roll against you.",
+    "macrocodecrit": "<b><font color=\"Teal\">Shortbow Crit Damage (+vex)</font></b> => [t: 2d6 + Dexterity] <font color=\"Silver\">📍</font> damage + grants the attacker advantage on their next attack roll against you!"
+  },
+  {
+    "id": 543,
+    "name": "Rapier (dexterity) (+vex)",
+    "description": "A dexterity-based weapon used with an attack action.",
+    "category": "Martial Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">Rapier Damage (+vex)</font></b> => [t: 1d8 + Dexterity] <font color=\"Silver\">📍</font> damage + grants the attacker advantage on their next attack roll against you.",
+    "macrocodecrit": "<b><font color=\"Teal\">Rapier Crit Damage (+vex)</font></b> => [t: 2d8 + Dexterity] <font color=\"Silver\">📍</font> damage + grants the attacker advantage on their next attack roll against you!"
+  },
+  {
+    "id": 544,
+    "name": "Rapier (strength) (+vex)",
+    "description": "A strength-based weapon used with an attack action.",
+    "category": "Martial Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">Rapier Damage (+vex)</font></b> => [t: 1d8 + Strength] <font color=\"Silver\">📍</font> damage + grants the attacker advantage on their next attack roll against you.",
+    "macrocodecrit": "<b><font color=\"Teal\">Rapier Crit Damage (+vex)</font></b> => [t: 2d8 + Strength] <font color=\"Silver\">📍</font> damage + grants the attacker advantage on their next attack roll against you!"
+  },
+  {
+    "id": 545,
+    "name": "Shortsword (dexterity) (+vex)",
+    "description": "A dexterity-based weapon used with an attack action.\r\n\r\nRemove Dexterity damage if used in off-hand.",
+    "category": "Martial Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">Shortsword Damage (+vex)</font></b> => [t: 1d6 + Dexterity] <font color=\"Silver\">📍</font> damage + grants the attacker advantage on their next attack roll against you.",
+    "macrocodecrit": "<b><font color=\"Teal\">Shortsword Crit Damage (+vex)</font></b> => [t: 2d6 + Dexterity] <font color=\"Silver\">📍</font> damage + grants the attacker advantage on their next attack roll against you!"
+  },
+  {
+    "id": 546,
+    "name": "Shortsword (strength) (+vex)",
+    "description": "A strength-based weapon used with an attack action.\r\n\r\nRemove Strength damage if used in off-hand.",
+    "category": "Martial Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">Shortsword Damage (+vex)</font></b> => [t: 1d6 + Strength] <font color=\"Silver\">📍</font> damage + grants the attacker advantage on their next attack roll against you.",
+    "macrocodecrit": "<b><font color=\"Teal\">Shortsword Crit Damage (+vex)</font></b> => [t: 2d6 + Strength] <font color=\"Silver\">📍</font> damage + grants the attacker advantage on their next attack roll against you!"
+  },
+  {
+    "id": 547,
+    "name": "Blowgun (+vex)",
+    "description": "A dexterity-based weapon used with an attack action.",
+    "category": "Martial Ranged Weapons",
+    "macrocode": "<b><font color=\"Green\">Blowgun Damage (+vex)</font></b> => [t: 1 + Dexterity] <font color=\"Silver\">📍</font> damage + grants the attacker advantage on their next attack roll against you.",
+    "macrocodecrit": "<b><font color=\"Teal\">Blowgun Crit Damage (+vex)</font></b> => [t: 1 + Dexterity] <font color=\"Silver\">📍</font> damage + grants the attacker advantage on their next attack roll against you!"
+  },
+  {
+    "id": 548,
+    "name": "Hand Crossbow (+vex)",
+    "description": "A dexterity-based weapon used with an attack action.\r\n\r\nRemove Dexterity damage if used in off-hand.",
+    "category": "Martial Ranged Weapons",
+    "macrocode": "<b><font color=\"Green\">Hand Crossbow Damage (+vex)</font></b> => [t: 1d6 + Dexterity] <font color=\"Silver\">📍</font> damage + grants the attacker advantage on their next attack roll against you.",
+    "macrocodecrit": "<b><font color=\"Teal\">Hand Crossbow Crit Damage (+vex)</font></b> => [t: 2d6 + Dexterity] <font color=\"Silver\">📍</font> damage + grants the attacker advantage on their next attack roll against you!"
+  },
+  {
+    "id": 549,
+    "name": "Pistol (+vex)",
+    "description": "A dexterity-based weapon used with an attack action.",
+    "category": "Martial Ranged Weapons",
+    "macrocode": "<b><font color=\"Green\">Pistol Damage (+vex)</font></b> => [t: 1d10 + Dexterity] <font color=\"Silver\">📍</font> damage + grants the attacker advantage on their next attack roll against you.",
+    "macrocodecrit": "<b><font color=\"Teal\">Pistol Crit Damage (+vex)</font></b> => [t: 2d10 + Dexterity] <font color=\"Silver\">📍</font> damage + grants the attacker advantage on their next attack roll against you!"
+  },
+  {
+    "id": 550,
+    "name": "Mace (+sap)",
+    "description": "A strength-based weapon used with an attack action.",
+    "category": "Simple Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">Mace Damage (+sap)</font></b> => [t: 1d6 + Strength] <font color=\"Silver\">🔨</font> damage + get disadvantage on your next attack roll.",
+    "macrocodecrit": "<b><font color=\"Teal\">Mace Crit Damage</font></b> => [t: 2d6 + Strength] <font color=\"Silver\">🔨</font> damage + get disadvantage on your next attack roll!"
+  },
+  {
+    "id": 551,
+    "name": "Spear (one-handed) (+sap)",
+    "description": "A strength-based weapon used with an attack action.",
+    "category": "Simple Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">Spear Damage (+sap)</font></b> => [t: 1d6 + Strength] <font color=\"Silver\">📍</font> damage + get disadvantage on your next attack roll.",
+    "macrocodecrit": "<b><font color=\"Teal\">Spear Crit Damage (+sap)</font></b> => [t: 2d6 + Strength] <font color=\"Silver\">📍</font> damage + get disadvantage on your next attack roll!"
+  },
+  {
+    "id": 552,
+    "name": "Spear (two-handed) (+sap)",
+    "description": "A strength-based weapon used with an attack action.",
+    "category": "Simple Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">Spear Damage (+sap)</font></b> => [t: 1d8 + Strength] <font color=\"Silver\">📍</font> damage + get disadvantage on your next attack roll.",
+    "macrocodecrit": "<b><font color=\"Teal\">Spear Crit Damage (+sap)</font></b> => [t: 2d8 + Strength] <font color=\"Silver\">📍</font> damage + get disadvantage on your next attack roll!"
+  },
+  {
+    "id": 553,
+    "name": "Flail (+sap)",
+    "description": "A strength-based weapon used with an attack action.",
+    "category": "Martial Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">Flail Damage (+sap)</font></b> => [t: 1d8 + Strength] <font color=\"Silver\">🔨</font> damage + get disadvantage on your next attack roll.",
+    "macrocodecrit": "<b><font color=\"Teal\">Flail Crit Damage (+sap)</font></b> => [t: 2d8 + Strength] <font color=\"Silver\">🔨</font> damage + get disadvantage on your next attack roll!"
+  },
+  {
+    "id": 554,
+    "name": "Longsword (two-handed) (+sap)",
+    "description": "A strength-based weapon used with an attack action.",
+    "category": "Martial Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">Longsword Damage (+sap)</font></b> => [t: 1d10 + Strength] <font color=\"Silver\">🔪</font> damage + get disadvantage on your next attack roll.",
+    "macrocodecrit": "<b><font color=\"Teal\">Longsword Crit Damage (+sap)</font></b> => [t: 2d10 + Strength] <font color=\"Silver\">🔪</font> damage + get disadvantage on your next attack roll!"
+  },
+  {
+    "id": 555,
+    "name": "Longsword (one-handed) (+sap)",
+    "description": "A strength-based weapon used with an attack action.",
+    "category": "Martial Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">Longsword Damage (+sap)</font></b> => [t: 1d8 + Strength] <font color=\"Silver\">🔪</font> damage + get disadvantage on your next attack roll.",
+    "macrocodecrit": "<b><font color=\"Teal\">Longsword Crit Damage (+sap)</font></b> => [t: 2d8 + Strength] <font color=\"Silver\">🔪</font> damage + get disadvantage on your next attack roll!"
+  },
+  {
+    "id": 556,
+    "name": "Morningstar (+sap)",
+    "description": "A strength-based weapon used with an attack action.",
+    "category": "Martial Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">Morningstar Damage (+sap)</font></b> => [t: 1d8 + Strength] <font color=\"Silver\">📍</font> damage + get disadvantage on your next attack roll.",
+    "macrocodecrit": "<b><font color=\"Teal\">Morningstar Crit Damage (+sap)</font></b> => [t: 2d8 + Strength] <font color=\"Silver\">📍</font> damage + get disadvantage on your next attack roll!"
+  },
+  {
+    "id": 557,
+    "name": "War pick (two-handed) (+sap)",
+    "description": "A strength-based weapon used with an attack action.",
+    "category": "Martial Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">War pick Damage (+sap)</font></b> => [t: 1d10 + Strength] <font color=\"Silver\">📍</font> damage + get disadvantage on your next attack roll.",
+    "macrocodecrit": "<b><font color=\"Teal\">War pick Crit Damage (+sap)</font></b> => [t: 2d10 + Strength] <font color=\"Silver\">📍</font> damage + get disadvantage on your next attack roll!"
+  },
+  {
+    "id": 558,
+    "name": "War pick (one-handed) (+sap)",
+    "description": "A strength-based weapon used with an attack action.",
+    "category": "Martial Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">War pick Damage (+sap)</font></b> => [t: 1d8 + Strength] <font color=\"Silver\">📍</font> damage + get disadvantage on your next attack roll.",
+    "macrocodecrit": "<b><font color=\"Teal\">War pick Crit Damage (+sap)</font></b> => [t: 2d8 + Strength] <font color=\"Silver\">📍</font> damage + get disadvantage on your next attack roll!"
+  },
+  {
+    "id": 559,
+    "name": "Quarterstaff (one-handed) (topple)",
+    "description": "A strength-based weapon used with an attack action.\r\n\r\nReplace INPUT with ability.",
+    "category": "Simple Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">Quarterstaff Damage (topple)</font></b> => [t: 1d6 + Strength] <font color=\"Silver\">🔨</font> damage + DC [r: 8 + INPUT + Proficiency] Constitution Save or become Prone.",
+    "macrocodecrit": "<b><font color=\"Teal\">Quarterstaff Crit Damage (topple)</font></b> => [t: 2d6 + Strength] <font color=\"Silver\">🔨</font> damage + DC [r: 8 + INPUT + Proficiency] Constitution Save or become Prone!"
+  },
+  {
+    "id": 560,
+    "name": "Quarterstaff (two-handed) (topple)",
+    "description": "A strength-based weapon used with an attack action.\r\n\r\nReplace INPUT with ability.",
+    "category": "Simple Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">Quarterstaff Damage (topple)</font></b> => [t: 1d8 + Strength] <font color=\"Silver\">🔨</font> damage + DC [r: 8 + INPUT + Proficiency] Constitution Save or become Prone.",
+    "macrocodecrit": "<b><font color=\"Teal\">Quarterstaff Crit Damage (topple)</font></b> => [t: 2d8 + Strength] <font color=\"Silver\">🔨</font> damage + DC [r: 8 + INPUT + Proficiency] Constitution Save or become Prone!"
+  },
+  {
+    "id": 561,
+    "name": "Battleaxe (one-handed) (topple)",
+    "description": "A strength-based weapon used with an attack action.\r\n\r\nReplace INPUT with ability.",
+    "category": "Martial Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">Battleaxe Damage (topple)</font></b> => [t: 1d8 + Strength] <font color=\"Silver\">🔪</font> damage + DC [r: 8 + INPUT + Proficiency] Constitution Save or become Prone.",
+    "macrocodecrit": "<b><font color=\"Teal\">Battleaxe Crit Damage (topple)</font></b> => [t: 2d8 + Strength] <font color=\"Silver\">🔪</font> damage + DC [r: 8 + INPUT + Proficiency] Constitution Save or become Prone!"
+  },
+  {
+    "id": 562,
+    "name": "Battleaxe (two-handed) (topple)",
+    "description": "A strength-based weapon used with an attack action.\r\n\r\nReplace INPUT with ability.",
+    "category": "Martial Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">Battleaxe Damage (topple)</font></b> => [t: 1d10 + Strength] <font color=\"Silver\">🔪</font> damage + DC [r: 8 + INPUT + Proficiency] Constitution Save or become Prone.",
+    "macrocodecrit": "<b><font color=\"Teal\">Battleaxe Crit Damage (topple)</font></b> => [t: 2d10 + Strength] <font color=\"Silver\">🔪</font> damage + DC [r: 8 + INPUT + Proficiency] Constitution Save or become Prone!"
+  },
+  {
+    "id": 563,
+    "name": "Lance (topple)",
+    "description": "A strength-based weapon used with an attack action.\r\n\r\nReplace INPUT with ability.",
+    "category": "Martial Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">Lance Damage (topple)</font></b> => [t: 1d10 + Strength] <font color=\"Silver\">📍</font> damage + DC [r: 8 + INPUT + Proficiency] Constitution Save or become Prone.",
+    "macrocodecrit": "<b><font color=\"Teal\">Lance Crit Damage (topple)</font></b> => [t: 2d10 + Strength] <font color=\"Silver\">📍</font> damage + DC [r: 8 + INPUT + Proficiency] Constitution Save or become Prone!"
+  },
+  {
+    "id": 564,
+    "name": "Maul (topple)",
+    "description": "A strength-based weapon used with an attack action.\r\n\r\nReplace INPUT with ability.",
+    "category": "Martial Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">Maul Damage (topple)</font></b> => [t: 2d6 + Strength] <font color=\"Silver\">🔨</font> damage + DC [r: 8 + INPUT + Proficiency] Constitution Save or become Prone.",
+    "macrocodecrit": "<b><font color=\"Teal\">Maul Crit Damage (topple)</font></b> => [t: 4d6 + Strength] <font color=\"Silver\">🔨</font> damage + DC [r: 8 + INPUT + Proficiency] Constitution Save or become Prone!"
+  },
+  {
+    "id": 565,
+    "name": "Trident (two-handed) (topple)",
+    "description": "A strength-based weapon used with an attack action.\r\n\r\nReplace INPUT with ability.",
+    "category": "Martial Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">Trident Damage (topple)</font></b> => [t: 1d10 + Strength] <font color=\"Silver\">📍</font> damage + DC [r: 8 + INPUT + Proficiency] Constitution Save or become Prone.",
+    "macrocodecrit": "<b><font color=\"Teal\">Trident Crit Damage (topple)</font></b> => [t: 2d10 + Strength] <font color=\"Silver\">📍</font> damage + DC [r: 8 + INPUT + Proficiency] Constitution Save or become Prone!"
+  },
+  {
+    "id": 566,
+    "name": "Trident (one-handed) (topple)",
+    "description": "A strength-based weapon used with an attack action.\r\n\r\nReplace INPUT with ability.",
+    "category": "Martial Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">Trident Damage (topple)</font></b> => [t: 1d8 + Strength] <font color=\"Silver\">📍</font> damage + DC [r: 8 + INPUT + Proficiency] Constitution Save or become Prone.",
+    "macrocodecrit": "<b><font color=\"Teal\">Trident Crit Damage (topple)</font></b> => [t: 2d8 + Strength] <font color=\"Silver\">📍</font> damage + DC [r: 8 + INPUT + Proficiency] Constitution Save or become Prone!"
+  },
+  {
+    "id": 567,
+    "name": "Greataxe (cleave)",
+    "description": "A strength-based weapon used with an attack action.\r\n\r\nAdd ability modifer to damage if negative.",
+    "category": "Martial Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">Greataxe Damage (cleave)</font></b> => [t: 1d12] <font color=\"Silver\">🔪</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Greataxe Crit Damage (cleave)</font></b> => [t: 2d12] <font color=\"Silver\">🔪</font> damage!"
+  },
+  {
+    "id": 568,
+    "name": "Greatsword (cleave)",
+    "description": "A strength-based weapon used with an attack action.\r\n\r\nAdd ability modifer to damage if negative.",
+    "category": "Martial Melee Weapons",
+    "macrocode": "<b><font color=\"Green\">Greatsword Damage (cleave)</font></b> => [t: 2d6] <font color=\"Silver\">🔪</font> damage.",
+    "macrocodecrit": "<b><font color=\"Teal\">Greatsword Crit Damage (cleave)</font></b> => [t: 4d6] <font color=\"Silver\">🔪</font> damage!"
   }
 ]
