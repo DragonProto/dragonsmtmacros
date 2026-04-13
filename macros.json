@@ -988,7 +988,7 @@
     "name": "Magic Missile",
     "description": "",
     "category": "1st Level",
-    "macrocode": "<b><font color=\"Purple\">Magic Missile</font></b> => [t: Missile = 1d4 + 1] <font color=\"Blue\">✊</font> damage.",
+    "macrocode": "[h: Missile = 1d4 + 1]\r\n<b><font color=\"Purple\">Magic Missile</font></b> => [t: Missile], [t: Missile], [t: Missile] <font color=\"Blue\">✊</font> damage.",
     "macrocodecrit": ""
   },
   {
@@ -4233,18 +4233,18 @@
   },
   {
     "id": 567,
-    "name": "Greataxe (cleave)",
+    "name": "Greataxe (+cleave)",
     "description": "A strength-based weapon used with an attack action.\r\n\r\nAdd ability modifer to damage if negative.",
     "category": "Martial Melee Weapons",
-    "macrocode": "<b><font color=\"Green\">Greataxe Damage (cleave)</font></b> => [t: 1d12] <font color=\"Silver\">🔪</font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Greataxe Crit Damage (cleave)</font></b> => [t: 2d12] <font color=\"Silver\">🔪</font> damage!"
+    "macrocode": "[t, if(Strength <= 0), CODE:{\r\n    <b><font color=\"Green\">Greataxe Damage (+cleave)</font></b> => [t: 1d12 + Strength] <font color=\"Silver\">🔪</font> damage.\r\n};{\r\n    <b><font color=\"Green\">Greataxe Damage (+cleave)</font></b> => [t: 1d12] <font color=\"Silver\">🔪</font> damage.\r\n}]",
+    "macrocodecrit": "[t, if(Strength <= -1), CODE:{\r\n    <b><font color=\"Teal\">Greataxe Crit Damage (+cleave)</font></b> => [t: 2d12 + Strength] <font color=\"Silver\">🔪</font>  damage!\r\n};{\r\n    <b><font color=\"Teal\">Greataxe Crit Damage (+cleave)</font></b> => [t: 2d12] <font color=\"Silver\">🔪</font> damage!\r\n}]"
   },
   {
     "id": 568,
-    "name": "Greatsword (cleave)",
-    "description": "A strength-based weapon used with an attack action.\r\n\r\nAdd ability modifer to damage if negative.",
+    "name": "Halberd (+cleave)",
+    "description": "A strength-based weapon used with an attack action.",
     "category": "Martial Melee Weapons",
-    "macrocode": "<b><font color=\"Green\">Greatsword Damage (cleave)</font></b> => [t: 2d6] <font color=\"Silver\">🔪</font> damage.",
-    "macrocodecrit": "<b><font color=\"Teal\">Greatsword Crit Damage (cleave)</font></b> => [t: 4d6] <font color=\"Silver\">🔪</font> damage!"
+    "macrocode": "[t, if(Strength <= -1), CODE:{\r\n    <b><font color=\"Green\">Halberd Damage (+cleave)</font></b> => [t: 1d10 + Strength] <font color=\"Silver\">🔪</font> damage.\r\n};{\r\n    <b><font color=\"Green\">Halberd Damage (+cleave)</font></b> => [t: 1d10] <font color=\"Silver\">🔪</font> damage.\r\n}]",
+    "macrocodecrit": "[t, if(Strength <= -1), CODE:{\r\n    <b><font color=\"Teal\">Halberd Crit Damage (+cleave)</font></b> => [t: 2d10 + Strength] <font color=\"Silver\">🔪</font> damage!\r\n};{\r\n    <b><font color=\"Teal\">Halberd Crit Damage (+cleave)</font></b> => [t: 2d10] <font color=\"Silver\">🔪</font> damage!\r\n}]"
   }
 ]
