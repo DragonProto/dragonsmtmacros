@@ -4234,7 +4234,7 @@
   {
     "id": 567,
     "name": "Greataxe (+cleave)",
-    "description": "A strength-based weapon used with an attack action.\r\n\r\nAdd ability modifer to damage if negative.",
+    "description": "A strength-based weapon used with an attack action.",
     "category": "Martial Melee Weapons",
     "macrocode": "[t, if(Strength <= 0), CODE:{\r\n    <b><font color=\"Green\">Greataxe Damage (+cleave)</font></b> => [t: 1d12 + Strength] <font color=\"Silver\">🔪</font> damage.\r\n};{\r\n    <b><font color=\"Green\">Greataxe Damage (+cleave)</font></b> => [t: 1d12] <font color=\"Silver\">🔪</font> damage.\r\n}]",
     "macrocodecrit": "[t, if(Strength <= -1), CODE:{\r\n    <b><font color=\"Teal\">Greataxe Crit Damage (+cleave)</font></b> => [t: 2d12 + Strength] <font color=\"Silver\">🔪</font>  damage!\r\n};{\r\n    <b><font color=\"Teal\">Greataxe Crit Damage (+cleave)</font></b> => [t: 2d12] <font color=\"Silver\">🔪</font> damage!\r\n}]"
